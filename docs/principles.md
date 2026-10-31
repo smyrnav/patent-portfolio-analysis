@@ -1,6 +1,6 @@
 # Working principles
 
-The [job posting](strategy.md#the-role-this-project-targets) lists how it expects people to work. I use those points as the rules for this analysis, and record honestly where I'm not there yet.
+The [traineeship posting](https://www.linkedin.com/jobs/view/4483030441) lists how it expects people to work. I use those points as the rules for this analysis, and record honestly where I'm not there yet.
 
 Status is ✅ done, 🟡 partly done or ⬜ not started.
 

@@ -21,6 +21,8 @@ The budget has to cover:
 
 ## The role this project targets
 
+The [Financial Data Engineering / Business Data Analytics Trainee posting](https://www.linkedin.com/jobs/view/4483030441) at Nokia, in the Business Data Analytics track.
+
 | What the role does | What I'll build |
 |---|---|
 | Analyse patent portfolio and financial data | Portfolio volumes linked to fee and cost data |
