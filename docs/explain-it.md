@@ -41,7 +41,7 @@ Page numbers are from the autumn 2026 PDF.
 
 ## Do it myself
 
-- [ ] Rerun [the recount](../sql/08_recount_us_30y.sql) and match the totals
+- [x] Rerun [the recount](../sql/08_recount_us_30y.sql) and match the totals. All 24 rows matched on 31 October 2026, on the same working table
 - [ ] Open the table and read 10 rows, including their owners and technology codes
 - [ ] Read the catalog pages above
 - [ ] Explain the 46% figure and its limits out loud
