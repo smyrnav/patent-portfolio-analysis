@@ -30,6 +30,8 @@ Read the independent claims first, then the abstract and description for context
 
 Where a patent is used doesn't set its label. A routing patent for data centres is still IPR.
 
+**Boundary rule from testing:** network management and control patents don't count as DCS or OPT just because they manage switches or optical equipment. They go to REVIEW, and the pilot will decide whether they need a rule of their own.
+
 ## Extra fields
 
 | Field | Values | Why |
@@ -80,4 +82,16 @@ Google's table has US full text, while [other offices may only have bibliographi
 | H04L 12 and G02B 6 as starting codes | Too broad | Not used alone |
 | Three labels with no link to the question | Doesn't connect to the business | Mapped to Nokia's units, and added AI and cloud relevance |
 
-I checked four of its 16 examples on Google Patents. The owners matched, and EP3410735A1's first claim and US20170063631A1's first claim support its labels. The other 12 and its claim-based reasoning aren't verified.
+## Check of the draft's 16 examples
+
+I checked all 16 on Google Patents, reading each patent's first claim. [Each result and link is logged](../data/processed/draft_examples_check.csv).
+
+| Check | Result |
+|---|---|
+| Owner matches | 16 of 16 |
+| My label agrees | 14 of 16, including the one the draft left as OPT or REVIEW |
+| Hedged label resolved | 1: US20250119395A1 is IPR, as its claim is about BGP sessions |
+| Disagree | 1: US9866474B2 is REVIEW, as it claims switch management rather than switching |
+| Reasoning wrong, label holds | 1: US20210058685A1's first claim doesn't mention optical components or reshufflers |
+
+**This doesn't validate the codebook.** It's a small hand-picked set, labelled by one reader from first claims only. It's also unbalanced: 10 of the 16 are Ciena's, 2 each are Nokia's and Cisco's, 1 each are Tigera's and Quanta's, and none are Arista's.

@@ -1,0 +1,17 @@
+patent,owner_on_google_patents,draft_owner_matches,draft_label,label_from_first_claim,result,note,link
+EP3410735A1,Nokia Solutions and Networks Oy,Yes,OPT,OPT,Agree,Optical cross-connect and multiplexers,https://patents.google.com/patent/EP3410735A1/en
+US8983293B2,Ciena Corp,Yes,OPT,OPT,Agree,Optical cross-connect switch,https://patents.google.com/patent/US8983293B2/en
+US12250101B1,Cisco Technology Inc,Yes,OPT,OPT,Agree,Coherent optical transceiver,https://patents.google.com/patent/US12250101B1/en
+US8805206B2,Ciena Corp,Yes,OPT,OPT,Agree,Coherent optical receiver,https://patents.google.com/patent/US8805206B2/en
+EP4300147A1,Nokia Solutions and Networks Oy,Yes,OPT,OPT,Agree,Optical add-drop multiplexer,https://patents.google.com/patent/EP4300147A1/en
+US9236953B2,Ciena Corp,Yes,OPT or REVIEW,REVIEW,Agree,Control plane carrying photonic control messages,https://patents.google.com/patent/US9236953B2/en
+US20250337681A1,Ciena Corp,Yes,IPR,IPR,Agree,BGP service advertisement over SRv6,https://patents.google.com/patent/US20250337681A1/en
+US12476907B2,Ciena Corp,Yes,IPR,IPR,Agree,BGP path selection and next hop,https://patents.google.com/patent/US12476907B2/en
+US7359393B1,Cisco Technology Inc,Yes,IPR,IPR,Agree,BGP update groups,https://patents.google.com/patent/US7359393B1/en
+US20250119395A1,Ciena Corp,Yes,IPR or REVIEW,IPR,Resolved,Claim is a BGP session lockout rather than general traffic control,https://patents.google.com/patent/US20250119395A1/en
+US11121984B2,Ciena Corp,Yes,IPR,IPR,Agree,Routing and forwarding tables with shortest and off-shortest paths,https://patents.google.com/patent/US11121984B2/en
+WO2021050481A1,Ciena Corp,Yes,DCS,DCS,Agree,Packet queueing and dequeue in a data centre network,https://patents.google.com/patent/WO2021050481A1/en
+US20170063631A1,Tigera Inc,Yes,DCS,DCS,Agree,Spine switch planes; Metaswitch was the earlier owner,https://patents.google.com/patent/US20170063631A1/en
+US9866474B2,Quanta Computer Inc,Yes,DCS,REVIEW,Disagree,Claim is switch management by emulated controllers rather than switching itself,https://patents.google.com/patent/US9866474B2/en
+US11750531B2,Ciena Corp,Yes,DCS,DCS,Agree,FPGA-based virtual switching fabric,https://patents.google.com/patent/US11750531B2/en
+US20210058685A1,Ciena Corp,Yes,DCS,DCS,Agree with correction,Label holds but claim 1 doesn't mention optical components or reshufflers as the draft implied,https://patents.google.com/patent/US20210058685A1/en
