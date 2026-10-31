@@ -1,10 +1,12 @@
 # Patent Portfolio Analysis
 
-A self-directed project, started after reading a job posting for a patent portfolio trainee at Nokia. I didn't know what that work involves, so I'm teaching myself by doing a version of it with public data.
+I saw a job posting for a patent portfolio trainee at Nokia and didn't know what that work involves. This repo documents me teaching myself: finding the tools, picking interesting questions, and recording how I found each answer and which resources I used.
 
-This repo records each step: what I looked at, what I found and what I got wrong. It isn't affiliated with Nokia, and it uses only public data.
+**Start with the [question log](docs/questions.md)**, which lists everything I've asked so far and what's still open. The rest of this page walks through the work with screenshots.
 
-**Status:** Steps 1–5 are done. The cost model is not built yet.
+This isn't affiliated with Nokia, and it uses only public data.
+
+**Status:** six questions answered. Next I'm working out which patents are still alive and what they cost to keep.
 
 ## What I've found so far
 
@@ -98,11 +100,7 @@ A further 20 names (46 listings) are marked **Needs review**. They look like joi
 
 ## Next steps
 
-1. Count unique patents, and keep only those likely to still be in force.
-2. Add USPTO maintenance fee records to see which patents owners kept paying for.
-3. Build a 10-year cost model using official fees, with simulated internal costs clearly labelled.
-4. Show the result as a range, and test which assumptions matter most.
-5. Write a one-page decision brief.
+The open questions are in the [question log](docs/questions.md#open).
 
 ## Run it yourself
 
