@@ -25,11 +25,11 @@ MORE = [
 NEVER = ["Revenue per patent", "Licensing terms", "Who holds a licence", "Nokia's real internal costs", "Why it decided anything"]
 
 
-def card(ax, x, y, w, h, title, body, foot, color):
+def card(ax, x, y, w, h, title, body, foot, color, width=54):
     ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0,rounding_size=0.08", fc=CARD, ec="none"))
     ax.add_patch(FancyBboxPatch((x, y), .07, h, boxstyle="square,pad=0", fc=color, ec="none"))
     ax.text(x + .2, y + h - .24, title, fontsize=13, fontweight="bold", color=INK, va="center")
-    ax.text(x + .2, y + h - .48, "\n".join(wrap(body, 54)), fontsize=10.5, color=INK, va="top", linespacing=1.3)
+    ax.text(x + .2, y + h - .48, "\n".join(wrap(body, width)), fontsize=10.5, color=INK, va="top", linespacing=1.3)
     ax.text(x + .2, y + .16, foot, fontsize=9.5, color=MUTED, va="center")
 
 
@@ -44,10 +44,18 @@ for i, (t, b, f) in enumerate(NOW):
     card(ax, .15 + (i % 2) * 4.45, 6.5 - (i // 2) * 1.68, 4.3, 1.48, t, b, "Decision: " + f, ACCENT)
 ax.text(9.2, 8.08, "NEEDS MORE DATA", fontsize=11.5, fontweight="bold", color=MID)
 for i, (t, b, f) in enumerate(MORE):
-    card(ax, 9.2, 6.5 - i * 1.3, 5.65, 1.12, t, b, "Needs: " + f, MID)
-ax.text(9.2, 2.5, "CAN'T BE ANSWERED FROM PUBLIC DATA", fontsize=11.5, fontweight="bold", color=MUTED)
+    card(ax, 9.2, 6.72 - i * 1.25, 5.65, 1.14, t, b, "Needs: " + f, MID, width=74)
+ax.text(9.2, 2.72, "CAN'T BE ANSWERED FROM PUBLIC DATA", fontsize=11.5, fontweight="bold", color=MUTED)
 for i, t in enumerate(NEVER):
-    ax.text(9.2, 2.12 - i * .36, "×  " + t, fontsize=12, color=INK)
+    ax.text(9.2, 2.34 - i * .36, "×  " + t, fontsize=12, color=INK)
+ax.text(.15, 2.72, "THE PATH", fontsize=11.5, fontweight="bold", color=INK)
+STEPS = ["Clean owner\nnames", "Answer the\nsix questions", "Add renewals\nand fees", "One-page\ndecision brief"]
+for i, t in enumerate(STEPS):
+    x = .15 + i * 2.2
+    ax.add_patch(FancyBboxPatch((x, 1.45), 1.85, 1.0, boxstyle="round,pad=0,rounding_size=0.08", fc=ACCENT, ec="none"))
+    ax.text(x + .925, 1.95, t, ha="center", va="center", color="white", fontsize=11.5, fontweight="bold")
+    if i < 3:
+        ax.annotate("", xy=(x + 2.18, 1.95), xytext=(x + 1.87, 1.95), arrowprops=dict(arrowstyle="-|>", color=INK, lw=1.5))
 fig.tight_layout(pad=.4)
 fig.savefig(IMG / "question_map.png", dpi=150)
 
