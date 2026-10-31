@@ -10,11 +10,11 @@ The rest of this page walks through the work with screenshots.
 
 This isn't affiliated with Nokia, and it uses only public data.
 
-**Status:** nine questions answered. **Known issue:** the US totals below leave out 8,808 older patents, and I'm rerunning them for the last 30 years (Q15 in the log).
+**Status:** ten questions answered. I've built a working table of **72,207 inventions filed in the last 30 years**, across 64 patent offices. **Known issue:** the US totals below predate it and leave out 8,808 older patents.
 
 ## What I've found so far
 
-The US figures below come from a search that missed older patents, so they will change.
+The US figures below come from a search that missed older patents, so they will change once I recount from the working table.
 
 | | |
 |---|---|

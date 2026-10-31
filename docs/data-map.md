@@ -27,13 +27,13 @@ Blue steps have been started, and grey steps haven't. The owner step is still be
 |---|---|---|---|
 | **Identity** | The patent, office, type and family | Yes | Where was it filed? How many inventions are there, not just filings? |
 | **Dates** | Filing and grant timing | Partly | How has filing changed over time? Did it change after a deal? |
-| **People and owners** | Owner names and inventors | Owners only | Whose name is on it? Who are the most prolific inventors? |
-| **Technology codes** | Classification of the invention | Not yet | Did Nokia shift from phones to networks? |
-| **Written content** | Titles, abstracts, claims and full text | Not yet | What are the patents about in plain words? |
-| **Links** | Citations and related filings | Not yet | Which patents do others build on? |
+| **People and owners** | Owner names and inventors | Owners analysed, inventors in my table | Whose name is on it? Who are the most prolific inventors? |
+| **Technology codes** | Classification of the invention | In my table | Did Nokia shift from phones to networks? |
+| **Written content** | Titles, abstracts, claims and full text | Titles and abstracts in my table | What are the patents about in plain words? |
+| **Links** | Citations and related filings | Citations in my table | Which patents do others build on? |
 | **Office details** | Examining unit and applicant size status | Not yet | I haven't looked at these yet |
 
-I've only used 7 of the 37 fields so far. The groupings and descriptions are my own, based on the field names, so some may change once I look more closely.
+I've only analysed 7 of the 37 fields so far, though my working table now holds more of them. The groupings and descriptions are my own, based on the field names, so some may change once I look more closely.
 
 ## What the sources cover
 
@@ -65,12 +65,13 @@ I've only used the Google table so far. The USPTO and ETSI columns reflect what 
 | Q11 | Where did the portfolio come from? | Partly Alcatel-Lucent, with shares being corrected in Q15 |
 | Q12 | Where does Nokia file? | US first, Europe close behind, China next after the international filings |
 | Q14 | Did I miss older patents? | Yes, 8,808 of them |
+| Q15 | What does the last 30 years look like? | 72,207 inventions across 64 offices |
 
 ### Open
 
 | # | Question | What it needs |
 |---|---|---|
-| Q15 | What does the portfolio look like over the last 30 years? | [Working table query ready](../sql/06_create_portfolio_30y.sql) |
+| Q16 | Did Nokia's technology focus shift? | [Query ready](../sql/08_technology_by_period.sql) |
 | Q7 | How many unique patents are alive? | Cleaned names and renewal data |
 | Q8 | Which patents do owners stop paying for? | USPTO fee records |
 | Q9 | What would keeping them cost over 10 years? | Official fees and a model |
