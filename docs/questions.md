@@ -1,5 +1,7 @@
 # Question log
 
+These are the questions from my exploration. The business questions I'm now working towards are in the [analysis strategy](strategy.md).
+
 Every question I ask while teaching myself this work, how I went about answering it, and what I used. New questions go at the top of "Open".
 
 To add one, copy this:
@@ -14,10 +16,6 @@ To add one, copy this:
 ```
 
 ## Open
-
-### Q16. Did Nokia's technology focus shift over 30 years?
-- **Why I asked:** I want to see whether the portfolio moved from phones towards networks, and how the deals show up.
-- **How I'll look:** [count inventions by technology area and 5-year period](../sql/08_technology_by_period.sql).
 
 ### Q13. Did Lucent's patents actually stay in the family?
 - **Why I asked:** as far as I remember, Lucent spun off Avaya and Agere, so a Lucent name may not lead to Nokia today.
@@ -46,7 +44,7 @@ To add one, copy this:
 - **How I looked:** [built a working table](../sql/06_create_portfolio_30y.sql), then [checked it](../sql/07_check_portfolio_30y.sql) ([results](../data/raw/portfolio_30y_check.csv)).
 - **Answer:** 289,998 publications from 212,660 applications and 72,207 patent families, across 64 offices. That's about 2.9 applications per invention. Citations are missing on 49% of publications, English abstracts on 21%, inventor countries on 18%, English titles on 13%, and technology codes on 2%.
 - **Tools and resources:** BigQuery. Still to review: the owner names in the table, since some false matches or sold businesses may remain.
-- **What it led to:** Q16. Later queries can use this table instead of the 2.88 TB source.
+- **What it led to:** the [analysis strategy](strategy.md). Later queries can use this table instead of the 2.88 TB source.
 
 ### Q14. Did my first two searches miss older US patents?
 - **Why I asked:** the country query found 43,674 granted US applications, more than the 34,229 listings from my earlier searches, even though those double-count some patents.

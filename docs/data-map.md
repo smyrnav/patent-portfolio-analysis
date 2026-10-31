@@ -71,7 +71,6 @@ I've only used the Google table so far. The USPTO and ETSI columns reflect what 
 
 | # | Question | What it needs |
 |---|---|---|
-| Q16 | Did Nokia's technology focus shift? | [Query ready](../sql/08_technology_by_period.sql) |
 | Q7 | How many unique patents are alive? | Cleaned names and renewal data |
 | Q8 | Which patents do owners stop paying for? | USPTO fee records |
 | Q9 | What would keeping them cost over 10 years? | Official fees and a model |

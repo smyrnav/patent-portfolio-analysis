@@ -8,6 +8,12 @@ This is my outside view of what a portfolio team needs. Nokia's real priorities 
 
 > Across the last 30 years, where is the portfolio strong, where is it exposed, and where might it be costing more than it should?
 
+![What this data can answer for the business](img/question_map.png)
+
+## What each question needs
+
+![Which data each question needs](img/question_data_matrix.png)
+
 ## What the data is made of
 
 | Building block | Fields | Lets me compare by |
@@ -24,13 +30,12 @@ This is my outside view of what a portfolio team needs. Nokia's real priorities 
 
 | Business question | Decision it supports | Measure | Main limit |
 |---|---|---|---|
-| What does the portfolio cover? | Where to invest or prune | Inventions by technology and origin | Historical names, not confirmed current ownership |
-| Where is momentum rising or falling? | Where to focus patent budgets | New inventions per period | The latest years are incomplete because of publication delays |
-| When could protection run out? | When to refill a technology area | Filing date + 20 years, by technology | Latest possible date, as patents can lapse earlier |
-| Where are the protection gaps? | Where to file | Share of inventions filed in each office, by technology | Filing is not the same as a granted patent |
-| Which areas are costly to protect? | Where filing could be narrower | Offices per invention | Shows breadth, not actual money spent |
-| What did each acquisition add? | How to value deals | Inventions by origin and technology | Names can be out of date |
-| Where does inventing happen? | R&D site and key-person risk | Inventions by inventor country and inventor | 18% of publications lack inventor country |
+| **Refill rate:** is new invention replacing what's about to expire? | Where to invest in new patents | New inventions against inventions reaching 20 years, by technology | Recent years are incomplete because of publication delays |
+| **Protection cliff:** how much protection could run out by 2036? | What to renew or replace | Filing date + 20 years, by technology | Latest possible date, as patents can lapse earlier |
+| **Geographic gaps:** which key technologies lack cover in major markets? | Where to file next | Share of inventions filed in each office, by technology | Filing is not the same as a granted patent |
+| **Costly coverage:** which areas are filed in many more offices than others? | Where to file more narrowly | Offices per invention | Shows breadth, not actual money spent |
+| **Deal value:** what did each acquisition add that Nokia didn't already have? | How to value future deals | Inventions by origin and technology, and how much they overlap | Names can be out of date |
+| **Dependency:** which technologies rely on few countries or inventors? | R&D site and talent risk | Share held by the top countries and inventors | 18% of publications lack inventor country |
 
 ## Needs more data
 
@@ -51,13 +56,10 @@ This is my outside view of what a portfolio team needs. Nokia's real priorities 
 
 ## The plan
 
-1. **Clean the base:** review owner names, and settle the counting rules.
-2. **Portfolio profile:** what it covers, by technology, period and origin.
-3. **Momentum:** where new inventions are rising or falling.
-4. **Expiry wall:** when protection could run out, by technology.
-5. **Geographic gaps:** where each technology is protected.
-6. **Add renewal data:** which patents owners actually keep, and what that costs.
-7. **Decision brief:** one page on strengths, exposures and where to look for savings.
+1. **Clean the base:** review owner names, as Deal value and rival comparisons depend on them.
+2. **Answer the six questions** above from my table.
+3. **Add renewal data and fees** to reach Keep or drop and the 10-year budget.
+4. **Write a decision brief:** one page on strengths, exposures and where to look for savings.
 
 ## Rule for each new question
 
@@ -68,4 +70,4 @@ Before running a query, I write down:
 3. **What result would change my mind**
 4. **The main limit** of the data
 
-If I can't name the decision, it goes in a parking list instead of the plan.
+If I can't name the decision, it goes in a parking list instead of the plan. The same goes for anything that only confirms what's already obvious, like "Nokia moved to 5G".
