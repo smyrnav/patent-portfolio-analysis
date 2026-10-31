@@ -1,6 +1,6 @@
 # Patent Portfolio Analysis
 
-I saw a job posting for a patent portfolio trainee at Nokia and didn't know what that work involves. This repo documents me teaching myself: finding the tools, picking interesting questions, and recording how I found each answer and which resources I used.
+I saw a job posting for a patent portfolio trainee at Nokia and didn't know what that work involves. This repo documents me teaching myself, and it's now focused on the role's Business Data Analytics track: how to allocate a limited patent budget.
 
 **To get oriented:**
 - [Analysis strategy](docs/strategy.md): the decisions this analysis supports, and the plan
@@ -14,7 +14,7 @@ The rest of this page walks through the work with screenshots.
 
 This isn't affiliated with Nokia, and it uses only public data.
 
-**Status:** I've built a working table of **72,207 inventions filed in the last 30 years**, across 64 patent offices, and recounted the US figures from it. Next I'm working through [five business questions](docs/strategy.md), starting with portfolio efficiency.
+**Status:** I've built a working table of **72,207 inventions filed in the last 30 years**, across 64 patent offices, and recounted the US figures from it. Next I'm building [the budget model](docs/strategy.md): a cost forecast, keep-or-drop analysis, scenarios and sensitivities.
 
 ## What I've found so far
 
@@ -126,9 +126,8 @@ I then [recounted the US figures](sql/08_recount_us_30y.sql) from that table, wh
 
 ## Step 9: Change approach
 
-At this point I was running queries without a clear purpose, so I stopped and [changed my approach](docs/approach-changes.md). The [analysis strategy](docs/strategy.md) now starts from the decisions the work should support.
+At this point I was running queries without a clear purpose, so I stopped and [changed my approach](docs/approach-changes.md). The [analysis strategy](docs/strategy.md) now centres on one problem: how to allocate a limited patent budget.
 
-![Five business questions, and what each one needs](docs/img/question_map.png)
 
 ## What these numbers can't tell you
 
@@ -150,7 +149,6 @@ python src/clean_lineage.py
 pip install matplotlib
 python src/make_charts.py
 python src/make_data_map.py
-python src/make_question_map.py
 ```
 
 The queries are in [`sql/`](sql), numbered in the order I ran them. The working table expires after 60 days in the BigQuery sandbox, so rerun [the build query](sql/06_create_portfolio_30y.sql) to restore it.

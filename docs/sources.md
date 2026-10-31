@@ -21,6 +21,19 @@ The outside facts this project relies on, and how well each one is supported. St
 
 **Still unknown:** which patents went with Avaya and Agere. A name on a patent doesn't settle that, so Q13 stays open.
 
+## Nokia's business structure
+
+| Claim | Status | Source |
+|---|---|---|
+| Reportable segments are Network Infrastructure, Mobile Infrastructure and Portfolio Businesses | Confirmed | [Nokia Q3 2026 report](https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm) |
+| Network Infrastructure includes Optical Networks, IP Networks and Fixed Networks | Confirmed | Same report |
+| Mobile Infrastructure includes Core Software, Radio Networks and Technology Standards | Confirmed | Same report |
+| Technology Standards manages the patent portfolio and licensing, and was formerly Nokia Technologies | Confirmed | Same report |
+| Portfolio Businesses comprise Site Implementation and Outside Plant, and Microwave Radio | Confirmed | Same report |
+| Fixed Wireless Access CPE was sold, and an agreement to sell Enterprise Campus Edge was signed | Confirmed | Same report |
+| IP Networks grew 43% and Optical Networks 18% in Q3 2026, at constant currency | Confirmed | [Nokia Q3 2026 release](https://www.nasdaq.com/press-release/nokia-corporation-interim-report-q3-2026-2026-10-22) |
+| Nokia's portfolio has over 20,000 patent families | Reported in January 2025, no newer figure found | [Trade report](https://tecknexus.com/5gnews-all/nokia-achieves-7000-essential-5g-patents-milestone/) |
+
 ## The "Needs review" names
 
 | Name pattern | What I found | Effect on the analysis |

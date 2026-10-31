@@ -11,11 +11,11 @@ I got annoyed with running random queries. Each result suggested another questio
 | | Before | After |
 |---|---|---|
 | **Starting point** | Whatever the last result showed | A decision someone has to make |
-| **Main question** | What's in this data? | Where is the portfolio strong, where is it exposed, and where might it cost more than it should? |
+| **Main question** | What's in this data? | How should a limited patent budget be allocated? |
 | **Choosing a query** | It seemed interesting | It has to inform a named decision |
 | **Unit of analysis** | Mostly owner names and listings | Inventions (patent families) |
 | **Data source** | The 2.88 TB table each time | My own 30-year working table |
-| **Result** | A trail of facts | Five business questions, in a set order, each ending in a brief |
+| **Result** | A trail of facts | A budget allocation model and a decision brief |
 
 ## What changed along the way
 
@@ -26,18 +26,19 @@ I got annoyed with running random queries. Each result suggested another questio
 5. **Paused to set a strategy.** I listed what the data can and can't answer, then rebuilt the questions around decisions.
 6. **Dropped a query.** I deleted the technology-over-time query before running it, because it only confirmed the obvious on its own.
 7. **Raised the questions to business level.** My first list was mostly measures, like when patents expire. I replaced it with five questions a company would actually ask: technology strategy, competitive intelligence, commercial intelligence, portfolio efficiency and market foresight. The earlier measures now sit inside them.
+8. **Focused on the role.** The posting has a track for turning patent and financial data into investment decisions, so the project now centres on allocating a limited patent budget. Its outputs are a cost forecast, keep-or-drop analysis, scenarios, sensitivities, a capacity plan and a decision brief. Competitive and licensing questions are parked for now.
 
 ## The rule I use now
 
 Before running a query, I write down:
 
-1. **Which of the five questions** it serves
+1. **Which deliverable** it feeds
 2. **The decision** it would inform
 3. **The measure** I'd use
 4. **What result would change my mind**
 5. **The main limit** of the data
 
-If it doesn't serve one of the five, or the answer is already obvious, the query doesn't get run.
+If it doesn't feed a deliverable, the query doesn't get run.
 
 ## What I kept from the exploration
 

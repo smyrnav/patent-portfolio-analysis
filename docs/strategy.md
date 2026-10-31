@@ -1,69 +1,130 @@
 # Analysis strategy
 
-I started by following whatever the data showed next. This page sets a method: start from a decision someone has to make, then work back to the data. [Here's why I changed approach](approach-changes.md).
+I started by following whatever the data showed next. I then set out business questions, and now I've focused the project on the [Business Data Analytics track](#the-role-this-project-targets) of the role that caught my eye. [Here's how my approach changed](approach-changes.md).
 
-This is my outside view. Nokia's real priorities may differ, and patent data gives signals to investigate rather than final answers.
+This is an outside view. It uses public data and clearly labelled assumptions, not Nokia's internal figures.
 
-![Five business questions, and what each one needs](img/question_map.png)
+## The central problem
 
-## The five questions
+> Nokia has a limited annual budget for patent portfolio management. How should it be allocated to get the most strategic and economic value from the portfolio?
 
-| Question | What I can show | What I can't show |
-|---|---|---|
-| **Portfolio efficiency:** which patents are worth maintaining, developing or reconsidering? | A shortlist based on renewal history, remaining life, breadth, citations and overlap | The final decision, which needs legal review and internal licensing value |
-| **Competitive intelligence:** where are competitors gaining technological advantages? | Growth and share by technology and market, against rivals | Whether more patents means better technology or products |
-| **Technology strategy:** where should Nokia invest in R&D? | Where the portfolio is thinning, and where rivals are moving | Whether the investment would pay off, which needs market and cost data |
-| **Commercial intelligence:** which parts of the portfolio have licensing potential? | Candidates with declared standards links, outside citations and life left | Actual licensing value, terms or licensees |
-| **Market foresight:** which emerging technologies could become commercially important? | Fast growth from a small base, new entrants and standards activity | Commercial demand, and the latest inventions because of publication delay |
+The budget has to cover:
 
-## What each question needs
+- New patent applications
+- Maintaining existing patents
+- Different geographical markets
+- Different technology areas
+- External patent services
+- Portfolio management resources
 
-![Which data each question needs](img/question_data_matrix.png)
+## The role this project targets
 
-## Order of work
-
-1. **Portfolio efficiency.** It's closest to the job posting, and renewal records can be used without scanning the big BigQuery table.
-2. **Competitive intelligence.** A rival table also feeds the next question.
-3. **Technology strategy.** It combines my portfolio view with the rival view.
-4. **Commercial intelligence.** It adds ETSI declarations and the patents citing Nokia's.
-5. **Market foresight.** It needs the widest data, so it comes last.
-
-Each one ends in a short brief covering the finding, the evidence, the limits and the decision it supports.
-
-## How the earlier questions fit
-
-They're now measures inside the five questions:
-
-| Earlier question | Now part of |
+| What the role does | What I'll build |
 |---|---|
-| Protection cliff, Costly coverage | Portfolio efficiency |
-| Geographic gaps | Competitive intelligence, once compared with rivals |
-| Refill rate, Dependency | Technology strategy |
-| Deal value | Portfolio efficiency and Commercial intelligence |
-| Keep or drop, 10-year budget | Portfolio efficiency |
-| Rival benchmark | Competitive intelligence |
-| Standards exposure | Commercial intelligence and Market foresight |
+| Analyse patent portfolio and financial data | Portfolio volumes linked to fee and cost data |
+| Investment modelling | A cost forecast, and NPV for keep-or-drop decisions |
+| Cost-efficiency studies | Cost per invention by office and technology, and what drives it |
+| Scenario analysis | Three budget scenarios, compared side by side |
+| Business cases | One recommendation with costs, benefits and risks |
+| Demand and capacity planning | Forecast filings and renewals against a team's capacity |
+| Presenting findings and reliability | A one-page brief showing ranges, assumptions and data limits |
 
-## What the data is made of
+## The deliverables
 
-| Building block | Fields | Lets me compare by |
+### 1. Baseline cost forecast
+
+**Question:** what would the current portfolio cost to keep over the next 10 years?
+
+Patent volumes come from my table, and US fees from the official schedule. Other offices and internal costs are assumptions, labelled as such.
+
+### 2. Keep-or-drop model
+
+**Question:** how much value must a patent generate to justify its next renewal fee?
+
+A worked example using the [USPTO large-entity fees](sources.md#patent-rules-and-data-sources), and assuming a patent is granted 3 years after filing:
+
+| Renewal | Fee | Cover it buys | Break-even value per year at 5% | At 10% | At 15% |
+|---|---:|---:|---:|---:|---:|
+| 3.5 years | $2,150 | 4 years | $606 | $678 | $753 |
+| 7.5 years | $4,040 | 4 years | $1,139 | $1,275 | $1,415 |
+| 11.5 years | $8,280 | 5.5 years | $1,759 | $2,030 | $2,316 |
+
+The three fees total $14,470, or about $6,284 in present value at 10%.
+
+The fee rises, but so does the time it buys in this example. The real insight will come from applying this across thousands of patents, and from adding other countries' fees. The discount rate and the value of each patent are assumptions, because public data doesn't show them.
+
+### 3. Three budget scenarios
+
+| Scenario | What changes | What I'd compare |
 |---|---|---|
-| **Inventions** | `family_id` | The basic unit of counting |
-| **Filings** | `application_number`, `country_code` | How widely each invention is protected |
-| **Time** | `priority_date`, `filing_date`, `grant_date` | Trends and expected expiry |
-| **Technology** | `cpc_codes`, `title_en`, `abstract_en` | Which fields it covers |
-| **Origin** | `owners` | Nokia, Alcatel, Lucent, Infinera and others |
-| **People and places** | `inventors`, `inventor_countries` | Where the inventing happens |
-| **Connections** | `cited_publications` | What each patent builds on |
+| **Keep everything** | Renew all eligible patents | Highest cost, least risk of dropping something valuable |
+| **Narrow the geography** | Maintain fewer offices per invention | Savings against lost market cover |
+| **Shift the mix** | Move spending from older areas to priority areas | Savings against new filing costs |
 
-## Rule for each new question
+Priority areas can use [Nokia's reported business units](sources.md#nokias-business-structure). IP Networks and Optical Networks are the growth areas in its Q3 2026 report, so they make a good test case.
+
+### 4. Sensitivity analysis
+
+**Question:** which assumptions move the answer most?
+
+I'll test the renewal rate, fee growth, cost per application, exchange rates, and the discount rate, then show the results in a chart.
+
+### 5. Demand and capacity plan
+
+**Question:** how many filings and renewal decisions will the team handle each year, and is that within capacity?
+
+Volumes come from the forecast. Hours per task are assumptions.
+
+### 6. Decision brief
+
+One page with the recommendation, savings range, risks and how reliable each number is.
+
+## Finance concepts in this project
+
+| Concept | What it means here |
+|---|---|
+| **CAPEX vs OPEX** | Whether patent costs are recorded as a long-term asset or an expense. I don't know how Nokia treats each cost, so I'll model cash spending and flag this as a question |
+| **Budget vs actuals** | Planned against actual spend. I can build the budget side, but actuals are internal |
+| **Cost allocation** | Assigning costs to business units, offices and technologies. One family can serve several units, so the rule needs to be stated |
+| **Cost drivers** | Number of inventions, offices per invention, patent age, fee levels and exchange rates |
+| **ROI** | Return compared with cost. It needs a value for each patent, which has to be an assumption |
+| **NPV** | Future value and costs converted to today's money. Used for keep-or-drop |
+| **Discount rate** | How much less future money is worth today. I test a range because I don't know Nokia's rate |
+| **Forecasting** | Estimating renewals and new filings by year |
+| **Sensitivity analysis** | Changing one assumption at a time |
+| **Scenario analysis** | Changing several assumptions together to compare futures |
+
+## What each input is based on
+
+| Input | Status |
+|---|---|
+| Patent counts by office and year | From my table, needs filtering for ownership and status |
+| US renewal fees | Official, check they're current |
+| US renewal behaviour | Public USPTO records, not yet collected |
+| European and other fees | Public, not yet collected |
+| Application and attorney costs | Assumption |
+| Team capacity | Assumption |
+| Patent value and discount rate | Assumption, tested as ranges |
+| Nokia's real budget, costs and licensing income | Not available |
+
+## Known limits
+
+- **Portfolio size:** my table has 72,207 families because it searches names across 30 years. Nokia reported [over 20,000 families](sources.md#nokias-business-structure) in January 2025, so most of the difference is probably expired, sold or otherwise inactive patents. The cost model needs a filter before it reflects today's portfolio.
+- **Recent years:** publication lags filing by about 18 months, so recent trends are provisional.
+- **Patent value:** citations and family size are indicators, not measures of commercial value.
+
+## Rule for each new query
 
 Before running a query, I write down:
 
-1. **Which of the five questions** it serves
-2. **The decision** it would inform
+1. **Which deliverable** it feeds
+2. **The decision** it informs
 3. **The measure** I'd use
 4. **What result would change my mind**
 5. **The main limit** of the data
 
-If it doesn't serve one of the five, or the answer is already obvious, the query doesn't get run.
+If it doesn't feed a deliverable, the query doesn't get run.
+
+## The wider questions
+
+These are still worth knowing, but they're outside this project for now: competitive intelligence, licensing opportunities, market foresight and AI-RAN or 6G analysis. Rival data and ETSI declarations would be the next additions.
