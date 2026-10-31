@@ -35,7 +35,7 @@ The budget has to cover:
 
 **Question:** what would the current portfolio cost to keep over the next 10 years?
 
-Patent volumes come from my table, and US fees from the official schedule. Other offices and internal costs are assumptions, labelled as such.
+Patent volumes come from my [filtered portfolio](portfolio-filter.md), starting with the US and Europe. Fees come from official schedules. Internal costs are assumptions, labelled as such.
 
 ### 2. Keep-or-drop model
 
@@ -98,10 +98,10 @@ One page with the recommendation, savings range, risks and how reliable each num
 
 | Input | Status |
 |---|---|
-| Patent counts by office and year | From my table, needs filtering for ownership and status |
-| US renewal fees | Official, check they're current |
+| Patent counts by office and year | [Filtered](portfolio-filter.md), but lapsed and sold patents aren't removed yet |
+| US and European fees | Official, check they're current |
 | US renewal behaviour | Public USPTO records, not yet collected |
-| European and other fees | Public, not yet collected |
+| European renewal behaviour | Harder to get, needs Espacenet or a PATSTAT trial |
 | Application and attorney costs | Assumption |
 | Team capacity | Assumption |
 | Patent value and discount rate | Assumption, tested as ranges |
@@ -109,7 +109,8 @@ One page with the recommendation, savings range, risks and how reliable each num
 
 ## Known limits
 
-- **Portfolio size:** my table has 72,207 families because it searches names across 30 years. Nokia reported [over 20,000 families](sources.md#nokias-business-structure) in January 2025, so most of the difference is probably expired, sold or otherwise inactive patents. The cost model needs a filter before it reflects today's portfolio.
+- **Portfolio size:** my [filter](portfolio-filter.md) reduces 72,207 families to 19,873 granted families within 20 years, plus 5,595 possibly pending. It doesn't yet remove patents that lapsed or were sold.
+- **Trust:** see [how far I trust each part of the data](data-trust.md).
 - **Recent years:** publication lags filing by about 18 months, so recent trends are provisional.
 - **Patent value:** citations and family size are indicators, not measures of commercial value.
 

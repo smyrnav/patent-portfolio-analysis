@@ -35,6 +35,13 @@ To add one, copy this:
 
 ## Answered
 
+### Q18. How do I get from 72,207 families to a workable portfolio?
+- **Why I asked:** a cost forecast on the raw table would be far too high, as Nokia reports just over 20,000 families.
+- **How I looked:** [sorted every family by status](../sql/09_family_status.sql).
+- **Answer:** 19,873 granted families within 20 years, plus 5,595 possibly pending. Lapsed and sold patents are still in there. See [the filter](portfolio-filter.md).
+- **Tools and resources:** BigQuery and my working table.
+- **What it led to:** spot-checks, plus USPTO renewal and assignment records.
+
 ### Q17. What are the corrected US numbers?
 - **Why I asked:** my early counts missed older patents, so I couldn't rely on them.
 - **How I looked:** [recounted from the working table](../sql/08_recount_us_30y.sql) ([results](../data/processed/us_30y_recount.csv)), which processed 14.46 MB.

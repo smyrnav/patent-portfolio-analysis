@@ -1,0 +1,2 @@
+-- Families with a detected grant within 20 years, by patent office. This is the exact text I ran.
+SELECT p.country_code, COUNT(DISTINCT p.family_id) AS families FROM nokia_analytics.portfolio_30y AS p JOIN nokia_analytics.family_status AS s USING (family_id) WHERE s.core_owner AND s.granted_in_term AND p.filing_date >= 20061101 AND p.country_code != 'WO' AND NOT STARTS_WITH(p.kind_code, 'S') AND (p.grant_date > 0 OR REGEXP_CONTAINS(p.kind_code, r'^[BCE]')) GROUP BY p.country_code ORDER BY families DESC LIMIT 15;

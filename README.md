@@ -5,6 +5,8 @@ I saw a job posting for a patent portfolio trainee at Nokia and didn't know what
 **To get oriented:**
 - [Analysis strategy](docs/strategy.md): the decisions this analysis supports, and the plan
 - [How my approach changed](docs/approach-changes.md): why I moved from exploring to starting with decisions
+- [The workable portfolio](docs/portfolio-filter.md): how 72,207 families become about 20,000
+- [Can I trust this data?](docs/data-trust.md): where it comes from, and where to find money data
 - [Data map](docs/data-map.md): what the data contains, and all my questions at a glance
 - [Question log](docs/questions.md): how I found each answer and what I used
 - [Fact checks](docs/sources.md): the outside facts I rely on, and how well each one is supported
@@ -14,7 +16,7 @@ The rest of this page walks through the work with screenshots.
 
 This isn't affiliated with Nokia, and it uses only public data.
 
-**Status:** I've built a working table of **72,207 inventions filed in the last 30 years**, across 64 patent offices, and recounted the US figures from it. Next I'm building [the budget model](docs/strategy.md): a cost forecast, keep-or-drop analysis, scenarios and sensitivities.
+**Status:** I've narrowed 72,207 families filed in the last 30 years to a [workable portfolio](docs/portfolio-filter.md) of **19,873 granted families**, plus 5,595 possibly pending. Next I'm building [the budget model](docs/strategy.md): a cost forecast, keep-or-drop analysis, scenarios and sensitivities.
 
 ## What I've found so far
 
