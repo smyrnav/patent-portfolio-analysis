@@ -1,0 +1,6 @@
+measure,n,mean,median,p10,p90
+Applications per core family,19873,3.68,3,1,6
+Offices per core family including WO,19873,3.43,3,1,6
+US years to grant,10855,4.27,4.05,2.16,6.66
+EP years to grant,6417,6.17,5.79,2.79,9.92
+CN years to grant,2278,4.89,4.88,3.67,6.08

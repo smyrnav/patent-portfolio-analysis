@@ -24,7 +24,7 @@ I didn't find a formal accuracy audit of this dataset.
 ## How I check it
 
 1. **Compare totals across queries.** That's how I found the 8,808 missing US patents.
-2. **Spot-check against official registers.** Compare a random sample with [Espacenet](https://worldwide.espacenet.com/) and the USPTO, and record the error rate. Not done yet.
+2. **Spot-check against official registers.** Compare [a repeatable random sample of 35](../data/processed/spot_check_sample.csv) with [Espacenet](https://worldwide.espacenet.com/) and the USPTO, and record the error rate. The sample has none from Japan, because no Japanese grants were detected. Checks not done yet.
 3. **Compare with what Nokia reports.** [New families follow its reported new inventions](twenty-years.md#my-family-counts-follow-nokias-own-numbers), though its counting rules may differ from mine.
 4. **State the reliability next to every number.**
 

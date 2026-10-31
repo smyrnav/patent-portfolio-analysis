@@ -26,14 +26,14 @@ Every assumption behind the [budget analysis](strategy.md), grouped by the decis
 
 | # | Assumption | Current value | Affects | Impact | How to test | Status |
 |---|---|---|---|---|---|---|
-| C1 | Costs can be built per national patent, then linked to families | Not modelled | All costs | High | Build the model at patent level | Not started |
+| C1 | Costs can be built per national patent, then linked to families | Not modelled. Core families average 3.68 applications | All costs | High | Build the model at patent level | [Measured](../data/processed/patent_measures.csv), model not started |
 | C2 | Official fees use large-entity rates | US $2,150, $4,040, $8,280 | US costs | Medium | Recheck the schedule | Official, recheck before use |
-| C3 | Number of offices maintained per family | Not set | Geography scenario | High | Measure from data, with renewal data where possible | Not started. Grant data is weak outside the US |
+| C3 | Number of offices maintained per family | Filed in a mean of 3.43 offices, median 3, including international filings | Geography scenario | High | Renewal data where possible | Filing measured, maintained offices not known |
 | C4 | European renewal costs after grant | Not set | Europe costs | High | National fees and typical countries | Not started |
 | C5 | Chinese and Japanese fees | Not set | China and Japan costs | Medium | Official schedules | Not started |
 | C6 | Filing, attorney and translation costs | Not set | New filing costs | High | Public benchmarks, then ranges | Not started. Current surveys are paid |
 | C7 | Fee growth and exchange rates | Not set | Forecast | Medium | Fee history and sensitivity test | Not started |
-| C8 | US time from filing to grant | 3 years | Break-even example | Low | Measure from my data | Placeholder, can be measured |
+| C8 | US time from filing to grant | Median 4.05 years, mean 4.27 | Break-even example | Low | Measured from my data | Tested. It raised the 11.5-year break-even from $2,030 to $2,395 at 10% |
 
 ## Behaviour: what happens next?
 
@@ -59,7 +59,7 @@ Every assumption behind the [budget analysis](strategy.md), grouped by the decis
 | # | Assumption | Current value | Affects | Impact | How to test | Status |
 |---|---|---|---|---|---|---|
 | B1 | The budget is limited and can be moved between activities | Taken from my [strategy](strategy.md) | The whole question | High | Ask the team if I get the chance | Assumed |
-| B2 | Official fees are a big enough share to be worth optimising | Not set | Size of savings | High | Compare fee totals with assumed internal costs and [€1.5B of 2025 licensing sales](twenty-years.md) | Not started |
+| B2 | Official fees are a big enough share to be worth optimising | [About $14.5M–$18.8M a year](strategy.md#early-answer-are-fees-big-enough-to-matter) for US renewals, roughly 1% of licensing-unit sales | Size of savings | High | Add other offices and costs | Rough US check only. Renewal savings alone look small |
 | B3 | Dropping low-signal patents wouldn't harm licensing | Not set | Savings against risk | High | State the risk, and test the shortlist for overlap with declarations | Not tested |
 | B4 | Costs can be allocated to business units | Not set | Mix scenario | Medium | State a rule for families serving several units | Not started |
 | B5 | Team capacity per task | Not set | Capacity plan | Low | Assumed hours as ranges | Not started |

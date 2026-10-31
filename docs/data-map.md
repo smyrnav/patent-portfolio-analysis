@@ -63,8 +63,9 @@ I've analysed 8 of its 37 fields. My working table also holds inventors, technol
 |---|---|
 | [Workable portfolio](portfolio-filter.md) | Built, with lapsed and sold patents still to remove |
 | [Twenty years of patents and money](twenty-years.md) | Built |
-| Register spot-check | Not started |
+| Register spot-check | [Sample of 35 drawn](../data/processed/spot_check_sample.csv), checks not done |
 | Mean and median patent costs | [Illustrative only](strategy.md#mean-and-median-patent-costs), until renewal records are available |
+| Mean and median time to grant and filings per family | [Measured](strategy.md#measured-so-far) |
 | 10-year cost forecast | Not started |
 | Scenarios, sensitivity and probability curve | Not started |
 | Capacity plan and decision brief | Not started |

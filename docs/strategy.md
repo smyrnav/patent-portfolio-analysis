@@ -45,13 +45,13 @@ Patent volumes come from my [filtered portfolio](portfolio-filter.md), for the U
 
 **Question:** how much value must a patent generate to justify its next renewal fee?
 
-A worked example using the [USPTO large-entity fees](sources.md#patent-rules-and-data-sources), and assuming a patent is granted 3 years after filing:
+A worked example using the [USPTO large-entity fees](sources.md#patent-rules-and-data-sources), and the [median US time to grant of 4.05 years](../data/processed/patent_measures.csv):
 
 | Renewal | Fee | Cover it buys | Break-even value per year at 5% | At 10% | At 15% |
 |---|---:|---:|---:|---:|---:|
 | 3.5 years | $2,150 | 4 years | $606 | $678 | $753 |
 | 7.5 years | $4,040 | 4 years | $1,139 | $1,275 | $1,415 |
-| 11.5 years | $8,280 | 5.5 years | $1,759 | $2,030 | $2,316 |
+| 11.5 years | $8,280 | 4.45 years | $2,121 | $2,395 | $2,682 |
 
 The three fees total $14,470, or about $6,284 in present value at 10%.
 
@@ -93,6 +93,26 @@ Volumes come from the forecast. Hours per task are assumptions.
 ### 6. Decision brief
 
 One page with the recommendation, savings range, risks and how reliable each number is.
+
+## Early answer: are fees big enough to matter?
+
+A rough check for official US renewal fees: if 1,000–1,300 US patents a year were each kept for their full term, fees would reach about **$14.5M–$18.8M a year** once the portfolio is steady.
+
+That's about **1% of Nokia's roughly €1.6B annualised licensing-unit sales**, before converting currency. It assumes every patent is renewed, so real fees could be lower.
+
+**What this changes:** cutting renewals alone is unlikely to be the main prize, and a small saving wouldn't justify much licensing risk. The model also needs other offices, filing and attorney costs before it can say where the money goes. This is an order-of-magnitude check, not Nokia's real spend.
+
+## Measured so far
+
+| Measure | Mean | Median | Middle 80% | Patents or families |
+|---|---:|---:|---:|---:|
+| US years to grant | 4.27 | 4.05 | 2.16–6.66 | 10,855 |
+| European years to grant | 6.17 | 5.79 | 2.79–9.92 | 6,417 |
+| Chinese years to grant | 4.89 | 4.88 | 3.67–6.08 | 2,278 |
+| Applications per core family | 3.68 | 3 | 1–6 | 19,873 |
+| Offices per core family, including international filings | 3.43 | 3 | 1–6 | 19,873 |
+
+Time to grant covers filings from November 2006 to 2015, so recent cases don't skew it short. Filings per family are low, because they rely on owner names and miss some records, such as many Japanese ones. Filing somewhere doesn't mean a patent is being maintained there.
 
 ## Finance concepts in this project
 

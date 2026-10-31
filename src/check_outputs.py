@@ -41,7 +41,7 @@ check("listings are at least unique patents", total["Listings"] >= total["Unique
 check("Alcatel and Lucent share, %", round((origin["Alcatel and Alcatel-Lucent"] + origin["Lucent"]) / sum(origin.values()) * 100), 46)
 check("top 10 names' share of listings, %", round(sum(names[:10]) / total["Listings"] * 100), 93)
 
-check("break-even at 11.5 years and 10%, $", round(8280 / annuity(0.10, 5.5)), 2030)
+check("break-even at 11.5 years and 10%, $", round(8280 / annuity(0.10, 20 - 4.05 - 11.5)), 2395)
 check("break-even at 3.5 years and 10%, $", round(2150 / annuity(0.10, 4)), 678)
 check("sales per core family, €k", round(1217e6 / 9 * 12 / core / 1000), 82)
 years = rows("data/processed/office_filings_by_year.csv")
