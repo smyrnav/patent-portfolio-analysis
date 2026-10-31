@@ -70,7 +70,7 @@ I've only used the Google table so far. The USPTO and ETSI columns reflect what 
 
 | # | Question | What it needs |
 |---|---|---|
-| Q15 | What does the portfolio look like over the last 30 years? | [Query ready](../sql/06_owners_by_filing_year.sql) |
+| Q15 | What does the portfolio look like over the last 30 years? | [Working table query ready](../sql/06_create_portfolio_30y.sql) |
 | Q7 | How many unique patents are alive? | Cleaned names and renewal data |
 | Q8 | Which patents do owners stop paying for? | USPTO fee records |
 | Q9 | What would keeping them cost over 10 years? | Official fees and a model |
