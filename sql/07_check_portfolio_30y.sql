@@ -7,5 +7,9 @@ SELECT
   MIN(filing_date) AS first_filing,
   MAX(filing_date) AS last_filing,
   COUNTIF(title_en IS NULL) AS without_english_title,
-  COUNTIF(ARRAY_LENGTH(cpc_codes) = 0) AS without_cpc
+  COUNTIF(abstract_en IS NULL) AS without_english_abstract,
+  COUNTIF(ARRAY_LENGTH(cpc_codes) = 0) AS without_cpc,
+  COUNTIF(ARRAY_LENGTH(inventors) = 0) AS without_inventors,
+  COUNTIF(ARRAY_LENGTH(inventor_countries) = 0) AS without_inventor_country,
+  COUNTIF(ARRAY_LENGTH(cited_publications) = 0) AS without_citations
 FROM nokia_analytics.portfolio_30y;

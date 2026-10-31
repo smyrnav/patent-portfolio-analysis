@@ -32,6 +32,7 @@ SELECT
     FROM UNNEST(p.assignee_harmonized) AS a
     WHERE is_family(a.name)
   ) AS owners,
+  ARRAY(SELECT i.name FROM UNNEST(p.inventor_harmonized) AS i) AS inventors,
   ARRAY(
     SELECT DISTINCT i.country_code
     FROM UNNEST(p.inventor_harmonized) AS i
@@ -43,7 +44,18 @@ SELECT
     FROM UNNEST(p.title_localized) AS t
     WHERE t.language = 'en'
     LIMIT 1
-  ) AS title_en
+  ) AS title_en,
+  (
+    SELECT t.text
+    FROM UNNEST(p.abstract_localized) AS t
+    WHERE t.language = 'en'
+    LIMIT 1
+  ) AS abstract_en,
+  ARRAY(
+    SELECT c.publication_number
+    FROM UNNEST(p.citation) AS c
+    WHERE c.publication_number != ''
+  ) AS cited_publications
 FROM `patents-public-data.patents.publications` AS p
 WHERE p.filing_date >= 19961101
   AND EXISTS (
