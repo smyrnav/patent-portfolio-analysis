@@ -2,9 +2,19 @@
 
 Checked against the [central research question](research-design.md):
 
-> How does Nokia's patent portfolio and associated investment position compare with the leading competitors in AI and cloud infrastructure networking, and what strategic and financial lessons can be identified?
+> How should Nokia prioritise its patent portfolio investments to support its AI and cloud infrastructure strategy?
 
-## Evidence by part of the question
+## Evidence by research question
+
+| Research question | Needs most | Status |
+|---|---|---|
+| 1. What does Nokia own? | Validated labels, live rights | 🟡 |
+| 2. Where does it stand against competitors? | Rival patent table | ❌ |
+| 3. Is the portfolio aligned with commercial growth? | Labelled trends against commercial figures | 🟡 |
+| 4. What do patent costs suggest about allocation? | Renewal records and fees for other offices | 🟡 |
+| 5. What should Nokia do differently? | All of the above | ❌ |
+
+## Evidence in detail
 
 ✅ have it · 🟡 partly · ❌ missing
 

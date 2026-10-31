@@ -2,7 +2,7 @@
 
 Where the project stands, which data feeds which work and what's missing.
 
-**Central question:** How does Nokia's patent portfolio and associated investment position compare with the leading competitors in AI and cloud infrastructure networking, and what strategic and financial lessons can be identified?
+**Central question:** How should Nokia prioritise its patent portfolio investments to support its AI and cloud infrastructure strategy?
 
 ## How the data fits together
 
@@ -63,7 +63,7 @@ I've analysed 8 of its 37 fields. My working table also holds inventors, technol
 
 | Work | Status |
 |---|---|
-| [Research design](research-design.md) for the central question | Written, analysis not started |
+| [Research design](research-design.md) with five research questions | Written, analysis not started |
 | [Market leaders and comparison set](competitors.md) | Checked against sources, patent comparison not started |
 | [Workable portfolio](portfolio-filter.md) | Built, with lapsed and sold patents still to remove |
 | [Twenty years of patents and money](twenty-years.md) | Built |

@@ -6,22 +6,29 @@ This isn't affiliated with Nokia, and it uses only public data.
 
 ## Central research question
 
-> How does Nokia's patent portfolio and associated investment position compare with the leading competitors in AI and cloud infrastructure networking, and what strategic and financial lessons can be identified?
+> **How should Nokia prioritise its patent portfolio investments to support its AI and cloud infrastructure strategy?**
+>
+> Where is Nokia's patent portfolio strategically strong or exposed across optical networking, IP routing and data centre switching, how does its position compare with relevant competitors, and what do portfolio costs, technological developments and commercial trends suggest about future investment priorities?
+
+~~How does Nokia's patent portfolio and associated investment position compare with the leading competitors in AI and cloud infrastructure networking, and what strategic and financial lessons can be identified?~~
+
+I replaced the earlier question because it made comparing rivals the goal, while the role is about investment decisions. Comparisons and technology labels are now inputs to those decisions.
 
 I didn't know what patent portfolio work involves, so this repo documents me teaching myself. After a couple of hours of exploring the data, testing questions and learning the field, I'd learned enough to zoom in on this question.
 
+**How far public data can go:** it can show patent positions, technology trends and commercial signals, and it can estimate costs from official fees. It can't measure Nokia's real patent spending or investment efficiency, which would need internal data.
+
 ## Where it stands
 
-| Step | Status |
-|---|---|
-| [Nokia base](docs/portfolio-filter.md): filtered portfolio and [20 years of finances](docs/twenty-years.md) | Built, with lapsed and sold patents still to remove |
-| [Market leaders](docs/competitors.md): verified comparison set | Checked |
-| Patent comparison against Ciena, Cisco and Arista, with Huawei as a benchmark | **Next** |
-| Investment comparison: rivals' R&D and AI and cloud figures | Not started |
-| [Budget model](docs/strategy.md): costs, scenarios, sensitivity and a probability curve | Partly started, needs USPTO renewal records |
-| Decision brief: up to five findings, each with a decision | Not started |
+| Research question | Output | Status |
+|---|---|---|
+| **1. What does Nokia own?** | Patent inventory by technology | 🟡 [Portfolio filtered](docs/portfolio-filter.md), [technology labels](docs/classification-codebook.md) not validated |
+| **2. Where does it stand against competitors?** | Technology and competitor benchmark | 🟡 [Market leaders checked](docs/competitors.md), patent comparison is next |
+| **3. Is the portfolio aligned with commercial growth?** | Technology-to-business assessment | 🟡 [Commercial and R&D signals](docs/competitors.md#investment-position) collected |
+| **4. What do patent costs suggest about allocation?** | Public-data cost estimate and scenarios | 🟡 [US fees and a rough check](docs/strategy.md#early-answer-are-fees-big-enough-to-matter), needs USPTO records |
+| **5. What should Nokia do differently?** | Scenarios and a recommendation | ❌ Not started |
 
-**There's no answer to the central question yet.** The results below are the groundwork, and the patent comparison is still to come.
+**There's no answer to the main question yet.** The results below are the groundwork, and the patent comparison is still to come.
 
 ## What I've found so far
 
@@ -65,8 +72,8 @@ A rough check puts official US renewal fees at about $14.5M–$18.8M a year, or 
 ## Guide to the repo
 
 **The analysis**
-- [What I have and still need](docs/evidence-gaps.md): evidence against the central question, and the order of work
-- [Research design](docs/research-design.md): hypotheses and reliability rules for the central question
+- [What I have and still need](docs/evidence-gaps.md): evidence against each research question, and the order of work
+- [Research design](docs/research-design.md): the five research questions, hypotheses and reliability rules
 - [Analysis strategy](docs/strategy.md): the plan, and the financial analysis
 - [Who leads AI and cloud networking?](docs/competitors.md): verified market positions and the comparison set
 - [Technology codebook](docs/classification-codebook.md): how optical, IP routing and data centre switching are defined and tested

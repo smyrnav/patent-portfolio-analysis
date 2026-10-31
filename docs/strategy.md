@@ -6,9 +6,13 @@ This is an outside view. It uses public data and clearly labelled assumptions, n
 
 ## The central research question
 
-> How does Nokia's patent portfolio and associated investment position compare with the leading competitors in AI and cloud infrastructure networking, and what strategic and financial lessons can be identified?
+> **How should Nokia prioritise its patent portfolio investments to support its AI and cloud infrastructure strategy?**
+>
+> Where is Nokia's patent portfolio strategically strong or exposed across optical networking, IP routing and data centre switching, how does its position compare with relevant competitors, and what do portfolio costs, technological developments and commercial trends suggest about future investment priorities?
 
-The financial side comes down to one problem: with a limited patent budget, how should it be allocated to get the most strategic and economic value?
+~~How does Nokia's patent portfolio and associated investment position compare with the leading competitors in AI and cloud infrastructure networking, and what strategic and financial lessons can be identified?~~
+
+The [five research questions](research-design.md#the-five-research-questions) break this down. The financial side is question 4, and this page sets out how it's estimated from public data.
 
 ## The role this project targets
 
@@ -116,9 +120,9 @@ Time to grant covers filings from November 2006 to 2015, so recent cases don't s
 
 | Scenario | What changes | What I'd compare |
 |---|---|---|
-| **Keep everything** | Renew all eligible patents | Highest cost, least risk of dropping something valuable |
-| **Narrow the geography** | Maintain fewer offices per invention | Savings against lost market cover |
-| **Shift to AI and cloud** | Move spending from older areas to optical and IP | Savings against new filing costs, using the gap map |
+| **Maintain** | Continue the current filing and renewal approach | Highest cost, least risk of dropping something valuable |
+| **Concentrate** | Move spending from older areas to high-growth optical and IP areas | New filing costs against cover given up, using the gap map |
+| **Optimise** | Reallocate through selective filing, geography and renewals | Savings against lost market cover |
 
 I'll then test which assumptions move the answer most: renewal rates, fee growth, cost per application, exchange rates and the discount rate. The forecast will end in a range with a probability curve.
 

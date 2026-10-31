@@ -11,11 +11,11 @@ I got annoyed with running random queries. Each result suggested another questio
 | | Before | After |
 |---|---|---|
 | **Starting point** | Whatever the last result showed | A decision someone has to make |
-| **Main question** | What's in this data? | How should a limited patent budget be allocated? |
+| **Main question** | What's in this data? | How should Nokia prioritise its patent portfolio investments to support its AI and cloud infrastructure strategy? |
 | **Choosing a query** | It seemed interesting | It has to inform a named decision |
 | **Unit of analysis** | Mostly owner names and listings | Inventions (patent families) |
 | **Data source** | The 2.88 TB table each time | My own 30-year working table |
-| **Result** | A trail of facts | A budget allocation model and a decision brief |
+| **Result** | A trail of facts | Five research questions, ending in investment scenarios and a recommendation |
 
 ## What changed along the way
 
@@ -28,7 +28,8 @@ I got annoyed with running random queries. Each result suggested another questio
 7. **Raised the questions to business level.** My first list was mostly measures, like when patents expire. I replaced it with five questions a company would actually ask: technology strategy, competitive intelligence, commercial intelligence, portfolio efficiency and market foresight. The earlier measures now sit inside them.
 8. **Focused on the role.** The posting has a track for turning patent and financial data into investment decisions, so the project now centres on allocating a limited patent budget. Its outputs are a cost forecast, keep-or-drop analysis, scenarios, sensitivities, a capacity plan and a decision brief. Competitive and licensing questions are parked for now.
 9. **Made the work hypothesis-led.** Pulling more metrics wasn't producing answers. I set three priority questions, hypotheses that could be disproved, pass rules for reliability and limits on what gets analysed.
-10. **Zoomed in on one question.** After a couple of hours of learning, I'd covered enough to focus: *How does Nokia's patent portfolio and associated investment position compare with the leading competitors in AI and cloud infrastructure networking, and what strategic and financial lessons can be identified?*
+10. **Zoomed in on one question.** After a couple of hours of learning, I'd covered enough to focus on comparing Nokia's patent and investment position with its rivals.
+11. **Made the question about investment decisions.** Comparing rivals had become the goal. I changed the question to: *How should Nokia prioritise its patent portfolio investments to support its AI and cloud infrastructure strategy?* Comparisons and technology labels are now inputs, and I separated what public data can do from what needs internal data.
 
 ## The rule I use now
 
