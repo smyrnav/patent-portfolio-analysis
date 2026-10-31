@@ -3,6 +3,7 @@
 I saw a job posting for a patent portfolio trainee at Nokia and didn't know what that work involves. This repo documents me teaching myself: finding the tools, picking interesting questions, and recording how I found each answer and which resources I used.
 
 **To get oriented:**
+- [Analysis strategy](docs/strategy.md): the decisions this analysis supports, and the plan
 - [Data map](docs/data-map.md): what the data contains, and all my questions at a glance
 - [Question log](docs/questions.md): how I found each answer and what I used
 
