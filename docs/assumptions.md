@@ -1,17 +1,75 @@
 # Assumption register
 
-Every assumption behind the analysis. The final column shows whether I've tested how much it moves the answer.
+Every assumption behind the [budget analysis](strategy.md), grouped by the decision it affects. **Impact** is my estimate of how much it could change the recommendation, and it needs testing. **Status** shows what's been done.
 
-| # | Assumption | Value | Why | Could change | Tested? |
-|---|---|---|---|---|---|
-| A1 | Inventions are counted as simple patent families | `family_id` | One invention filed in many offices shouldn't count many times | All counts | No |
-| A2 | Owner search finds the portfolio | Name patterns in [the build query](../sql/06_create_portfolio_30y.sql) | Public data has no current-owner field | Portfolio size | Partly, I read the owner names for US filings |
-| A3 | A document counts as granted if it has a grant date, or a kind code starting with B, C or E | See [the filter](portfolio-filter.md) | Grant dates are incomplete outside the US | Portfolio size | Partly, Japan and China look undercounted |
-| A4 | Protection lasts up to 20 years from filing | Cut-off of 1 November 2006 | [US rule](sources.md#patent-rules-and-data-sources), and used as an approximation for other offices | Portfolio size | No |
-| A5 | Ungranted filings since 2021 may be pending | 1 January 2021 | Examination often takes years | Pending count | No |
-| A6 | Time from filing to US grant | 3 years | Placeholder for the break-even example | Break-even values | Not yet, can be measured from my data |
-| A7 | Discount rate | 5%, 10% and 15% | Nokia's rate isn't known | NPV and break-even | Yes, for the break-even example |
-| A8 | US fees are large-entity rates | $2,150, $4,040, $8,280 | [USPTO schedule](sources.md#patent-rules-and-data-sources), to be rechecked | Cost forecast | No |
-| A9 | Renewal rates | Placeholders of 90/80/70% and 80/60/40% | USPTO records need an account | Mean and median costs, and the forecast | Two cases shown, real rates not yet measured |
-| A11 | Filings are counted once per year by filing date | `application_number` | A few applications carry more than one date, so yearly US totals exceed a single count by 6 since 2010 | Small | Yes |
-| A10 | Costs per application and hours per task | To be set | Internal figures aren't public | Forecast and capacity | Not yet |
+## Top priorities to test
+
+1. **V1:** how patent value is distributed, since keep-or-drop depends on it
+2. **C1:** fees are paid per national patent, while I count families
+3. **P1:** which patents are still alive and owned
+4. **C3:** how many offices each family keeps paying for
+5. **B2:** whether official fees are large enough to matter compared with other costs
+
+## Portfolio: what is being paid for?
+
+| # | Assumption | Current value | Affects | Impact | How to test | Status |
+|---|---|---|---|---|---|---|
+| P1 | Filtered families are live and owned | 19,873 core, 5,595 possibly pending | All costs | High | USPTO renewal and assignment records | Not tested. Lapsed and sold patents remain |
+| P2 | Owner names find the portfolio | [Name patterns](../sql/06_create_portfolio_30y.sql) | Portfolio size | High | Register spot-check | Partly tested. Japan needed a family lookup |
+| P3 | Grant is detected from grant date or kind code | [Filter rules](portfolio-filter.md) | Portfolio size | Medium | Spot-check by office | Partly tested. Grants outside the US look undercounted |
+| P4 | Protection ends 20 years after filing | Cut-off of 1 November 2006 | Expiry and forecast | Medium | Compare with register dates | Not tested. [US rule](sources.md#patent-rules-and-data-sources), applied as an approximation elsewhere |
+| P5 | Ungranted filings since 2021 may be pending | 1 January 2021 | Filing and grant forecast | Low | Sample register status | Not tested |
+| P6 | Families are the unit for inventions | Simple families | Inventions and value | Medium | Compare with extended families | Supported. New families [follow Nokia's reported inventions](twenty-years.md) |
+| P7 | The US, Europe, China and Japan are the offices that matter | Four offices | Scope of the budget | Medium | Check filing share in other offices | Chosen, not tested |
+
+## Costs: what would it cost?
+
+| # | Assumption | Current value | Affects | Impact | How to test | Status |
+|---|---|---|---|---|---|---|
+| C1 | Costs can be built per national patent, then linked to families | Not modelled | All costs | High | Build the model at patent level | Not started |
+| C2 | Official fees use large-entity rates | US $2,150, $4,040, $8,280 | US costs | Medium | Recheck the schedule | Official, recheck before use |
+| C3 | Number of offices maintained per family | Not set | Geography scenario | High | Measure from data, with renewal data where possible | Not started. Grant data is weak outside the US |
+| C4 | European renewal costs after grant | Not set | Europe costs | High | National fees and typical countries | Not started |
+| C5 | Chinese and Japanese fees | Not set | China and Japan costs | Medium | Official schedules | Not started |
+| C6 | Filing, attorney and translation costs | Not set | New filing costs | High | Public benchmarks, then ranges | Not started. Current surveys are paid |
+| C7 | Fee growth and exchange rates | Not set | Forecast | Medium | Fee history and sensitivity test | Not started |
+| C8 | US time from filing to grant | 3 years | Break-even example | Low | Measure from my data | Placeholder, can be measured |
+
+## Behaviour: what happens next?
+
+| # | Assumption | Current value | Affects | Impact | How to test | Status |
+|---|---|---|---|---|---|---|
+| F1 | Renewal rates at 3.5, 7.5 and 11.5 years | Placeholders of 90/80/70% and 80/60/40% | Mean, median and forecast | High | USPTO renewal records | Placeholder |
+| F2 | Renewal rates vary by age, origin and technology | Not set | Keep-or-drop and scenarios | High | Split renewal rates | Not started |
+| F3 | Future new inventions per year | Not set | Filing budget and capacity | Medium | Scenarios from the [recent trend](twenty-years.md) | Not started. Recent data is provisional |
+| F4 | Past behaviour predicts future choices | Not set | Forecast | Medium | Compare periods | Not started |
+
+## Value: what is it worth?
+
+| # | Assumption | Current value | Affects | Impact | How to test | Status |
+|---|---|---|---|---|---|---|
+| V1 | How value is spread across families | Illustrative splits only | Keep-or-drop | High | Scenarios, then proxies | Illustrative. Real split isn't public |
+| V2 | Discount rate | 5%, 10%, 15% | NPV and break-even | Medium | Sensitivity test | Tested for the break-even example only |
+| V3 | Renewals, citations, breadth and declarations indicate value | Not set | Keep-or-drop shortlist | High | Check whether indicators agree with each other | Not tested, and these aren't proof of value |
+| V4 | Licensing sales give a sense of scale | About €62k–€82k per family | Scale check | Medium | Use several years | Single-year figure. Sales swing with renewal cycles |
+| V5 | ETSI declarations indicate standards relevance | Not collected | Which patents to protect | Medium | Compare with family data | Not started. ETSI doesn't verify essentiality |
+
+## Budget: what would the company do with this?
+
+| # | Assumption | Current value | Affects | Impact | How to test | Status |
+|---|---|---|---|---|---|---|
+| B1 | The budget is limited and can be moved between activities | Taken from my [strategy](strategy.md) | The whole question | High | Ask the team if I get the chance | Assumed |
+| B2 | Official fees are a big enough share to be worth optimising | Not set | Size of savings | High | Compare fee totals with assumed internal costs and [€1.5B of 2025 licensing sales](twenty-years.md) | Not started |
+| B3 | Dropping low-signal patents wouldn't harm licensing | Not set | Savings against risk | High | State the risk, and test the shortlist for overlap with declarations | Not tested |
+| B4 | Costs can be allocated to business units | Not set | Mix scenario | Medium | State a rule for families serving several units | Not started |
+| B5 | Team capacity per task | Not set | Capacity plan | Low | Assumed hours as ranges | Not started |
+
+## The value this analysis can offer
+
+What it could give Nokia, if the tests above hold up:
+
+- A method for estimating what the portfolio costs to maintain, as a range
+- A public-data shortlist of areas to review, not patents to drop
+- A view of which assumptions most change the budget
+
+What it can't give without internal data: the actual savings, the value of a patent or a final keep-or-drop decision.

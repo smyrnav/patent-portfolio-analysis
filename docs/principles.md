@@ -7,7 +7,7 @@ Status is ✅ done, 🟡 partly done or ⬜ not started.
 | What the posting asks for | How I apply it | Evidence so far | Status |
 |---|---|---|---|
 | **Can turn a vague question into a structured analysis** | Turn "how should the budget be allocated?" into defined deliverables | [Analysis strategy](strategy.md) | ✅ |
-| **Writes down assumptions and tests which ones actually move the answer** | List every assumption, then test the main ones | [Assumption register](assumptions.md). The discount rate is tested, but most aren't yet | 🟡 |
+| **Writes down assumptions and tests which ones actually move the answer** | List every assumption, then test the main ones | [Assumption register](assumptions.md), grouped by decision, with five priorities to test. Most aren't tested yet | 🟡 |
 | **Gets curious when something looks strange and follows the trail until it makes sense** | Investigate numbers that don't fit | The [8,808 missing patents](questions.md#q14-did-my-first-two-searches-miss-older-us-patents), and 72,207 families against Nokia's 20,000+ | ✅ |
 | **Builds work that others can rerun, understand, and improve** | Save exact queries, results and scripts, and explain each step | [`sql/`](../sql), [`data/`](../data), [`src/`](../src). The raw BigQuery results are partly hand-copied, and the all-years search is only saved in part | 🟡 |
 | **Knows that reliable data needs both technical care and clear explanations** | Show where data comes from and how far it can be trusted | [Can I trust this data?](data-trust.md) and [fact checks](sources.md). The register spot-check isn't done yet | 🟡 |
@@ -26,7 +26,7 @@ Status is ✅ done, 🟡 partly done or ⬜ not started.
 ## Still to do
 
 - Spot-check a random sample against official registers, and record the error rate
-- Measure time to grant and renewal rates, replacing assumptions A6 and A9
+- Measure time to grant and renewal rates, replacing assumptions C8 and F1
 - Build the cost forecast, with a sensitivity chart and a probability curve
 - Export query results directly as CSV, so nothing is hand-copied
 - Write the decision brief
