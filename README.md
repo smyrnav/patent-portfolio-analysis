@@ -65,6 +65,7 @@ A rough check puts official US renewal fees at about $14.5M–$18.8M a year, or 
 ## Guide to the repo
 
 **The analysis**
+- [What I have and still need](docs/evidence-gaps.md): evidence against the central question, and the order of work
 - [Research design](docs/research-design.md): hypotheses and reliability rules for the central question
 - [Analysis strategy](docs/strategy.md): the plan, and the financial analysis
 - [Who leads AI and cloud networking?](docs/competitors.md): verified market positions and the comparison set

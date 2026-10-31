@@ -1,6 +1,6 @@
 # Analysis strategy
 
-How the project answers its central question, and what each output is for. The detailed hypotheses and pass rules are in the [research design](research-design.md), and the reasons for each change in approach are in [how my approach changed](approach-changes.md).
+How the project answers its central question, and what each output is for. The detailed hypotheses and pass rules are in the [research design](research-design.md), the evidence still needed is in [what I have and still need](evidence-gaps.md), and the reasons for each change in approach are in [how my approach changed](approach-changes.md).
 
 This is an outside view. It uses public data and clearly labelled assumptions, not Nokia's internal figures.
 
