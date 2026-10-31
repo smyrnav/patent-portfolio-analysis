@@ -15,9 +15,9 @@ To add one, copy this:
 
 ## Open
 
-### Q15. What do the origin shares look like once older patents are included?
-- **Why I asked:** Q14 showed that my first searches missed 8,808 older patents.
-- **How I'll look:** rerun the name search [for all years](../sql/05_owner_names_all_years.sql).
+### Q15. What does the portfolio look like over the last 30 years?
+- **Why I asked:** the all-years rerun showed Lucent's biggest name almost doubling to 9,310 patents. It also pulled in old businesses like cables, TVs and capacitors, and false matches including a person called Craig Enokian. I decided to focus on the last 30 years, as that covers everything that could still be alive plus 10 years of history.
+- **How I'll look:** [count patents by owner and filing year](../sql/06_owners_by_filing_year.sql), using filing date because a US patent generally lasts 20 years from filing.
 
 ### Q13. Did Lucent's patents actually stay in the family?
 - **Why I asked:** as far as I remember, Lucent spun off Avaya and Agere, so a Lucent name may not lead to Nokia today.

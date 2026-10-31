@@ -1,6 +1,6 @@
 # Data map
 
-Where I am, what the data contains and which questions it can answer. The full notes for each question are in the [question log](questions.md).
+Where I am, what the data contains and which questions it can answer. My focus is patents filed in the last 30 years. The full notes for each question are in the [question log](questions.md).
 
 ![What the Google patents table contains](img/data_map.png)
 
@@ -70,7 +70,7 @@ I've only used the Google table so far. The USPTO and ETSI columns reflect what 
 
 | # | Question | What it needs |
 |---|---|---|
-| Q15 | What are the origin shares with older patents included? | [Query ready](../sql/05_owner_names_all_years.sql) |
+| Q15 | What does the portfolio look like over the last 30 years? | [Query ready](../sql/06_owners_by_filing_year.sql) |
 | Q7 | How many unique patents are alive? | Cleaned names and renewal data |
 | Q8 | Which patents do owners stop paying for? | USPTO fee records |
 | Q9 | What would keeping them cost over 10 years? | Official fees and a model |

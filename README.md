@@ -10,7 +10,7 @@ The rest of this page walks through the work with screenshots.
 
 This isn't affiliated with Nokia, and it uses only public data.
 
-**Status:** nine questions answered. **Known issue:** the US totals below leave out 8,808 older patents, and I'm rerunning them (Q15 in the log).
+**Status:** nine questions answered. **Known issue:** the US totals below leave out 8,808 older patents, and I'm rerunning them for the last 30 years (Q15 in the log).
 
 ## What I've found so far
 
