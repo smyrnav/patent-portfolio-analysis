@@ -4,6 +4,15 @@
 
 I didn't know what patent portfolio work involves, so this repo documents me teaching myself. It focuses on the track's core problem: how to allocate a limited patent budget.
 
+It also shows how I work:
+
+- **Combining sources:** patent records, Nokia's annual reports and official fee and standards data
+- **Verifying outputs:** cross-checks between sources, automatic checks and a record of what's still unverified
+- **Using AI to move faster:** AI-accelerated search and analysis, with standard data handling and me directing the work
+- **Building my own method:** a repeatable approach for my analytics and education
+- **Learning quickly:** picking up new concepts and turning them into structured analysis
+- **Directing my own research:** changing approach when something isn't working, and choosing where to spend my effort
+
 **To get oriented:**
 - [Working principles](docs/principles.md): the posting's expectations, how I apply them and where I fall short
 - [Assumption register](docs/assumptions.md): what the analysis assumes, and what's been tested
