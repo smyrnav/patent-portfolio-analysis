@@ -19,7 +19,7 @@ flowchart LR
     style E fill:#E6EAF0,color:#1A1A1A
 ```
 
-Blue steps have been started, and grey steps haven't. The owner step is still being corrected because of the older patents I missed.
+Blue steps have been started, and grey steps haven't.
 
 ## What each group can tell me
 
@@ -45,10 +45,10 @@ I've only analysed 8 of the 37 fields so far, though my working table now holds 
 | Lapses | Not in main table | Yes | Yes (US) | No |
 | Essential to a standard | No | No | No | Yes |
 | Revenue | No | No | No | No |
-| Cost to me | Free up to 1 TB a month | Paid | Not checked | Not checked |
-| Status | **In use** | Read the catalog | Not opened | Not opened |
+| Cost to me | Free up to 1 TB a month | Paid | Public listing | Free to search |
+| Status | **In use** | Read the catalog | Listing found, not downloaded | Confirmed free to search, not used yet |
 
-I've only used the Google table so far. The USPTO and ETSI columns reflect what I expect to find, and I haven't opened those sources yet.
+I've only used the Google table so far. I've [confirmed the USPTO and ETSI sources exist](sources.md#patent-rules-and-data-sources), but I haven't worked with their data yet. ETSI doesn't check whether declared patents are truly essential.
 
 ## My questions at a glance
 
@@ -64,10 +64,12 @@ The business questions I'm working towards are in the [analysis strategy](strate
 | Q4 | How do I get into the Google data? | SQL in the BigQuery sandbox |
 | Q5 | Under which names do the patents appear? | Many, with a few names holding most listings |
 | Q6 | What do those names mean? | Company history, typos and false matches |
-| Q11 | Where did the portfolio come from? | Partly Alcatel-Lucent, with shares being corrected in Q15 |
+| Q11 | Where did the portfolio come from? | 46% carry Alcatel or Lucent names |
 | Q12 | Where does Nokia file? | US first, Europe close behind, China next after the international filings |
 | Q14 | Did I miss older patents? | Yes, 8,808 of them |
 | Q15 | What does the last 30 years look like? | 72,207 inventions across 64 offices |
+| Q17 | What are the corrected US numbers? | 36,630 unique patents under 238 names |
+| Q10 | Which "Needs review" names did Nokia inherit? | Several left, but they cover only 0.5% of patents |
 
 ### Open
 
@@ -76,11 +78,10 @@ The business questions I'm working towards are in the [analysis strategy](strate
 | Q7 | How many unique patents are alive? | Cleaned names and renewal data |
 | Q8 | Which patents do owners stop paying for? | USPTO fee records |
 | Q9 | What would keeping them cost over 10 years? | Official fees and a model |
-| Q10 | Which "Needs review" names did Nokia inherit? | Company histories |
 | Q13 | Did Lucent's patents stay in the family? | Patent assignment records |
 
 ### Ideas not started
 
 - Does Nokia keep Alcatel's patents as long as its own?
-- What happened to the phone patents after the sale to Microsoft?
+- How much of the phone-era portfolio is still being renewed? Nokia [kept those patents](sources.md#company-history) when it sold the phone business.
 - How do Nokia's renewal habits compare with Ericsson's?

@@ -31,7 +31,7 @@ This is my outside view of what a portfolio team needs. Nokia's real priorities 
 | Business question | Decision it supports | Measure | Main limit |
 |---|---|---|---|
 | **Refill rate:** is new invention replacing what's about to expire? | Where to invest in new patents | New inventions against inventions reaching 20 years, by technology | Recent years are incomplete because of publication delays |
-| **Protection cliff:** how much protection could run out by 2036? | What to renew or replace | Filing date + 20 years, by technology | Latest possible date, as patents can lapse earlier |
+| **Protection cliff:** how much protection could run out by 2036? | What to renew or replace | Filing date + 20 years, by technology | An estimate: patents can lapse earlier, and term rules can move the date |
 | **Geographic gaps:** which key technologies lack cover in major markets? | Where to file next | Share of inventions filed in each office, by technology | Filing is not the same as a granted patent |
 | **Costly coverage:** which areas are filed in many more offices than others? | Where to file more narrowly | Offices per invention | Shows breadth, not actual money spent |
 | **Deal value:** what did each acquisition add that Nokia didn't already have? | How to value future deals | Inventions by origin and technology, and how much they overlap | Names can be out of date |
@@ -56,7 +56,7 @@ This is my outside view of what a portfolio team needs. Nokia's real priorities 
 
 ## The plan
 
-1. **Clean the base:** review owner names, as Deal value and rival comparisons depend on them.
+1. **Clean the base:** done for now, with [corrected US counts](../data/processed/us_30y_recount.csv) and [checked history](sources.md).
 2. **Answer the six questions** above from my table.
 3. **Add renewal data and fees** to reach Keep or drop and the 10-year budget.
 4. **Write a decision brief:** one page on strengths, exposures and where to look for savings.

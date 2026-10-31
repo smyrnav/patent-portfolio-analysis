@@ -18,7 +18,7 @@ To add one, copy this:
 ## Open
 
 ### Q13. Did Lucent's patents actually stay in the family?
-- **Why I asked:** as far as I remember, Lucent spun off Avaya and Agere, so a Lucent name may not lead to Nokia today.
+- **Why I asked:** Lucent spun off Avaya and Agere ([fact checks](sources.md)), so a Lucent name may not lead to Nokia today.
 - **How I'll look:** patent assignment records for a sample of Lucent patents, and company histories.
 
 ### Q7. How many unique Nokia patents are still alive?
@@ -33,17 +33,27 @@ To add one, copy this:
 - **Why I asked:** the posting asks for ranges and tested assumptions rather than one number.
 - **How I'll look:** official fee schedules, simulated internal costs labelled as simulated, and a Monte Carlo model.
 
-### Q10. Which of the "Needs review" names did Nokia actually inherit?
-- **Why I asked:** 20 names look like joint ownership or businesses that may have been sold.
-- **How I'll look:** company histories and patent assignment records.
-
 ## Answered
+
+### Q17. What are the corrected US numbers?
+- **Why I asked:** my early counts missed older patents, so I couldn't rely on them.
+- **How I looked:** [recounted from the working table](../sql/08_recount_us_30y.sql) ([results](../data/processed/us_30y_recount.csv)), which processed 14.46 MB.
+- **Answer:** 36,630 unique patents under 238 names. 46% carry an Alcatel or Lucent name, and the top 10 names hold 93% of listings.
+- **Tools and resources:** BigQuery and my working table.
+- **What it led to:** the current figures in the README.
+
+### Q10. Which of the "Needs review" names did Nokia actually inherit?
+- **Why I asked:** some names look like joint ownership or businesses that may have been sold.
+- **How I looked:** checked company histories online, and recorded them in my [fact checks](sources.md#the-needs-review-names).
+- **Answer:** several look like businesses that left, such as cables, optronics and the TCL mobile venture. They cover only 178 patents, about 0.5%, so they barely affect the picture. A few remain unknown, and patent-level records would be needed to prove ownership.
+- **Tools and resources:** encyclopedia and trade sources.
+- **What it led to:** no change to the plan, as the effect is small.
 
 ### Q15. What does the portfolio look like over the last 30 years?
 - **Why I asked:** the all-years rerun showed Lucent's biggest name almost doubling to 9,310 patents ([top 20 names](../data/raw/owner_counts_all_years_top20.csv)). It also pulled in old businesses and false matches, including a person called Craig Enokian. The last 30 years cover everything that could still be alive, plus 10 years of history.
 - **How I looked:** [built a working table](../sql/06_create_portfolio_30y.sql), then [checked it](../sql/07_check_portfolio_30y.sql) ([results](../data/raw/portfolio_30y_check.csv)).
 - **Answer:** 289,998 publications from 212,660 applications and 72,207 patent families, across 64 offices. That's about 2.9 applications per invention. Citations are missing on 49% of publications, English abstracts on 21%, inventor countries on 18%, English titles on 13%, and technology codes on 2%.
-- **Tools and resources:** BigQuery. Still to review: the owner names in the table, since some false matches or sold businesses may remain.
+- **Tools and resources:** BigQuery.
 - **What it led to:** the [analysis strategy](strategy.md). Later queries can use this table instead of the 2.88 TB source.
 
 ### Q14. Did my first two searches miss older US patents?
@@ -63,8 +73,8 @@ To add one, copy this:
 ### Q11. Which companies' patents did the portfolio come from?
 - **Why I asked:** the first search only covered names with "Nokia" or "Alcatel", and I realised Alcatel had merged with Lucent.
 - **How I looked:** listed the deals I knew of, then [searched for the missing names](../sql/02_lineage_names.sql).
-- **Answer:** Lucent adds 4,772 listings and Infinera 705, so about 4 in 10 listings trace back to Alcatel-Lucent. This shows where listings came from, not what Nokia owns today.
-- **Tools and resources:** BigQuery, whole-word regular expressions, and my memory of the deal history, still to be checked.
+- **Answer:** Lucent and Infinera were both missing from my first search. At that stage, about 4 in 10 listings traced back to Alcatel-Lucent, which rose to 46% after the correction in Q17. This shows where listings came from, not what Nokia owns today.
+- **Tools and resources:** BigQuery, whole-word regular expressions, and the deal history, later checked in my [fact checks](sources.md).
 - **What it led to:** Q12 and Q13. It also found 10 misspelled Alcatel names that the first search missed, and 7 unrelated companies, such as Lucent Medical Systems, that a text search can't rule out.
 
 ### Q1. What does a patent portfolio team actually do?
@@ -98,7 +108,7 @@ To add one, copy this:
 ### Q5. Under which names do Nokia's US patents appear?
 - **Why I asked:** I needed to find the portfolio before analysing it.
 - **How I looked:** ran [a query](../sql/01_owner_names.sql) on owner names containing "Nokia" or "Alcatel".
-- **Answer:** 187 names, with the top 10 holding 94% of listings.
+- **Answer:** 187 names in my first search, later corrected to 238 in Q17.
 - **Tools and resources:** BigQuery and the `assignee_harmonized` field.
 - **What it led to:** Q6.
 

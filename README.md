@@ -7,26 +7,31 @@ I saw a job posting for a patent portfolio trainee at Nokia and didn't know what
 - [How my approach changed](docs/approach-changes.md): why I moved from exploring to starting with decisions
 - [Data map](docs/data-map.md): what the data contains, and all my questions at a glance
 - [Question log](docs/questions.md): how I found each answer and what I used
+- [Fact checks](docs/sources.md): the outside facts I rely on, and how well each one is supported
+- [Explain it yourself](docs/explain-it.md): the calculations and questions I should be able to answer
 
 The rest of this page walks through the work with screenshots.
 
 This isn't affiliated with Nokia, and it uses only public data.
 
-**Status:** ten questions answered. I've built a working table of **72,207 inventions filed in the last 30 years**, across 64 patent offices. **Known issue:** the name counts and charts in Steps 4–6 come from my first searches, which missed 8,808 older US patents. I'm keeping them as a record of what I found at the time, and they'll be recounted from the working table.
+**Status:** I've built a working table of **72,207 inventions filed in the last 30 years**, across 64 patent offices, and recounted the US figures from it. Next I'm answering the six questions in the strategy.
 
 ## What I've found so far
 
-These figures come from my first searches, which missed older US patents, so they will change once I recount from the working table. The corrected search made `LUCENT TECHNOLOGIES INC` the largest single name, with 9,310 patents.
+These are granted US patents filed since November 1996 ([recount](data/processed/us_30y_recount.csv)).
 
 | | |
 |---|---|
-| **187, then 218** | owner names found, once a second search added the companies Nokia absorbed |
-| **94%** | of listings sit under just the top 10 names |
-| **About 4 in 10** | listings, before the correction, trace back to Alcatel and Lucent, which Nokia acquired as Alcatel-Lucent |
-| **32% of names, 0.5% of listings** | the share of names that look like spelling or legal-form variants |
-| **39** | listings that matched "Nokia" but belong to Nokian Tyres |
+| **36,630** | unique patents, listed under 238 owner names |
+| **93%** | of listings sit under just the top 10 names |
+| **46%** | carry an Alcatel or Lucent name, from the company Nokia acquired in 2016 |
+| **About 2.9** | applications per invention, worldwide |
 
-**Main takeaway:** the typos are easy to spot, but they barely change the totals. Knowing how the company is built, and which business lines it sold, matters far more.
+![US patents by origin](docs/img/origin_30y.png)
+
+**Main takeaway:** almost half of this US portfolio came through one acquisition, or at least still carries its names. Understanding how the company was built matters more than fixing spelling.
+
+**Main limit:** these names show who's on each patent, not who owns it today or whether it's still in force.
 
 ## Step 1: Work out what the job actually is
 
@@ -67,27 +72,20 @@ The search found 187 names ([raw results](data/raw/owner_counts.csv)).
 
 ### The names reflect the company's history
 
-Some of the largest names:
+These are the largest names in the corrected recount:
 
-| Owner name | Granted US patents | What I think it is |
+| Owner name | Granted US patents | What it is |
 |---|---:|---|
-| NOKIA CORP | 7,336 | Parent company |
-| NOKIA TECHNOLOGIES OY | 6,431 | Technology and licensing company |
-| ALCATEL LUCENT | 5,062 | Acquired in 2016 |
-| NOKIA SOLUTIONS & NETWORKS OY | 2,401 | Networks business |
-| CIT ALCATEL | 2,188 | Older Alcatel name |
-| NOKIA MOBILE PHONES LTD | 977 | Former phone business |
+| NOKIA CORP | 7,382 | Parent company |
+| LUCENT TECHNOLOGIES INC | 7,209 | Merged into Alcatel-Lucent in 2006 |
+| NOKIA TECHNOLOGIES OY | 6,457 | Nokia's technology business |
+| ALCATEL LUCENT | 5,074 | Acquired by Nokia in 2016 |
+| CIT ALCATEL | 2,493 | Older Alcatel name |
+| NOKIA SOLUTIONS & NETWORKS OY | 2,405 | Networks business |
+| NOKIA MOBILE PHONES LTD | 1,212 | Former phone business |
 | NOKIA SIEMENS NETWORKS OY | 531 | Former joint venture |
 
-### Sorting them into families
-
-[`src/clean_owners.py`](src/clean_owners.py) sorts every name into a family using simple rules, with the results in [`owner_mapping.csv`](data/processed/owner_mapping.csv).
-
-![Listings by company family](docs/img/families.png)
-
-### A few names hold almost everything
-
-![Share of listings by owner name](docs/img/concentration.png)
+The company history is in my [fact checks](docs/sources.md).
 
 ### Three kinds of mess
 
@@ -95,19 +93,15 @@ Some of the largest names:
 2. **Legal forms and subsidiaries:** `NOKIA OYJ`, `NOKIA INC`, `NOKIA GMBH`. These may be real, separate entities, so merging them is a decision about the question being asked.
 3. **False matches:** `NOKIAN TYRES PLC` and `NOKIAN RENKAAT OYJ` are a tyre company. A simple text search catches them, and I only saw this by reading the output.
 
-The script flags 59 names as likely variants, covering 140 listings. That's a floor, because the matching misses some, such as `NOKIA CORPORTION` against the much shorter `NOKIA CORP`, and some flagged names may be real entities.
+In my first search, [`src/clean_owners.py`](src/clean_owners.py) flagged 59 of 187 names as likely variants, covering just 140 of 28,773 listings. That's a floor, because the matching misses some, such as `NOKIA CORPORTION` against the much shorter `NOKIA CORP`, and some flagged names may be real entities.
 
-A further 20 names (46 listings) are marked **Needs review**. They look like joint ownership or businesses that may have been sold, such as cables and optronics. I haven't verified their histories.
+In the recount, 28 names (178 patents) are marked **Needs review**. They look like joint ownership or businesses that were sold, such as cables and optronics. [I've checked what I could](docs/sources.md#the-needs-review-names).
 
 ## Step 6: Check what the first search missed
 
 The first search looked for "Alcatel", but Alcatel merged with Lucent in 2006, and Lucent's patents don't carry the Alcatel name. So I listed the deals I knew of and [searched for the missing companies](sql/02_lineage_names.sql).
 
 ![The second query and its results](docs/img/03_lineage_query.png)
-
-![Listings by origin across both searches](docs/img/lineage.png)
-
-This chart comes before the older-patent correction, so Lucent and older Alcatel names are understated.
 
 This search taught me two more things:
 
@@ -128,6 +122,8 @@ It also exposed a mistake in my earlier searches. It found 43,674 granted US app
 
 I then [built my own table](sql/06_create_portfolio_30y.sql) of everything filed since November 1996, across all offices, so later questions don't have to rescan the 2.88 TB source. [A check](sql/07_check_portfolio_30y.sql) found 72,207 inventions from 212,660 applications. Citations are missing on 49% of publications, so they need care ([results](data/raw/portfolio_30y_check.csv)).
 
+I then [recounted the US figures](sql/08_recount_us_30y.sql) from that table, which processed just 14.46 MB. That replaced the early numbers with the ones at the top of this page.
+
 ## Step 9: Change approach
 
 At this point I was running queries without a clear purpose, so I stopped and [changed my approach](docs/approach-changes.md). The [analysis strategy](docs/strategy.md) now starts from the decisions the work should support.
@@ -136,9 +132,9 @@ At this point I was running queries without a clear purpose, so I stopped and [c
 
 ## What these numbers can't tell you
 
-- **This isn't Nokia's current portfolio.** It includes expired patents and shows the name on the patent, which may be out of date after a sale or transfer.
-- **Listings aren't unique patents.** A patent with two owners counts under both, so the 34,229 total is too high.
-- **Lucent's name doesn't prove Nokia ownership.** As far as I remember, Lucent spun off Avaya and Agere, which may have taken patents with them.
+- **This isn't Nokia's current portfolio.** It includes patents that have expired or lapsed, and it shows the name on the patent, which may be out of date after a sale or transfer.
+- **Listings aren't unique patents.** A patent with two owners counts under both, which is why there are 37,710 listings for 36,630 patents.
+- **Lucent's name doesn't prove Nokia ownership.** Lucent spun off Avaya and Agere, which may have taken patents with them.
 - **The name searches are US-only.** Step 7 shows how much sits elsewhere.
 - **Family assignments are my judgement.** They need checking against company records.
 
