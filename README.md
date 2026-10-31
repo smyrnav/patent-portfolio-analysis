@@ -4,6 +4,7 @@ I saw a job posting for a patent portfolio trainee at Nokia and didn't know what
 
 **To get oriented:**
 - [Analysis strategy](docs/strategy.md): the decisions this analysis supports, and the plan
+- [How my approach changed](docs/approach-changes.md): why I moved from exploring to starting with decisions
 - [Data map](docs/data-map.md): what the data contains, and all my questions at a glance
 - [Question log](docs/questions.md): how I found each answer and what I used
 

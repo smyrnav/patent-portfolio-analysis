@@ -1,6 +1,6 @@
 # Analysis strategy
 
-I started by following whatever the data showed next. This page sets a method: start from a decision someone has to make, then work back to the data.
+I started by following whatever the data showed next. This page sets a method: start from a decision someone has to make, then work back to the data. [Here's why I changed approach](approach-changes.md).
 
 This is my outside view of what a portfolio team needs. Nokia's real priorities may differ, and the results are signals rather than proof.
 
