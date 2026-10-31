@@ -33,6 +33,8 @@ These are granted US patents filed since November 1996 ([recount](data/processed
 
 ![US patents by origin](docs/img/origin_30y.png)
 
+![From 72,207 families to a workable portfolio](docs/img/portfolio_filter.png)
+
 **Main takeaway:** almost half of this US portfolio came through one acquisition, or at least still carries its names. Understanding how the company was built matters more than fixing spelling.
 
 **Main limit:** these names show who's on each patent, not who owns it today or whether it's still in force.
@@ -154,6 +156,7 @@ python src/check_outputs.py
 pip install matplotlib
 python src/make_charts.py
 python src/make_data_map.py
+python src/make_scale_charts.py
 ```
 
 To get Nokia's annual reports, set your own contact, as the SEC requires one:

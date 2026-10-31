@@ -2,6 +2,8 @@
 
 My table had 72,207 families, against Nokia's reported 20,000+. I sorted every family into one status using [this query](../sql/09_family_status.sql), and it processed about 15 MB.
 
+![From 72,207 families to a workable portfolio](img/portfolio_filter.png)
+
 | Status | Families | Share | Use in the model |
 |---|---:|---:|---|
 | **Granted, filed within 20 years** | **19,873** | 27.5% | **Core dataset** |

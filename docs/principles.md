@@ -21,6 +21,7 @@ Status is ✅ done, 🟡 partly done or ⬜ not started.
 2. **While working:** add new assumptions to the [register](assumptions.md), and follow up anything strange.
 3. **After a result:** save the exact query and result, then state how far it can be trusted.
 4. **Before publishing:** run the checks, and read the output as a sceptical reviewer would.
+5. **When presenting:** show key numbers as a chart or visual first, with the explanation short and underneath.
 
 ## Still to do
 

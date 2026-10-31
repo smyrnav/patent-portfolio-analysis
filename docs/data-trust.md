@@ -42,4 +42,8 @@ I didn't find a formal accuracy audit of this dataset.
 
 Nokia's actual patent budget, its costs per patent and the terms of its deals remain private, so those stay as labelled assumptions.
 
-A rough sense of scale: €1,217M over nine months is about €1.6B a year. Divided by about 20,000 families, that's about €80,000 per family. That's only a scale check, because licensing income is usually concentrated in a few programmes and families, and this isn't a value per patent.
+### A rough sense of scale
+
+![About €82k of licensing-unit sales per family, but the average hides most of the story](img/scale_check.png)
+
+Licensing income is usually concentrated in a few programmes and families, so this isn't a value per patent. The right-hand chart shows how different the same total looks under different splits. Those splits are illustrative, not estimates.
