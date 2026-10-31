@@ -32,6 +32,7 @@ I didn't find a formal accuracy audit of this dataset.
 
 | Source | What it gives | Status |
 |---|---|---|
+| [Nokia's 20 annual reports, FY2006–FY2025](../data/raw/annual_reports_manifest.csv) | R&D, licensing, segments, deals and risks | Official, downloaded, figures not extracted yet |
 | [Nokia's Q3 2026 report](https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm) | Technology Standards net sales of €425M in Q3 and €1,217M for January–September, and R&D expenses of €1,251M in Q3 | Official |
 | [USPTO fee schedule](https://www.uspto.gov/learning-and-resources/fees-and-payment/uspto-fee-schedule) | US renewal fees | Official |
 | [EPO fee rules](https://www.epo.org/en/legal/epc/2020/EPC_rfees_20260401_en_20260326.pdf) | European fees from 1 April 2026 | Official, figures not extracted yet |

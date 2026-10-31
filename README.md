@@ -156,6 +156,14 @@ python src/make_charts.py
 python src/make_data_map.py
 ```
 
+To get Nokia's annual reports, set your own contact, as the SEC requires one:
+
+```bash
+SEC_USER_AGENT="Your Name you@example.com" python src/download_annual_reports.py
+```
+
+The reports stay out of the repo because of their size, and [the manifest](data/raw/annual_reports_manifest.csv) records each file's source and fingerprint.
+
 The queries are in [`sql/`](sql), numbered in the order I ran them. The working table expires after 60 days in the BigQuery sandbox, so rerun [the build query](sql/06_create_portfolio_30y.sql) to restore it.
 
 ## How this was made

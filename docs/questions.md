@@ -17,6 +17,10 @@ To add one, copy this:
 
 ## Open
 
+### Q19. How do Nokia's reported finances line up with its patent activity?
+- **Why I asked:** patent data has no money in it, and the annual reports are the main public source of it. This feeds the budget model.
+- **How I'll look:** extract R&D and licensing figures from [20 annual reports](../data/raw/annual_reports_manifest.csv), with page references, and compare them with new families per year. Ten or twenty yearly points can show a pattern, not cause and effect.
+
 ### Q13. Did Lucent's patents actually stay in the family?
 - **Why I asked:** Lucent spun off Avaya and Agere ([fact checks](sources.md)), so a Lucent name may not lead to Nokia today.
 - **How I'll look:** patent assignment records for a sample of Lucent patents, and company histories.
