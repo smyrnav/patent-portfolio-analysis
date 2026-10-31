@@ -25,7 +25,7 @@ MORE = [
 NEVER = ["Revenue per patent", "Licensing terms", "Who holds a licence", "Nokia's real internal costs", "Why it decided anything"]
 
 
-def card(ax, x, y, w, h, title, body, foot, color, width=54):
+def card(ax, x, y, w, h, title, body, foot, color, width=50):
     ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0,rounding_size=0.08", fc=CARD, ec="none"))
     ax.add_patch(FancyBboxPatch((x, y), .07, h, boxstyle="square,pad=0", fc=color, ec="none"))
     ax.text(x + .2, y + h - .24, title, fontsize=13, fontweight="bold", color=INK, va="center")
