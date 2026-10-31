@@ -84,7 +84,7 @@ To add one, copy this:
 ### Q12. Where does Nokia file, including China and Europe?
 - **Why I asked:** I started with the US because it's easier, not because I knew it mattered most.
 - **How I looked:** [counted applications and patent families by office](../sql/03_filings_by_country.sql).
-- **Answer:** US 56,039, European Patent Office 44,353, China 24,662, and Germany 13,141. The US is the largest, but Europe is close, so starting with the US was reasonable but tells only part of the story.
+- **Answer:** US 56,039, European Patent Office 44,353, China 24,662, and Germany 13,141. The US is the largest, but Europe is close, and 79% of the US total.
 - **Tools and resources:** BigQuery. EP is the European Patent Office rather than the EU, and WO filings aren't patents yet.
 - **What it led to:** Q14, and a warning that grant dates can't be compared across countries. Japan shows 0 granted, while Austria shows 99.8%.
 
@@ -133,6 +133,6 @@ To add one, copy this:
 ### Q6. What do those 187 names mean?
 - **Why I asked:** I couldn't count anything until I knew which names were really the same company.
 - **How I looked:** read the output, then wrote [rules to group the names](../src/clean_owners.py).
-- **Answer:** they reflect the company's history, plus typos and false matches. Nokian Tyres matched only because of its name. The typos make up 32% of names but only 0.5% of listings, so company structure matters more.
+- **Answer:** they reflect the company's history, plus typos and false matches. Nokian Tyres matched only because of its name. The likely typos make up 32% of names but only 0.5% of listings, so they barely change the totals.
 - **Tools and resources:** Python and `difflib`.
 - **What it led to:** Q7 and Q10.

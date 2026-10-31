@@ -28,7 +28,7 @@ Financial figures are as first reported in each year's report, except where a no
 | 2023 | 1,966 (provisional) | more than 2,300 |
 | 2024 | 2,471 (provisional) | more than 3,000 |
 
-This is the strongest check so far that family counts are measuring something real. Both are rising, and the recent gap is what publication delay would produce.
+Both series rise from 2019 to 2024. My counts are lower in 2023–24, which fits publication delay.
 
 ### Portfolio size has two reported levels
 

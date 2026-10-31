@@ -55,7 +55,7 @@ A worked example using the [USPTO large-entity fees](sources.md#patent-rules-and
 
 The three fees total $14,470, or about $6,284 in present value at 10%.
 
-The fee rises, but so does the time it buys in this example. The real insight will come from applying this across thousands of patents, and from adding other countries' fees. The discount rate and the value of each patent are assumptions, because public data doesn't show them.
+The fee rises, but so does the time it buys in this example. The discount rate and the value of each patent are assumptions, because public data doesn't show them.
 
 ### Mean and median patent costs
 

@@ -36,7 +36,7 @@ These are granted US patents filed since November 1996 ([recount](data/processed
 
 ![From 72,207 families to a workable portfolio](docs/img/portfolio_filter.png)
 
-**Main takeaway:** almost half of this US portfolio came through one acquisition, or at least still carries its names. Understanding how the company was built matters more than fixing spelling.
+**Main takeaway:** 46% of these US patents carry an Alcatel or Lucent name, so any cost or renewal analysis needs to report them separately.
 
 **Main limit:** these names show who's on each patent, not who owns it today or whether it's still in force.
 
