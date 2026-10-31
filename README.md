@@ -2,7 +2,11 @@
 
 I saw a job posting for a patent portfolio trainee at Nokia and didn't know what that work involves. This repo documents me teaching myself: finding the tools, picking interesting questions, and recording how I found each answer and which resources I used.
 
-**Start with the [question log](docs/questions.md)**, which lists everything I've asked so far and what's still open. The rest of this page walks through the work with screenshots.
+**To get oriented:**
+- [Data map](docs/data-map.md): what the data contains, and all my questions at a glance
+- [Question log](docs/questions.md): how I found each answer and what I used
+
+The rest of this page walks through the work with screenshots.
 
 This isn't affiliated with Nokia, and it uses only public data.
 

@@ -1,6 +1,6 @@
 -- Replaces queries 01 and 02. Kind A covers older US patents, B newer ones and E reissues.
 -- Design patents (S) and invention registrations (H) are left out.
--- The search is deliberately broad, and src/clean_owner_names.py removes false matches.
+-- The search is deliberately broad, and false matches get removed afterwards.
 SELECT
   a.name AS owner,
   COUNT(DISTINCT p.publication_number) AS granted_patents,
