@@ -3,6 +3,8 @@
 I saw a job posting for a patent portfolio trainee at Nokia and didn't know what that work involves. This repo documents me teaching myself, and it's now focused on the role's Business Data Analytics track: how to allocate a limited patent budget.
 
 **To get oriented:**
+- [Working principles](docs/principles.md): the posting's expectations, how I apply them and where I fall short
+- [Assumption register](docs/assumptions.md): what the analysis assumes, and what's been tested
 - [Analysis strategy](docs/strategy.md): the decisions this analysis supports, and the plan
 - [How my approach changed](docs/approach-changes.md): why I moved from exploring to starting with decisions
 - [The workable portfolio](docs/portfolio-filter.md): how 72,207 families become about 20,000
@@ -148,6 +150,7 @@ The plan is in the [analysis strategy](docs/strategy.md), and smaller open quest
 ```bash
 python src/clean_owners.py
 python src/clean_lineage.py
+python src/check_outputs.py
 pip install matplotlib
 python src/make_charts.py
 python src/make_data_map.py

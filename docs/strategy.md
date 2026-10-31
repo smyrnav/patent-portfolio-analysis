@@ -4,6 +4,8 @@ I started by following whatever the data showed next. I then set out business qu
 
 This is an outside view. It uses public data and clearly labelled assumptions, not Nokia's internal figures.
 
+This work follows the posting's [expectations for how people work](principles.md).
+
 ## The central problem
 
 > Nokia has a limited annual budget for patent portfolio management. How should it be allocated to get the most strategic and economic value from the portfolio?
@@ -115,6 +117,8 @@ One page with the recommendation, savings range, risks and how reliable each num
 - **Patent value:** citations and family size are indicators, not measures of commercial value.
 
 ## Rule for each new query
+
+This follows the [working principles](principles.md).
 
 Before running a query, I write down:
 
