@@ -1,6 +1,6 @@
 # The workable portfolio
 
-My table had 72,207 families, against Nokia's reported 20,000+. I sorted every family into one status using [this query](../sql/09_family_status.sql), and it processed about 15 MB.
+My table had 72,207 families, against [Nokia's reported figures](twenty-years.md#portfolio-size-has-two-reported-levels) of around 20,000 for FY2017–FY2023 and 26,000+ for FY2025. I sorted every family into one status using [this query](../sql/09_family_status.sql), and it processed about 15 MB.
 
 ![From 72,207 families to a workable portfolio](img/portfolio_filter.png)
 
@@ -15,7 +15,7 @@ My table had 72,207 families, against Nokia's reported 20,000+. I sorted every f
 
 **The workable portfolio is about 19,873 granted families, plus 5,595 possible pending ones.** The tables are `nokia_analytics.portfolio_30y` and `nokia_analytics.family_status`.
 
-The core figure is close to Nokia's "over 20,000", which is encouraging. But it's not proof, as the errors below push in both directions and Nokia's counting rules aren't published.
+The total of 25,468 is close to Nokia's 26,000+, which is encouraging. But it's not proof, as the errors below push in both directions and Nokia's counting rules aren't published.
 
 ## How the rules work
 
@@ -30,7 +30,7 @@ The core figure is close to Nokia's "over 20,000", which is encouraging. But it'
 |---|---|
 | Patents that lapsed because fees weren't paid | Too high |
 | Patents sold to others, as old names remain | Too high |
-| Grants missed outside the US, such as Japan | Too low |
+| Grants missed outside the US, as [many Japanese records have no owner name](twenty-years.md#japan-needed-fixing) | Too low |
 | Pending applications older than 2021 | Not counted as pending |
 | Grant dates that look wrong for some offices | Could go either way |
 

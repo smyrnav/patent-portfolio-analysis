@@ -13,4 +13,5 @@ Every assumption behind the analysis. The final column shows whether I've tested
 | A7 | Discount rate | 5%, 10% and 15% | Nokia's rate isn't known | NPV and break-even | Yes, for the break-even example |
 | A8 | US fees are large-entity rates | $2,150, $4,040, $8,280 | [USPTO schedule](sources.md#patent-rules-and-data-sources), to be rechecked | Cost forecast | No |
 | A9 | Renewal rates | To be measured | USPTO records | Cost forecast | Not yet |
+| A11 | Filings are counted once per year by filing date | `application_number` | A few applications carry more than one date, so yearly US totals exceed a single count by 6 since 2010 | Small | Yes |
 | A10 | Costs per application and hours per task | To be set | Internal figures aren't public | Forecast and capacity | Not yet |

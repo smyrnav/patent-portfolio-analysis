@@ -32,7 +32,7 @@ The outside facts this project relies on, and how well each one is supported. St
 | Portfolio Businesses comprise Site Implementation and Outside Plant, and Microwave Radio | Confirmed | Same report |
 | Fixed Wireless Access CPE was sold, and an agreement to sell Enterprise Campus Edge was signed | Confirmed | Same report |
 | IP Networks grew 43% and Optical Networks 18% in Q3 2026, at constant currency | Confirmed | [Nokia Q3 2026 release](https://www.nasdaq.com/press-release/nokia-corporation-interim-report-q3-2026-2026-10-22) |
-| Nokia's portfolio has over 20,000 patent families | Reported in January 2025, no newer figure found | [Trade report](https://tecknexus.com/5gnews-all/nokia-achieves-7000-essential-5g-patents-milestone/) |
+| Nokia's portfolio has 26,000+ patent families | Confirmed in its FY2025 annual report, and around 20,000 was reported for FY2017–FY2023 | [Annual reports](twenty-years.md) |
 
 ## The "Needs review" names
 

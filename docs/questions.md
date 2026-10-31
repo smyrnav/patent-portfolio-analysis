@@ -17,9 +17,9 @@ To add one, copy this:
 
 ## Open
 
-### Q19. How do Nokia's reported finances line up with its patent activity?
-- **Why I asked:** patent data has no money in it, and the annual reports are the main public source of it. This feeds the budget model.
-- **How I'll look:** extract R&D and licensing figures from [20 annual reports](../data/raw/annual_reports_manifest.csv), with page references, and compare them with new families per year. Ten or twenty yearly points can show a pattern, not cause and effect.
+### Q20. Why did Nokia's reported portfolio fall from 26,000+ to about 20,000, then return to 26,000+?
+- **Why I asked:** it's a change of about 6,000 families, and my searches of the reports haven't explained it.
+- **How I'll look:** read the FY2016, FY2017 and FY2025 reports closely, then look for lapses or sales in USPTO records.
 
 ### Q13. Did Lucent's patents actually stay in the family?
 - **Why I asked:** Lucent spun off Avaya and Agere ([fact checks](sources.md)), so a Lucent name may not lead to Nokia today.
@@ -38,6 +38,13 @@ To add one, copy this:
 - **How I'll look:** official fee schedules, simulated internal costs labelled as simulated, and a Monte Carlo model.
 
 ## Answered
+
+### Q19. How do Nokia's reported finances line up with its patent activity?
+- **Why I asked:** patent data has no money in it, and the annual reports are the main public source of it.
+- **How I looked:** [extracted figures from 20 reports](twenty-years.md), and compared them with new families per year.
+- **Answer:** new families follow Nokia's reported new inventions closely, and licensing sales move with renewal cycles. It's a pattern, not proof of cause.
+- **Tools and resources:** SEC EDGAR, Nokia's 20-F reports and BigQuery.
+- **What it led to:** Q20 and the Japan fix.
 
 ### Q18. How do I get from 72,207 families to a workable portfolio?
 - **Why I asked:** a cost forecast on the raw table would be far too high, as Nokia reports just over 20,000 families.

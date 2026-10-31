@@ -25,14 +25,14 @@ I didn't find a formal accuracy audit of this dataset.
 
 1. **Compare totals across queries.** That's how I found the 8,808 missing US patents.
 2. **Spot-check against official registers.** Compare a random sample with [Espacenet](https://worldwide.espacenet.com/) and the USPTO, and record the error rate. Not done yet.
-3. **Compare with what Nokia reports.** It reported [over 20,000 families](sources.md#nokias-business-structure), though its counting rules may differ from mine.
+3. **Compare with what Nokia reports.** [New families follow its reported new inventions](twenty-years.md#my-family-counts-follow-nokias-own-numbers), though its counting rules may differ from mine.
 4. **State the reliability next to every number.**
 
 ## Where to find money data
 
 | Source | What it gives | Status |
 |---|---|---|
-| [Nokia's 20 annual reports, FY2006–FY2025](../data/raw/annual_reports_manifest.csv) | R&D, licensing, segments, deals and risks | Official, downloaded, figures not extracted yet |
+| [Nokia's 20 annual reports, FY2006–FY2025](../data/raw/annual_reports_manifest.csv) | R&D, licensing, segments, deals and risks | Official, [key figures extracted](twenty-years.md) |
 | [Nokia's Q3 2026 report](https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm) | Technology Standards net sales of €425M in Q3 and €1,217M for January–September, and R&D expenses of €1,251M in Q3 | Official |
 | [USPTO fee schedule](https://www.uspto.gov/learning-and-resources/fees-and-payment/uspto-fee-schedule) | US renewal fees | Official |
 | [EPO fee rules](https://www.epo.org/en/legal/epc/2020/EPC_rfees_20260401_en_20260326.pdf) | European fees from 1 April 2026 | Official, figures not extracted yet |
@@ -46,4 +46,4 @@ Nokia's actual patent budget, its costs per patent and the terms of its deals re
 
 ![About €82k of licensing-unit sales per family, but the average hides most of the story](img/scale_check.png)
 
-Licensing income is usually concentrated in a few programmes and families, so this isn't a value per patent. The right-hand chart shows how different the same total looks under different splits. Those splits are illustrative, not estimates.
+Licensing income is usually concentrated in a few programmes and families, so this isn't a value per patent. Using Nokia's 26,000+ families instead gives about €62k, and yearly sales also swing with renewal cycles. The right-hand chart shows how different the same total looks under different splits. Those splits are illustrative, not estimates.

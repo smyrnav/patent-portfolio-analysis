@@ -7,6 +7,7 @@ I saw a job posting for a patent portfolio trainee at Nokia and didn't know what
 - [Assumption register](docs/assumptions.md): what the analysis assumes, and what's been tested
 - [Analysis strategy](docs/strategy.md): the decisions this analysis supports, and the plan
 - [How my approach changed](docs/approach-changes.md): why I moved from exploring to starting with decisions
+- [Twenty years of patents and money](docs/twenty-years.md): reported finances and events against the patent data
 - [The workable portfolio](docs/portfolio-filter.md): how 72,207 families become about 20,000
 - [Can I trust this data?](docs/data-trust.md): where it comes from, and where to find money data
 - [Data map](docs/data-map.md): what the data contains, and all my questions at a glance
@@ -157,6 +158,7 @@ pip install matplotlib
 python src/make_charts.py
 python src/make_data_map.py
 python src/make_scale_charts.py
+python src/make_twenty_years_chart.py
 ```
 
 To get Nokia's annual reports, set your own contact, as the SEC requires one:

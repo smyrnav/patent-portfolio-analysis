@@ -37,7 +37,7 @@ The budget has to cover:
 
 **Question:** what would the current portfolio cost to keep over the next 10 years?
 
-Patent volumes come from my [filtered portfolio](portfolio-filter.md), starting with the US and Europe. Fees come from official schedules. Internal costs are assumptions, labelled as such.
+Patent volumes come from my [filtered portfolio](portfolio-filter.md), for the US, Europe, China and Japan. Fees come from official schedules. Internal costs are assumptions, labelled as such.
 
 ### 2. Keep-or-drop model
 
@@ -111,7 +111,8 @@ One page with the recommendation, savings range, risks and how reliable each num
 
 ## Known limits
 
-- **Portfolio size:** my [filter](portfolio-filter.md) reduces 72,207 families to 19,873 granted families within 20 years, plus 5,595 possibly pending. It doesn't yet remove patents that lapsed or were sold.
+- **Portfolio size:** my [filter](portfolio-filter.md) reduces 72,207 families to 19,873 granted families within 20 years, plus 5,595 possibly pending. Nokia [reports 26,000+](twenty-years.md). The filter doesn't yet remove patents that lapsed or were sold.
+- **Focus offices:** the model covers the US, Europe, China and Japan, with [filings found by family](twenty-years.md#japan-needed-fixing).
 - **Trust:** see [how far I trust each part of the data](data-trust.md).
 - **Recent years:** publication lags filing by about 18 months, so recent trends are provisional.
 - **Patent value:** citations and family size are indicators, not measures of commercial value.
