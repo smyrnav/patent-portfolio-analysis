@@ -69,6 +69,7 @@ A rough check puts official US renewal fees at about $14.5M–$18.8M a year, or 
 - [Research design](docs/research-design.md): hypotheses and reliability rules for the central question
 - [Analysis strategy](docs/strategy.md): the plan, and the financial analysis
 - [Who leads AI and cloud networking?](docs/competitors.md): verified market positions and the comparison set
+- [Technology codebook](docs/classification-codebook.md): how optical, IP routing and data centre switching are defined and tested
 - [Twenty years of patents and money](docs/twenty-years.md): reported finances and events against the patent data
 - [The workable portfolio](docs/portfolio-filter.md): how 72,207 families were narrowed
 

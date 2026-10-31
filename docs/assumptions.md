@@ -22,6 +22,14 @@ Every assumption behind the [budget analysis](strategy.md), grouped by the decis
 | P6 | Families are the unit for inventions | Simple families | Inventions and value | Medium | Compare with extended families | Supported. New families [follow Nokia's reported inventions](twenty-years.md) |
 | P7 | The US, Europe, China and Japan are the offices that matter | Four offices | Scope of the budget | Medium | Check filing share in other offices | Chosen, not tested |
 
+## Technology: what counts as AI and cloud networking?
+
+| # | Assumption | Current value | Affects | Impact | How to test | Status |
+|---|---|---|---|---|---|---|
+| T1 | [Codebook labels](classification-codebook.md) separate the three areas reliably | Draft 0.1 | All comparisons | High | Pilot, precision and agreement tests | Not tested |
+| T2 | CPC codes find most relevant families | H04B 10, H04J 14, H04Q 11, H04L 45, H04L 49, H04L 47 | Share and growth | High | Recall test | Not tested |
+| T3 | Optical, routing and switching represent AI and cloud infrastructure | Three areas | The central question | High | Use `ai_cloud_relevance` to separate general networking | Not tested |
+
 ## Costs: what would it cost?
 
 | # | Assumption | Current value | Affects | Impact | How to test | Status |

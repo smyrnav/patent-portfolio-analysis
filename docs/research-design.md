@@ -77,7 +77,7 @@ Every finding has to pass these checks:
 
 | Check | Pass rule |
 |---|---|
-| **Classification** | Hand-label a random 100 families per area, with precision of at least 80% |
+| **Classification** | Pass the [codebook tests](classification-codebook.md#testing-the-definitions): at least 85% precision per label, and kappa of at least 0.7 |
 | **Owner matching** | Review the top names for each company, and spot-check a sample against registers |
 | **Robustness** | Same direction under a second technology definition |
 | **Unit** | Same direction in families and in US grants |
@@ -114,7 +114,7 @@ Patents show technical position, not product quality or market share. Citations 
 |---|---|---|
 | Rival R&D from annual reports | 1 | Not collected |
 | Rival patent table | 1, 2 | Not built. Check the query size first, and use only the columns needed |
-| Business unit technology definitions | 1, 2, 3 | Draft only, to be tested |
+| [Technology codebook](classification-codebook.md) | 1 | Draft, to be tested |
 | USPTO renewal and assignment records | 1, 3 | Needs a USPTO account |
 | ETSI declarations | 2, 3 | Free to export, not done yet |
 | Public licence announcements and partner lists | 2, 3 | Not collected |

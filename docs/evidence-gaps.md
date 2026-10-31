@@ -26,8 +26,8 @@ Checked against the [central research question](research-design.md):
 
 | # | Step | Why | Who | Cost |
 |---|---|---|---|---|
-| 1 | Define optical, IP routing and data centre switching, and test on 100 hand-labelled families each | Everything else depends on it | Me, then you review | About 15 MB per query |
-| 2 | Clean rival owner names, and build a rival patent table | Enables the comparison | Me | Check size first |
+| 1 | Clean rival owner names, and build a rival patent table | The sample has to cover each company | Me | Check size first |
+| 2 | Pilot, freeze and test the [technology codebook](classification-codebook.md) | Everything else depends on it | Claude first, then I label and settle disagreements | Claims up to 119 GB, or Google Patents pages for free |
 | 3 | Pull earlier R&D from rivals' annual reports | Shows the investment trend | Me, from SEC filings and Huawei's report | Free |
 | 4 | Get USPTO renewal records | Live patents, renewal rates and costs, for rivals too | **You sign in**, then me | Free |
 | 5 | Run the register spot-check on [the 35-patent sample](../data/processed/spot_check_sample.csv) | Shows the error rate | Me, with you reviewing | Free |

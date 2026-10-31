@@ -4,7 +4,7 @@
 
 1. **Patent offices** publish the records, such as the USPTO, EPO and CNIPA. These are official documents.
 2. **Data providers** collect them. The Google table is supplied by [IFI CLAIMS](https://www.ificlaims.com/news/view/blog-posts/public-patent-data-now.htm), and simple families follow the [EPO's DOCDB family identifier](https://inspire.wipo.int/node/3481).
-3. **Google** publishes the result in BigQuery. My copy of the table was last modified on 23 September 2026.
+3. **Google** publishes the result in BigQuery. The table was last modified on 23 September 2026, with filings to August 2026. Google's [example code repository was archived in April 2026](https://github.com/google/patents-public-data), so I check the table's own date rather than relying on that repository.
 4. **I filter it** with my own SQL, which is saved in [`sql/`](../sql), so anyone can check it.
 
 ## How far to trust each part
