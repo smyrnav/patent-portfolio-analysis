@@ -6,15 +6,15 @@ I saw a job posting for a patent portfolio trainee at Nokia and didn't know what
 
 This isn't affiliated with Nokia, and it uses only public data.
 
-**Status:** six questions answered. Next I'm working out which patents are still alive and what they cost to keep.
+**Status:** seven questions answered. Next I'm looking at where Nokia files, including China and Europe.
 
 ## What I've found so far
 
 | | |
 |---|---|
-| **187** | different owner names for what is mostly one corporate family |
+| **187, then 218** | owner names found, once a second search added the companies Nokia absorbed |
 | **94%** | of listings sit under just the top 10 names |
-| **About 1 in 3** | listings come through Alcatel and Alcatel-Lucent, which Nokia acquired |
+| **About 4 in 10** | listings trace back to Alcatel and Lucent, which Nokia acquired as Alcatel-Lucent |
 | **32% of names, 0.5% of listings** | the share of names that look like spelling or legal-form variants |
 | **39** | listings that matched "Nokia" but belong to Nokian Tyres |
 
@@ -91,10 +91,24 @@ The script flags 59 names as likely variants, covering 140 listings. That's a fl
 
 A further 20 names (46 listings) are marked **Needs review**. They look like joint ownership or businesses that may have been sold, such as cables and optronics. I haven't verified their histories.
 
+## Step 6: Check what the first search missed
+
+The first search looked for "Alcatel", but Alcatel merged with Lucent in 2006, and Lucent's patents don't carry the Alcatel name. So I listed the deals I knew of and [searched for the missing companies](sql/02_lineage_names.sql).
+
+![The second query and its results](docs/img/03_lineage_query.png)
+
+![Listings by origin across both searches](docs/img/lineage.png)
+
+This search taught me two more things:
+
+- **The first search had a blind spot:** it missed 10 misspelled names like `ALCALTEL LUCENT`, because they don't contain "Alcatel".
+- **Whole-word matching isn't enough:** it blocks "TRANSLUCENT", but it still finds unrelated companies like `LUCENT MEDICAL SYSTEMS` and `LUCENT BIOSCIENCES`. I marked those as unrelated by reading them, based only on their names.
+
 ## What these numbers can't tell you
 
 - **This isn't Nokia's current portfolio.** It includes expired patents and shows the name on the patent, which may be out of date after a sale or transfer.
-- **Listings aren't unique patents.** A patent with two owners counts under both, so the 28,773 total is too high.
+- **Listings aren't unique patents.** A patent with two owners counts under both, so the 34,229 total is too high.
+- **Lucent's name doesn't prove Nokia ownership.** As far as I remember, Lucent spun off Avaya and Agere, which may have taken patents with them.
 - **It's US-only.** A real portfolio spans many countries and patent families.
 - **Family assignments are my judgement.** They need checking against company records.
 
@@ -106,6 +120,7 @@ The open questions are in the [question log](docs/questions.md#open).
 
 ```bash
 python src/clean_owners.py
+python src/clean_lineage.py
 pip install matplotlib && python src/make_charts.py
 ```
 

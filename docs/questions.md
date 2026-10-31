@@ -15,6 +15,14 @@ To add one, copy this:
 
 ## Open
 
+### Q12. Where does Nokia file, including China and Europe?
+- **Why I asked:** I started with the US because it's easier, not because I knew it mattered most.
+- **How I'll look:** [count applications and patent families by country](../sql/03_filings_by_country.sql). EP is the European Patent Office, which isn't the same as the EU, and national offices like DE, FR and FI count separately.
+
+### Q13. Did Lucent's patents actually stay in the family?
+- **Why I asked:** as far as I remember, Lucent spun off Avaya and Agere, so a Lucent name may not lead to Nokia today.
+- **How I'll look:** patent assignment records for a sample of Lucent patents, and company histories.
+
 ### Q7. How many unique Nokia patents are still alive?
 - **Why I asked:** the 28,773 total counts co-owned patents twice and includes expired ones.
 - **How I'll look:** count distinct publication numbers across the cleaned names, then filter by grant date and renewal status.
@@ -32,6 +40,13 @@ To add one, copy this:
 - **How I'll look:** company histories and patent assignment records.
 
 ## Answered
+
+### Q11. Which companies' patents did the portfolio come from?
+- **Why I asked:** the first search only covered names with "Nokia" or "Alcatel", and I realised Alcatel had merged with Lucent.
+- **How I looked:** listed the deals I knew of, then [searched for the missing names](../sql/02_lineage_names.sql).
+- **Answer:** Lucent adds 4,772 listings and Infinera 705, so about 4 in 10 listings trace back to Alcatel-Lucent. This shows where listings came from, not what Nokia owns today.
+- **Tools and resources:** BigQuery, whole-word regular expressions, and my memory of the deal history, still to be checked.
+- **What it led to:** Q12 and Q13. It also found 10 misspelled Alcatel names that the first search missed, and 7 unrelated companies, such as Lucent Medical Systems, that a text search can't rule out.
 
 ### Q1. What does a patent portfolio team actually do?
 - **Why I asked:** the posting caught my eye, but I didn't know what the work is.

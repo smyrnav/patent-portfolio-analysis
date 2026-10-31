@@ -62,3 +62,23 @@ ax.set_title("A few names hold almost everything, and the rest is a long messy t
 fig.tight_layout()
 fig.savefig(IMG / "concentration.png", dpi=160)
 print(f"total={total} top3={cumulative[2]:.1f} top10={cumulative[9]:.1f} ones={ones}")
+
+# Listings by origin, across both queries
+lineage = Counter(listings)
+with (ROOT / "data/processed/lineage_mapping.csv").open(newline="") as f:
+    for r in csv.DictReader(f):
+        lineage[r["family"]] += int(r["granted_patents"])
+groups = ["Nokia", "Alcatel and Alcatel-Lucent", "Lucent", "Nokia Siemens Networks", "Infinera", "Shanghai Bell"]
+fig, ax = plt.subplots(figsize=(10, 4.2))
+ax.barh(groups, [lineage[g] for g in groups], color=[MUTED, ACCENT, ACCENT, MUTED, MUTED, MUTED], height=.62)
+ax.invert_yaxis()
+kept = sum(v for k, v in lineage.items() if not k.startswith("Not Nokia"))
+for i, g in enumerate(groups):
+    ax.text(lineage[g] + 250, i, f"{lineage[g]:,} ({lineage[g] / kept * 100:.0f}%)", va="center", fontsize=11)
+ax.set_xlim(0, max(lineage.values()) * 1.2)
+ax.xaxis.set_visible(False)
+for s in ("top", "right", "bottom"):
+    ax.spines[s].set_visible(False)
+ax.set_title("About 4 in 10 listings trace back to Alcatel-Lucent", loc="left", fontweight="bold")
+fig.tight_layout()
+fig.savefig(IMG / "lineage.png", dpi=160)
