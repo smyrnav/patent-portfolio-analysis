@@ -82,3 +82,23 @@ for s in ("top", "right", "bottom"):
 ax.set_title("About 4 in 10 listings trace back to Alcatel-Lucent", loc="left", fontweight="bold")
 fig.tight_layout()
 fig.savefig(IMG / "lineage.png", dpi=160)
+
+# Applications by patent office
+with (ROOT / "data/raw/filings_by_country.csv").open(newline="") as f:
+    offices = sorted(csv.DictReader(f), key=lambda r: -int(r["applications"]))[:9]
+labels = {"US": "United States", "EP": "European Patent Office", "WO": "International (WO), not yet a patent",
+          "CN": "China", "DE": "Germany", "JP": "Japan", "AU": "Australia", "KR": "South Korea", "CA": "Canada"}
+fig, ax = plt.subplots(figsize=(10, 4.6))
+values = [int(r["applications"]) for r in offices]
+colors = [ACCENT if r["country_code"] in ("US", "EP", "CN") else MUTED for r in offices]
+ax.barh([labels[r["country_code"]] for r in offices], values, color=colors, height=.62)
+ax.invert_yaxis()
+for i, v in enumerate(values):
+    ax.text(v + 600, i, f"{v:,}", va="center", fontsize=11)
+ax.set_xlim(0, max(values) * 1.12)
+ax.xaxis.set_visible(False)
+for s in ("top", "right", "bottom"):
+    ax.spines[s].set_visible(False)
+ax.set_title("Europe is close behind the US, and China is about 44% of the US", loc="left", fontweight="bold")
+fig.tight_layout()
+fig.savefig(IMG / "offices.png", dpi=160)

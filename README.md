@@ -6,9 +6,11 @@ I saw a job posting for a patent portfolio trainee at Nokia and didn't know what
 
 This isn't affiliated with Nokia, and it uses only public data.
 
-**Status:** seven questions answered. Next I'm looking at where Nokia files, including China and Europe.
+**Status:** eight questions answered. **Known issue:** the US totals may leave out older patents, and I'm checking that now (Q14 in the log).
 
 ## What I've found so far
+
+The US figures below come from a search that may have missed older patents, so they may change.
 
 | | |
 |---|---|
@@ -104,12 +106,22 @@ This search taught me two more things:
 - **The first search had a blind spot:** it missed 10 misspelled names like `ALCALTEL LUCENT`, because they don't contain "Alcatel".
 - **Whole-word matching isn't enough:** it blocks "TRANSLUCENT", but it still finds unrelated companies like `LUCENT MEDICAL SYSTEMS` and `LUCENT BIOSCIENCES`. I marked those as unrelated by reading them, based only on their names.
 
+## Step 7: Look beyond the US
+
+[This query](sql/03_filings_by_country.sql) counts applications by patent office ([results](data/raw/filings_by_country.csv)).
+
+![Applications by patent office](docs/img/offices.png)
+
+It also taught me to distrust a column: grant dates can't be compared across countries. Japan shows 0 granted applications and Austria shows 99.8%, which says more about the data than about Nokia.
+
+And it exposed a possible mistake of mine. It found 43,674 granted US applications, more than my earlier searches. I think filtering on kind codes starting with B dropped older US patents, so I'm [checking that](sql/04_check_us_kind_codes.sql).
+
 ## What these numbers can't tell you
 
 - **This isn't Nokia's current portfolio.** It includes expired patents and shows the name on the patent, which may be out of date after a sale or transfer.
 - **Listings aren't unique patents.** A patent with two owners counts under both, so the 34,229 total is too high.
 - **Lucent's name doesn't prove Nokia ownership.** As far as I remember, Lucent spun off Avaya and Agere, which may have taken patents with them.
-- **It's US-only.** A real portfolio spans many countries and patent families.
+- **The name searches are US-only.** Step 7 shows how much sits elsewhere.
 - **Family assignments are my judgement.** They need checking against company records.
 
 ## Next steps

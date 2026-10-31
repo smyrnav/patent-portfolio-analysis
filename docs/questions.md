@@ -15,9 +15,10 @@ To add one, copy this:
 
 ## Open
 
-### Q12. Where does Nokia file, including China and Europe?
-- **Why I asked:** I started with the US because it's easier, not because I knew it mattered most.
-- **How I'll look:** [count applications and patent families by country](../sql/03_filings_by_country.sql). EP is the European Patent Office, which isn't the same as the EU, and national offices like DE, FR and FI count separately.
+### Q14. Did my first two searches miss older US patents?
+- **Why I asked:** the country query found 43,674 granted US applications, more than the 34,229 listings from my earlier searches, even though those double-count some patents.
+- **How I'll look:** [count US patents by kind code](../sql/04_check_us_kind_codes.sql). I filtered on kind codes starting with B, and I believe older US patents use A.
+- **Until then:** treat the US totals and origin shares from Q5, Q6 and Q11 as incomplete, especially Lucent.
 
 ### Q13. Did Lucent's patents actually stay in the family?
 - **Why I asked:** as far as I remember, Lucent spun off Avaya and Agere, so a Lucent name may not lead to Nokia today.
@@ -40,6 +41,13 @@ To add one, copy this:
 - **How I'll look:** company histories and patent assignment records.
 
 ## Answered
+
+### Q12. Where does Nokia file, including China and Europe?
+- **Why I asked:** I started with the US because it's easier, not because I knew it mattered most.
+- **How I looked:** [counted applications and patent families by office](../sql/03_filings_by_country.sql).
+- **Answer:** US 56,039, European Patent Office 44,353, China 24,662, and Germany 13,141. The US is the largest, but Europe is close, so starting with the US was reasonable but tells only part of the story.
+- **Tools and resources:** BigQuery. EP is the European Patent Office rather than the EU, and WO filings aren't patents yet.
+- **What it led to:** Q14, and a warning that grant dates can't be compared across countries. Japan shows 0 granted, while Austria shows 99.8%.
 
 ### Q11. Which companies' patents did the portfolio come from?
 - **Why I asked:** the first search only covered names with "Nokia" or "Alcatel", and I realised Alcatel had merged with Lucent.
