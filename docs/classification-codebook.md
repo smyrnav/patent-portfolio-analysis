@@ -84,7 +84,7 @@ Google's table has US full text, while [other offices may only have bibliographi
 
 ## Check of the draft's 16 examples
 
-I checked all 16 on Google Patents, reading each patent's first claim. [Each result and link is logged](../data/processed/draft_examples_check.csv).
+I checked all 16 on Google Patents, reading each patent's first claim, and its dependent claims where the draft's reasoning relied on them. [Each result and link is logged](../data/processed/draft_examples_check.csv).
 
 | Check | Result |
 |---|---|
@@ -92,6 +92,5 @@ I checked all 16 on Google Patents, reading each patent's first claim. [Each res
 | My label agrees | 14 of 16, including the one the draft left as OPT or REVIEW |
 | Hedged label resolved | 1: US20250119395A1 is IPR, as its claim is about BGP sessions |
 | Disagree | 1: US9866474B2 is REVIEW, as it claims switch management rather than switching |
-| Reasoning wrong, label holds | 1: US20210058685A1's first claim doesn't mention optical components or reshufflers |
 
-**This doesn't validate the codebook.** It's a small hand-picked set, labelled by one reader from first claims only. It's also unbalanced: 10 of the 16 are Ciena's, 2 each are Nokia's and Cisco's, 1 each are Tigera's and Quanta's, and none are Arista's.
+**This doesn't validate the codebook.** It's a small hand-picked set, labelled by one reader, mostly from first claims. It's also unbalanced: 10 of the 16 are Ciena's, 2 each are Nokia's and Cisco's, 1 each are Tigera's and Quanta's, and none are Arista's.
