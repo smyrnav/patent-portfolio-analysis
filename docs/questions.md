@@ -15,10 +15,9 @@ To add one, copy this:
 
 ## Open
 
-### Q14. Did my first two searches miss older US patents?
-- **Why I asked:** the country query found 43,674 granted US applications, more than the 34,229 listings from my earlier searches, even though those double-count some patents.
-- **How I'll look:** [count US patents by kind code](../sql/04_check_us_kind_codes.sql). I filtered on kind codes starting with B, and I believe older US patents use A.
-- **Until then:** treat the US totals and origin shares from Q5, Q6 and Q11 as incomplete, especially Lucent.
+### Q15. What do the origin shares look like once older patents are included?
+- **Why I asked:** Q14 showed that my first searches missed 8,808 older patents.
+- **How I'll look:** rerun the name search [for all years](../sql/05_owner_names_all_years.sql).
 
 ### Q13. Did Lucent's patents actually stay in the family?
 - **Why I asked:** as far as I remember, Lucent spun off Avaya and Agere, so a Lucent name may not lead to Nokia today.
@@ -41,6 +40,13 @@ To add one, copy this:
 - **How I'll look:** company histories and patent assignment records.
 
 ## Answered
+
+### Q14. Did my first two searches miss older US patents?
+- **Why I asked:** the country query found 43,674 granted US applications, more than the 34,229 listings from my earlier searches, even though those double-count some patents.
+- **How I looked:** [counted US patents by kind code](../sql/04_check_us_kind_codes.sql) ([results](../data/raw/us_kind_codes.csv)).
+- **Answer:** yes. Filtering on B dropped 8,808 A patents, the last granted in December 2000, plus 1,609 design patents and 123 reissues. So the totals and shares from Q5, Q6 and Q11 are too low or incomplete.
+- **Tools and resources:** BigQuery, and comparing totals from two different queries.
+- **What it led to:** Q15. Design patents protect how a product looks, so they need separate treatment in any technology analysis.
 
 ### Q12. Where does Nokia file, including China and Europe?
 - **Why I asked:** I started with the US because it's easier, not because I knew it mattered most.

@@ -6,11 +6,11 @@ I saw a job posting for a patent portfolio trainee at Nokia and didn't know what
 
 This isn't affiliated with Nokia, and it uses only public data.
 
-**Status:** eight questions answered. **Known issue:** the US totals may leave out older patents, and I'm checking that now (Q14 in the log).
+**Status:** nine questions answered. **Known issue:** the US totals below leave out 8,808 older patents, and I'm rerunning them (Q15 in the log).
 
 ## What I've found so far
 
-The US figures below come from a search that may have missed older patents, so they may change.
+The US figures below come from a search that missed older patents, so they will change.
 
 | | |
 |---|---|
@@ -114,7 +114,7 @@ This search taught me two more things:
 
 It also taught me to distrust a column: grant dates can't be compared across countries. Japan shows 0 granted applications and Austria shows 99.8%, which says more about the data than about Nokia.
 
-And it exposed a possible mistake of mine. It found 43,674 granted US applications, more than my earlier searches. I think filtering on kind codes starting with B dropped older US patents, so I'm [checking that](sql/04_check_us_kind_codes.sql).
+It also exposed a mistake in my earlier searches. It found 43,674 granted US applications, more than those searches did. [A check](sql/04_check_us_kind_codes.sql) confirmed that filtering on kind codes starting with B dropped 8,808 older patents, the last granted in December 2000, so I'm [rerunning the name search](sql/05_owner_names_all_years.sql).
 
 ## What these numbers can't tell you
 
