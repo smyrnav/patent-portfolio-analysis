@@ -16,23 +16,35 @@ No single company leads. The leader changes by segment, and Nokia's strongest pu
 | Data centre Ethernet, 2Q 2026 | NVIDIA 20.4%, Arista 18.7%, Cisco 18.2% | [IDC](https://www.idc.com/resource-center/blog/ethernet-switch-market-surges-43-4-to-18-9b-in-2q26-as-ai-infrastructure-demand-drives-record-datacenter-spending/) |
 | Ethernet AI back-end, 2Q 2026 | Celestica, NVIDIA, Arista, Cisco, in that order | [Dell'Oro](https://www.delloro.com/news/ai-back-end-networks-switch-sales-surpass-front-end-networks-for-the-first-time-in-2q2026/) |
 
-## How fast is each company growing in AI and cloud?
+## Investment position
 
-**What this measures:** each company's latest sales in the area, against **its own sales a year earlier**. It shows momentum within a company, not who is bigger, because each company defines its figure differently.
+**Question this answers:** how much of each company's business depends on AI and cloud, and is it putting more into R&D as sales grow?
 
-| Company | What's counted | Period | Sales | Change on a year earlier | Source |
-|---|---|---|---:|---:|---|
-| **Nokia** | Sales to AI and cloud customers | July–September 2026 | €631M | +126% reported, +123% at constant currency | [Nokia Q3 report](https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm) |
-| **Ciena** | Sales to cloud providers | Fiscal Q3 2026 | About $885M (53% of [$1.67B](https://www.sec.gov/Archives/edgar/data/936395/000162828026060245/ex9912026q3earningspressre.htm)) | +82% | [Ciena presentation](https://s25.q4cdn.com/550667411/files/content_files/Ex-99-2-2026-Q3-Earnings-Presentation_FINAL-1.pdf) |
-| **NVIDIA** | Ethernet switch sales | April–June 2026 | $2.5B | +181.1% | [IDC](https://www.idc.com/resource-center/blog/ethernet-switch-market-surges-43-4-to-18-9b-in-2q26-as-ai-infrastructure-demand-drives-record-datacenter-spending/) |
-| **Arista** | Ethernet switch sales, about 91% data centre | April–June 2026 | $2.5B | +37.6% | [IDC](https://www.idc.com/resource-center/blog/ethernet-switch-market-surges-43-4-to-18-9b-in-2q26-as-ai-infrastructure-demand-drives-record-datacenter-spending/) |
-| **Cisco** | AI infrastructure sales | Full fiscal 2026 | About $4B | Not in the source I checked | [Cisco Q4 results](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/cisco-reports-fourth-quarter-earnings.html) |
+![Sales are growing faster than R&D at all four](img/investment_position.png)
 
-Cisco's row covers a full year, while the others cover one quarter, so its sales can't be compared with theirs directly.
+| Company | Scope and period | R&D as % of sales | Year earlier | R&D growth | Sales growth | Source |
+|---|---|---:|---:|---:|---:|---|
+| **Nokia** | Network Infrastructure, Q3 2026 | 18.4% | 21.2% | +1% | +17% | [Nokia Q3 report](https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm) |
+| **Nokia** | Whole group, Q3 2026 | 24.3% | 24.6% | +8% | +10% | [Nokia Q3 report](https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm) |
+| **Ciena** | Whole company, quarter to 1 August 2026 | 14.2% | 17.4% | +12% | +37% | [Ciena results](https://www.sec.gov/Archives/edgar/data/936395/000162828026060245/ex9912026q3earningspressre.htm) |
+| **Arista** | Whole company, Q2 2026 | 11.5% | 13.4% | +17% | +38% | [Arista 10-Q](https://www.sec.gov/Archives/edgar/data/1596532/000159653226000175/) |
+| **Cisco** | Whole company, fiscal 2026 | 15.1% | 16.4% | +3% | +12% | [Cisco results](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/cisco-reports-fourth-quarter-earnings.html) |
 
-**What it shows:** Nokia's growth is high, partly because it starts from a smaller base of about €279M, which I calculated from its reported growth. Its AI and cloud sales are about 12% of [group sales of €5,154M](https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm).
+| Company | AI or cloud measure | As % of sales | Source |
+|---|---|---:|---|
+| **Ciena** | Cloud provider revenue | 53% | [Ciena presentation](https://s25.q4cdn.com/550667411/files/content_files/Ex-99-2-2026-Q3-Earnings-Presentation_FINAL-1.pdf) |
+| **Nokia** | Sales to AI and cloud customers | 12% | [Nokia Q3 report](https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm) |
+| **Cisco** | AI infrastructure revenue, fiscal 2026 | 6% | [Cisco results](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/cisco-reports-fourth-quarter-earnings.html) |
 
-**Other figures:** Nokia took [€1.5B of AI and cloud orders](https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm) in the quarter, with order intake up 118%. Cisco took [$9.3B of AI infrastructure orders](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/cisco-reports-fourth-quarter-earnings.html) in fiscal 2026. Arista's whole-company revenue was [$3.036B, up 37.7%](https://www.arista.com/company/news/press-release/24401-pr-20260804).
+**What it shows:**
+
+- **Nokia's network R&D barely moved:** it rose 1% while segment sales rose 17%. Of the four, it's the lowest R&D growth, though Cisco's +3% covers a full year.
+- **Everyone's R&D share fell:** demand is growing faster than R&D at all four, so a falling share doesn't by itself mean underinvestment.
+- **Nokia is much less exposed to AI and cloud than Ciena:** 12% of sales against 53%. That could mean more room to grow, or a weaker position, and patents can help test which.
+
+**What it can't show:** these aren't fully like for like. Nokia's segment figure uses comparable R&D and excludes group-level items, the others are whole companies, the periods differ, and each company defines its AI or cloud figure in its own way. Total R&D also isn't R&D on AI and cloud.
+
+**What to test next:** whether Nokia's optical and IP patent filings are growing as fast as its rivals' while its segment R&D is flat.
 
 ## Sanity check of the draft analysis
 

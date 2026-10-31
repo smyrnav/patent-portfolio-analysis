@@ -1,0 +1,6 @@
+company,scope,period,currency,sales_m,sales_prior_m,rnd_m,rnd_prior_m,ai_cloud_sales_m,ai_cloud_label,source
+Nokia,Network Infrastructure segment (comparable R&D),Q3 2026,EUR,2158,1850,396,392,,,https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm
+Nokia,Whole group (reported),Q3 2026,EUR,5154,4700,1251,1155,631,Sales to AI and cloud customers,https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm
+Ciena,Whole company (GAAP),Quarter to 1 Aug 2026,USD,1671.129,1219.385,236.673,211.898,885,Cloud provider revenue at 53%,https://www.sec.gov/Archives/edgar/data/936395/000162828026060245/ex9912026q3earningspressre.htm
+Arista,Whole company (GAAP),Q2 2026,USD,3035.7,2204.8,348.2,296.5,,,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000175/
+Cisco,Whole company (GAAP),Fiscal 2026,USD,63325,56654,9563,9300,4000,AI infrastructure revenue,https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/cisco-reports-fourth-quarter-earnings.html

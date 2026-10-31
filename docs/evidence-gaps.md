@@ -16,7 +16,7 @@ Checked against the [central research question](research-design.md):
 | **Market coverage** | Filings in the US, Europe, China and Japan | 🟡 [Totals exist](twenty-years.md), not by area | ❌ | Same as above |
 | **What Infinera added** | Nokia with and without Infinera | 🟡 Names identified | N/A | Technology definitions, ownership check |
 | **Live and owned patents** | Renewals and transfers | ❌ | ❌ | USPTO renewal and assignment records |
-| **Investment: R&D** | R&D spending by year | ✅ [20 years](twenty-years.md) | ❌ | Ciena, Cisco and Arista filings, and Huawei's report |
+| **Investment: R&D** | R&D spending by year | ✅ [20 years](twenty-years.md) | 🟡 [Latest period](competitors.md#investment-position) | Earlier years for rivals, and Huawei's report |
 | **Investment: AI and cloud** | Sales and orders | 🟡 [Latest quarter](competitors.md) | 🟡 [Latest period](competitors.md) | Earlier years, where reported |
 | **Investment: patent cost** | Fees and renewal behaviour | 🟡 US fees and [rough check](strategy.md#early-answer-are-fees-big-enough-to-matter) | ❌ | Renewal rates, and fees for Europe, China and Japan |
 | **Strategic lessons** | Findings tied to decisions | ❌ | ❌ | Depends on everything above |
@@ -28,7 +28,7 @@ Checked against the [central research question](research-design.md):
 |---|---|---|---|---|
 | 1 | Define optical, IP routing and data centre switching, and test on 100 hand-labelled families each | Everything else depends on it | Me, then you review | About 15 MB per query |
 | 2 | Clean rival owner names, and build a rival patent table | Enables the comparison | Me | Check size first |
-| 3 | Pull R&D from rivals' annual reports | Answers the investment side | Me, from SEC filings and Huawei's report | Free |
+| 3 | Pull earlier R&D from rivals' annual reports | Shows the investment trend | Me, from SEC filings and Huawei's report | Free |
 | 4 | Get USPTO renewal records | Live patents, renewal rates and costs, for rivals too | **You sign in**, then me | Free |
 | 5 | Run the register spot-check on [the 35-patent sample](../data/processed/spot_check_sample.csv) | Shows the error rate | Me, with you reviewing | Free |
 | 6 | Collect European, Chinese and Japanese fees | Completes the cost model | Me | Free |

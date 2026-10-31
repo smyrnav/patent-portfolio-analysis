@@ -68,4 +68,7 @@ def fee_spread(rates):
 
 check("mean and median fees at high renewal", fee_spread((0.9, 0.8, 0.7)), (9017, 14470))
 check("mean and median fees at low renewal", fee_spread((0.8, 0.6, 0.4)), (5249, 2150))
+inv = {r["scope"][:5] + r["company"]: r for r in rows("data/processed/investment_position.csv")}
+net = inv["NetwoNokia"]
+check("Nokia segment R&D share, %", round(float(net["rnd_m"]) / float(net["sales_m"]) * 100, 1), 18.4)
 print("All checks passed.")

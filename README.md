@@ -97,6 +97,7 @@ python src/make_data_map.py
 python src/make_scale_charts.py
 python src/make_twenty_years_chart.py
 python src/make_competitor_chart.py
+python src/make_investment_chart.py
 ```
 
 To get Nokia's annual reports, set your own contact, as the SEC requires one:
