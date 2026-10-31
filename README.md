@@ -2,7 +2,11 @@
 
 **I'm doing this project to apply for Nokia's [Financial Data Engineering / Business Data Analytics Trainee — Patent Portfolio Management](https://www.linkedin.com/jobs/view/4483030441) traineeship, in the Business Data Analytics track.**
 
-I didn't know what patent portfolio work involves, so this repo documents me teaching myself. It focuses on the track's core problem: how to allocate a limited patent budget.
+## Central research question
+
+> How does Nokia's patent portfolio and associated investment position compare with the leading competitors in AI and cloud infrastructure networking, and what strategic and financial lessons can be identified?
+
+I didn't know what patent portfolio work involves, so this repo documents me teaching myself. After a couple of hours of exploring the data, testing questions and learning the field, I'd learned enough to zoom in on this question.
 
 It also shows how I work:
 
@@ -16,6 +20,7 @@ It also shows how I work:
 **To get oriented:**
 - [Working principles](docs/principles.md): the posting's expectations, how I apply them and where I fall short
 - [Assumption register](docs/assumptions.md): what the analysis assumes, and what's been tested
+- [Who leads AI and cloud networking?](docs/competitors.md): verified market positions and the comparison set
 - [Research design](docs/research-design.md): the three priority questions, hypotheses and reliability rules
 - [Analysis strategy](docs/strategy.md): the decisions this analysis supports, and the plan
 - [How my approach changed](docs/approach-changes.md): why I moved from exploring to starting with decisions
@@ -31,7 +36,7 @@ The rest of this page walks through the work with screenshots.
 
 This isn't affiliated with Nokia, and it uses only public data.
 
-**Status:** I've narrowed 72,207 families filed in the last 30 years to a [workable portfolio](docs/portfolio-filter.md) of **19,873 granted families**, plus 5,595 possibly pending. Next I'm building [the budget model](docs/strategy.md): a cost forecast, keep-or-drop analysis, scenarios and sensitivities.
+**Status:** I've narrowed 72,207 families filed in the last 30 years to a [workable portfolio](docs/portfolio-filter.md) of **19,873 granted families**, plus 5,595 possibly pending. Next I'm comparing patent positions against [the market leaders](docs/competitors.md), using the [research design](docs/research-design.md).
 
 ## What I've found so far
 
@@ -171,6 +176,7 @@ python src/make_charts.py
 python src/make_data_map.py
 python src/make_scale_charts.py
 python src/make_twenty_years_chart.py
+python src/make_competitor_chart.py
 ```
 
 To get Nokia's annual reports, set your own contact, as the SEC requires one:

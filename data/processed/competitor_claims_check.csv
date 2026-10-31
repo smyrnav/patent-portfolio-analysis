@@ -1,0 +1,19 @@
+claim,company,stated_value,checked_value,status,period,source
+AI and cloud customer sales growth,Nokia,+123%,+123% at constant currency; +126% reported,Confirmed,Q3 2026,https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm
+AI and cloud order intake growth,Nokia,+118%,+118%,Confirmed,Q3 2026,https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm
+New AI and cloud orders,Nokia,EUR 1.5B,EUR 1.5B,Confirmed,Q3 2026,https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm
+Total revenue growth,Ciena,+37%,$1.67B and +37%,Confirmed,Fiscal Q3 2026,https://www.sec.gov/Archives/edgar/data/936395/000162828026060245/ex9912026q3earningspressre.htm
+Cloud provider revenue,Ciena,+82% and 53% of revenue,+82% and 53% of revenue,Confirmed,Fiscal Q3 2026,https://s25.q4cdn.com/550667411/files/content_files/Ex-99-2-2026-Q3-Earnings-Presentation_FINAL-1.pdf
+Global leader in data centre interconnect,Ciena,Leader,#1 in its own deck citing Dell'Oro; excludes China,Company claim,Q1 2026,https://www.sec.gov/Archives/edgar/data/0000936395/000162828026040614/ex9922026q2earningsprese.htm
+Top optical DCI vendors,Ciena; Nokia; Cisco,Top three,Top three reported by trade press,Secondary,2025,https://www.sdxcentral.com/news/huawei-ciena-and-nokia-lead-16b-optical-transport-rebound-as-dci-surges/
+AI infrastructure orders,Cisco,$9.3B,$9.3B,Confirmed,FY2026,https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/cisco-reports-fourth-quarter-earnings.html
+AI infrastructure revenue,Cisco,$4B,About $4B,Confirmed,FY2026,https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/cisco-reports-fourth-quarter-earnings.html
+Total Ethernet switching share,Cisco,28.7% and #1,28.7% and #1,Confirmed,2Q 2026,https://www.idc.com/resource-center/blog/ethernet-switch-market-surges-43-4-to-18-9b-in-2q26-as-ai-infrastructure-demand-drives-record-datacenter-spending/
+Router share,Cisco,34.7% and #1,34.7%,Confirmed,2Q 2026,https://www.idc.com/resource-center/blog/ethernet-switch-market-surges-43-4-to-18-9b-in-2q26-as-ai-infrastructure-demand-drives-record-datacenter-spending/
+Data centre Ethernet share,Cisco,18.2%,18.2%,Confirmed,2Q 2026,https://www.idc.com/resource-center/blog/ethernet-switch-market-surges-43-4-to-18-9b-in-2q26-as-ai-infrastructure-demand-drives-record-datacenter-spending/
+Data centre Ethernet share,Arista,18.7%,18.7%,Confirmed,2Q 2026,https://www.idc.com/resource-center/blog/ethernet-switch-market-surges-43-4-to-18-9b-in-2q26-as-ai-infrastructure-demand-drives-record-datacenter-spending/
+Company revenue,Arista,$2.5B and +37.6%,$3.036B and +37.7%; the $2.5B and +37.6% are Ethernet switch revenue,Wrong label,2Q 2026,https://www.arista.com/company/news/press-release/24401-pr-20260804
+AI back-end switching rank,Arista,Third,Third; Celestica first and NVIDIA second,Confirmed,2Q 2026,https://www.delloro.com/news/ai-back-end-networks-switch-sales-surpass-front-end-networks-for-the-first-time-in-2q2026/
+Largest optical transport vendor,Huawei,#1 with Nokia third,Huawei first; Ciena second; Nokia third,Secondary,2025,https://www.sdxcentral.com/news/huawei-ciena-and-nokia-lead-16b-optical-transport-rebound-as-dci-surges/
+Router share,Huawei,29.9%,29.9%,Confirmed,2Q 2026,https://www.idc.com/resource-center/blog/ethernet-switch-market-surges-43-4-to-18-9b-in-2q26-as-ai-infrastructure-demand-drives-record-datacenter-spending/
+Data centre Ethernet share,NVIDIA,20.4% and #1,20.4% and #1,Confirmed,2Q 2026,https://www.idc.com/resource-center/blog/ethernet-switch-market-surges-43-4-to-18-9b-in-2q26-as-ai-infrastructure-demand-drives-record-datacenter-spending/

@@ -1,6 +1,8 @@
 # Data map
 
-Where the project stands, which data feeds which work and what's missing. The question being answered is [how to allocate a limited patent budget](strategy.md).
+Where the project stands, which data feeds which work and what's missing.
+
+**Central question:** How does Nokia's patent portfolio and associated investment position compare with the leading competitors in AI and cloud infrastructure networking, and what strategic and financial lessons can be identified?
 
 ## How the data fits together
 
@@ -61,7 +63,8 @@ I've analysed 8 of its 37 fields. My working table also holds inventors, technol
 
 | Work | Status |
 |---|---|
-| [Research design](research-design.md) for three priorities | Written, analysis not started |
+| [Research design](research-design.md) for the central question | Written, analysis not started |
+| [Market leaders and comparison set](competitors.md) | Checked against sources, patent comparison not started |
 | [Workable portfolio](portfolio-filter.md) | Built, with lapsed and sold patents still to remove |
 | [Twenty years of patents and money](twenty-years.md) | Built |
 | Register spot-check | [Sample of 35 drawn](../data/processed/spot_check_sample.csv), checks not done |

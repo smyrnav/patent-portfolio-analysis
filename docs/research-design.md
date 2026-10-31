@@ -1,6 +1,22 @@
 # Research design
 
-Metrics only matter if they can change a decision. This page sets the three questions, what would count as an answer and how reliable each answer can be from public data. I fix these rules before seeing the results.
+## Central research question
+
+> How does Nokia's patent portfolio and associated investment position compare with the leading competitors in AI and cloud infrastructure networking, and what strategic and financial lessons can be identified?
+
+Priority 1 below is the main analysis. Priorities 2 and 3 are later extensions, and only happen if Priority 1 passes its checks.
+
+**What each part means:**
+
+| Part of the question | How I'll answer it |
+|---|---|
+| Patent portfolio | Inventions, growth, age and market coverage in optical and IP networking |
+| Investment position | Reported R&D and AI and cloud figures, plus renewal cost estimates |
+| Leading competitors | [Ciena, Cisco and Arista, with Huawei as a benchmark](competitors.md) |
+| Strategic lessons | Findings that pass the checks below, each with a decision |
+| Financial lessons | What each finding changes about the [patent budget](strategy.md) |
+
+Metrics only matter if they can change a decision. This page sets what would count as an answer and how reliable each answer can be from public data. I fix these rules before seeing the results.
 
 ## What each priority can deliver
 
@@ -25,7 +41,7 @@ All three feed the [budget question](strategy.md): each ends by saying what it w
 | H3: Part of Nokia's cover is ageing without enough replacement | Families reaching 20 years by 2036, against new families | New families outnumber expiring ones in each area |
 | H4: Cover in the main markets has gaps | Share of families in the US, Europe, China and Japan, against rivals | Coverage matches rivals' in each market |
 
-**Comparison set:** to be confirmed against company reports, starting with Ciena, Cisco, Huawei, Arista, Juniper and ZTE. Owner names need the same cleaning I used for Nokia, and deals such as Cisco's Acacia must be handled explicitly.
+**Comparison set:** [Ciena, Cisco and Arista, with Huawei as a benchmark](competitors.md). Owner names need the same cleaning I used for Nokia, and deals such as Cisco's Acacia must be handled explicitly.
 
 **Output:** a heatmap of technology areas against companies, showing share and growth, then a short list of gaps ranked by size, confidence and link to the business.
 
@@ -96,6 +112,7 @@ Patents show technical position, not product quality or market share. Citations 
 
 | Data | Priority | Status |
 |---|---|---|
+| Rival R&D from annual reports | 1 | Not collected |
 | Rival patent table | 1, 2 | Not built. Check the query size first, and use only the columns needed |
 | Business unit technology definitions | 1, 2, 3 | Draft only, to be tested |
 | USPTO renewal and assignment records | 1, 3 | Needs a USPTO account |

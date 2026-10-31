@@ -6,9 +6,11 @@ This is an outside view. It uses public data and clearly labelled assumptions, n
 
 This work follows the posting's [expectations for how people work](principles.md). The priority questions and their reliability rules are in the [research design](research-design.md).
 
-## The central problem
+## The central research question
 
-> Nokia has a limited annual budget for patent portfolio management. How should it be allocated to get the most strategic and economic value from the portfolio?
+> How does Nokia's patent portfolio and associated investment position compare with the leading competitors in AI and cloud infrastructure networking, and what strategic and financial lessons can be identified?
+
+The financial side comes down to one problem: with a limited patent budget, how should it be allocated to get the most strategic and economic value?
 
 The budget has to cover:
 
