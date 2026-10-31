@@ -12,17 +12,17 @@ The rest of this page walks through the work with screenshots.
 
 This isn't affiliated with Nokia, and it uses only public data.
 
-**Status:** ten questions answered. I've built a working table of **72,207 inventions filed in the last 30 years**, across 64 patent offices. **Known issue:** the US totals below predate it and leave out 8,808 older patents.
+**Status:** ten questions answered. I've built a working table of **72,207 inventions filed in the last 30 years**, across 64 patent offices. **Known issue:** the name counts and charts in Steps 4–6 come from my first searches, which missed 8,808 older US patents. I'm keeping them as a record of what I found at the time, and they'll be recounted from the working table.
 
 ## What I've found so far
 
-The US figures below come from a search that missed older patents, so they will change once I recount from the working table.
+These figures come from my first searches, which missed older US patents, so they will change once I recount from the working table. The corrected search made `LUCENT TECHNOLOGIES INC` the largest single name, with 9,310 patents.
 
 | | |
 |---|---|
 | **187, then 218** | owner names found, once a second search added the companies Nokia absorbed |
 | **94%** | of listings sit under just the top 10 names |
-| **About 4 in 10** | listings trace back to Alcatel and Lucent, which Nokia acquired as Alcatel-Lucent |
+| **About 4 in 10** | listings, before the correction, trace back to Alcatel and Lucent, which Nokia acquired as Alcatel-Lucent |
 | **32% of names, 0.5% of listings** | the share of names that look like spelling or legal-form variants |
 | **39** | listings that matched "Nokia" but belong to Nokian Tyres |
 
@@ -61,7 +61,7 @@ The main table is `patents-public-data.patents.publications`, with about 173.5 m
 
 ![The first query and its results](docs/img/02_first_query.png)
 
-I expected a short list and got 187 names ([raw results](data/raw/owner_counts.csv)).
+The search found 187 names ([raw results](data/raw/owner_counts.csv)).
 
 ## Step 5: Find out what the results mean
 
@@ -107,6 +107,8 @@ The first search looked for "Alcatel", but Alcatel merged with Lucent in 2006, a
 
 ![Listings by origin across both searches](docs/img/lineage.png)
 
+This chart comes before the older-patent correction, so Lucent and older Alcatel names are understated.
+
 This search taught me two more things:
 
 - **The first search had a blind spot:** it missed 10 misspelled names like `ALCALTEL LUCENT`, because they don't contain "Alcatel".
@@ -120,7 +122,17 @@ This search taught me two more things:
 
 It also taught me to distrust a column: grant dates can't be compared across countries. Japan shows 0 granted applications and Austria shows 99.8%, which says more about the data than about Nokia.
 
-It also exposed a mistake in my earlier searches. It found 43,674 granted US applications, more than those searches did. [A check](sql/04_check_us_kind_codes.sql) confirmed that filtering on kind codes starting with B dropped 8,808 older patents, the last granted in December 2000, so I'm [rerunning the name search](sql/05_owner_names_all_years.sql).
+It also exposed a mistake in my earlier searches. It found 43,674 granted US applications, more than those searches did. [A check](sql/04_check_us_kind_codes.sql) confirmed that filtering on kind codes starting with B dropped 8,808 older patents, the last granted in December 2000, so I [reran the name search](sql/05_owner_names_all_years.sql) ([top 20 names](data/raw/owner_counts_all_years_top20.csv)). `LUCENT TECHNOLOGIES INC` rose from 4,757 to 9,310 patents.
+
+## Step 8: Build a working table
+
+I then [built my own table](sql/06_create_portfolio_30y.sql) of everything filed since November 1996, across all offices, so later questions don't have to rescan the 2.88 TB source. [A check](sql/07_check_portfolio_30y.sql) found 72,207 inventions from 212,660 applications. Citations are missing on 49% of publications, so they need care ([results](data/raw/portfolio_30y_check.csv)).
+
+## Step 9: Change approach
+
+At this point I was running queries without a clear purpose, so I stopped and [changed my approach](docs/approach-changes.md). The [analysis strategy](docs/strategy.md) now starts from the decisions the work should support.
+
+![What this data can answer for the business](docs/img/question_map.png)
 
 ## What these numbers can't tell you
 
@@ -132,17 +144,20 @@ It also exposed a mistake in my earlier searches. It found 43,674 granted US app
 
 ## Next steps
 
-The open questions are in the [question log](docs/questions.md#open).
+The plan is in the [analysis strategy](docs/strategy.md), and smaller open questions are in the [question log](docs/questions.md#open).
 
 ## Run it yourself
 
 ```bash
 python src/clean_owners.py
 python src/clean_lineage.py
-pip install matplotlib && python src/make_charts.py
+pip install matplotlib
+python src/make_charts.py
+python src/make_data_map.py
+python src/make_question_map.py
 ```
 
-To refresh the raw data, run [the SQL](sql/01_owner_names.sql) in BigQuery and export it to `data/raw/owner_counts.csv`.
+The queries are in [`sql/`](sql), numbered in the order I ran them. The working table expires after 60 days in the BigQuery sandbox, so rerun [the build query](sql/06_create_portfolio_30y.sql) to restore it.
 
 ## How this was made
 

@@ -26,14 +26,14 @@ Blue steps have been started, and grey steps haven't. The owner step is still be
 | Group | What it tells me | Used so far | Questions it could answer |
 |---|---|---|---|
 | **Identity** | The patent, office, type and family | Yes | Where was it filed? How many inventions are there, not just filings? |
-| **Dates** | Filing and grant timing | Partly | How has filing changed over time? Did it change after a deal? |
+| **Dates** | Filing and grant timing | Partly | When could protection run out? Is new invention replacing it? |
 | **People and owners** | Owner names and inventors | Owners analysed, inventors in my table | Whose name is on it? Who are the most prolific inventors? |
-| **Technology codes** | Classification of the invention | In my table | Did Nokia shift from phones to networks? |
+| **Technology codes** | Classification of the invention | In my table | Which technologies could lose protection soonest? |
 | **Written content** | Titles, abstracts, claims and full text | Titles and abstracts in my table | What are the patents about in plain words? |
 | **Links** | Citations and related filings | Citations in my table | Which patents do others build on? |
 | **Office details** | Examining unit and applicant size status | Not yet | I haven't looked at these yet |
 
-I've only analysed 7 of the 37 fields so far, though my working table now holds more of them. The groupings and descriptions are my own, based on the field names, so some may change once I look more closely.
+I've only analysed 8 of the 37 fields so far, though my working table now holds more of them. The groupings and descriptions are my own, based on the field names, so some may change once I look more closely.
 
 ## What the sources cover
 
@@ -51,6 +51,8 @@ I've only analysed 7 of the 37 fields so far, though my working table now holds 
 I've only used the Google table so far. The USPTO and ETSI columns reflect what I expect to find, and I haven't opened those sources yet.
 
 ## My questions at a glance
+
+The business questions I'm working towards are in the [analysis strategy](strategy.md).
 
 ### Answered
 
@@ -79,7 +81,6 @@ I've only used the Google table so far. The USPTO and ETSI columns reflect what 
 
 ### Ideas not started
 
-- How did Nokia's invention focus change over time, by technology and country?
 - Does Nokia keep Alcatel's patents as long as its own?
 - What happened to the phone patents after the sale to Microsoft?
 - How do Nokia's renewal habits compare with Ericsson's?

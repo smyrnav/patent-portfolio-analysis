@@ -1,3 +1,4 @@
+-- Superseded by 05_owner_names_all_years.sql: the kind code filter below misses US patents granted before 2001.
 -- Every owner name attached to granted US patents that mentions Nokia or Alcatel.
 SELECT
   a.name AS owner,

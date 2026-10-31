@@ -22,7 +22,7 @@ To add one, copy this:
 - **How I'll look:** patent assignment records for a sample of Lucent patents, and company histories.
 
 ### Q7. How many unique Nokia patents are still alive?
-- **Why I asked:** the 28,773 total counts co-owned patents twice and includes expired ones.
+- **Why I asked:** my totals count co-owned patents twice and include expired ones.
 - **How I'll look:** count distinct publication numbers across the cleaned names, then filter by grant date and renewal status.
 
 ### Q8. Which patents do owners stop paying for, and when?
@@ -40,7 +40,7 @@ To add one, copy this:
 ## Answered
 
 ### Q15. What does the portfolio look like over the last 30 years?
-- **Why I asked:** the all-years rerun showed Lucent's biggest name almost doubling to 9,310 patents. It also pulled in old businesses and false matches, including a person called Craig Enokian. The last 30 years cover everything that could still be alive, plus 10 years of history.
+- **Why I asked:** the all-years rerun showed Lucent's biggest name almost doubling to 9,310 patents ([top 20 names](../data/raw/owner_counts_all_years_top20.csv)). It also pulled in old businesses and false matches, including a person called Craig Enokian. The last 30 years cover everything that could still be alive, plus 10 years of history.
 - **How I looked:** [built a working table](../sql/06_create_portfolio_30y.sql), then [checked it](../sql/07_check_portfolio_30y.sql) ([results](../data/raw/portfolio_30y_check.csv)).
 - **Answer:** 289,998 publications from 212,660 applications and 72,207 patent families, across 64 offices. That's about 2.9 applications per invention. Citations are missing on 49% of publications, English abstracts on 21%, inventor countries on 18%, English titles on 13%, and technology codes on 2%.
 - **Tools and resources:** BigQuery. Still to review: the owner names in the table, since some false matches or sold businesses may remain.
@@ -89,7 +89,7 @@ To add one, copy this:
 - **What it led to:** a clear idea of what the free data is missing.
 
 ### Q4. How do I get into the Google data?
-- **Why I asked:** I'd never used BigQuery.
+- **Why I asked:** I needed a way to reach the data.
 - **How I looked:** followed the sandbox setup and opened the table.
 - **Answer:** the data stays on Google's side, and you query it with SQL. The sandbox needs no card, and the Schema and Preview tabs are free. The table is 2.88 TB, so choose columns carefully, as `LIMIT` doesn't reduce what's scanned.
 - **Tools and resources:** [BigQuery sandbox docs](https://docs.cloud.google.com/bigquery/docs/sandbox).

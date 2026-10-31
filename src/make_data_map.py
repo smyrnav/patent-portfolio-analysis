@@ -6,7 +6,7 @@ from matplotlib.patches import FancyBboxPatch
 
 OUT = Path(__file__).resolve().parents[1] / "docs/img/data_map.png"
 ACCENT, MUTED, INK, CARD = "#124191", "#6B7686", "#1A1A1A", "#F2F4F8"
-USED = {"publication_number", "application_number", "country_code", "kind_code",
+USED = {"publication_number", "application_number", "country_code", "kind_code", "filing_date",
         "family_id", "grant_date", "assignee_harmonized"}
 CARDS = [
     ("Identity", "Which patent, which office, which type?",
@@ -33,7 +33,7 @@ ax.set_xlim(0, 4 * W + 3 * GAP)
 ax.set_ylim(0, 2 * H + GAP + 1.05)
 ax.axis("off")
 ax.text(0, 2 * H + GAP + .72, "What the Google patents table contains", fontsize=20, fontweight="bold", color=INK)
-ax.text(0, 2 * H + GAP + .3, "37 fields in 7 groups. Blue, bold fields are the 7 I have used so far.", fontsize=13, color=MUTED)
+ax.text(0, 2 * H + GAP + .3, "37 fields in 7 groups. Blue, bold fields are the 8 I have analysed so far.", fontsize=13, color=MUTED)
 for i, (title, question, fields) in enumerate(CARDS):
     x = (i % 4) * (W + GAP)
     y = H + GAP if i < 4 else 0

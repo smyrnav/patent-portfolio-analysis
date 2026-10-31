@@ -1,3 +1,4 @@
+-- Superseded by 05_owner_names_all_years.sql: the kind code filter below misses US patents granted before 2001.
 -- Owner names for companies absorbed through deals, left out of the first query.
 -- \b matches whole words, so TRANSLUCENT is excluded. Alcatel names are already in query 01.
 SELECT
