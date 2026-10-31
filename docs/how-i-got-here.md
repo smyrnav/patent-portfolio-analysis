@@ -1,0 +1,116 @@
+# How I got here
+
+The steps I took to learn the field, in order, including what I got wrong. Early figures are kept as a record of what I found at the time. The latest figures are in the [README](../README.md).
+
+## Step 1: Work out what the job actually is
+
+The [posting](https://www.linkedin.com/jobs/view/4483030441) has a Business Data Analytics track covering investment modelling, cost-efficiency studies, scenario analysis, business cases, and demand and capacity planning. It also asks for reliable data and honest ranges rather than single numbers.
+
+I started with the data so I could learn what's possible. That first reading later became the [central research question](research-design.md).
+
+## Step 2: Choose a data source
+
+| | Google Patents Public Data | EPO PATSTAT Global |
+|---|---|---|
+| **Cost** | Free in the BigQuery sandbox, with 1 TB of queries a month | Paid |
+| **Access** | Immediate, with SQL | Subscription, or a trial for PATSTAT Online |
+| **Renewal data** | Not in the main table | Yes: `TLS231_INPADOC_LEGAL_EVENT`, `FEE_RENEWAL_YEAR`, `LAPSE_DATE` |
+| **Owner names** | `assignee_harmonized` | `PSN_NAME`, `HAN_HARMONIZED` |
+
+I chose Google so I could start straight away. I read the PATSTAT data catalog to see what the stronger source would add, and it's the natural upgrade for the European side.
+
+## Step 3: Open the data
+
+The main table is `patents-public-data.patents.publications`, with about 173.5 million rows and 2.88 TB. That size matters: the free allowance is 1 TB a month, so selecting only the columns I need is essential. `LIMIT` doesn't reduce what's scanned.
+
+![The publications table in BigQuery](img/01_publications_table.png)
+
+## Step 4: Ask a simple question first
+
+**Question:** under which names do Nokia's granted US patents appear?
+
+[The query](../sql/01_owner_names.sql) searches owner names containing "Nokia" or "Alcatel". I included Alcatel because Nokia bought Alcatel-Lucent in 2016.
+
+![The first query and its results](img/02_first_query.png)
+
+The search found 187 names ([raw results](../data/raw/owner_counts.csv)).
+
+## Step 5: Find out what the results mean
+
+### The names reflect the company's history
+
+These are the largest names in the corrected recount:
+
+| Owner name | Granted US patents | What it is |
+|---|---:|---|
+| NOKIA CORP | 7,382 | Parent company |
+| LUCENT TECHNOLOGIES INC | 7,209 | Merged into Alcatel-Lucent in 2006 |
+| NOKIA TECHNOLOGIES OY | 6,457 | Nokia's technology business |
+| ALCATEL LUCENT | 5,074 | Acquired by Nokia in 2016 |
+| CIT ALCATEL | 2,493 | Older Alcatel name |
+| NOKIA SOLUTIONS & NETWORKS OY | 2,405 | Networks business |
+| NOKIA MOBILE PHONES LTD | 1,212 | Former phone business |
+| NOKIA SIEMENS NETWORKS OY | 531 | Former joint venture |
+
+The company history is in my [fact checks](sources.md).
+
+### Three kinds of mess
+
+1. **Typos:** `NOKIA TECHNOLGIES OY`, `Nokia Technololgies Oy`, `NOKIA MOVILE PHONES LTD`, `ALCATEL LUCENT USA ZINC`.
+2. **Legal forms and subsidiaries:** `NOKIA OYJ`, `NOKIA INC`, `NOKIA GMBH`. These may be real, separate entities, so merging them is a decision about the question being asked.
+3. **False matches:** `NOKIAN TYRES PLC` and `NOKIAN RENKAAT OYJ` are a tyre company. A simple text search catches them, and I only saw this by reading the output.
+
+In my first search, [`src/clean_owners.py`](../src/clean_owners.py) flagged 59 of 187 names as likely variants, covering just 140 of 28,773 listings. That's a floor, because the matching misses some, such as `NOKIA CORPORTION` against the much shorter `NOKIA CORP`, and some flagged names may be real entities.
+
+In the recount, 28 names (178 patents) are marked **Needs review**. They look like joint ownership or businesses that were sold, such as cables and optronics. [I've checked what I could](sources.md#the-needs-review-names).
+
+## Step 6: Check what the first search missed
+
+The first search looked for "Alcatel", but Alcatel merged with Lucent in 2006, and Lucent's patents don't carry the Alcatel name. So I listed the deals I knew of and [searched for the missing companies](../sql/02_lineage_names.sql).
+
+![The second query and its results](img/03_lineage_query.png)
+
+This search taught me two more things:
+
+- **The first search had a blind spot:** it missed 10 misspelled names like `ALCALTEL LUCENT`, because they don't contain "Alcatel".
+- **Whole-word matching isn't enough:** it blocks "TRANSLUCENT", but it still finds unrelated companies like `LUCENT MEDICAL SYSTEMS` and `LUCENT BIOSCIENCES`. I marked those as unrelated by reading them, based only on their names.
+
+## Step 7: Look beyond the US
+
+[This query](../sql/03_filings_by_country.sql) counts applications by patent office ([results](../data/raw/filings_by_country.csv)).
+
+![Applications by patent office](img/offices.png)
+
+It also taught me to distrust a column: grant dates can't be compared across countries. Japan shows 0 granted applications and Austria shows 99.8%, which says more about the data than about Nokia.
+
+It also exposed a mistake in my earlier searches. It found 43,674 granted US applications, more than those searches did. [A check](../sql/04_check_us_kind_codes.sql) confirmed that filtering on kind codes starting with B dropped 8,808 older patents, the last granted in December 2000, so I [reran the name search](../sql/05_owner_names_all_years.sql) ([top 20 names](../data/raw/owner_counts_all_years_top20.csv)). `LUCENT TECHNOLOGIES INC` rose from 4,757 to 9,310 patents.
+
+## Step 8: Build a working table
+
+I then [built my own table](../sql/06_create_portfolio_30y.sql) of everything filed since November 1996, across all offices, so later questions don't have to rescan the 2.88 TB source. [A check](../sql/07_check_portfolio_30y.sql) found 72,207 inventions from 212,660 applications. Citations are missing on 49% of publications, so they need care ([results](../data/raw/portfolio_30y_check.csv)).
+
+I then [recounted the US figures](../sql/08_recount_us_30y.sql) from that table, which processed just 14.46 MB. That replaced the early numbers with the ones at the top of this page.
+
+## Step 9: Change approach
+
+At this point I was running queries without a clear purpose, so I stopped and [changed my approach](approach-changes.md). The [analysis strategy](strategy.md) now centres on one problem: how to allocate a limited patent budget.
+
+## Step 10: Add the money
+
+I [extracted figures from 20 of Nokia's annual reports](twenty-years.md) and compared them with the patent data. New families followed Nokia's reported new inventions, and the check also exposed missing owner names on Japanese records.
+
+## Step 11: Narrow the portfolio
+
+I [sorted all 72,207 families by status](portfolio-filter.md), which left 19,873 granted within 20 years, plus 5,595 possibly pending.
+
+## Step 12: Check the market
+
+I [checked a competitor summary against its sources](competitors.md), corrected a mislabelled figure and added a missing segment leader. That gave me the comparison set for the [central research question](research-design.md).
+
+## What the early numbers can't tell you
+
+- **This isn't Nokia's current portfolio.** It includes patents that have expired or lapsed, and it shows the name on the patent, which may be out of date after a sale or transfer.
+- **Listings aren't unique patents.** A patent with two owners counts under both, which is why there are 37,710 listings for 36,630 patents.
+- **Lucent's name doesn't prove Nokia ownership.** Lucent spun off Avaya and Agere, which may have taken patents with them.
+- **The name searches are US-only.** Step 7 shows how much sits elsewhere.
+- **Family assignments are my judgement.** They need checking against company records.

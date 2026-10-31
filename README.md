@@ -2,168 +2,87 @@
 
 **I'm doing this project to apply for Nokia's [Financial Data Engineering / Business Data Analytics Trainee — Patent Portfolio Management](https://www.linkedin.com/jobs/view/4483030441) traineeship, in the Business Data Analytics track.**
 
+This isn't affiliated with Nokia, and it uses only public data.
+
 ## Central research question
 
 > How does Nokia's patent portfolio and associated investment position compare with the leading competitors in AI and cloud infrastructure networking, and what strategic and financial lessons can be identified?
 
 I didn't know what patent portfolio work involves, so this repo documents me teaching myself. After a couple of hours of exploring the data, testing questions and learning the field, I'd learned enough to zoom in on this question.
 
-It also shows how I work:
+## Where it stands
 
-- **Combining sources:** patent records, Nokia's annual reports and official fee and standards data
+| Step | Status |
+|---|---|
+| [Nokia base](docs/portfolio-filter.md): filtered portfolio and [20 years of finances](docs/twenty-years.md) | Built, with lapsed and sold patents still to remove |
+| [Market leaders](docs/competitors.md): verified comparison set | Checked |
+| Patent comparison against Ciena, Cisco and Arista, with Huawei as a benchmark | **Next** |
+| Investment comparison: rivals' R&D and AI and cloud figures | Not started |
+| [Budget model](docs/strategy.md): costs, scenarios, sensitivity and a probability curve | Partly started, needs USPTO renewal records |
+| Decision brief: up to five findings, each with a decision | Not started |
+
+**There's no answer to the central question yet.** The results below are the groundwork, and the patent comparison is still to come.
+
+## What I've found so far
+
+### No single company leads AI and cloud networking
+
+Nokia's strongest public positions are in optical. Market share doesn't show who has the stronger patents, which is what I'm testing next.
+
+![No single company leads AI and cloud networking](docs/img/ai_cloud_leaders.png)
+
+### The workable portfolio is about 20,000 families
+
+Nokia reports 26,000+ families, and my total including possibly pending ones is 25,468. Lapsed and sold patents are still included.
+
+![From 72,207 families to a workable portfolio](docs/img/portfolio_filter.png)
+
+### 46% of US patents filed since 1996 carry an Alcatel or Lucent name
+
+That's across 36,630 unique patents, so any cost or renewal analysis needs to report them separately. These names show who's on each patent, not who owns it today or whether it's still in force.
+
+![US patents by origin](docs/img/origin_30y.png)
+
+### The patent data tracks Nokia's reported figures
+
+New families follow Nokia's reported new inventions, and licensing sales swing with renewal cycles, from €1,085M in 2023 to €1,928M in 2024.
+
+![Twenty years of Nokia's patents and money](docs/img/twenty_years.png)
+
+### Renewal fees alone look small
+
+A rough check puts official US renewal fees at about $14.5M–$18.8M a year, or roughly 1% of licensing-unit sales. Other offices and filing and attorney costs [aren't included yet](docs/strategy.md#early-answer-are-fees-big-enough-to-matter).
+
+## How I work
+
+- **Combining sources:** patent records, Nokia's annual reports, competitor and market data, and official fees
 - **Verifying outputs:** cross-checks between sources, automatic checks and a record of what's still unverified
 - **Using AI to move faster:** AI-accelerated search and analysis, with standard data handling and me directing the work
 - **Building my own method:** a repeatable approach for my analytics and education
 - **Learning quickly:** picking up new concepts and turning them into structured analysis
 - **Directing my own research:** changing approach when something isn't working, and choosing where to spend my effort
 
-**To get oriented:**
-- [Working principles](docs/principles.md): the posting's expectations, how I apply them and where I fall short
-- [Assumption register](docs/assumptions.md): what the analysis assumes, and what's been tested
+## Guide to the repo
+
+**The analysis**
+- [Research design](docs/research-design.md): hypotheses and reliability rules for the central question
+- [Analysis strategy](docs/strategy.md): the plan, and the financial analysis
 - [Who leads AI and cloud networking?](docs/competitors.md): verified market positions and the comparison set
-- [Research design](docs/research-design.md): the three priority questions, hypotheses and reliability rules
-- [Analysis strategy](docs/strategy.md): the decisions this analysis supports, and the plan
-- [How my approach changed](docs/approach-changes.md): why I moved from exploring to starting with decisions
 - [Twenty years of patents and money](docs/twenty-years.md): reported finances and events against the patent data
-- [The workable portfolio](docs/portfolio-filter.md): how 72,207 families become about 20,000
+- [The workable portfolio](docs/portfolio-filter.md): how 72,207 families were narrowed
+
+**Reliability**
+- [Assumption register](docs/assumptions.md): what the analysis assumes, and what's been tested
 - [Can I trust this data?](docs/data-trust.md): where it comes from, and where to find money data
-- [Data map](docs/data-map.md): what the data contains, and all my questions at a glance
-- [Question log](docs/questions.md): how I found each answer and what I used
 - [Fact checks](docs/sources.md): the outside facts I rely on, and how well each one is supported
+- [Working principles](docs/principles.md): the posting's expectations, how I apply them and where I fall short
+
+**How I learned**
+- [How I got here](docs/how-i-got-here.md): each step with screenshots, including mistakes
+- [How my approach changed](docs/approach-changes.md): why I moved from exploring to testing hypotheses
+- [Question log](docs/questions.md): how I found each answer and what I used
+- [Data map](docs/data-map.md): what the data contains, and what's missing
 - [Explain it yourself](docs/explain-it.md): the calculations and questions I should be able to answer
-
-The rest of this page walks through the work with screenshots.
-
-This isn't affiliated with Nokia, and it uses only public data.
-
-**Status:** I've narrowed 72,207 families filed in the last 30 years to a [workable portfolio](docs/portfolio-filter.md) of **19,873 granted families**, plus 5,595 possibly pending. Next I'm comparing patent positions against [the market leaders](docs/competitors.md), using the [research design](docs/research-design.md).
-
-## What I've found so far
-
-These are granted US patents filed since November 1996 ([recount](data/processed/us_30y_recount.csv)).
-
-| | |
-|---|---|
-| **36,630** | unique patents, listed under 238 owner names |
-| **93%** | of listings sit under just the top 10 names |
-| **46%** | carry an Alcatel or Lucent name, from the company Nokia acquired in 2016 |
-| **About 2.9** | applications per invention, worldwide |
-
-![US patents by origin](docs/img/origin_30y.png)
-
-![From 72,207 families to a workable portfolio](docs/img/portfolio_filter.png)
-
-**Main takeaway:** 46% of these US patents carry an Alcatel or Lucent name, so any cost or renewal analysis needs to report them separately.
-
-**Main limit:** these names show who's on each patent, not who owns it today or whether it's still in force.
-
-## Step 1: Work out what the job actually is
-
-The posting mentions patent costs, investment modelling, scenario analysis, and demand and capacity planning. My reading is that the team's core question is:
-
-> Which patents are worth paying to keep, and how much should we spend?
-
-Patents cost money to keep alive and earn money through licensing. The posting also spends a lot of time on data quality and on honest ranges rather than single numbers, so I decided to start with the data. This is my own inference from the posting, not something Nokia has told me.
-
-## Step 2: Choose a data source
-
-| | Google Patents Public Data | EPO PATSTAT Global |
-|---|---|---|
-| **Cost** | Free in the BigQuery sandbox, with 1 TB of queries a month | Paid |
-| **Access** | Immediate, with SQL | Subscription, or a trial for PATSTAT Online |
-| **Renewal data** | Not in the main table | Yes: `TLS231_INPADOC_LEGAL_EVENT`, `FEE_RENEWAL_YEAR`, `LAPSE_DATE` |
-| **Owner names** | `assignee_harmonized` | `PSN_NAME`, `HAN_HARMONIZED` |
-
-I chose Google so I could start straight away. I read the PATSTAT data catalog to see what the stronger source would add, and it's the natural upgrade for the European side.
-
-## Step 3: Open the data
-
-The main table is `patents-public-data.patents.publications`, with about 173.5 million rows and 2.88 TB. That size matters: the free allowance is 1 TB a month, so selecting only the columns I need is essential. `LIMIT` doesn't reduce what's scanned.
-
-![The publications table in BigQuery](docs/img/01_publications_table.png)
-
-## Step 4: Ask a simple question first
-
-**Question:** under which names do Nokia's granted US patents appear?
-
-[The query](sql/01_owner_names.sql) searches owner names containing "Nokia" or "Alcatel". I included Alcatel because Nokia bought Alcatel-Lucent in 2016.
-
-![The first query and its results](docs/img/02_first_query.png)
-
-The search found 187 names ([raw results](data/raw/owner_counts.csv)).
-
-## Step 5: Find out what the results mean
-
-### The names reflect the company's history
-
-These are the largest names in the corrected recount:
-
-| Owner name | Granted US patents | What it is |
-|---|---:|---|
-| NOKIA CORP | 7,382 | Parent company |
-| LUCENT TECHNOLOGIES INC | 7,209 | Merged into Alcatel-Lucent in 2006 |
-| NOKIA TECHNOLOGIES OY | 6,457 | Nokia's technology business |
-| ALCATEL LUCENT | 5,074 | Acquired by Nokia in 2016 |
-| CIT ALCATEL | 2,493 | Older Alcatel name |
-| NOKIA SOLUTIONS & NETWORKS OY | 2,405 | Networks business |
-| NOKIA MOBILE PHONES LTD | 1,212 | Former phone business |
-| NOKIA SIEMENS NETWORKS OY | 531 | Former joint venture |
-
-The company history is in my [fact checks](docs/sources.md).
-
-### Three kinds of mess
-
-1. **Typos:** `NOKIA TECHNOLGIES OY`, `Nokia Technololgies Oy`, `NOKIA MOVILE PHONES LTD`, `ALCATEL LUCENT USA ZINC`.
-2. **Legal forms and subsidiaries:** `NOKIA OYJ`, `NOKIA INC`, `NOKIA GMBH`. These may be real, separate entities, so merging them is a decision about the question being asked.
-3. **False matches:** `NOKIAN TYRES PLC` and `NOKIAN RENKAAT OYJ` are a tyre company. A simple text search catches them, and I only saw this by reading the output.
-
-In my first search, [`src/clean_owners.py`](src/clean_owners.py) flagged 59 of 187 names as likely variants, covering just 140 of 28,773 listings. That's a floor, because the matching misses some, such as `NOKIA CORPORTION` against the much shorter `NOKIA CORP`, and some flagged names may be real entities.
-
-In the recount, 28 names (178 patents) are marked **Needs review**. They look like joint ownership or businesses that were sold, such as cables and optronics. [I've checked what I could](docs/sources.md#the-needs-review-names).
-
-## Step 6: Check what the first search missed
-
-The first search looked for "Alcatel", but Alcatel merged with Lucent in 2006, and Lucent's patents don't carry the Alcatel name. So I listed the deals I knew of and [searched for the missing companies](sql/02_lineage_names.sql).
-
-![The second query and its results](docs/img/03_lineage_query.png)
-
-This search taught me two more things:
-
-- **The first search had a blind spot:** it missed 10 misspelled names like `ALCALTEL LUCENT`, because they don't contain "Alcatel".
-- **Whole-word matching isn't enough:** it blocks "TRANSLUCENT", but it still finds unrelated companies like `LUCENT MEDICAL SYSTEMS` and `LUCENT BIOSCIENCES`. I marked those as unrelated by reading them, based only on their names.
-
-## Step 7: Look beyond the US
-
-[This query](sql/03_filings_by_country.sql) counts applications by patent office ([results](data/raw/filings_by_country.csv)).
-
-![Applications by patent office](docs/img/offices.png)
-
-It also taught me to distrust a column: grant dates can't be compared across countries. Japan shows 0 granted applications and Austria shows 99.8%, which says more about the data than about Nokia.
-
-It also exposed a mistake in my earlier searches. It found 43,674 granted US applications, more than those searches did. [A check](sql/04_check_us_kind_codes.sql) confirmed that filtering on kind codes starting with B dropped 8,808 older patents, the last granted in December 2000, so I [reran the name search](sql/05_owner_names_all_years.sql) ([top 20 names](data/raw/owner_counts_all_years_top20.csv)). `LUCENT TECHNOLOGIES INC` rose from 4,757 to 9,310 patents.
-
-## Step 8: Build a working table
-
-I then [built my own table](sql/06_create_portfolio_30y.sql) of everything filed since November 1996, across all offices, so later questions don't have to rescan the 2.88 TB source. [A check](sql/07_check_portfolio_30y.sql) found 72,207 inventions from 212,660 applications. Citations are missing on 49% of publications, so they need care ([results](data/raw/portfolio_30y_check.csv)).
-
-I then [recounted the US figures](sql/08_recount_us_30y.sql) from that table, which processed just 14.46 MB. That replaced the early numbers with the ones at the top of this page.
-
-## Step 9: Change approach
-
-At this point I was running queries without a clear purpose, so I stopped and [changed my approach](docs/approach-changes.md). The [analysis strategy](docs/strategy.md) now centres on one problem: how to allocate a limited patent budget.
-
-
-## What these numbers can't tell you
-
-- **This isn't Nokia's current portfolio.** It includes patents that have expired or lapsed, and it shows the name on the patent, which may be out of date after a sale or transfer.
-- **Listings aren't unique patents.** A patent with two owners counts under both, which is why there are 37,710 listings for 36,630 patents.
-- **Lucent's name doesn't prove Nokia ownership.** Lucent spun off Avaya and Agere, which may have taken patents with them.
-- **The name searches are US-only.** Step 7 shows how much sits elsewhere.
-- **Family assignments are my judgement.** They need checking against company records.
-
-## Next steps
-
-The plan is in the [analysis strategy](docs/strategy.md), and smaller open questions are in the [question log](docs/questions.md#open).
 
 ## Run it yourself
 
