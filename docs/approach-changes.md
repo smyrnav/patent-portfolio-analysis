@@ -34,13 +34,13 @@ I got annoyed with running random queries. Each result suggested another questio
 
 Before running a query, I write down:
 
-1. **Which deliverable** it feeds
+1. **Which hypothesis or deliverable** it feeds
 2. **The decision** it would inform
 3. **The measure** I'd use
 4. **What result would change my mind**
 5. **The main limit** of the data
 
-If it doesn't feed a deliverable, the query doesn't get run.
+If it doesn't feed one, the query doesn't get run.
 
 ## What I kept from the exploration
 

@@ -1,10 +1,8 @@
 # Analysis strategy
 
-I started by following whatever the data showed next. I then set out business questions, and now I've focused the project on the [Business Data Analytics track](#the-role-this-project-targets) of the role that caught my eye. [Here's how my approach changed](approach-changes.md).
+How the project answers its central question, and what each output is for. The detailed hypotheses and pass rules are in the [research design](research-design.md), and the reasons for each change in approach are in [how my approach changed](approach-changes.md).
 
 This is an outside view. It uses public data and clearly labelled assumptions, not Nokia's internal figures.
-
-This work follows the posting's [expectations for how people work](principles.md). The priority questions and their reliability rules are in the [research design](research-design.md).
 
 ## The central research question
 
@@ -12,38 +10,64 @@ This work follows the posting's [expectations for how people work](principles.md
 
 The financial side comes down to one problem: with a limited patent budget, how should it be allocated to get the most strategic and economic value?
 
-The budget has to cover:
-
-- New patent applications
-- Maintaining existing patents
-- Different geographical markets
-- Different technology areas
-- External patent services
-- Portfolio management resources
-
 ## The role this project targets
 
 The [Financial Data Engineering / Business Data Analytics Trainee posting](https://www.linkedin.com/jobs/view/4483030441) at Nokia, in the Business Data Analytics track.
 
-| What the role does | What I'll build |
+| What the role does | Where it shows up here |
 |---|---|
-| Analyse patent portfolio and financial data | Portfolio volumes linked to fee and cost data |
-| Investment modelling | A cost forecast, and NPV for keep-or-drop decisions |
-| Cost-efficiency studies | Cost per invention by office and technology, and what drives it |
-| Scenario analysis | Three budget scenarios, compared side by side |
+| Analyse patent portfolio and financial data | Nokia against rivals, with reported finances |
+| Investment modelling | Cost forecast, and NPV for keep-or-drop decisions |
+| Cost-efficiency studies | Cost per invention by office and technology |
+| Scenario analysis | Three budget scenarios |
 | Business cases | One recommendation with costs, benefits and risks |
-| Demand and capacity planning | Forecast filings and renewals against a team's capacity |
-| Presenting findings and reliability | A one-page brief showing ranges, assumptions and data limits |
+| Demand and capacity planning | Forecast filings and renewals against team capacity |
+| Presenting findings and reliability | One-page brief with ranges, assumptions and data limits |
 
-## The deliverables
+The project also follows the posting's [expectations for how people work](principles.md).
 
-### 1. Baseline cost forecast
+## How the work fits together
 
-**Question:** what would the current portfolio cost to keep over the next 10 years?
+```mermaid
+flowchart LR
+    A["1. Nokia base<br/>Filtered portfolio and 20 years of finances"] --> B["2. Market leaders<br/>Verified comparison set"]
+    B --> C["3. Patent comparison<br/>Tests the hypotheses"]
+    C --> D["4. Investment comparison<br/>R&D and AI and cloud figures"]
+    D --> E["5. Budget model<br/>Costs, scenarios, sensitivity"]
+    E --> F["6. Decision brief<br/>Lessons and limits"]
+    style A fill:#124191,color:#ffffff
+    style B fill:#124191,color:#ffffff
+    style C fill:#E6EAF0,color:#1A1A1A
+    style D fill:#E6EAF0,color:#1A1A1A
+    style E fill:#E6EAF0,color:#1A1A1A
+    style F fill:#E6EAF0,color:#1A1A1A
+```
 
-Patent volumes come from my [filtered portfolio](portfolio-filter.md), for the US, Europe, China and Japan. Fees come from official schedules. Internal costs are assumptions, labelled as such.
+Blue is built, and grey is still to do.
 
-### 2. Keep-or-drop model
+## The plan
+
+| Step | Output | What it needs | Status |
+|---|---|---|---|
+| 1. Nokia base | [Workable portfolio](portfolio-filter.md) and [20 years of finances](twenty-years.md) | Google data and annual reports | Built, with lapsed and sold patents still to remove |
+| 2. Market leaders | [Leader map and comparison set](competitors.md) | Company reports, IDC and Dell'Oro | Checked |
+| 3. Patent comparison | Technology gap map | Tested technology definitions and a rival patent table | Next |
+| 4. Investment comparison | R&D and AI and cloud comparison | Rivals' annual reports | Not started |
+| 5. Budget model | Forecast, scenarios, sensitivity and a probability curve | Official fees and USPTO renewal records | Partly started |
+| 6. Decision brief | Up to five findings, each with a decision | All of the above | Not started |
+
+**Scope:** the US, Europe, China and Japan, in optical and IP networking. Filings use the last 30 years, and comparisons use 2020–2024 as the main period.
+
+## What's been learned so far
+
+- **Portfolio:** 72,207 families narrow to [19,873 granted within 20 years, plus 5,595 possibly pending](portfolio-filter.md), against [Nokia's reported 26,000+](twenty-years.md).
+- **Data quality:** my new-family counts [follow Nokia's reported inventions](twenty-years.md#my-family-counts-follow-nokias-own-numbers), but grants outside the US are unreliable.
+- **Market:** [no single company leads](competitors.md). Nokia's strongest public positions are in optical.
+- **Licensing:** sales [swing with renewal cycles](twenty-years.md#licensing-income-moves-with-renewal-cycles), from €1,085M in 2023 to €1,928M in 2024.
+
+## The financial analysis
+
+### Keep-or-drop model
 
 **Question:** how much value must a patent generate to justify its next renewal fee?
 
@@ -55,9 +79,7 @@ A worked example using the [USPTO large-entity fees](sources.md#patent-rules-and
 | 7.5 years | $4,040 | 4 years | $1,139 | $1,275 | $1,415 |
 | 11.5 years | $8,280 | 4.45 years | $2,121 | $2,395 | $2,682 |
 
-The three fees total $14,470, or about $6,284 in present value at 10%.
-
-The fee rises, but so does the time it buys in this example. The discount rate and the value of each patent are assumptions, because public data doesn't show them.
+The three fees total $14,470, or about $6,284 in present value at 10%. The discount rate and the value of each patent are assumptions, because public data doesn't show them.
 
 ### Mean and median patent costs
 
@@ -70,33 +92,7 @@ Nokia's reports don't show patent costs, so these need official fees and renewal
 
 The median can jump a long way with small changes, as fees come in large steps, so the mean and the full spread both matter. These are official renewal fees only, not filing or attorney costs. The rates are placeholders, not findings.
 
-### 3. Three budget scenarios
-
-| Scenario | What changes | What I'd compare |
-|---|---|---|
-| **Keep everything** | Renew all eligible patents | Highest cost, least risk of dropping something valuable |
-| **Narrow the geography** | Maintain fewer offices per invention | Savings against lost market cover |
-| **Shift the mix** | Move spending from older areas to priority areas | Savings against new filing costs |
-
-Priority areas can use [Nokia's reported business units](sources.md#nokias-business-structure). IP Networks and Optical Networks are the growth areas in its Q3 2026 report, so they make a good test case.
-
-### 4. Sensitivity analysis
-
-**Question:** which assumptions move the answer most?
-
-I'll test the renewal rate, fee growth, cost per application, exchange rates, and the discount rate, then show the results in a chart.
-
-### 5. Demand and capacity plan
-
-**Question:** how many filings and renewal decisions will the team handle each year, and is that within capacity?
-
-Volumes come from the forecast. Hours per task are assumptions.
-
-### 6. Decision brief
-
-One page with the recommendation, savings range, risks and how reliable each number is.
-
-## Early answer: are fees big enough to matter?
+### Early answer: are fees big enough to matter?
 
 A rough check for official US renewal fees: if 1,000–1,300 US patents a year were each kept for their full term, fees would reach about **$14.5M–$18.8M a year** once the portfolio is steady.
 
@@ -104,7 +100,7 @@ That's about **1% of Nokia's roughly €1.6B annualised licensing-unit sales**, 
 
 **What this changes:** cutting renewals alone is unlikely to be the main prize, and a small saving wouldn't justify much licensing risk. The model also needs other offices, filing and attorney costs before it can say where the money goes. This is an order-of-magnitude check, not Nokia's real spend.
 
-## Measured so far
+### Measured so far
 
 | Measure | Mean | Median | Middle 80% | Patents or families |
 |---|---:|---:|---:|---:|
@@ -115,6 +111,20 @@ That's about **1% of Nokia's roughly €1.6B annualised licensing-unit sales**, 
 | Offices per core family, including international filings | 3.43 | 3 | 1–6 | 19,873 |
 
 Time to grant covers filings from November 2006 to 2015, so recent cases don't skew it short. Filings per family are low, because they rely on owner names and miss some records, such as many Japanese ones. Filing somewhere doesn't mean a patent is being maintained there.
+
+### Budget scenarios
+
+| Scenario | What changes | What I'd compare |
+|---|---|---|
+| **Keep everything** | Renew all eligible patents | Highest cost, least risk of dropping something valuable |
+| **Narrow the geography** | Maintain fewer offices per invention | Savings against lost market cover |
+| **Shift to AI and cloud** | Move spending from older areas to optical and IP | Savings against new filing costs, using the gap map |
+
+I'll then test which assumptions move the answer most: renewal rates, fee growth, cost per application, exchange rates and the discount rate. The forecast will end in a range with a probability curve.
+
+### Capacity plan
+
+Volumes of filings and renewal decisions come from the forecast. Hours per task are assumptions, shown as ranges.
 
 ## Finance concepts in this project
 
@@ -131,41 +141,22 @@ Time to grant covers filings from November 2006 to 2015, so recent cases don't s
 | **Sensitivity analysis** | Changing one assumption at a time |
 | **Scenario analysis** | Changing several assumptions together to compare futures |
 
-## What each input is based on
-
-| Input | Status |
-|---|---|
-| Patent counts by office and year | [Filtered](portfolio-filter.md), but lapsed and sold patents aren't removed yet |
-| US and European fees | Official, check they're current |
-| US renewal behaviour | Public USPTO records, not yet collected |
-| European renewal behaviour | Harder to get, needs Espacenet or a PATSTAT trial |
-| Application and attorney costs | Assumption |
-| Team capacity | Assumption |
-| Patent value and discount rate | Assumption, tested as ranges |
-| Nokia's real budget, costs and licensing income | Not available |
-
 ## Known limits
 
-- **Portfolio size:** my [filter](portfolio-filter.md) reduces 72,207 families to 19,873 granted families within 20 years, plus 5,595 possibly pending. Nokia [reports 26,000+](twenty-years.md). The filter doesn't yet remove patents that lapsed or were sold.
-- **Focus offices:** the model covers the US, Europe, China and Japan, with [filings found by family](twenty-years.md#japan-needed-fixing).
-- **Trust:** see [how far I trust each part of the data](data-trust.md).
-- **Recent years:** publication lags filing by about 18 months, so recent trends are provisional.
+- **Ownership and status:** the [filter](portfolio-filter.md) doesn't yet remove lapsed or sold patents.
+- **Non-US grants:** these are undercounted, and [filings are found by family](twenty-years.md#japan-needed-fixing) to reduce the gap.
+- **Recent years:** publication lags filing by about 18 months, so 2025–2026 are provisional.
 - **Patent value:** citations and family size are indicators, not measures of commercial value.
+- **Internal data:** Nokia's budget, cost per patent and licence terms aren't public. See [how far I trust each source](data-trust.md) and the [assumption register](assumptions.md).
 
 ## Rule for each new query
 
-This follows the [working principles](principles.md).
-
 Before running a query, I write down:
 
-1. **Which deliverable** it feeds
+1. **Which hypothesis or deliverable** it feeds
 2. **The decision** it informs
 3. **The measure** I'd use
 4. **What result would change my mind**
 5. **The main limit** of the data
 
-If it doesn't feed a deliverable, the query doesn't get run.
-
-## The wider questions
-
-Competitive position, AI-RAN and 6G, and licensing are now covered in the [research design](research-design.md), and each one has to say what it changes about the budget.
+If it doesn't feed one, the query doesn't get run.
