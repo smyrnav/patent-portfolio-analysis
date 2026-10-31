@@ -99,6 +99,6 @@ ax.set_xlim(0, max(values) * 1.12)
 ax.xaxis.set_visible(False)
 for s in ("top", "right", "bottom"):
     ax.spines[s].set_visible(False)
-ax.set_title("Europe is close behind the US, and China is about 44% of the US", loc="left", fontweight="bold")
+ax.set_title("Europe is close behind the US", loc="left", fontweight="bold")
 fig.tight_layout()
 fig.savefig(IMG / "offices.png", dpi=160)
