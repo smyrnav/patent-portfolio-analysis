@@ -14,7 +14,7 @@ The rest of this page walks through the work with screenshots.
 
 This isn't affiliated with Nokia, and it uses only public data.
 
-**Status:** I've built a working table of **72,207 inventions filed in the last 30 years**, across 64 patent offices, and recounted the US figures from it. Next I'm answering the six questions in the strategy.
+**Status:** I've built a working table of **72,207 inventions filed in the last 30 years**, across 64 patent offices, and recounted the US figures from it. Next I'm working through [five business questions](docs/strategy.md), starting with portfolio efficiency.
 
 ## What I've found so far
 
@@ -128,7 +128,7 @@ I then [recounted the US figures](sql/08_recount_us_30y.sql) from that table, wh
 
 At this point I was running queries without a clear purpose, so I stopped and [changed my approach](docs/approach-changes.md). The [analysis strategy](docs/strategy.md) now starts from the decisions the work should support.
 
-![What this data can answer for the business](docs/img/question_map.png)
+![Five business questions, and what each one needs](docs/img/question_map.png)
 
 ## What these numbers can't tell you
 

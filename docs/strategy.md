@@ -2,17 +2,47 @@
 
 I started by following whatever the data showed next. This page sets a method: start from a decision someone has to make, then work back to the data. [Here's why I changed approach](approach-changes.md).
 
-This is my outside view of what a portfolio team needs. Nokia's real priorities may differ, and the results are signals rather than proof.
+This is my outside view. Nokia's real priorities may differ, and patent data gives signals to investigate rather than final answers.
 
-## The central question
+![Five business questions, and what each one needs](img/question_map.png)
 
-> Across the last 30 years, where is the portfolio strong, where is it exposed, and where might it be costing more than it should?
+## The five questions
 
-![What this data can answer for the business](img/question_map.png)
+| Question | What I can show | What I can't show |
+|---|---|---|
+| **Portfolio efficiency:** which patents are worth maintaining, developing or reconsidering? | A shortlist based on renewal history, remaining life, breadth, citations and overlap | The final decision, which needs legal review and internal licensing value |
+| **Competitive intelligence:** where are competitors gaining technological advantages? | Growth and share by technology and market, against rivals | Whether more patents means better technology or products |
+| **Technology strategy:** where should Nokia invest in R&D? | Where the portfolio is thinning, and where rivals are moving | Whether the investment would pay off, which needs market and cost data |
+| **Commercial intelligence:** which parts of the portfolio have licensing potential? | Candidates with declared standards links, outside citations and life left | Actual licensing value, terms or licensees |
+| **Market foresight:** which emerging technologies could become commercially important? | Fast growth from a small base, new entrants and standards activity | Commercial demand, and the latest inventions because of publication delay |
 
 ## What each question needs
 
 ![Which data each question needs](img/question_data_matrix.png)
+
+## Order of work
+
+1. **Portfolio efficiency.** It's closest to the job posting, and renewal records can be used without scanning the big BigQuery table.
+2. **Competitive intelligence.** A rival table also feeds the next question.
+3. **Technology strategy.** It combines my portfolio view with the rival view.
+4. **Commercial intelligence.** It adds ETSI declarations and the patents citing Nokia's.
+5. **Market foresight.** It needs the widest data, so it comes last.
+
+Each one ends in a short brief covering the finding, the evidence, the limits and the decision it supports.
+
+## How the earlier questions fit
+
+They're now measures inside the five questions:
+
+| Earlier question | Now part of |
+|---|---|
+| Protection cliff, Costly coverage | Portfolio efficiency |
+| Geographic gaps | Competitive intelligence, once compared with rivals |
+| Refill rate, Dependency | Technology strategy |
+| Deal value | Portfolio efficiency and Commercial intelligence |
+| Keep or drop, 10-year budget | Portfolio efficiency |
+| Rival benchmark | Competitive intelligence |
+| Standards exposure | Commercial intelligence and Market foresight |
 
 ## What the data is made of
 
@@ -26,48 +56,14 @@ This is my outside view of what a portfolio team needs. Nokia's real priorities 
 | **People and places** | `inventors`, `inventor_countries` | Where the inventing happens |
 | **Connections** | `cited_publications` | What each patent builds on |
 
-## Answerable with my table now
-
-| Business question | Decision it supports | Measure | Main limit |
-|---|---|---|---|
-| **Refill rate:** is new invention replacing what's about to expire? | Where to invest in new patents | New inventions against inventions reaching 20 years, by technology | Recent years are incomplete because of publication delays |
-| **Protection cliff:** how much protection could run out by 2036? | What to renew or replace | Filing date + 20 years, by technology | An estimate: patents can lapse earlier, and term rules can move the date |
-| **Geographic gaps:** which key technologies lack cover in major markets? | Where to file next | Share of inventions filed in each office, by technology | Filing is not the same as a granted patent |
-| **Costly coverage:** which areas are filed in many more offices than others? | Where to file more narrowly | Offices per invention | Shows breadth, not actual money spent |
-| **Deal value:** what did each acquisition add that Nokia didn't already have? | How to value future deals | Inventions by origin and technology, and how much they overlap | Names can be out of date |
-| **Dependency:** which technologies rely on few countries or inventors? | R&D site and talent risk | Share held by the top countries and inventors | 18% of publications lack inventor country |
-
-## Needs more data
-
-| Business question | What's missing |
-|---|---|
-| Which patents are still alive? | USPTO fee records or PATSTAT legal events |
-| Which patents should be dropped? | Renewal history and a measure of value |
-| What will the portfolio cost over 10 years? | Official fees for each office, plus assumptions |
-| How does Nokia compare with rivals? | The same table for Ericsson, Huawei and others |
-| Which patents matter for 5G? | ETSI declarations |
-| Which patents have the most influence? | Who cites them, from another search of the full table |
-
-## Can't be answered from public data
-
-- Revenue or return per patent
-- Licensing terms and who holds a licence
-- Nokia's actual internal costs and its reasons for each decision
-
-## The plan
-
-1. **Clean the base:** done for now, with [corrected US counts](../data/processed/us_30y_recount.csv) and [checked history](sources.md).
-2. **Answer the six questions** above from my table.
-3. **Add renewal data and fees** to reach Keep or drop and the 10-year budget.
-4. **Write a decision brief:** one page on strengths, exposures and where to look for savings.
-
 ## Rule for each new question
 
 Before running a query, I write down:
 
-1. **The decision** it would inform
-2. **The measure** I'd use
-3. **What result would change my mind**
-4. **The main limit** of the data
+1. **Which of the five questions** it serves
+2. **The decision** it would inform
+3. **The measure** I'd use
+4. **What result would change my mind**
+5. **The main limit** of the data
 
-If I can't name the decision, it goes in a parking list instead of the plan. The same goes for anything that only confirms what's already obvious, like "Nokia moved to 5G".
+If it doesn't serve one of the five, or the answer is already obvious, the query doesn't get run.
