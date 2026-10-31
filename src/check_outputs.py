@@ -49,4 +49,23 @@ check("new families by year add up to all families", sum(int(r["new_families"]) 
 check("Japanese filings since 2010", sum(int(r["jp_applications"]) for r in years if int(r["year"]) >= 2010), 4376)
 fin = rows("data/processed/nokia_financials_by_year.csv")
 check("financial years covered", len(fin), 20)
+
+
+def fee_spread(rates):
+    alive, paid, spread = 1.0, 0, []
+    for rate, fee in zip(rates, (2150, 4040, 8280)):
+        spread.append((paid, alive * (1 - rate)))
+        alive *= rate
+        paid += fee
+    spread.append((paid, alive))
+    mean = sum(cost * share for cost, share in spread)
+    running = 0
+    for cost, share in spread:
+        running += share
+        if running >= 0.5:
+            return round(mean), cost
+
+
+check("mean and median fees at high renewal", fee_spread((0.9, 0.8, 0.7)), (9017, 14470))
+check("mean and median fees at low renewal", fee_spread((0.8, 0.6, 0.4)), (5249, 2150))
 print("All checks passed.")

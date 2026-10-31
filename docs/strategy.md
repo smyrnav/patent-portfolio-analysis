@@ -55,6 +55,17 @@ The three fees total $14,470, or about $6,284 in present value at 10%.
 
 The fee rises, but so does the time it buys in this example. The real insight will come from applying this across thousands of patents, and from adding other countries' fees. The discount rate and the value of each patent are assumptions, because public data doesn't show them.
 
+### Mean and median patent costs
+
+Nokia's reports don't show patent costs, so these need official fees and renewal records. I can't get those records yet, as the [USPTO portal needs an account](data-map.md#whats-missing). This example shows how the calculation works, using assumed renewal rates and today's US large-entity fees:
+
+| Share renewed at 3.5, 7.5 and 11.5 years (assumed) | Mean fees per patent | Median fees per patent |
+|---|---:|---:|
+| 90%, 80%, 70% | $9,017 | $14,470 |
+| 80%, 60%, 40% | $5,249 | $2,150 |
+
+The median can jump a long way with small changes, as fees come in large steps, so the mean and the full spread both matter. These are official renewal fees only, not filing or attorney costs. The rates are placeholders, not findings.
+
 ### 3. Three budget scenarios
 
 | Scenario | What changes | What I'd compare |
