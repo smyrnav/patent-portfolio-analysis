@@ -56,13 +56,12 @@ The company history is in my [fact checks](sources.md).
 
 ### Three kinds of mess
 
-1. **Typos:** `NOKIA TECHNOLGIES OY`, `Nokia Technololgies Oy`, `NOKIA MOVILE PHONES LTD`, `ALCATEL LUCENT USA ZINC`.
-2. **Legal forms and subsidiaries:** `NOKIA OYJ`, `NOKIA INC`, `NOKIA GMBH`. These may be real, separate entities, so merging them is a decision about the question being asked.
-3. **False matches:** `NOKIAN TYRES PLC` and `NOKIAN RENKAAT OYJ` are a tyre company. A simple text search catches them, and I only saw this by reading the output.
-
-In my first search, [`src/clean_owners.py`](../src/clean_owners.py) flagged 59 of 187 names as likely variants, covering just 140 of 28,773 listings. That's a floor, because the matching misses some, such as `NOKIA CORPORTION` against the much shorter `NOKIA CORP`, and some flagged names may be real entities.
-
-In the recount, 28 names (178 patents) are marked **Needs review**. They look like joint ownership or businesses that were sold, such as cables and optronics. [I've checked what I could](sources.md#the-needs-review-names).
+| Type | Examples | What I did | Size |
+|---|---|---|---:|
+| **Typos and variants** | `NOKIA TECHNOLGIES OY`, `NOKIA MOVILE PHONES LTD`, `ALCATEL LUCENT USA ZINC` | Flagged with [a script](../src/clean_owners.py). Some real entities may be flagged, and some typos are missed | 59 of 187 names, 140 of 28,773 listings |
+| **Legal forms and subsidiaries** | `NOKIA OYJ`, `NOKIA INC`, `NOKIA GMBH` | Kept in the family, as they may be real entities | Not counted separately |
+| **False matches** | `NOKIAN TYRES PLC`, `NOKIAN RENKAAT OYJ` | Removed, after spotting them by reading the output | 2 names, 39 listings |
+| **Needs review (recount)** | Cables, optronics and joint owners | [Checked what I could](sources.md#the-needs-review-names) | 28 names, 178 patents |
 
 ## Step 6: Check what the first search missed
 
