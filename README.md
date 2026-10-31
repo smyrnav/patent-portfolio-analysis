@@ -16,6 +16,7 @@ It also shows how I work:
 **To get oriented:**
 - [Working principles](docs/principles.md): the posting's expectations, how I apply them and where I fall short
 - [Assumption register](docs/assumptions.md): what the analysis assumes, and what's been tested
+- [Research design](docs/research-design.md): the three priority questions, hypotheses and reliability rules
 - [Analysis strategy](docs/strategy.md): the decisions this analysis supports, and the plan
 - [How my approach changed](docs/approach-changes.md): why I moved from exploring to starting with decisions
 - [Twenty years of patents and money](docs/twenty-years.md): reported finances and events against the patent data

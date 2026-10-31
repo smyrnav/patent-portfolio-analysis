@@ -4,7 +4,7 @@ I started by following whatever the data showed next. I then set out business qu
 
 This is an outside view. It uses public data and clearly labelled assumptions, not Nokia's internal figures.
 
-This work follows the posting's [expectations for how people work](principles.md).
+This work follows the posting's [expectations for how people work](principles.md). The priority questions and their reliability rules are in the [research design](research-design.md).
 
 ## The central problem
 
@@ -166,4 +166,4 @@ If it doesn't feed a deliverable, the query doesn't get run.
 
 ## The wider questions
 
-These are still worth knowing, but they're outside this project for now: competitive intelligence, licensing opportunities, market foresight and AI-RAN or 6G analysis. Rival data and ETSI declarations would be the next additions.
+Competitive position, AI-RAN and 6G, and licensing are now covered in the [research design](research-design.md), and each one has to say what it changes about the budget.

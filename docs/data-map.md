@@ -61,6 +61,7 @@ I've analysed 8 of its 37 fields. My working table also holds inventors, technol
 
 | Work | Status |
 |---|---|
+| [Research design](research-design.md) for three priorities | Written, analysis not started |
 | [Workable portfolio](portfolio-filter.md) | Built, with lapsed and sold patents still to remove |
 | [Twenty years of patents and money](twenty-years.md) | Built |
 | Register spot-check | [Sample of 35 drawn](../data/processed/spot_check_sample.csv), checks not done |

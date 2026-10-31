@@ -27,6 +27,7 @@ I got annoyed with running random queries. Each result suggested another questio
 6. **Dropped a query.** I deleted the technology-over-time query before running it, because it only confirmed the obvious on its own.
 7. **Raised the questions to business level.** My first list was mostly measures, like when patents expire. I replaced it with five questions a company would actually ask: technology strategy, competitive intelligence, commercial intelligence, portfolio efficiency and market foresight. The earlier measures now sit inside them.
 8. **Focused on the role.** The posting has a track for turning patent and financial data into investment decisions, so the project now centres on allocating a limited patent budget. Its outputs are a cost forecast, keep-or-drop analysis, scenarios, sensitivities, a capacity plan and a decision brief. Competitive and licensing questions are parked for now.
+9. **Made the work hypothesis-led.** Pulling more metrics wasn't producing answers. I set three priority questions, hypotheses that could be disproved, pass rules for reliability and limits on what gets analysed.
 
 ## The rule I use now
 
