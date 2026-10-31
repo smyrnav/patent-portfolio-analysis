@@ -1,6 +1,8 @@
 # Patent Portfolio Analysis
 
-I saw [this traineeship posting at Nokia](https://www.linkedin.com/jobs/view/4483030441) and didn't know what patent portfolio work involves. This repo documents me teaching myself, and it's now focused on the role's Business Data Analytics track: how to allocate a limited patent budget.
+**I'm doing this project to apply for Nokia's [Financial Data Engineering / Business Data Analytics Trainee — Patent Portfolio Management](https://www.linkedin.com/jobs/view/4483030441) traineeship, in the Business Data Analytics track.**
+
+I didn't know what patent portfolio work involves, so this repo documents me teaching myself. It focuses on the track's core problem: how to allocate a limited patent budget.
 
 **To get oriented:**
 - [Working principles](docs/principles.md): the posting's expectations, how I apply them and where I fall short
