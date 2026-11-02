@@ -1,6 +1,8 @@
 # Nokia–ICEYE Sovereign LEO Communications
 
-**Technology, Patent Portfolio and Strategic Investment Analysis — Ukraine and European government customers**
+**Ukraine's sovereign alternative to Starlink — technology, patent portfolio and strategic investment analysis**
+
+*"Alternative to Starlink" is the headline framing; the partners describe the system as complementing, not replacing, existing networks — see the [pivot document](docs/01-research-design/pivot-sovereign-satcom.md).*
 
 **Independent research project | [Financial Data Engineering / Business Data Analytics Trainee](https://www.linkedin.com/jobs/view/4483030441) application, Business Data Analytics track**
 
