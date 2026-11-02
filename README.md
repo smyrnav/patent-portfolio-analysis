@@ -12,7 +12,13 @@ Not affiliated with Nokia.
 
 I saw Nokia's Financial Data Engineering / Business Data Analytics Trainee vacancy and opened this repository to teach myself the analytics the role calls for. Patent portfolio analysis was new territory for me, so this project is a deliberate, working-in-the-open learning exercise: pick a real question, source public data, build the pipeline, document every assumption, and keep the record honest about what holds up and what doesn't. The goal is a defensible work sample for that vacancy — and, along the way, a genuinely learned skill set.
 
-The question sharpened as I worked — I pivoted and re-aimed the research questions more than once as the evidence demanded. Then, in October 2026, ICEYE and Nokia announced a sovereign LEO satellite communications partnership, and on 22 October signed a Letter of Intent with Ukraine's Ministry of Defence — [the news reached me as a "Starlink alternative for Ukraine" headline](docs/01-research-design/assets/pivot-trigger-1-headline.jpg). I'm Ukrainian. Secure communications that answer to Kyiv are not an abstract market trend for me — they're critical infrastructure for my country, in a war where a foreign vendor's ten-day throttling decision just demonstrated exactly why sovereignty matters. Getting to work on this question is something I genuinely want, not only academic interest. So the project pivoted with me: same pipeline, same standards, aimed at the Nokia–ICEYE sovereign LEO venture. Slava Ukraini.
+The question sharpened as I worked — I pivoted and re-aimed the research questions more than once as the evidence demanded. Then, in October 2026, ICEYE and Nokia announced a sovereign LEO satellite communications partnership, and on 22 October signed a Letter of Intent with Ukraine's Ministry of Defence. The news reached me like this:
+
+![Nokia partners with Ukraine to build a Starlink alternative](docs/01-research-design/assets/pivot-trigger-1-headline.jpg)
+![Letter of Intent with the Ministry of Defense of Ukraine, announced 22 October 2026](docs/01-research-design/assets/pivot-trigger-2-loi.jpg)
+![Nokia and ICEYE: secure, sovereign LEO satellite communications for defense, border security and disaster response](docs/01-research-design/assets/pivot-trigger-3-partnership.jpg)
+
+I'm Ukrainian. Secure communications that answer to Kyiv are not an abstract market trend for me — they're critical infrastructure for my country, in a war where a foreign vendor's ten-day throttling decision just demonstrated exactly why sovereignty matters. Getting to work on this question is something I genuinely want, not only academic interest. So the project pivoted with me: same pipeline, same standards, aimed at the Nokia–ICEYE sovereign LEO venture. Slava Ukraini.
 
 ## Research question
 
