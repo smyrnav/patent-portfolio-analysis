@@ -4,6 +4,10 @@
 
 Not affiliated with Nokia.
 
+## Why this repo exists
+
+I saw Nokia's Financial Data Engineering / Business Data Analytics Trainee vacancy and opened this repository to teach myself the analytics the role calls for. Patent portfolio analysis was new territory for me, so this project is a deliberate, working-in-the-open learning exercise: pick a real question, source public data, build the pipeline, document every assumption, and keep the record honest about what holds up and what doesn't. The goal is a defensible work sample for that vacancy — and, along the way, a genuinely learned skill set.
+
 ## Research question
 
 **How should Nokia prioritise its patent portfolio investments to support its AI and cloud infrastructure strategy?**

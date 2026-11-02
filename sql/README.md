@@ -21,3 +21,7 @@ Numbered in the order I ran them, as the exact text used, so older queries keep 
 | [16](16_codebook_sample.sql) | Validation sample | [`codebook_sample.csv`](../data/validation/codebook_sample.csv) | Not recorded |
 | [17](17_codebook_sample_h04l49.sql) | H04L 49-only sample | [`codebook_sample_h04l49.csv`](../data/validation/codebook_sample_h04l49.csv) | Not recorded |
 | [18](18_validation_sample_metadata.sql) | Family and priority date for the labelled sample | [`sample_metadata.csv`](../data/validation/sample_metadata.csv) | Not recorded |
+| [19](19_origin_overlap.sql) | Alcatel/Lucent overlap and distinct-union share | Not run yet | Small |
+| [20](20_category_period.sql) | Pool family counts by company and priority period, for H2 | Not run yet | Small |
+| [21](21_expiry_curve.sql) | Families reaching 20 years per year, for H3 | Not run yet | Small |
+| [22](22_infinera_optical.sql) | Infinera families against the optical pool, for H1 | Not run yet | Small |
