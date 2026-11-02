@@ -64,3 +64,28 @@ These names cover only 178 patents, about 0.5% of the recount, so they don't cha
 
 - Filing date + 20 years is an estimate of expiry, not an exact date. Patents can lapse earlier if fees aren't paid, and term rules can move the date in either direction.
 - A patent declared essential to 5G hasn't necessarily been proven essential.
+
+## Sovereign satcom context (post-pivot)
+
+Mined from the imported [deep-research report](deep-research-ukraine-satcom.md) on 2 November 2026. Status reflects the link it carries, checked the same day.
+
+| Claim | Status | Source |
+|---|---|---|
+| ICEYE and Nokia announced a partnership for sovereign LEO satellite communications on 1 October 2026, first satellites expected 2028 | Confirmed, company announcement | [ICEYE press release](https://www.iceye.com/newsroom/press-releases/iceye-and-nokia-partner-to-launch-secure-and-sovereign-satellite-communications-for-governments-and-defense-customers) |
+| ICEYE, Nokia and Ukraine's Ministry of Defence signed a Letter of Intent on 22 October 2026; no funding, satellite count or schedule disclosed | Confirmed, company announcement; the absence of terms is confirmed by trade coverage | [ICEYE press release](https://www.iceye.com/newsroom/press-releases/iceye-and-nokia-partner-with-the-ministry-of-defence-of-ukraine-to-develop-sovereign-satcom-capability), [Telecoms Tech News](https://www.telecomstechnews.com/news/iceye-and-nokia-sign-ukraine-sovereign-satellite-letter-of-intent/) |
+| The LoI was one of seven documents signed during PM Orpo's Kyiv visit within a €300M package; no value attributed to this document | Reported | [Nordic Defence Sector](https://nordicdefencesector.com/en/article/iceye-and-nokia-sign-loi-with-ukraine-on-sovereign-satellite-communications) |
+| Starshield terminal speed caps over Ukraine, 14–24 October 2026 (restored after ten days); attribution contested between sources | Reported, contested | [United24](https://united24media.com/war-in-ukraine/ukraines-drones-were-hit-by-a-10-day-starlink-speed-limit-what-happened-and-why-it-matters-23813), [CBS News](https://www.cbsnews.com/news/elon-musk-ukraine-spacex-starshield-trump-administration/) |
+| ICEYE delivered Poland's four-satellite MikroSAR sovereign SAR system in under 12 months, contract ~€200M signed May 2025 | Reported, company announcement | [PR Newswire/ICEYE](https://www.prnewswire.com/news-releases/iceye-delivers-mikrosar-system-to-polish-armed-forces-in-under-12-months-302773631.html) |
+| ICEYE had launched 76 satellites by July 2026 and targets 100 satellites/year production by 2027 | Reported, company announcement | [ICEYE press release](https://www.iceye.com/newsroom/press-releases/iceye-launches-four-new-satellites-aboard-transporter-17) |
+| Ukraine's crowdfunded "People's Satellite" has delivered 5,900+ SAR images to Ukrainian intelligence since 2022 | Reported | [Euromaidan Press](https://euromaidanpress.com/2026/05/27/crowdfunded-ukrainian-satellite-that-helped-find-russian-landing-ship-minsk-has-now-delivered-5900-radar-images-to-intelligence/) |
+| Nokia's defence catalogue includes the Banshee 5G Tactical Radio and Mission-Safe Phone; Nokia has a dedicated Space and Defense unit | Confirmed, company announcement | [Nokia press release](https://www.nokia.com/newsroom/nokia-expands-defense-portfolio-with-two-advanced-tactical-communication-solutions/) |
+| Nokia provides base-station technology to AST SpaceMobile and advocates satellite integration into 6G standards from day one | Reported | [Kratos](https://www.kratosspace.com/constellations/articles/nokia-urges-3gpp-to-integrate-satellite-into-6g-from-day-1) |
+| Poland finances 29,000+ Starlink terminals for Ukraine at roughly US$50M/year | Secondary, single analysis source | [Tech-Insider](https://tech-insider.org/sikorski-musk-starlink-politics-ukraine-2026/) |
+| EU IRIS² constellation: 348 satellites, first Ka-band military satellites 2029, full operations ~2032 | Secondary | [Technology.org](https://www.technology.org/2026/10/30/eutelsat-iris2-10-billion-revenue-starlink-rival/), [Wikipedia: IRIS²](https://en.wikipedia.org/wiki/IRIS%C2%B2) |
+| ICEYE satellites currently launch on SpaceX rideshare missions | Confirmed pattern in launch coverage; supply-chain sovereignty gap stands | [ESA Earth Online](https://earth.esa.int/eogateway/missions/iceye) |
+| On 19 October 2026, Russia's Kosmos-2612 approached within ~26 m of ICEYE-X36 | Reported, single source chain | [United24](https://united24media.com/war-in-ukraine/ukraines-drones-were-hit-by-a-10-day-starlink-speed-limit-what-happened-and-why-it-matters-23813) |
+
+**What this means for the analysis:**
+
+- The market context is confirmed; the programme is not. No funding, count or schedule exists to model — RQ4 can only run scenario ranges, not a programme business case.
+- The competitor set for the pivot is grounded: Starlink/Starshield (incumbent, patent-opaque), Eutelsat OneWeb (rented European capacity), IRIS² (sovereign but 2030s), ICEYE×Nokia (sovereign, national, 2028 target).

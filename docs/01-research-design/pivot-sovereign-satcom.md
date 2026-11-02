@@ -15,7 +15,7 @@ How the news reached me (via [Cybernews](https://cybernews.com/tech/nokia-ukrain
 ![LoI signed with the Ministry of Defense of Ukraine, announced 22 October 2026](assets/pivot-trigger-2-loi.jpg)
 ![Nokia and ICEYE partnership for secure, sovereign LEO satellite communications](assets/pivot-trigger-3-partnership.jpg)
 
-The screenshots are the discovery record; the press release and reporting linked above are the evidence.
+The screenshots are the discovery record; the press release and reporting linked above are the evidence. Broader context — including the 14–24 October Starshield restriction that preceded the LoI, what each partner brings, and the Starlink / OneWeb / IRIS² landscape — is in the imported [deep-research report](../appendices/deep-research-ukraine-satcom.md), with its key claims status-tagged in [sources.md](../appendices/sources.md#sovereign-satcom-context-post-pivot).
 
 ## Why pivot
 
