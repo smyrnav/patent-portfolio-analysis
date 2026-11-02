@@ -41,7 +41,7 @@ What the analysis takes as given, separated into verified inputs and hypothetica
 |---|---|---|---|---|---|---|
 | T1 | [Codebook labels](../02-methodology/classification-codebook.md) separate the three categories reliably | Version 1.1 | All comparisons | High | Agreement test | Not tested. First-pass labels only |
 | T2 | CPC codes find most relevant families | H04B 10, H04J 14, H04Q 11/00, H04L 45, H04L 49 | Share and growth | High | Recall test | Not tested. [Precision failed](../02-methodology/validation.md#precision-result) |
-| T3 | Optical, routing and switching represent AI and cloud infrastructure | Three categories | The central question | High | Use `ai_cloud_relevance` | Weak so far: 1 explicit AI patent in the 343 tested |
+| T3 | ~~Optical, routing and switching represent AI and cloud infrastructure~~ Superseded by the [2 November 2026 pivot](../01-research-design/pivot-sovereign-satcom.md): the categories no longer stand proxy for the central question | Three categories | The central question | High | New satcom code pools, then recall test | Retired: 1 explicit AI patent in the 343 tested |
 
 ### Costs: what would it cost?
 

@@ -4,7 +4,9 @@ This is the authoritative protocol for the project. The [scope](scope.md) and [r
 
 ## Central research question
 
-> **How should Nokia prioritise its patent portfolio investments to support its AI and cloud infrastructure strategy?**
+> **Which technological capabilities, patent assets and investment priorities are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?**
+
+Adopted 2 November 2026 in the [pivot to sovereign satellite communications](pivot-sovereign-satcom.md). The pipeline diagram below shows the method as built and tested on optical networking, IP routing and data-centre switching; the technology categories, comparators and hypotheses are being re-aimed per the pivot checklist.
 
 ## Research basis and limitations
 

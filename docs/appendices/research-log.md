@@ -72,3 +72,7 @@ I used software assistance for a repository review and checked each recommendati
 ## Pivot to sovereign satcom, 2 November 2026
 
 The ICEYE–Nokia–Ukraine Letter of Intent (22 October 2026) is the strongest public signal of where Nokia is placing a new bet, so the research question pivots from AI and cloud infrastructure to sovereign satellite communications and defence connectivity. Decision, sources, impact map and execution checklist: [pivot-sovereign-satcom.md](../01-research-design/pivot-sovereign-satcom.md). The pipeline, validation method and cost model carry over; the technology categories, peer set and hypotheses do not.
+
+## Central question rewritten, 2 November 2026
+
+Same day as the pivot decision: adopted the new central question — *Which technological capabilities, patent assets and investment priorities are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?* — and rewrote it in `config/research_parameters.toml`, the README (new title: *Sovereign LEO Communications — Nokia–ICEYE: Technology, Patent Portfolio and Strategic Investment Analysis*), the research design and the five research questions in one pass. H1–H4 are retired in place, T3 in the assumptions register is superseded, and the scope keeps the old categories explicitly marked as the pre-pivot lens pending new satcom code pools. Tests stayed green throughout.

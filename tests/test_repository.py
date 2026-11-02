@@ -50,6 +50,8 @@ class Wording(unittest.TestCase):
     def test_central_question_is_identical_everywhere(self):
         central = CFG["question"]["central"]
         for doc in DOCS:
+            if doc.name in LOGS:  # logs quote superseded wording as dated history
+                continue
             for found in re.findall(r"How should Nokia prioriti[sz]e[^?*]*\?", doc.read_text()):
                 self.assertEqual(found, central, doc.name)
         self.assertIn(central, (ROOT / "README.md").read_text())

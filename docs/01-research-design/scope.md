@@ -4,6 +4,8 @@ All documents use this scope, and [`config/research_parameters.toml`](../../conf
 
 ## Technology
 
+> **Post-pivot note (2 November 2026):** these three categories are the pre-pivot lens the pipeline was built and tested on. They are being replaced by satellite-communications code pools per the [pivot checklist](pivot-sovereign-satcom.md#checklist-to-execute-the-pivot). Until the new pools are defined and validated, no satcom comparative claim is made.
+
 | Category | Definition | Primary competitor | Nokia unit |
 |---|---|---|---|
 | **OPT:** Optical networking | Optical transmission, transport, multiplexing and optical switching | Ciena | Optical Networks |

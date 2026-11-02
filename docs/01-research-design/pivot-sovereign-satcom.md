@@ -1,7 +1,7 @@
 # Pivot: sovereign satellite communications
 
 **Date:** 2 November 2026
-**Status:** Decided. Canonical rewrite of the research question across the repository is the next step (see checklist below).
+**Status:** Executed. The central question was rewritten across the repository on the same day (checklist item 2 done). Code pools (item 1) are the next step.
 
 ## Trigger
 
@@ -21,11 +21,11 @@ The screenshots are the discovery record; the press release and reporting linked
 
 The original question asked how Nokia's patent portfolio supports its AI and cloud infrastructure strategy. The ICEYE partnership is the strongest public signal yet of where Nokia is actually placing a new bet: sovereign satellite communications and defence connectivity. Analysing that bet is more current, more distinctive as a work sample, and still squarely patent portfolio analytics — the skill set the vacancy calls for. The question changes; the craft doesn't.
 
-## New central question (candidate)
+## New central question (adopted)
 
-> How should Nokia develop its patent portfolio to support a sovereign satellite communications and defence connectivity strategy?
+> Which technological capabilities, patent assets and investment priorities are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?
 
-This wording is provisional. The canonical question lives in `config/research_parameters.toml` and is enforced by `tests/test_repository.py`; switching it means updating every document in one pass so the consistency test stays green.
+Adopted 2 November 2026. The canonical question lives in `config/research_parameters.toml` and is enforced by `tests/test_repository.py`; the rewrite covered the config, README, research design, research questions, scope and the assumptions register in one pass, with the consistency test green.
 
 ## What the analysis will be used for
 

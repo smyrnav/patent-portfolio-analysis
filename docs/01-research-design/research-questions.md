@@ -1,13 +1,13 @@
 # Research questions
 
-Five questions support the [central research question](research-design.md#central-research-question). Each one feeds the next: position, comparison, business fit, cost, then priorities.
+Five questions support the [central research question](research-design.md#central-research-question). Each one feeds the next: position, comparison, business fit, cost, then priorities. Re-aimed to sovereign LEO satellite communications in the [2 November 2026 pivot](pivot-sovereign-satcom.md).
 
 | # | Research question | Investigation | Expected output | Limit |
 |---|---|---|---|---|
-| **RQ1** | What is Nokia's publicly observable patent position in AI and cloud infrastructure technologies? | Patent portfolio inventory, classification, geographical coverage and lifecycle | Validated patent database | Ownership and legal status are incomplete, especially outside the US |
-| **RQ2** | How does Nokia's position compare with relevant competitors? | Technology-specific patent activity, commercial developments and competitive benchmarking | Competitive landscape | A patent position isn't commercial success |
-| **RQ3** | Are there potential gaps or misalignments between Nokia's technological portfolio and emerging commercial opportunities? | Patent activity against market developments and technology trends | Opportunity and exposure analysis | Public links between patents and products are limited |
-| **RQ4** | What are the financial characteristics and potential costs of maintaining the portfolio? | Maintenance fees, geographical coverage, cost forecasts and sensitivity analysis | Portfolio economics model | Statutory fees only. It can't measure Nokia's actual spending or efficiency |
+| **RQ1** | What is Nokia's publicly observable patent position in satellite communications and non-terrestrial networks? | Patent portfolio inventory, classification, geographical coverage and lifecycle | Validated patent database | Ownership and legal status are incomplete, especially outside the US |
+| **RQ2** | How does Nokia's position compare with the actors that matter in sovereign satcom, and what does ICEYE add? | Technology-specific patent activity, commercial developments and competitive benchmarking | Competitive landscape | A patent position isn't commercial success |
+| **RQ3** | Are there capability gaps or technological dependencies between the partnership's portfolio and the requirements of sovereign government and defence customers? | Patent activity against programme requirements and technology trends | Opportunity and exposure analysis | Public links between patents and products are limited, and defence requirements are partly classified |
+| **RQ4** | What are the financial characteristics and potential costs of building and maintaining the required portfolio? | Maintenance fees, geographical coverage, cost forecasts and sensitivity analysis | Portfolio economics model | Statutory fees only. It can't measure Nokia's actual spending or efficiency |
 | **RQ5** | What investment priorities and alternative portfolio strategies emerge from the evidence? | Scenario analysis, assumptions and investment trade-offs | Management recommendations | Shows priorities to investigate, not final decisions |
 
 Current status is in the [evidence tracker](../appendices/evidence-gaps.md). The patent database isn't validated yet, so "validated" above is the target rather than a claim.
@@ -16,9 +16,9 @@ Current status is in the [evidence tracker](../appendices/evidence-gaps.md). The
 
 ## Hypotheses
 
-Each can be disproved, and each feeds a named question.
+**H1–H4 below are retired.** They belong to the pre-pivot optical/routing/switching scope; new satcom hypotheses get drafted once the new code pools exist, per the [pivot checklist](pivot-sovereign-satcom.md#checklist-to-execute-the-pivot). Kept here for the record.
 
-| # | Hypothesis | Feeds | Measure | What would disprove it |
+| # | Hypothesis (retired) | Feeds | Measure | What would disprove it |
 |---|---|---|---|---|
 | **H1** | Infinera materially strengthened Nokia's optical position | RQ1, RQ2 | Optical families and share, with and without Infinera | Infinera adds little in key optical areas, or mostly duplicates Nokia's cover |
 | **H2** | Nokia's position trails the leaders in IP routing and data-centre switching | RQ2 | Share of new families in routing and switching, 2020–2024 | Nokia's share is level with or above the leaders' |

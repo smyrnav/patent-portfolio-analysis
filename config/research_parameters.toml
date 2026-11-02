@@ -1,7 +1,7 @@
 # Single source for the project's research parameters. Scripts and tests read this file.
 
 [question]
-central = "How should Nokia prioritise its patent portfolio investments to support its AI and cloud infrastructure strategy?"
+central = "Which technological capabilities, patent assets and investment priorities are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?"
 
 [scope]
 labels = ["OPT", "IPR", "DCS"]

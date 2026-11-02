@@ -1,4 +1,6 @@
-# Nokia Patent Portfolio Investment Analysis
+# Sovereign LEO Communications
+
+**Nokia–ICEYE: Technology, Patent Portfolio and Strategic Investment Analysis**
 
 **Independent research project | [Financial Data Engineering / Business Data Analytics Trainee](https://www.linkedin.com/jobs/view/4483030441) application, Business Data Analytics track**
 
@@ -10,17 +12,20 @@ I saw Nokia's Financial Data Engineering / Business Data Analytics Trainee vacan
 
 ## Research question
 
-**How should Nokia prioritise its patent portfolio investments to support its AI and cloud infrastructure strategy?**
+**Which technological capabilities, patent assets and investment priorities are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?**
 
-## Research scope
+The project [pivoted to this question](docs/01-research-design/pivot-sovereign-satcom.md) on 2 November 2026, after ICEYE and Nokia signed a Letter of Intent with the Ministry of Defence of Ukraine.
 
-This project investigates Nokia's publicly observable patent portfolio and its position in three technology areas relevant to AI and cloud infrastructure:
+## Analytical focus
 
-- Optical networking
-- IP routing
-- Data-centre switching
+- Satellite communications and non-terrestrial networks (NTN)
+- Secure and resilient connectivity
+- Ground infrastructure and network integration
+- Satellite terminals and communications technology
+- Patent portfolios, technological dependencies and competitors
+- Strategic investment priorities
 
-Nokia is benchmarked against Ciena, Cisco and Arista Networks, with Huawei as an additional global reference. [Full scope](docs/01-research-design/scope.md).
+The pipeline was built and tested on optical networking, IP routing and data-centre switching. Those categories are being replaced by satellite-communications code pools per the [pivot checklist](docs/01-research-design/pivot-sovereign-satcom.md#checklist-to-execute-the-pivot); the results below predate the pivot and show the method, not the answer to the new question. [Full scope](docs/01-research-design/scope.md).
 
 ## Research objective
 
