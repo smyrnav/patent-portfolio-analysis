@@ -1,0 +1,9 @@
+stage,measure,patents,unique_patents,share
+pilot,MULTI,1,78,0.013
+pilot,Low confidence,6,78,0.077
+pilot,MULTI or low confidence,6,78,0.077
+pilot,Status pending,78,78,1.0
+test,MULTI,3,343,0.009
+test,Low confidence,38,343,0.111
+test,MULTI or low confidence,39,343,0.114
+test,Status pending,343,343,1.0

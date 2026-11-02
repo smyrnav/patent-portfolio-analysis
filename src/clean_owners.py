@@ -1,4 +1,4 @@
-"""Sort the raw owner names into company families and flag likely typos."""
+"""Sort raw owner names into company lineages and flag likely typos for review."""
 import csv
 import re
 from collections import Counter, defaultdict
@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data/raw/owner_counts.csv"
-OUT = ROOT / "data/processed/owner_mapping.csv"
+OUT = ROOT / "data/interim/owner_mapping.csv"
 
 NOT_NOKIA = re.compile(r"\bNOKIAN\b")
 REVIEW = re.compile(
@@ -20,7 +20,7 @@ TYPO_SIMILARITY = 0.88
 ESTABLISHED_NAME = 20
 
 
-def family(name: str) -> str:
+def company_lineage(name: str) -> str:
     upper = name.upper()
     if NOT_NOKIA.search(upper):
         return "Not Nokia (Nokian Tyres)"
@@ -32,7 +32,9 @@ def family(name: str) -> str:
         return "Nokia Siemens Networks"
     if "ALCATEL" in upper:
         return "Alcatel and Alcatel-Lucent"
-    return "Nokia"
+    if "NOKIA" in upper:
+        return "Nokia"
+    return "Unresolved"
 
 
 def main() -> None:
@@ -49,21 +51,21 @@ def main() -> None:
                 if s > score:
                     match, score = candidate, s
         typo = score >= TYPO_SIMILARITY
-        out.append((name, count, family(name), match if typo else "", round(score, 2) if typo else ""))
+        out.append((name, count, company_lineage(name), match if typo else "", round(score, 2) if typo else ""))
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with OUT.open("w", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["owner", "granted_patents", "family", "likely_variant_of", "similarity"])
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["owner", "granted_patents", "company_lineage", "likely_variant_of", "similarity"])
         w.writerows(out)
 
     names, listings = Counter(), Counter()
-    for _, count, fam, *_ in out:
-        names[fam] += 1
-        listings[fam] += count
+    for _, count, lineage, *_ in out:
+        names[lineage] += 1
+        listings[lineage] += count
     print(f"{len(out)} names, {sum(listings.values())} listings")
-    for fam, total in listings.most_common():
-        print(f"{fam:30} names={names[fam]:3} listings={total}")
+    for lineage, total in listings.most_common():
+        print(f"{lineage:30} names={names[lineage]:3} listings={total}")
     print("likely variants:", sum(1 for r in out if r[3]), "covering", sum(r[1] for r in out if r[3]))
     groups = defaultdict(list)
     for r in out:

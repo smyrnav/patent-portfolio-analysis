@@ -1,0 +1,16 @@
+pool,company,pool_size_us_families,labelled,claims_match_and_lineage_assignee,est_families_mid
+OPT,Arista,13,10,7,9
+OPT,Ciena,438,20,12,263
+OPT,Cisco,359,20,13,233
+OPT,Huawei,1065,10,7,746
+OPT,Nokia,904,40,28,633
+IPR,Arista,238,10,6,143
+IPR,Ciena,257,20,7,90
+IPR,Cisco,2264,20,7,792
+IPR,Huawei,1784,10,4,714
+IPR,Nokia,622,40,13,202
+DCS-H04L49,Arista,83,10,4,33
+DCS-H04L49,Ciena,81,20,10,40
+DCS-H04L49,Cisco,549,20,8,220
+DCS-H04L49,Huawei,437,10,4,175
+DCS-H04L49,Nokia,175,40,6,26

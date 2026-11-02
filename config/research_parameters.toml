@@ -1,0 +1,48 @@
+# Single source for the project's research parameters. Scripts and tests read this file.
+
+[question]
+central = "How should Nokia prioritise its patent portfolio investments to support its AI and cloud infrastructure strategy?"
+
+[scope]
+labels = ["OPT", "IPR", "DCS"]
+all_classes = ["OPT", "IPR", "DCS", "OTHER", "MULTI"]
+reference_company = "Nokia"
+core_peers = ["Ciena", "Cisco", "Arista"]
+global_reference = "Huawei"
+offices = ["US", "EP", "CN", "JP"]
+filings_since = 19961101
+twenty_year_cutoff = 20061101
+possibly_pending_since = 20210101
+main_comparison_years = [2020, 2024]
+provisional_years = [2025, 2026]
+
+[retrieval_pools]
+OPT = ["H04B10/", "H04J14/", "H04Q11/00"]
+IPR = ["H04L45/"]
+# H04L47 is part of the initial DCS retrieval pool alongside H04L49, matching sql/16_codebook_sample.sql.
+DCS = ["H04L49/", "H04L47/"]
+
+[validation]
+codebook_version = "1.1"
+precision_bar = 0.85
+kappa_bar = 0.70
+review_statuses = ["pending", "adjudicated", "accepted"]
+confidence_levels = ["High", "Medium", "Low"]
+priority_periods = [[0, 20101231, "to 2010"], [20110101, 20151231, "2011-2015"], [20160101, 20201231, "2016-2020"], [20210101, 99999999, "2021 on"]]
+
+[lineage_names]
+Nokia = "nokia|alcatel|lucent|infinera"
+Ciena = "ciena"
+Cisco = "cisco|acacia|luxtera"
+Arista = "arista"
+Huawei = "huawei"
+
+[us_fees_large_entity_usd]
+# Check against the USPTO fee schedule before use, because fees change.
+year_3_5 = 2150
+year_7_5 = 4040
+year_11_5 = 8280
+
+[model]
+horizon_years = 10
+discount_rates = [0.05, 0.10, 0.15]

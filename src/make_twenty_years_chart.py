@@ -50,9 +50,9 @@ clean(ax)
 ax = axes[0, 1]
 x, y = zip(*series(fin, "fiscal_year", "licensing_unit_net_sales_eur_m"))
 ax.bar(x, y, color=[ACCENT if v in (2017, 2024) else MID for v in x], width=.72)
-ax.set_title("Licensing-unit net sales, €M: it moves with renewal cycles", loc="left", fontweight="bold")
+ax.set_title("Licensing-unit net sales, €M (reported figures)", loc="left", fontweight="bold")
 ax.annotate("Catch-up\nabout €300M", (2017, 1654), (2013.2, 1760), arrowprops=dict(arrowstyle="-", color=INK))
-ax.annotate("Renewal cycle:\n€1,085M, then €1,928M", (2024, 1928), (2018.2, 2010), arrowprops=dict(arrowstyle="-", color=INK))
+ax.annotate("Reported increase:\n€1,085M to €1,928M", (2024, 1928), (2018.2, 2010), arrowprops=dict(arrowstyle="-", color=INK))
 ax.set_ylim(0, 2300)
 clean(ax)
 
@@ -65,7 +65,7 @@ ax.axvspan(2023, 2024, color=LIGHT, alpha=.4, lw=0)
 ax.text(2023.5, 3150, "Provisional", ha="center", color=MUTED, fontsize=10)
 ax.set_ylim(0, 3500)
 ax.legend(frameon=False, loc="lower left")
-ax.set_title("My data follows Nokia's own reported figures", loc="left", fontweight="bold")
+ax.set_title("Reported inventions and reconstructed families; definitions differ", loc="left", fontweight="bold")
 clean(ax)
 
 ax = axes[1, 1]

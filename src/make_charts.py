@@ -21,7 +21,6 @@ def hide(ax):
 # Patents by origin
 with (ROOT / "data/processed/us_30y_recount.csv").open(newline="") as f:
     origins = [r for r in csv.DictReader(f) if r["row_type"] == "origin"]
-total = sum(int(r["patents"]) for r in origins)
 labels = [r["label"] for r in origins]
 values = [int(r["patents"]) for r in origins]
 colors = [ACCENT if l in ("Alcatel and Alcatel-Lucent", "Lucent") else MUTED for l in labels]
@@ -29,11 +28,12 @@ fig, ax = plt.subplots(figsize=(10, 4.6))
 ax.barh(labels, values, color=colors, height=.62)
 ax.invert_yaxis()
 for i, v in enumerate(values):
-    ax.text(v + 250, i, f"{v:,} ({v / total * 100:.0f}%)", va="center", fontsize=11)
+    ax.text(v + 250, i, f"{v:,}", va="center", fontsize=11)
 ax.set_xlim(0, max(values) * 1.2)
 hide(ax)
-ax.set_title("46% of US patents filed since 1996 carry an Alcatel or Lucent name", loc="left", fontweight="bold", x=-.28)
-fig.tight_layout()
+ax.set_title("US publications by historical applicant origin; origins overlap", loc="left", fontweight="bold", x=-.28)
+fig.text(.02, .015, "One publication can appear in multiple origins. The distinct Alcatel/Lucent union requires a corrected SQL rerun.", color=MUTED, fontsize=10)
+fig.tight_layout(rect=(0, .08, 1, 1))
 fig.savefig(IMG / "origin_30y.png", dpi=160)
 
 # Applications by patent office

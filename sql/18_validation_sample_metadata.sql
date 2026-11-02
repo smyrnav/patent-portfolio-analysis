@@ -1,0 +1,4 @@
+-- Family ID and priority date for the 421 labelled patents, for data/validation/sample_metadata.csv.
+-- Run on 1 November 2026 with the full list of publication numbers from data/validation/validation_slots.csv in the IN clause.
+-- It returned one concatenated cell, which I split into the CSV. Applicant and current assignee in that CSV come from the saved Google Patents pages.
+SELECT STRING_AGG(CONCAT(publication_number,'|',CAST(family_id AS STRING),'|',CAST(priority_date AS STRING),'|',CAST(filing_date AS STRING),'|',ARRAY_TO_STRING(owners,';')),'#') AS x FROM (SELECT publication_number,family_id,priority_date,filing_date,owners FROM nokia_analytics.portfolio_30y UNION ALL SELECT publication_number,family_id,priority_date,filing_date,owners FROM nokia_analytics.rivals_30y) WHERE publication_number IN (/* the 421 publication numbers */);
