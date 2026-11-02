@@ -146,4 +146,4 @@ The reports stay out of the repo because of their size, and [the manifest](data/
 
 ## How this was made
 
-I chose the question, sources and method, and I am responsible for the methods, validation, calculations and conclusions. I used Claude for script drafting, browser-assisted query execution, document drafting and software-generated first-pass patent labels, and ChatGPT for a repository-structure review. Those labels haven't been human reviewed; the [validation page](docs/02-methodology/validation.md#who-labelled-what) records what remains to be checked.
+I chose the question, sources and method, and I am responsible for the methods, validation, calculations and conclusions. I used Claude for script drafting, browser-assisted query execution, document drafting and software-generated first-pass patent labels, and Kimi for a repository-structure review. Those labels haven't been human reviewed; the [validation page](docs/02-methodology/validation.md#who-labelled-what) records what remains to be checked.
