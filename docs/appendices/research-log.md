@@ -68,3 +68,7 @@ I used software assistance for a repository review and checked each recommendati
 - The README disclosure understated the software's role. It's now specific.
 - The estimates table compared Nokia with other assignees removed against competitors without that adjustment. [Both are now shown on the same basis](../03-market-and-patent-analysis/patent-landscape.md#the-same-estimate-keeping-only-patents-without-another-current-assignee).
 - Recalculating from unrounded shares moved four range edges by 1, such as Nokia routing's upper end from 330 to 329.
+
+## Pivot to sovereign satcom, 2 November 2026
+
+The ICEYE–Nokia–Ukraine Letter of Intent (22 October 2026) is the strongest public signal of where Nokia is placing a new bet, so the research question pivots from AI and cloud infrastructure to sovereign satellite communications and defence connectivity. Decision, sources, impact map and execution checklist: [pivot-sovereign-satcom.md](../01-research-design/pivot-sovereign-satcom.md). The pipeline, validation method and cost model carry over; the technology categories, peer set and hypotheses do not.
