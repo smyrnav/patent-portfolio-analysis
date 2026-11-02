@@ -49,6 +49,17 @@ flowchart TD
 
 Dark blue is built, mid blue is partly done, and grey isn't started. [`src/run_all.py`](../../src/run_all.py) reruns every local step, and [`sql/README.md`](../../sql/README.md) records the BigQuery steps.
 
+## What we can investigate with actual data
+
+| Analysis | What it could reveal | Where it runs |
+|---|---|---|
+| Patent landscape | Who holds relevant satellite communications technology | BigQuery patent data, same extraction pipeline as [`sql/`](../../sql/README.md), with new satcom code pools |
+| Nokia vs. competitors | Where Nokia has technological strengths or gaps, and what ICEYE adds | Pool counts by company, as in [`sql/20_category_period.sql`](../../sql/20_category_period.sql), re-aimed at the new peer set |
+| NTN and LEO filing trends | Which technologies are attracting increasing patent activity | Priority-year series per code pool, same period logic as the pre-pivot pools |
+| Ground infrastructure and security | Which capabilities are needed beyond the satellites themselves | Separate ground-segment and security code pools, so space and ground are counted apart |
+| Patent ownership and legal status | Which assets are actually supported by reliable ownership and status evidence | The [five evidence levels](../02-methodology/candidate-portfolio-universe.md#what-each-data-category-establishes), plus USPTO maintenance-fee events once downloaded |
+| Financial and business analysis | What investment and market considerations matter for a sovereign system | [Ten-year maintenance cost model](../04-financial-analysis/ten-year-maintenance-cost-model.md), [assumptions and scenarios](../04-financial-analysis/assumptions-and-scenarios.md), twenty years of annual reports |
+
 ## Where each part lives
 
 | Part | Document |
