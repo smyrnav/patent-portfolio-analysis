@@ -84,3 +84,7 @@ A software-assisted deep-research report on the Ukraine sovereign satcom deal ar
 ## Renamed and made personal, 2 November 2026
 
 Project retitled to *Nokia–ICEYE Sovereign LEO Communications* — the partnership name carries the project better than the generic "Sovereign LEO Communications". The README origin section now records what the pivot actually meant: I'm Ukrainian, the research questions had already moved several times as evidence demanded, and the Ukraine LoI turned a professional exercise into a personal one. Disclosed as motivation, not as evidence.
+
+## Personal position documented, 2 November 2026
+
+The README now states my position plainly: dependence on any foreign private company or foreign administration's politics is itself the vulnerability; Ukraine's communications must be Ukraine's; Finland sheltered me and this project is part of earning my keep. Recorded as motivation, explicitly not as evidence. The language is deliberate — the position is strong, so it doesn't need to be loud; insults would only give a reviewer a reason to discount the analysis.
