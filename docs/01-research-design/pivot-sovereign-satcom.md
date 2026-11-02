@@ -9,6 +9,14 @@ On 22 October 2026, ICEYE and Nokia signed a Letter of Intent with the Ministry 
 
 This is a verified public fact. What a Letter of Intent will become — contract, programme, cancellation — is unknown and must not be treated as revenue.
 
+How the news reached me (via [Cybernews](https://cybernews.com/tech/nokia-ukraine-starlink/) on Instagram, 24 October 2026):
+
+![Headline: Nokia partners with Ukraine to build a Starlink alternative](assets/pivot-trigger-1-headline.jpg)
+![LoI signed with the Ministry of Defense of Ukraine, announced 22 October 2026](assets/pivot-trigger-2-loi.jpg)
+![Nokia and ICEYE partnership for secure, sovereign LEO satellite communications](assets/pivot-trigger-3-partnership.jpg)
+
+The screenshots are the discovery record; the press release and reporting linked above are the evidence.
+
 ## Why pivot
 
 The original question asked how Nokia's patent portfolio supports its AI and cloud infrastructure strategy. The ICEYE partnership is the strongest public signal yet of where Nokia is actually placing a new bet: sovereign satellite communications and defence connectivity. Analysing that bet is more current, more distinctive as a work sample, and still squarely patent portfolio analytics — the skill set the vacancy calls for. The question changes; the craft doesn't.
