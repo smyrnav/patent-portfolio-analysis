@@ -20,7 +20,7 @@ The question sharpened as I worked — I pivoted and re-aimed the research quest
   <img src="docs/01-research-design/assets/pivot-trigger-3-partnership-sq.jpg" alt="Nokia and ICEYE: secure, sovereign LEO satellite communications for defense, border security and disaster response" width="32%">
 </p>
 
-I'm Ukrainian, and this pivot is personal: secure communications that answer to Kyiv are critical infrastructure for my country, not an abstract market trend. October 2026 showed why — a foreign vendor throttled Ukraine's service for ten days without warning, and dependence itself proved to be the vulnerability. Finland sheltered me and gave me the chance to build a professional life; this project is part of earning my keep. I would be glad to bring these skills to the Nokia–ICEYE effort. This motivation is disclosed as such — every claim in the repository still has to pass the same checks.
+I'm Ukrainian, and this pivot is personal: secure communications that answer to Kyiv are critical infrastructure for my country, not an abstract market trend. October 2026 showed why — a foreign vendor throttled Ukraine's service for ten days without warning, and dependence itself proved to be the vulnerability. Finland has been a reliable and dependable ally in these unprecedentedly dark times, helping Ukraine defend itself and hosting thousands of Ukrainians. So naturally, participating in this project — and, hopefully, in the Nokia–ICEYE effort itself — is how I would like to contribute. This motivation is disclosed as such; every claim in the repository still has to pass the same checks.
 
 ## Research question
 

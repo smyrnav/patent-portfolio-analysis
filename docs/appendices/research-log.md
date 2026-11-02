@@ -87,4 +87,4 @@ Project retitled to *Nokia–ICEYE Sovereign LEO Communications* — the partner
 
 ## Personal position documented, 2 November 2026
 
-The README now states my position plainly: dependence on any foreign private company or foreign administration's politics is itself the vulnerability; Ukraine's communications must be Ukraine's; Finland sheltered me and this project is part of earning my keep. Recorded as motivation, explicitly not as evidence. The language is deliberate — the position is strong, so it doesn't need to be loud; insults would only give a reviewer a reason to discount the analysis.
+The README now states my position plainly: dependence on any foreign private company or foreign administration's politics is itself the vulnerability; Finland has been a reliable and dependable ally in these unprecedentedly dark times, and participating in this project is how I would like to contribute. Recorded as motivation, explicitly not as evidence. Personal circumstances stay private — nationality is relevant to the pivot; nothing beyond it is.
