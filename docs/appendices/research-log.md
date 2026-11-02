@@ -80,3 +80,7 @@ Same day as the pivot decision: adopted the new central question — *Which tech
 ## Deep-research report imported, 2 November 2026
 
 A software-assisted deep-research report on the Ukraine sovereign satcom deal arrived from the Kimi browser version. Imported as [deep-research-ukraine-satcom.md](deep-research-ukraine-satcom.md) with a provenance header: every claim is a source lead, not a project fact. Key claims mined into [sources.md](sources.md#sovereign-satcom-context-post-pivot) with status labels. Its two figures weren't available and its closing editorial line was omitted. Unlike the earlier browser report (AI-RAN/6G drift, rejected), this one is on-scope for the pivot.
+
+## Renamed and made personal, 2 November 2026
+
+Project retitled to *Nokia–ICEYE Sovereign LEO Communications* — the partnership name carries the project better than the generic "Sovereign LEO Communications". The README origin section now records what the pivot actually meant: I'm Ukrainian, the research questions had already moved several times as evidence demanded, and the Ukraine LoI turned a professional exercise into a personal one. Disclosed as motivation, not as evidence.

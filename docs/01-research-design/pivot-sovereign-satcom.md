@@ -21,6 +21,8 @@ The screenshots are the discovery record; the press release and reporting linked
 
 The original question asked how Nokia's patent portfolio supports its AI and cloud infrastructure strategy. The ICEYE partnership is the strongest public signal yet of where Nokia is actually placing a new bet: sovereign satellite communications and defence connectivity. Analysing that bet is more current, more distinctive as a work sample, and still squarely patent portfolio analytics — the skill set the vacancy calls for. The question changes; the craft doesn't.
 
+There is also a personal stake, disclosed for honesty rather than effect: I'm Ukrainian. Sovereign communications for Ukraine are critical infrastructure for my own country, which makes this question genuinely mine — and makes the honesty machinery below matter more, not less. Motivation is not evidence; every claim still has to pass the same checks.
+
 ## New central question (adopted)
 
 > Which technological capabilities, patent assets and investment priorities are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?
