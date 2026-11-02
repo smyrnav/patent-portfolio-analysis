@@ -20,13 +20,7 @@ The question sharpened as I worked — I pivoted and re-aimed the research quest
   <img src="docs/01-research-design/assets/pivot-trigger-3-partnership-sq.jpg" alt="Nokia and ICEYE: secure, sovereign LEO satellite communications for defense, border security and disaster response" width="32%">
 </p>
 
-I'm Ukrainian. Secure communications that answer to Kyiv are not an abstract market trend for me — they're critical infrastructure for my country, in a war where a foreign vendor's ten-day throttling decision just demonstrated exactly why sovereignty matters. Getting to work on this question is something I genuinely want, not only academic interest. So the project pivoted with me: same pipeline, same standards, aimed at the Nokia–ICEYE sovereign LEO venture. Slava Ukraini.
-
-**My position, stated plainly.** October 2026 proved that a nation's critical infrastructure cannot rest on the unilateral decisions of a foreign private company, or on the politics of any foreign administration — however allied it may be today. Dependence itself is the vulnerability, whoever holds the lever: what can be throttled without warning, explanation or appeal is not a capability you own. Ukraine's communications must be Ukraine's — and Europe's sovereign capacity must be Europe's.
-
-Finland has been a steadfast ally: it sheltered Ukrainian refugees and gave them the chance to become professionals and rebuild their lives in safety. I'm one of them, and this project is part of earning my keep — bringing the skills I've built to the alliance that took me in. Joining the Nokia–ICEYE effort, even at the level of analysing its patent and investment landscape as a trainee, would be a privilege I'd work hard to deserve.
-
-This position is disclosed as motivation, not smuggled in as evidence. Every analytical claim in this repository still has to pass the same checks, and the record of what held up and what didn't is public.
+I'm Ukrainian, and this pivot is personal: secure communications that answer to Kyiv are critical infrastructure for my country, not an abstract market trend. October 2026 showed why — a foreign vendor throttled Ukraine's service for ten days without warning, and dependence itself proved to be the vulnerability. Finland sheltered me and gave me the chance to build a professional life; this project is part of earning my keep. I would be glad to bring these skills to the Nokia–ICEYE effort. This motivation is disclosed as such — every claim in the repository still has to pass the same checks.
 
 ## Research question
 
