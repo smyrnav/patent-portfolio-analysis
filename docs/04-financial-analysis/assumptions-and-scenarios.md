@@ -78,7 +78,7 @@ Filing, attorney and translation costs are [outside the statutory baseline](ten-
 | # | Assumption | Current value | Affects | Impact | How to test | Status |
 |---|---|---|---|---|---|---|
 | B1 | The budget is limited and can be moved between activities | Assumed | The whole question | High | Ask the team if I get the chance | Assumed |
-| B3 | Dropping low-signal patents wouldn't harm licensing | Not set | Savings against risk | High | State the risk, and test the shortlist against declarations | Not tested |
+| B3 | Dropping patents with weak indicators wouldn't harm licensing | Not set | Savings against risk | High | State the risk, and test the shortlist against declarations | Not tested |
 | B4 | Costs can be allocated to business units | Not set | Scenarios | Medium | State a rule for families serving several units | Not started |
 | B5 | Team capacity per task | Not set | Capacity plan | Low | Assumed hours as ranges | Not started |
 
@@ -90,7 +90,7 @@ There are two sets, and they answer different questions.
 
 | Set | Question | Options |
 |---|---|---|
-| **Maintenance scenarios (RQ4)** | What would a defined set of rights cost? | [A Maintain, B Selective maintenance, C Optimisation](ten-year-maintenance-cost-model.md#scenarios) |
+| **Maintenance scenarios (RQ5)** | What would a defined set of rights cost? | [A Maintain, B Selective maintenance, C Optimisation](ten-year-maintenance-cost-model.md#scenarios) |
 | **Investment strategies (RQ5)** | Where should patent investment go? | Below |
 
 | Strategy | What changes | What I'd compare |

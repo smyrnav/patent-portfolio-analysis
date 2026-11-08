@@ -1,6 +1,6 @@
 # Patent landscape
 
-**Status: first estimates, low confidence.** This page answers RQ1 and RQ2 as far as the evidence goes. It uses claim-based estimates because [code counts failed the precision test](../02-methodology/validation.md#precision-result).
+**Status: first estimates, low confidence, pre-pivot.** This page answers the pre-pivot position and comparison questions as far as the evidence goes. It uses claim-based estimates because [code counts failed the precision test](../02-methodology/validation.md#precision-result).
 
 ## Estimated US families by company
 

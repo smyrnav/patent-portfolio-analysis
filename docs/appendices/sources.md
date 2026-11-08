@@ -87,5 +87,5 @@ Mined from the imported [deep-research report](deep-research-ukraine-satcom.md) 
 
 **What this means for the analysis:**
 
-- The market context is confirmed; the programme is not. No funding, count or schedule exists to model — RQ4 can only run scenario ranges, not a programme business case.
+- The market context is confirmed; the programme is not. No funding, count or schedule exists to model — the cost model can only run scenario ranges, not a programme business case.
 - The competitor set for the pivot is grounded: Starlink/Starshield (incumbent, patent-opaque), Eutelsat OneWeb (rented European capacity), IRIS² (sovereign but 2030s), ICEYE×Nokia (sovereign, national, 2028 target).

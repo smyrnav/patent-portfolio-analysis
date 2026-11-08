@@ -1,6 +1,6 @@
 # Ten-year maintenance cost model
 
-**Status: designed, not built.** This is the principal financial model and sits under RQ4. It's an indicative statutory maintenance-cost model, **not an estimate of Nokia's actual total patent expenditure.**
+**Status: designed, not built.** This is the principal financial model and feeds RQ5. It's an indicative statutory maintenance-cost model, **not an estimate of Nokia's actual total patent expenditure.**
 
 ## Q9: the research question
 

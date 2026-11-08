@@ -6,11 +6,11 @@ The single record of what's done and what's left, checked against the [central r
 
 | Research question | Needs most | Status |
 |---|---|---|
-| **RQ1.** Nokia's observable patent position | Human hand-labelling and agreement, verified rights and [current owners](questions.md#q22-how-much-of-the-portfolio-i-attribute-to-nokia-does-it-still-own) | 🟡 |
-| **RQ2.** Position against competitors | [First estimates](../03-market-and-patent-analysis/patent-landscape.md), then agreement, recall and 2020–2024 shares | 🟡 |
-| **RQ3.** Gaps against commercial opportunities | [Claim-based trends against commercial figures](../03-market-and-patent-analysis/commercial-alignment.md) | 🟡 |
-| **RQ4.** Costs of maintaining the portfolio | [Verified rights, renewal records and fees for other offices](../04-financial-analysis/ten-year-maintenance-cost-model.md) | 🟡 |
-| **RQ5.** Investment priorities and strategies | All of the above | ❌ |
+| **RQ1.** Reusable Nokia–ICEYE assets | Validated pools; census on the Nokia-lineage and ICEYE tables; [owner evidence](questions.md#q22-how-much-of-the-portfolio-i-attribute-to-nokia-does-it-still-own) | ❌ |
+| **RQ2.** Third-party exposure | New peers table (name research first), then [H1](../01-research-design/satcom-hypotheses.md) on precision-adjusted counts | ❌ |
+| **RQ3.** Where competitors invest and where differentiation is possible | Period-stratified counts (H2), citation context (H3) | ❌ |
+| **RQ4.** Build, buy, partner or license per capability | RQ1–RQ3 plus desk research on licensing and acquisition precedents | ❌ |
+| **RQ5.** R&D funding priorities | All of the above, plus the Q9 cost range | ❌ |
 
 ## Evidence in detail
 
@@ -38,9 +38,9 @@ The single record of what's done and what's left, checked against the [central r
 | 4 | Complete classification validation: preliminary software pilot and precision are done. Human hand-labelling of 100 families per primary category (300 total), human–software agreement, repeated-subset consistency and recall are incomplete. [60-publication sheet](../../data/validation/agreement_sheet.csv) | Needed for every comparison | Human hand-labelling, evidence review and adjudication required; software-assisted sampling only | Free, from Google Patents pages | 🟡 |
 | 5 | Estimate how much of the universe has been transferred, on a random US sample and USPTO assignment records | [23.5% in my sample](../02-methodology/candidate-portfolio-universe.md#current-owner-evidence-so-far) | Researcher obtains USPTO records and reviews assignment evidence | Free | ❌ |
 | 6 | Run the register spot-check on [35 patents](../../data/validation/spot_check_sample.csv) | Shows the error rate | Researcher checks official registers and reviews all outputs | Free | ❌ |
-| 7 | Build comparable portfolios by class and period, and test H1–H4 | Answers RQ2 | Software-assisted processing; researcher validates methods and outputs | Small | ❌ |
-| 8 | Test [commercial alignment](../03-market-and-patent-analysis/commercial-alignment.md) | Answers RQ3 | Software-assisted processing; researcher validates methods and outputs | None | ❌ |
-| 9 | Complete the [Q9 model](../04-financial-analysis/ten-year-maintenance-cost-model.md): USPTO renewal records first, then other offices | Answers RQ4 | Researcher obtains renewal records and validates model assumptions | Free | ❌ |
+| 7 | Build comparable portfolios by pool and period, and test H1–H3 | Answers RQ1–RQ3 | Software-assisted processing; researcher validates methods and outputs | Small | ❌ |
+| 8 | Re-aim [commercial alignment](../03-market-and-patent-analysis/commercial-alignment.md) to the satcom scope | Feeds RQ3 and RQ4 | Software-assisted processing; researcher validates methods and outputs | None | ❌ |
+| 9 | Complete the [Q9 model](../04-financial-analysis/ten-year-maintenance-cost-model.md): USPTO renewal records first, then other offices | Feeds RQ5 | Researcher obtains renewal records and validates model assumptions | Free | ❌ |
 | 10 | Pull earlier R&D from competitors' annual reports | Commercial context | Software-assisted extraction; researcher checks source filings | Free | ❌ |
 | 11 | Write findings and the executive brief | Answers RQ5 | Researcher writes and approves findings | None | 🟡 |
 

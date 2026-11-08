@@ -8,6 +8,10 @@
 
 Not affiliated with Nokia.
 
+## What would you do with all the patent data in the world?
+
+First probably go a little insane organising, deduplicating, cleaning and validating it — and only then produce findings solid enough to base a business strategy on; nevertheless, I'd try.
+
 ## Why this repo exists
 
 I saw Nokia's Financial Data Engineering / Business Data Analytics Trainee vacancy and opened this repository to teach myself the analytics the role calls for. Patent portfolio analysis was new territory for me, so this project is a deliberate, working-in-the-open learning exercise: pick a real question, source public data, build the pipeline, document every assumption, and keep the record honest about what holds up and what doesn't. The goal is a defensible work sample for that vacancy — and, along the way, a genuinely learned skill set.
@@ -23,9 +27,9 @@ The question sharpened as I worked — I pivoted and re-aimed the research quest
 I'm Ukrainian, and this pivot is fairly personal: secure communications that answer to Kyiv are critical infrastructure for my country rather than simply an abstract market investment opportunity. October 2026 showed why — a foreign vendor throttled Ukraine's service for ten days without warning and demonstrated how vulnerable the dependence itself is. Finland, on the other hand, has been a reliable and dependable ally in these unprecedentedly dark times, helping Ukraine defend itself and hosting thousands of Ukrainians. So naturally, participating in this project — and, hopefully, in the Nokia–ICEYE effort itself — is how I would like to contribute and, hopefully, this project can teach me something new and provide interesting and relevant insights for the company. All of these fields are quite new to me, so termology, appropriate research methodology and relevant data sources and validation methods are all learned along the way. Research itself, however, is not influenced by my own partiality or interest in the subject: the data, methods and checks are what they are, and the findings are evidence-supported.
 ## Research question
 
-**Which technological capabilities, patent assets and investment priorities are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?**
+**Which patented technologies does the proposed sovereign satellite communications system need, and where should Nokia and ICEYE build, buy, partner or license each one?**
 
-The project [pivoted to this question](docs/01-research-design/pivot-sovereign-satcom.md) on 2 November 2026, after ICEYE and Nokia signed a Letter of Intent with the Ministry of Defence of Ukraine.
+The project [pivoted to sovereign satcom](docs/01-research-design/pivot-sovereign-satcom.md) on 2 November 2026, after ICEYE and Nokia signed a Letter of Intent with the Ministry of Defence of Ukraine, and the question was sharpened into the build–buy–partner–license framing on 9 November 2026.
 
 ## Analytical focus
 
@@ -53,6 +57,16 @@ Classification rules, assumptions and data transformations are documented so tha
 The research relies only on publicly available information. It doesn't include Nokia's internal patent spending, portfolio valuations, confidential licensing arrangements or internal R&D investment decisions.
 
 So calculated indicators and recommendations are independent external assessments based on observable evidence. They aren't definitive assessments of Nokia's internal portfolio strategy.
+
+## Data sources
+
+| Data | Source | Notes |
+|---|---|---|
+| Patent publications and technology codes | [Google Patents public dataset in BigQuery](https://console.cloud.google.com/marketplace/product/google_patents_public_datasets/google-patents-public-data), supplied by IFI CLAIMS; table last modified 23 September 2026 | Queried with the SQL in [`sql/`](sql/README.md); local snapshots fingerprinted in [`data/source_manifest.csv`](data/source_manifest.csv) |
+| Classification code definitions | [USPTO CPC scheme](https://www.uspto.gov/web/patents/classification/cpc/html/cpc-H04B.html) | Basis of the satcom code pools, checked 8 November 2026 |
+| Nokia financials | [Nokia 20-F annual reports, FY2006–FY2025](data/raw/annual_reports_manifest.csv), via SEC EDGAR | Official filings |
+| US renewal fees | [USPTO fee schedule](https://www.uspto.gov/learning-and-resources/fees-and-payment/uspto-fee-schedule) | Official; fees change, check before reuse |
+| Ownership and renewal records | [USPTO bulk data portal](https://data.uspto.gov/bulkdata/datasets/ptmnfee2) | Not yet downloaded — the known ownership gap |
 
 ## Research status
 
