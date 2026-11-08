@@ -11,23 +11,21 @@ This is a verified public fact. What a Letter of Intent will become — contract
 
 How the news reached me (via [Cybernews](https://cybernews.com/tech/nokia-ukraine-starlink/) on Instagram, 24 October 2026):
 
-![Headline: Nokia partners with Ukraine to build a Starlink alternative](assets/pivot-trigger-1-headline.jpg)
-![LoI signed with the Ministry of Defense of Ukraine, announced 22 October 2026](assets/pivot-trigger-2-loi.jpg)
-![Nokia and ICEYE partnership for secure, sovereign LEO satellite communications](assets/pivot-trigger-3-partnership.jpg)
+<p>
+  <img src="assets/pivot-trigger-1-headline-sq.jpg" alt="Nokia partners with Ukraine to build a Starlink alternative" width="32%">
+  <img src="assets/pivot-trigger-2-loi-sq.jpg" alt="Letter of Intent with the Ministry of Defense of Ukraine, announced 22 October 2026" width="32%">
+  <img src="assets/pivot-trigger-3-partnership-sq.jpg" alt="Nokia and ICEYE: secure, sovereign LEO satellite communications for defense, border security and disaster response" width="32%">
+</p>
+
+The cropped originals, kept as the discovery record: [headline](assets/pivot-trigger-1-headline.jpg), [LoI](assets/pivot-trigger-2-loi.jpg), [partnership](assets/pivot-trigger-3-partnership.jpg).
 
 The screenshots are the discovery record; the press release and reporting linked above are the evidence. Broader context — including the 14–24 October Starshield restriction that preceded the LoI, what each partner brings, and the Starlink / OneWeb / IRIS² landscape — is in the imported [deep-research report](../appendices/deep-research-ukraine-satcom.md), with its key claims status-tagged in [sources.md](../appendices/sources.md#sovereign-satcom-context-post-pivot).
-
-## Why pivot
-
-The original question asked how Nokia's patent portfolio supports its AI and cloud infrastructure strategy. The ICEYE partnership is the strongest public signal yet of where Nokia is actually placing a new bet: sovereign satellite communications and defence connectivity. Analysing that bet is more current, more distinctive as a work sample, and still squarely patent portfolio analytics — the skill set the vacancy calls for. The question changes; the craft doesn't.
-
-There is also a personal stake, disclosed for honesty rather than effect: I'm Ukrainian. Sovereign communications for Ukraine are critical infrastructure for my own country, which makes this question genuinely mine — and makes the honesty machinery below matter more, not less. Motivation is not evidence; every claim still has to pass the same checks.
 
 ## New central question (adopted)
 
 > Which technological capabilities, patent assets and investment priorities are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?
 
-Adopted 2 November 2026. The canonical question lives in `config/research_parameters.toml` and is enforced by `tests/test_repository.py`; the rewrite covered the config, README, research design, research questions, scope and the assumptions register in one pass, with the consistency test green.
+Adopted 2 November 2026. The canonical question lives in `config/research_parameters.toml` and is enforced by `tests/test_repository.py`; the rewrite covered the config, README, research design, research questions, scope and the assumptions register in one pass, with the consistency test green. Sharpened 9 November 2026 into the build–buy–partner–license framing; the wording above is the 2 November adoption, kept as the record.
 
 ## What the analysis will be used for
 
