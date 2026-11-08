@@ -4,7 +4,7 @@
 
 *"Alternative to Starlink" is the headline framing; the partners describe the system as complementing, not replacing, existing networks — see the [pivot document](docs/01-research-design/pivot-sovereign-satcom.md).*
 
-*The vacancy asks: "What would you do with all the patent data in the world?" First probably go a little insane organising, deduplicating, cleaning and validating it — and only then produce findings solid enough to base a business strategy on; nevertheless, I'd try.*
+*The vacancy asks: "What would you do with all the patent data in the world?" This repository is the working answer: organise it, deduplicate it into families, resolve who holds what, validate the technology labels against the claims — and only then trust a finding enough to base a strategy on.*
 
 **Independent research project | [Financial Data Engineering / Business Data Analytics Trainee](https://www.linkedin.com/jobs/view/4483030441) application, Business Data Analytics track**
 
