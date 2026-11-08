@@ -4,13 +4,9 @@
 
 *"Alternative to Starlink" is the headline framing; the partners describe the system as complementing, not replacing, existing networks — see the [pivot document](docs/01-research-design/pivot-sovereign-satcom.md).*
 
-**Independent research project | [Financial Data Engineering / Business Data Analytics Trainee](https://www.linkedin.com/jobs/view/4483030441) application, Business Data Analytics track**
+**Independent research project | [Financial Data Engineering / Business Data Analytics Trainee](https://www.linkedin.com/jobs/view/4483030441) application, Business Data Analytics track**[^1]
 
 Not affiliated with Nokia.
-
-## What would you do with all the patent data in the world?
-
-First probably go a little insane organising, deduplicating, cleaning and validating it — and only then produce findings solid enough to base a business strategy on; nevertheless, I'd try.
 
 ## Why this repo exists
 
@@ -160,3 +156,5 @@ The reports stay out of the repo because of their size, and [the manifest](data/
 ## How this was made
 
 I chose the question, sources and method, and I am responsible for the methods, validation, calculations and conclusions. I used Claude for script drafting, browser-assisted query execution, document drafting and software-generated first-pass patent labels, and Kimi for a repository-structure review. Those labels haven't been human reviewed; the [validation page](docs/02-methodology/validation.md#who-labelled-what) records what remains to be checked.
+
+[^1]: *What would you do with all the patent data in the world?* First probably go a little insane organising, deduplicating, cleaning and validating it — and only then produce findings solid enough to base a business strategy on; nevertheless, I'd try.
