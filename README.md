@@ -27,9 +27,9 @@ The question sharpened as I worked — I pivoted and re-aimed the research quest
 I'm Ukrainian, and this pivot is fairly personal: secure communications that answer to Kyiv are critical infrastructure for my country rather than simply an abstract market investment opportunity. October 2026 showed why — a foreign vendor throttled Ukraine's service for ten days without warning and demonstrated how vulnerable the dependence itself is. Finland, on the other hand, has been a reliable and dependable ally in these unprecedentedly dark times, helping Ukraine defend itself and hosting thousands of Ukrainians. So naturally, participating in this project — and, hopefully, in the Nokia–ICEYE effort itself — is how I would like to contribute and, hopefully, this project can teach me something new and provide interesting and relevant insights for the company. All of these fields are quite new to me, so termology, appropriate research methodology and relevant data sources and validation methods are all learned along the way. Research itself, however, is not influenced by my own partiality or interest in the subject: the data, methods and checks are what they are, and the findings are evidence-supported.
 ## Research question
 
-**Which patented technologies does the proposed sovereign satellite communications system need, and where should Nokia and ICEYE build, buy, partner or license each one?**
+**Which technological capabilities, patent assets and investment priorities — observable in publicly available data — are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?**
 
-The project [pivoted to sovereign satcom](docs/01-research-design/pivot-sovereign-satcom.md) on 2 November 2026, after ICEYE and Nokia signed a Letter of Intent with the Ministry of Defence of Ukraine, and the question was sharpened into the build–buy–partner–license framing on 9 November 2026.
+The project [pivoted to sovereign satcom](docs/01-research-design/pivot-sovereign-satcom.md) on 2 November 2026, after ICEYE and Nokia signed a Letter of Intent with the Ministry of Defence of Ukraine. The [five research questions](docs/01-research-design/research-questions.md) operationalise it through the build–buy–partner–license framing.
 
 ## Analytical focus
 

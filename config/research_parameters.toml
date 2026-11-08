@@ -1,7 +1,7 @@
 # Single source for the project's research parameters. Scripts and tests read this file.
 
 [question]
-central = "Which patented technologies does the proposed sovereign satellite communications system need, and where should Nokia and ICEYE build, buy, partner or license each one?"
+central = "Which technological capabilities, patent assets and investment priorities — observable in publicly available data — are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?"
 
 [scope]
 labels = ["OPT", "IPR", "DCS"]

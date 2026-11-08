@@ -4,9 +4,9 @@ This is the authoritative protocol for the project. The [scope](scope.md) and [r
 
 ## Central research question
 
-> **Which patented technologies does the proposed sovereign satellite communications system need, and where should Nokia and ICEYE build, buy, partner or license each one?**
+> **Which technological capabilities, patent assets and investment priorities — observable in publicly available data — are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?**
 
-Adopted 2 November 2026 in the [pivot to sovereign satellite communications](pivot-sovereign-satcom.md), and sharpened 9 November 2026 into the build–buy–partner–license framing. The pipeline diagram below shows the method as built and tested on optical networking, IP routing and data-centre switching; the technology categories, comparators and hypotheses are being re-aimed per the pivot checklist.
+Adopted 2 November 2026 in the [pivot to sovereign satellite communications](pivot-sovereign-satcom.md); on 9 November 2026 the public-data qualification was made explicit and the build–buy–partner–license framing moved into the [five research questions](research-questions.md). The pipeline diagram below shows the method as built and tested on optical networking, IP routing and data-centre switching; the technology categories, comparators and hypotheses are being re-aimed per the pivot checklist.
 
 ## Research basis and limitations
 
