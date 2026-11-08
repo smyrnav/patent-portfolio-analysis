@@ -71,7 +71,7 @@ I used software assistance for a repository review and checked each recommendati
 
 ## Pivot to sovereign satcom, 2 November 2026
 
-The ICEYE–Nokia–Ukraine Letter of Intent (22 October 2026) is the strongest public signal of where Nokia is placing a new bet, so the research question pivots from AI and cloud infrastructure to sovereign satellite communications and defence connectivity. Decision, sources, impact map and execution checklist: [pivot-sovereign-satcom.md](../01-research-design/pivot-sovereign-satcom.md). The pipeline, validation method and cost model carry over; the technology categories, peer set and hypotheses do not.
+The ICEYE–Nokia–Ukraine Letter of Intent (22 October 2026) is the clearest public evidence of where Nokia is placing a new bet, so the research question pivots from AI and cloud infrastructure to sovereign satellite communications and defence connectivity. Decision, sources, impact map and execution checklist: [pivot-sovereign-satcom.md](../01-research-design/pivot-sovereign-satcom.md). The pipeline, validation method and cost model carry over; the technology categories, peer set and hypotheses do not.
 
 ## Central question rewritten, 2 November 2026
 

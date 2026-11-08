@@ -43,7 +43,7 @@ To add one, copy this:
 - **How I'll look:** count distinct publication numbers across the cleaned names, then filter by grant date and renewal status.
 
 ### Q8. Which patents do owners stop paying for, and when?
-- **Why I asked:** this is the closest public signal for the keep-or-drop decision.
+- **Why I asked:** this is the closest public evidence for the keep-or-drop decision.
 - **How I'll look:** USPTO maintenance fee records, with fees due at 3.5, 7.5 and 11.5 years.
 
 ### Q9. What would keeping a portfolio cost over 10 years, as a range?

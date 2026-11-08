@@ -1,10 +1,10 @@
 # Commercial alignment
 
-**Status: not tested.** This page answers RQ3: are there gaps or misalignments between Nokia's technology portfolio and its commercial opportunities? The inputs below are collected, and the comparison needs claim-based patent trends first.
+**Status: not tested, pre-pivot.** This page collected commercial inputs for the pre-pivot optical, routing and switching scope. Re-aimed, it feeds RQ3 and RQ4; the comparison needs validated claim-based satcom counts first.
 
-## Commercial signals collected
+## Commercial evidence collected
 
-| Signal | Figure | Source |
+| Indicator | Figure | Source |
 |---|---|---|
 | IP Networks growth, Q3 2026, constant currency | +43% | [Nokia Q3 2026 release](https://www.nasdaq.com/press-release/nokia-corporation-interim-report-q3-2026-2026-10-22) |
 | Optical Networks growth, Q3 2026, constant currency | +18% | Same release |
@@ -14,7 +14,7 @@
 
 ## The test
 
-| Category | Commercial signal | Patent signal needed | Possible reading |
+| Category | Commercial indicator | Patent evidence needed | Possible reading |
 |---|---|---|---|
 | **Optical** | Strong public position, +18% unit growth | Claim-based family share, 2020–2024, with and without Infinera | Aligned if patent share and growth hold up |
 | **IP routing** | +43% unit growth | Claim-based share of new families, 2020–2024 | Exposed if sales grow on a position that trails Cisco and Huawei |

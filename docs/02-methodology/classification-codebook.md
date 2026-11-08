@@ -14,7 +14,7 @@ Its starting point was a software-assisted draft. The changes are [listed below]
 | **OTHER** | None of the above | N/A | N/A |
 | **MULTI** | The claims genuinely cover two classes, and they can't be separated | N/A | N/A |
 
-CPC codes only find candidates, and they don't decide the label. H04L 47 is broad traffic control and [failed the pilot](validation.md#pilot-result), and H04L 12 and G02B 6 are too broad to use without another signal.
+CPC codes only find candidates, and they don't decide the label. H04L 47 is broad traffic control and [failed the pilot](validation.md#pilot-result), and H04L 12 and G02B 6 are too broad to use without another indicator.
 
 MULTI describes the invention, not my uncertainty. A record that's simply unclear gets a low `confidence` and stays in review.
 
