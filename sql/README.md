@@ -25,4 +25,4 @@ Numbered in the order I ran them, as the exact text used, so older queries keep 
 | [20](20_category_period.sql) | Pool family counts by company and priority period, for H2 | Not run yet | Small |
 | [21](21_expiry_curve.sql) | Families reaching 20 years per year, for H3 | Not run yet | Small |
 | [22](22_infinera_optical.sql) | Infinera families against the optical pool, for H1 | Not run yet | Small |
-| [23](23_satcom_actor_names.sql) | Name census for the satcom actors, for Q24 | Not run yet | Small. Note: the EADS pattern also matches "Leeds", so expect obvious false matches for the eyeball review |
+| [23](23_satcom_actor_names.sql) | Name census for the satcom actors, for Q24 | [satcom_actor_names.csv](../data/raw/satcom_actor_names.csv) | 6.73 GB scanned. 1,480 name variants. Note: the EADS pattern also matches "Leads"/"Leeds" (LEADSHINE, TREADSTONE etc.), so the Airbus bucket contains obvious false matches for the eyeball review |
