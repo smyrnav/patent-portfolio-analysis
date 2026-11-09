@@ -81,10 +81,10 @@ Same day as the pivot decision: adopted the new central question — *Which tech
 
 A software-assisted deep-research report on the Ukraine sovereign satcom deal arrived from the Kimi browser version. Imported as [deep-research-ukraine-satcom.md](deep-research-ukraine-satcom.md) with a provenance header: every claim is a source lead, not a project fact. Key claims mined into [sources.md](sources.md#sovereign-satcom-context-post-pivot) with status labels. Its two figures weren't available and its closing editorial line was omitted. Unlike the earlier browser report (AI-RAN/6G drift, rejected), this one is on-scope for the pivot.
 
-## Renamed and made personal, 2 November 2026
+## Renamed, 2 November 2026
 
-Project retitled to *Nokia–ICEYE Sovereign LEO Communications* — the partnership name carries the project better than the generic "Sovereign LEO Communications". The README origin section now records what the pivot actually meant: I'm Ukrainian, the research questions had already moved several times as evidence demanded, and the Ukraine LoI turned a professional exercise into a personal one. Disclosed as motivation, not as evidence.
+Project retitled to *Nokia–ICEYE Sovereign LEO Communications* — the partnership name carries the project better than the generic "Sovereign LEO Communications". The README origin section records what the pivot meant: the research questions had already moved several times as evidence demanded, and the Ukraine LoI gave the project its current direction.
 
-## Personal position documented, 2 November 2026
+## Origin section anonymised, 10 November 2026
 
-The README now states my position plainly: dependence on any foreign private company or foreign administration's politics is itself the vulnerability; Finland has been a reliable and dependable ally in these unprecedentedly dark times, and participating in this project is how I would like to contribute. Recorded as motivation, explicitly not as evidence. Personal circumstances stay private — nationality is relevant to the pivot; nothing beyond it is.
+The personal-position paragraph in the README was replaced with a neutral statement of professional and analytical interest, so the project doesn't disclose the author's nationality. Motivation is not evidence either way; the data, methods and checks stand on their own.
