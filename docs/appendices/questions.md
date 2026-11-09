@@ -17,6 +17,28 @@ To add one, copy this:
 
 ## Open
 
+### Q26. Which connectivity needs can Direct-to-Cell services cover, and which need a dedicated sovereign system?
+- **Why I asked:** Kyivstar's Starlink Direct-to-Cell service reached millions of users, so it's tempting to read that as proof of demand for a sovereign broadband constellation — but it's a different product (messaging and light data to ordinary phones, not dedicated broadband).
+- **Why it matters:** RQ3 and RQ4 need to know which requirements existing services already satisfy, or the build–buy–partner–license matrix compares the wrong things.
+- **How I'll look:** desk research comparing Direct-to-Cell, conventional Starlink, OneWeb and the proposed Nokia–ICEYE system against each requirement. Verified starting points: [Kyivstar's 3-million announcement](https://investors.kyivstar.ua/news-releases/news-release-details/kyivstar-reaches-3-million-customers-starlink-direct-cell-and) and [Light Reading, 10 September 2026](https://www.lightreading.com/satellite/lessons-from-a-war-zone-how-ukraine-s-kyivstar-harnesses-starlink-to-keep-users-online) (7.5M connected, 10M+ SMS, SMS/light-data scope).
+
+### Q25. Does ICEYE hold satellite-communications patents at all?
+- **Why I asked:** ICEYE's heritage is radar imaging (SAR), so its patent record may be radar-heavy and comms-thin — and "what ICEYE adds" (RQ1) can't be answered by press releases alone.
+- **Why it matters:** if the record is thin, that's a finding about the partnership's division of labour, not a data error.
+- **How I'll look:** ICEYE name research, then the pool census in BigQuery against the five satcom pools.
+- **Tools and resources:** BigQuery, [satcom code pools](../01-research-design/satcom-code-pools.md).
+
+### Q24. Under which names do the new satcom actors file patents?
+- **Why I asked:** the new comparison set is made of joint ventures, divisions and mergers — Thales Alenia Space (Thales/Leonardo), Airbus Defence and Space (a division), OneWeb (merged into Eutelsat, filed as WorldVu Satellites), Viasat (bought Inmarsat). Get the names wrong and every later count is wrong in a direction nobody can see.
+- **How I'll look:** the same procedure as Q5 and Q6 — applicant-name queries per company, read the variants, document the mapping before building any table.
+- **Tools and resources:** BigQuery applicant-name queries, then `data/interim/` for the mapping.
+
+### Q23. Which patent classification codes find satellite communications patents?
+- **Why I asked:** the pivot needed satcom code pools defined from the classification schedules, not guessed.
+- **How I looked:** read the USPTO CPC scheme pages for H04B, H04W and H04K directly.
+- **Answer:** five candidate pools (SAT, ISL, GRD, NET, SEC), documented with sources in [satcom-code-pools.md](../01-research-design/satcom-code-pools.md). Candidates only — each pool still has to pass the precision bar before any comparison, per the [validation plan](../02-methodology/satcom-validation-plan.md).
+- **What it led to:** Q24 and Q25.
+
 ### Q22. How much of the portfolio I attribute to Nokia does it still own?
 - **Why I asked:** while checking applicant/assignee names in my codebook sample, 42 of the 179 unique Nokia-lineage patents (23.5%) showed a current assignee on Google Patents outside Nokia, Alcatel, Lucent and Infinera. This isn't verified legal ownership. They include WSOU Investments 23, RPX 15, and 4 others. Recorded assignments on the pages I opened show transfers, such as [US8432894B2](https://patents.google.com/patent/US8432894B2/en) to WSOU and [US9825759B2](https://patents.google.com/patent/US9825759B2/en) to Provenance and then RPX.
 - **Why it matters:** my tables use `assignee_harmonized`, which keeps the name from filing, so my 19,873 families with grant evidence can include patents held by others. The other four companies show this far less: 2 of 242. Nokia's reported 26,000+ may therefore match my 25,468 partly by coincidence.
