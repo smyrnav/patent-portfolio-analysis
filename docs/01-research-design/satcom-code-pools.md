@@ -19,7 +19,7 @@ These describe what the system needs. They are not yet patent categories — tha
 
 ## From capabilities to candidate codes
 
-The rule carried over from the [codebook](../02-methodology/classification-codebook.md): **CPC codes only find candidates, and they don't decide the label** — the claims do. Pools are deliberately narrow; they get broadened only if the recall test shows misses. Every code below was read from the [CPC scheme](#sources), not guessed.
+The rule carried over from the [codebook](../02-methodology/classification-codebook.md): **CPC codes are only a search tool.** The patent office's category labels tell us which patents are *probably* about a topic; only the patent's own claims — the legal definition of what was actually invented — say what it is really about. So the codes pick the pile, and a human reading claims makes the call (see the [glossary](../glossary.md)). Pools are deliberately narrow; they get broadened only if the recall test shows misses. Every code below was read from the [CPC scheme](#sources), not guessed.
 
 | Pool | Covers capability | Candidate CPC codes | What the code covers (scheme wording, shortened) |
 |---|---|---|---|
@@ -42,7 +42,7 @@ The rule carried over from the [codebook](../02-methodology/classification-codeb
 ## Known risks, to be tested rather than assumed away
 
 - **No code cleanly separates LEO from GEO.** H04B 7/195 (non-synchronous stations) is the closest indicator; orbit class is ultimately a claim-reading decision.
-- **Codes are candidates only.** Each pool needs its own precision check against the 85% bar, a recall test, and a company check — the pre-pivot pools failed this bar on their first pass, so expect iteration.
+- **Code-based pools are unproven until checked by hand.** Each pool needs its own precision check against the 85% bar, a recall test, and a company check — the pre-pivot pools failed this bar on their first pass, so expect iteration.
 - **ICEYE's record may be thin.** A young private company with a radar heritage may have few comms patents; absence of patents is not absence of capability, and the analysis must say so if the data shows it.
 - **SpaceX stays opaque.** Patent counts don't measure Starlink's real position: SpaceX holds only 110 patent families in the dataset (ad hoc name query, 10 November 2026) against 19,488 for Airbus — a trade-secret strategy, not a technology gap. The same invisibility applies to classified defence R&D (which does not patent), to Ukrainian suppliers who file only domestically or not at all, and to foreign suppliers who never file in Ukraine. Patent counts are therefore a floor on capability, never a ceiling; SpaceX remains context, not a benchmark, per the [pivot document](pivot-sovereign-satcom.md).
 
