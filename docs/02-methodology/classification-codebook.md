@@ -82,7 +82,7 @@ Version 1.1 changes names and fields, not rules. All 421 labels were assigned un
 | Draft | Problem | My version |
 |---|---|---|
 | Don't rely on Google's table, as its data dates to 2018 | Not true of this table: it was last modified on 23 September 2026, with filings to August 2026 | Keep Google, and PATSTAT stays optional |
-| Two independent annotators | One human annotator can't establish inter-human reliability | Human hand-labelling of 100 families per primary category (300 total), a repeated subset for intra-rater consistency, and separately reported human–software agreement |
+| Two independent annotators | I'm the only human labeler, so whether two people would label the same patent the same way can't be measured — there is no second person to compare against | Human hand-labelling of 100 families per primary category (300 total), a repeated subset for self-consistency (do I agree with my own earlier labels?), and separately reported human–software agreement |
 | 300 families straight away | Expensive before the rules are tested | 90-slot pilot first, then the 300-family human-label target |
 | 16 examples as a boundary test | None came from Arista, and few from Nokia or Cisco. Others came from Tigera and Quanta, which aren't in my comparison set | Sample by company |
 | Started sampling before building a competitor set | The sample couldn't reflect each company | Build the competitor table first |

@@ -21,7 +21,7 @@ If a label fails, the comparison for that label is reported as low confidence or
 
 Software assistance produced the first pass on all 421 patents, working from the claims with company, pool, title and codes hidden. I am responsible for the methods, validation, calculations and conclusions, and I haven't yet reviewed these labels. The human review must be completed without reading the corresponding first-pass labels first.
 
-One human annotator can produce human-reviewed labels with documented evidence and repeated-subset intra-rater consistency. Human–software agreement will be reported separately; it isn't inter-human agreement or expert reliability. Cohen's kappa cannot describe agreement between independent humans unless two independent human annotators actually label the sample.
+I am the only person labelling. The standard proof that labels are trustworthy is two people independently labelling the same patents and measuring how often they agree — and that proof is impossible here by construction: there is no second person. What one labeler can still do: label every patent with a quoted sentence as evidence, re-label a subset later without looking at the first answers (do I agree with myself?), and separately measure how often I agree with the software first pass (Cohen's kappa). None of that is human-to-human agreement, and every report of these labels will say so.
 
 ## Files
 
