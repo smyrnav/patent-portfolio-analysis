@@ -27,7 +27,7 @@ This pivot is of both professional and analytical interest: secure communication
 
 **Which technological capabilities, patent assets and investment priorities — observable in publicly available data — are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?**
 
-The project [pivoted to sovereign satcom](docs/01-research-design/pivot-sovereign-satcom.md) on 2 November 2026, after ICEYE and Nokia signed a Letter of Intent with the Ministry of Defence of Ukraine. The [five research questions](docs/01-research-design/research-questions.md) operationalise it through the build–buy–partner–license framing. New to patent data? The [glossary](docs/glossary.md) explains every term used here in plain language.
+The project [pivoted to sovereign satcom](docs/01-research-design/pivot-sovereign-satcom.md) on 2 November 2026, after ICEYE and Nokia signed a Letter of Intent with the Ministry of Defence of Ukraine. The [five research questions](docs/01-research-design/research-questions.md) break it into five answerable parts, built on the build–buy–partner–license framing. New to patent data? The [glossary](docs/glossary.md) explains every term used here in plain language.
 
 ## Analytical focus
 

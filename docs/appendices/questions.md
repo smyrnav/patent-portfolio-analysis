@@ -22,17 +22,6 @@ To add one, copy this:
 - **Why it matters:** RQ3 and RQ4 need to know which requirements existing services already satisfy, or the build–buy–partner–license matrix compares the wrong things.
 - **How I'll look:** desk research comparing Direct-to-Cell, conventional Starlink, OneWeb and the proposed Nokia–ICEYE system against each requirement. Verified starting points: [Kyivstar's 3-million announcement](https://investors.kyivstar.ua/news-releases/news-release-details/kyivstar-reaches-3-million-customers-starlink-direct-cell-and) and [Light Reading, 10 September 2026](https://www.lightreading.com/satellite/lessons-from-a-war-zone-how-ukraine-s-kyivstar-harnesses-starlink-to-keep-users-online) (7.5M connected, 10M+ SMS, SMS/light-data scope).
 
-### Q25. Does ICEYE hold satellite-communications patents at all?
-- **Why I asked:** ICEYE's heritage is radar imaging (SAR), so its patent record may be radar-heavy and comms-thin — and "what ICEYE adds" (RQ1) can't be answered by press releases alone.
-- **Why it matters:** if the record is thin, that's a finding about the partnership's division of labour, not a data error.
-- **How I'll look:** ICEYE name research, then the pool census in BigQuery against the five satcom pools.
-- **Tools and resources:** BigQuery, [satcom code pools](../01-research-design/satcom-code-pools.md).
-
-### Q24. Under which names do the new satcom actors file patents?
-- **Why I asked:** the new comparison set is made of joint ventures, divisions and mergers — Thales Alenia Space (Thales/Leonardo), Airbus Defence and Space (a division), OneWeb (merged into Eutelsat, filed as WorldVu Satellites), Viasat (bought Inmarsat). Get the names wrong and every later count is wrong in a direction nobody can see.
-- **How I'll look:** the same procedure as Q5 and Q6 — applicant-name queries per company, read the variants, document the mapping before building any table.
-- **Tools and resources:** BigQuery applicant-name queries, then `data/interim/` for the mapping.
-
 ### Q23. Which patent classification codes find satellite communications patents?
 - **Why I asked:** the pivot needed satcom code pools defined from the classification schedules, not guessed.
 - **How I looked:** read the USPTO CPC scheme pages for H04B, H04W and H04K directly.
@@ -73,6 +62,49 @@ To add one, copy this:
 - **How I'll look:** the [ten-year maintenance cost model](../04-financial-analysis/ten-year-maintenance-cost-model.md): official fees on verified national rights, with scenarios, and Monte Carlo only where distributions can be justified. Internal costs stay out of the baseline.
 
 ## Answered
+
+### Q31. If Starlink already exists and works in Ukraine, why build a sovereign system at all?
+- **Why I asked:** Kyivstar's Direct-to-Cell reaches millions of users, so the sovereign proposal looked redundant on the surface.
+- **How I looked:** compared what Starlink solves (coverage) with what the Nokia–ICEYE announcement actually promises (government ownership and control of satellites, ground stations and terminals), against the October 2026 throttling incident.
+- **Answer:** Starlink answers "can you connect", not "who controls the connection". A rented lifeline can be throttled or geofenced by someone else's decision; sovereignty means the government owns the switch. Direct-to-Cell also covers only messaging and light data to ordinary phones, not secure broadband.
+- **What it led to:** a sharper reading of the central question; Q26 stays open for the requirement-by-requirement comparison.
+
+### Q30. What does a patent have to look like to pass the validation check — and "85% true" compared to what?
+- **Why I asked:** the validation plan talked about precision and the 85% bar without saying what a human actually checks.
+- **Answer:** two levels. One patent passes if the numbered sentences at the back of the document describe the bucket's capability (the ICEYE patent titled "Antenna and antenna array" fails: its sentences claim a radar imaging system). A bucket passes if at least 85 of 100 randomly sampled patents check out against a human's reading. "True" means matching the documented human reading, kept honest by a narrow question, written reasons and repeated labelling. Now written into the [validation plan](../02-methodology/satcom-validation-plan.md#what-a-validation-check-actually-is) and the [glossary](../glossary.md).
+- **What it led to:** the plain-language pass across the docs.
+
+### Q29. Does SpaceX hold a mountain of patents, given Starlink's scale?
+- **Why I asked:** intuition says the largest satellite operator on Earth must own a huge IP position.
+- **How I looked:** ad hoc BigQuery name query, 10 November 2026.
+- **Answer:** 110 patent families (366 publications) — about 175 times fewer than Airbus (19,488) and 7 times fewer than Viasat. SpaceX relies on trade secrets and execution speed, not published IP. Patent counts are a floor on capability, never a ceiling, and the same invisibility covers classified defence R&D. Recorded in [satcom-code-pools.md](../01-research-design/satcom-code-pools.md).
+- **What it led to:** the documented "SpaceX stays opaque" caveat now carries a measured number.
+
+### Q28. Which companies protect satcom technology in Ukraine itself?
+- **Why I asked:** a sovereign system needs suppliers; whoever files at the Ukrainian patent office considers the market worth protecting in.
+- **How I looked:** [query 26](../../sql/26_ukraine_office_satcom_filings.sql) ([results](../../data/raw/ukraine_office_satcom_filings.csv)).
+- **Answer:** barely anyone. Ten owners, 16 patent families, ever: Qualcomm 5, Motorola 3, Globalstar 2, and single filings including Viasat and Thales. Foreign suppliers largely do not file in Ukraine.
+- **What it led to:** with Q27, the RQ4 conclusion that the system's technology will be foreign-patented for years.
+
+### Q27. Does Ukraine have domestic companies holding satcom patents?
+- **Why I asked:** before recommending build–buy–partner–license for a Ukrainian system, I needed to know whether a domestic patent base exists to buy, license or partner with.
+- **How I looked:** [query 25](../../sql/25_ukraine_satcom_assignees.sql) ([results](../../data/raw/ukraine_satcom_assignees.csv)), then a coverage check and a look at the one promising name.
+- **Answer:** no corporate Ukrainian satcom patent base exists. Sixteen names matched, all individual inventors with one family each. The dataset holds 336,474 Ukrainian-office publications, so the empty result is real, not a data hole. EchoStar Ukraine's 114 patents are set-top-box video R&D (93 in H04N), outside the satcom pools.
+- **What it led to:** Q28, and the "sovereignty means owning foreign-patented technology" framing for RQ4.
+
+### Q25. Does ICEYE hold satellite-communications patents at all?
+- **Why I asked:** ICEYE's heritage is radar imaging (SAR), so its patent record may be radar-heavy and comms-thin — and "what ICEYE adds" (RQ1) can't be answered by press releases alone.
+- **How I looked:** ICEYE name review, the peers table, and reading one live example ([WO2025252651A1](https://patents.google.com/patent/WO2025252651A1/en)).
+- **Answer:** comms-thin, as predicted. ICEYE has 53 patent families in the peers table, dominated by radar (G01S) and spacecraft-platform (B64G) codes. The example patent's title sounds communications-relevant, but its numbered sentences claim SAR radar imaging. Patent-wise, ICEYE brings satellites and radar; the communications IP would come from Nokia — with the caveat that no patents does not mean no capability. The full per-pool picture waits for the pool census.
+- **Tools and resources:** BigQuery, Google Patents, [satcom code pools](../01-research-design/satcom-code-pools.md).
+- **What it led to:** the pool census as the next step.
+
+### Q24. Under which names do the new satcom actors file patents?
+- **Why I asked:** the comparison set is made of joint ventures, divisions and mergers — Thales Alenia Space (Thales/Leonardo), Airbus Defence and Space (a division), OneWeb (merged into Eutelsat, filed as WorldVu Satellites), Viasat (bought Inmarsat). Get the names wrong and every later count is wrong in a direction nobody can see.
+- **How I looked:** [name census](../../sql/23_satcom_actor_names.sql) over the whole patents table, then a rule-based review with a written reason for every name.
+- **Answer:** 1,480 name variants found. The review kept 854, dropped 615 proven false matches (an LED manufacturer under "Airbus", Brazilian first names under "Thales", Leonardo-lineage Alenia companies, inventors surnamed Meads), and flagged 11 for my decision (the Airbus OneWeb Satellites joint venture, a Chinese company named Changsha ICEYE, Ythales Invest, four unconfirmed Chinese "Thales" companies). Mapping in [satcom_name_review.csv](../../data/interim/satcom_name_review.csv); the peers table ([query 24](../../sql/24_satcom_peers_30y.sql)) uses only the kept names.
+- **Tools and resources:** BigQuery, [review_satcom_names.py](../../src/review_satcom_names.py).
+- **What it led to:** the peers table; the 11-name decision is still open.
 
 ### Q19. How do Nokia's reported finances line up with its patent activity?
 - **Why I asked:** patent data has no money in it, and the annual reports are the main public source of it.

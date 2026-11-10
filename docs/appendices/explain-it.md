@@ -26,6 +26,10 @@ A checklist of the numbers and ideas I should be able to explain without notes.
 6. **Why not rank patents by revenue?** Public data doesn't show revenue per patent or licensing terms.
 7. **Why did you stop exploring?** The queries weren't tied to a decision, so I rebuilt the work around decisions.
 8. **What's the biggest weakness?** Current ownership and legal status aren't verified, so the counts describe a [candidate universe](../02-methodology/candidate-portfolio-universe.md), not Nokia's portfolio.
+9. **What is a validation check, concretely?** The machine sorts patents into buckets using the patent office's labels; a human reads the numbered sentences at the back of a random sample and marks the machine right or wrong. A bucket is trusted only when at least 85 of 100 checks come out right.
+10. **Why doesn't SpaceX dominate your numbers?** It holds 110 patent families against Airbus's 19,488 — a trade-secret strategy, not a technology gap. Patent counts measure published IP, so the strongest player is nearly invisible, and the analysis says so.
+11. **Could Ukraine supply its own satcom technology?** Not from patents: no Ukrainian corporate satcom patent base exists (16 individual inventors, one family each), and foreign owners have filed only 16 satcom families at the Ukrainian office, ever. The system's technology will be foreign-patented, which is what makes licensing and partnership central.
+12. **How do you know a company name is really that company?** A census of every name variant first, then a written keep/drop/review decision per name. That is how an LED manufacturer was caught under "Airbus" and a Brazilian first name under "Thales".
 
 ## Read in the PATSTAT catalog
 
