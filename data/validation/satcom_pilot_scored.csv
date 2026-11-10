@@ -1,0 +1,146 @@
+pool,company,publication_number,family_id,period,matched_codes,first_code,first_code_matches_pool,label,multi,conf,match,reason
+NET,Nokia (lineage),US-2025055608-A1,94481446,2020s,H04W84/06,H04L1/1812,false,OTHER,,High,False,"HARQ scheduling for a terminal, no satellite context"
+GRD,Eutelsat/OneWeb,US-9438372-B2,50981434,2010s,H04B7/18517,H04B7/18519,false,SEC,,High,False,ground station neutralises jamming of a satellite uplink
+ISL,Airbus,US-12583626-B2,78828027,2020s,H04B10/118,H04B10/118,true,OTHER,,High,False,"Earth-observation imaging from a spacecraft, not communications"
+SEC,Nokia (lineage),US-11595148-B2,75914377,2020s,"H04K3/226,H04K3/25,H04K3/255,H04K3/45",H04L25/03012,false,OTHER,,High,False,"generic wireless interference mitigation, no satellite context"
+SAT,Nokia (lineage),US-6032902-A,9493146,pre-2000,H04B7/195,B64G1/242,false,OTHER,,Low,False,"constellation orbit geometry, no communications equipment"
+SEC,Airbus,US-9923662-B2,53489873,2010s,"H04K1/10,H04K3/65,H04K3/84,H04K3/86",H04K3/84,true,OTHER,,Medium,False,"signal masking over an LTE channel, terrestrial security not satcom"
+NET,Viasat,WO-2026035258-A1,92538674,2020s,H04B7/18541,H04B7/195,false,NET,,Medium,True,"selecting which satellite serves a service area, network operation"
+SAT,Viasat,US-10355772-B2,50490830,2010s,H04B7/18513,H04B7/18506,false,GRD,,Medium,False,vehicle terminal combining satellite and terrestrial antennas with interference isolation
+GRD,Thales,US-8934402-B2,43066988,2010s,H04B7/18528,H04B7/18513,false,NET,,Medium,False,scheduling messages from aircraft over a satellite resource
+SEC,Nokia (lineage),US-8238875-B2,37896100,2000s,H04K3/226,H04K3/226,true,OTHER,,Medium,False,"jamming workaround in a presence/messaging system, not satcom"
+ISL,Nokia (lineage),US-2007116095-A1,35976498,2000s,H04B7/18521,H04L27/2613,false,OTHER,,High,False,"cellular single-frequency-network pilot design, terrestrial"
+ISL,Airbus,WO-2024126905-A1,86657573,2020s,H04B10/118,H04B10/118,true,GRD,,Low,False,scheduling optical data collection between ground stations using weather forecasts
+NET,Nokia (lineage),US-2025151017-A1,93037220,2020s,H04W84/06,H04W56/0015,false,OTHER,,High,False,positioning measurement timing in a cellular network
+NET,Nokia (lineage),US-2024267772-A1,92051190,2020s,H04W84/06,H04B7/18573,false,NET,,High,True,radio measurement gap suspension in a non-terrestrial network
+GRD,Thales,US-9363712-B2,51014315,2010s,H04B7/18517,H04B7/18513,false,NET,,Medium,False,constellation system whose core is handover control between satellites and anchor stations
+ISL,Nokia (lineage),WO-2025233111-A1,95519178,2020s,H04B7/18521,H04B7/18521,true,NET,,High,False,UE transmission prioritisation in a non-terrestrial network
+GRD,Airbus,US-11026273-B2,70804735,2010s,H04B7/18517,H04W76/10,false,GRD,,High,True,mobile satellite gateway on an aircraft
+SAT,Eutelsat/OneWeb,US-7869802-B2,38024333,2000s,H04B7/18515,H04B7/18515,true,SAT,,High,True,satellite-borne transponder hardware with amplification chains and filters
+SEC,Thales,WO-2012080507-A2,45908008,2010s,"H04K3/28,H04K3/42,H04K3/45,H04K3/46",H04K3/46,true,OTHER,,Medium,False,"offensive jamming of enemy networks, not protecting satcom"
+SAT,Viasat,US-2024291143-A1,82404240,2020s,H04B7/18519,H04B7/18519,true,GRD,,High,False,steering a phased-array terminal antenna using a performance map
+SEC,Nokia (lineage),US-6584310-B1,22116304,pre-2000,H04K1/00,H04L2209/80,false,OTHER,,High,False,"GSM/IS-41 authentication interworking, legacy cellular"
+ISL,Viasat,WO-2025029255-A1,87760525,2020s,"H04B10/118,H04B7/18521",H04B10/118,true,SAT,,High,False,on-board reception of optical feeder links and reassembly of user data
+SAT,Thales,US-2011032867-A1,39863143,2000s,H04B7/18515,H04B7/18515,true,GRD,,Medium,False,beamforming moved to a ground processing base
+ISL,Nokia (lineage),US-2025267600-A1,94581875,2020s,H04B7/18521,H04W36/083,false,NET,,High,False,"terminal switching between two satellites, handover"
+ISL,Airbus,US-9240841-B2,43242267,2010s,H04B10/118,H04B10/516,false,OTHER,,Low,False,"free-space optical link adaptation, satellite not stated in the claims"
+NET,Nokia (lineage),WO-2025231879-A1,97591539,2020s,"H04B7/18541,H04W84/06",H04L67/56,false,OTHER,,Medium,False,"cellular handover timer with GPS assistance, not satcom"
+SAT,Airbus,WO-2024156540-A1,86657755,2020s,H04B7/18513,B64G1/1007,false,GRD,,Medium,False,"mission control centre configuring a telecom satellite payload, ground operations"
+NET,Thales,US-10461845-B2,60923523,2010s,H04W84/06,H01Q1/288,false,SAT,,High,False,multibeam payload with beam hopping
+GRD,Thales,US-2020100113-A1,65685385,2010s,H04B7/18517,H04L63/1458,false,SEC,,High,False,gateway filtering illegitimate streams in a satellite network
+NET,Nokia (lineage),WO-2022200682-A1,83396388,2020s,H04W84/06,H04W84/06,true,NET,,High,True,UE computing service and feeder link delays for an NTN cell
+ISL,Thales,US-10044435-B2,56101519,2010s,H04B7/18521,H04L45/502,false,MULTI,SAT+ISL,Medium,True,on-board packet routing that forwards between satellites
+GRD,Eutelsat/OneWeb,US-9203468-B2,51225675,2010s,H04B7/18528,H04B7/18513,false,SAT,,Low,False,"interference reduction around a satellite transponder, locus of processing unclear"
+GRD,Viasat,US-10284284-B2,50188190,2010s,H04B7/18517,H04W74/006,false,SAT,,High,False,transponder operation with flexible forward/return switching
+ISL,Thales,US-11595115-B2,83998930,2020s,H04B7/18521,H04B7/18521,true,GRD,,High,False,mobile SATCOM terminal with NGSO and GSO apertures
+ISL,Viasat,US-10075231-B2,60941388,2010s,H04B10/118,H04W4/00,false,SAT,,High,False,satellite feeder-link and user-link antenna subsystems forming beams
+SEC,Nokia (lineage),US-12212408-B2,68136376,2010s,"H04K1/00,H04K3/41,H04K3/825",H04W72/1273,false,OTHER,,Medium,False,"physical-layer security key at a terrestrial base station, no satellite"
+SEC,Thales,EP-2660621-A1,47019047,2010s,"H04K3/42,H04K3/45,H04K3/46",H04K3/46,true,OTHER,,High,False,"towed decoy for radar, electronic warfare not communications"
+GRD,Thales,US-10574344-B2,58669925,2010s,H04B7/18517,H04L12/4633,false,GRD,,Medium,True,satellite gateway/PoP architecture with split modulator
+NET,Airbus,US-2018061244-A1,57130138,2010s,H04W84/06,G08G5/0013,false,OTHER,,High,False,aircraft avionics data acquisition
+SAT,Nokia (lineage),WO-2026057615-A1,97067504,2020s,H04B7/1851,H04B7/1853,false,NET,,High,False,UE in a non-terrestrial network using sync-change indicators for camping
+SAT,Nokia (lineage),WO-2025209757-A1,94928051,2020s,H04B7/1851,H04W56/0045,false,NET,,High,False,system information block 19 is the 3GPP non-terrestrial-network broadcast
+GRD,Thales,EP-1134927-B1,8492752,2000s,H04B7/18528,H04J3/16,false,OTHER,,Low,False,"convolutional TDM channel mapping, satellite not stated"
+SEC,Airbus,US-8838334-B2,46514053,2010s,"H04K3/22,H04K3/224,H04K3/90",H04K3/224,true,OTHER,,Medium,False,"GNSS jammer detection for vehicle tracking, navigation not comms"
+ISL,Nokia (lineage),US-2024129044-A1,84359286,2020s,H04B10/118,H04B10/11,false,OTHER,,Low,False,"free-space optical receiver, satellite not stated"
+NET,Nokia (lineage),US-2026239250-A1,90880579,2020s,H04W84/06,H04W56/0045,false,OTHER,,Low,False,"timing drift pre-compensation, satellite not stated"
+ISL,Thales,US-12244351-B2,80595448,2020s,H04B10/118,H04B10/118,true,SEC,,Medium,False,"satellite-borne entangled-photon source for quantum links, secure comms"
+NET,Nokia (lineage),WO-2026073742-A1,97229797,2020s,H04W84/06,H04W36/00725,false,OTHER,,High,False,RACH-less handover in terrestrial cellular
+SEC,Nokia (lineage),US-12490248-B2,85076418,2020s,H04K3/22,H04L5/0005,false,OTHER,,Medium,False,subcarrier blanking against jamming in a generic wireless network
+SAT,Nokia (lineage),US-2025212292-A1,96026918,2020s,H04B7/18513,H04W48/08,false,NET,,High,False,non-terrestrial core network entity buffering data for terrestrial core
+GRD,Viasat,US-2026197071-A1,84360690,2020s,H04B7/18517,H04B7/18513,false,SAT,,High,False,beamforming coefficients updated on satellites for spot beams
+GRD,Viasat,US-8381078-B2,42936632,2000s,H04B7/18517,H04L1/0052,false,GRD,,High,True,decoder allocation at a satellite gateway
+SEC,Nokia (lineage),US-9031405-B2,41327307,2000s,"H04K1/04,H04K1/06",H04K1/06,true,OTHER,,High,False,submarine optical cable security
+NET,Nokia (lineage),WO-2025201925-A1,95064224,2020s,H04W84/06,H04W84/06,true,NET,,Medium,True,mobile access node with UE context transfer; dependent claim puts it on a satellite
+ISL,Airbus,EP-4601220-A1,89900757,2020s,H04B10/118,H04B10/1123,false,OTHER,,Low,False,"free-space laser terminal acquisition and pointing, satellite not stated"
+GRD,Viasat,WO-2024206556-A1,90829228,2020s,H04B7/18517,H04B7/2041,false,SAT,,High,False,satellite switching between two feeder/user beam service modes
+SEC,Thales,EP-1855125-A1,37496653,2000s,H04K3/228,H04K2203/32,false,OTHER,,Medium,False,"anti-jam spatial filtering on a mobile multichannel antenna, satellite not stated"
+SEC,Viasat,US-10305199-B2,48041750,2000s,H04B7/18593,H04W72/21,false,GRD,,Medium,False,configuring user terminal antennas to match spot beams
+ISL,Thales,EP-4765679-A1,95745667,2020s,H04B10/118,H04B10/118,true,OTHER,,Low,False,"quantum optical reception system, satellite not stated"
+SAT,Viasat,US-10313002-B2,47880592,2010s,H04B7/18515,H04B7/212,false,SAT,,Medium,True,bent-pipe payload switching capacity between forward and return timeslots
+SEC,Nokia (lineage),US-6266412-B1,22265101,pre-2000,H04K1/00,H04L9/0656,false,OTHER,,High,False,generic speech frame encryption
+NET,Viasat,US-11637628-B2,68848467,2010s,H04B7/18584,H04B7/18521,false,ISL,,High,False,gateway satellite with intra-cluster links and protocol conversion between satellites
+SEC,Thales,US-10330791-B2,54937119,2010s,"H04K3/22,H04K3/90",H04K3/90,true,OTHER,,Medium,False,"locating GNSS jamming sources, navigation warfare not comms"
+ISL,Nokia (lineage),WO-2007089817-A1,38175805,2000s,H04B7/18521,G01S19/20,false,OTHER,,Medium,False,"backup timing when GPS fails, terrestrial resilience"
+NET,Nokia (lineage),US-2025008524-A1,87553528,2020s,H04W84/06,H04L5/0053,false,OTHER,,Medium,False,"PDCCH repetition configuration, satellite not stated"
+ISL,Airbus,US-11675145-B2,67107743,2010s,H04B10/118,G02B6/4214,false,OTHER,,Low,False,"fibre injection and optical lasercom terminal, satellite not stated"
+ISL,Airbus,WO-2025172648-A1,91738509,2020s,H04B10/118,H04B10/70,false,OTHER,,Low,False,"single-photon optical terminal with adaptive optics, satellite not stated"
+SAT,Nokia (lineage),US-2024340825-A1,89663323,2020s,H04B7/1851,H04W84/06,false,NET,,High,False,NTN scheduling offset reporting
+NET,Nokia (lineage),US-12672087-B2,85796765,2020s,H04W84/06,H04W84/06,true,OTHER,,High,False,drone service registration in terrestrial 5G
+SEC,Nokia (lineage),US-2006234641-A1,36907535,2000s,"H04K3/22,H04K3/90",H04K2203/16,false,OTHER,,Medium,False,GPS interference detection at cellular base stations
+GRD,Nokia (lineage),US-11582003-B2,80953513,2020s,H04B7/18517,H04J3/12,false,GRD,,Medium,True,network node transmitting multiplexed symbols on a feeder link
+SEC,Thales,WO-2015086690-A1,50624629,2010s,"H04K3/43,H04K3/45",H04K3/45,true,OTHER,,Medium,False,confined jamming device to disable prohibited radios
+SAT,Airbus,US-7714797-B2,36203937,2000s,H04B7/18515,Y10S343/02,false,SAT,,Medium,True,deployable phased-array antenna; dependent claim mounts it on a telecom satellite
+ISL,Thales,EP-4478656-A1,88690050,2020s,H04B10/118,H04B10/118,true,SEC,,High,False,key management between ground control and a satellite in orbit
+NET,Nokia (lineage),US-12463715-B2,81207745,2020s,H04W84/06,H04W84/06,true,NET,,Medium,True,measurement window adjustment; dependent claim is explicitly NTN
+GRD,Nokia (lineage),WO-2021037327-A1,67777298,2010s,H04B7/18517,H04B7/18517,true,NET,,High,False,base station managing links via satellite transceiver reports
+GRD,Thales,US-10763582-B2,61655809,2010s,H04B7/18517,H01Q3/2635,false,GRD,,Medium,True,ground active-antenna calibration for satellite links
+GRD,Viasat,US-8068827-B2,40523687,2000s,H04B7/18528,H04B7/18528,true,NET,,Medium,False,GSO/NGSO spectrum sharing coordination
+SEC,Thales,EP-2850760-B1,48430724,2010s,"H04K3/22,H04K3/222",H04K2203/16,false,OTHER,,Medium,False,jamming detection in a terrestrial CDMA network
+NET,Nokia (lineage),US-7340258-B2,35732965,2000s,H04W84/06,H04B7/18523,false,NET,,Medium,True,mobile switching centre integrating satellite radio content delivery
+ISL,Thales,US-2026172116-A1,95745588,2020s,H04B10/118,H04J14/06,false,SAT,,High,False,optical repeater carried on board a satellite
+SAT,Airbus,US-9154216-B2,48050405,2010s,H04B7/18513,G01S19/08,false,OTHER,,Medium,False,"satellite-based augmentation system messages, navigation not comms"
+SEC,Thales,US-7346310-B2,32241536,2000s,"H04K3/224,H04K3/94",G01S7/2813,false,OTHER,,Medium,False,"anti-jam verification method, satellite not stated"
+SAT,Thales,US-2024187087-A1,86099872,2020s,H04B7/18513,H04B7/18513,true,NET,,Medium,False,time-frequency resource allocation across satellite beams and terminals
+SAT,Thales,EP-4429128-A1,89158550,2020s,H04B7/18513,H04B10/70,false,SEC,,High,False,satellite establishing quantum channels with ground stations
+GRD,Thales,US-12531632-B2,86007302,2020s,H04B7/18528,H04J1/04,false,OTHER,,Medium,False,"satellite-hosted RF geolocation device, surveillance not comms"
+ISL,Viasat,WO-2026136722-A1,98654562,2020s,H04B10/118,H04B10/118,true,ISL,,Medium,True,optical endpoint selecting among remote optical endpoints in a satcom system
+SEC,Nokia (lineage),US-9590744-B2,51841662,2010s,"H04K3/00,H04K3/28,H04K3/43,H04K3/45,H04K3/825",H04K3/28,true,OTHER,,Medium,False,"tactical beamforming against jammers, satellite not stated"
+GRD,Thales,US-9853718-B2,53758254,2010s,"H04B7/18517,H04B7/18528",H04W40/02,false,GRD,,Medium,True,satellite gateway and terminal routers with caching
+SAT,Eutelsat/OneWeb,US-10680701-B2,61899136,2010s,"H04B7/18513,H04B7/18515,H04B7/18519",H01Q3/34,false,SAT,,High,True,on-board iterative demodulation of terminal messages
+SAT,Viasat,US-8385223-B2,42543158,2000s,H04B7/18513,H04B7/18513,true,GRD,,High,False,gateway determining terminal EIRP for return-link power control
+SEC,Airbus,US-9397765-B2,48170377,2010s,"H04K3/45,H04K3/94",H04K3/94,true,OTHER,,Medium,False,self-test of a jamming device
+SEC,Thales,US-11888576-B2,74045645,2020s,H04K3/228,H04B7/18513,false,SAT,,Medium,False,on-board opposition matrix suppressing uplink interference between gateways
+SAT,Nokia (lineage),WO-2026041310-A1,96496606,2020s,"H04B7/1851,H04B7/18513",H04B7/18513,true,NET,,High,False,service request steering between satellite PLMNs and terrestrial networks
+NET,Nokia (lineage),US-2024155447-A1,90928548,2020s,H04W84/06,H04W36/00835,false,NET,,High,True,handover between cells on the same or different satellites
+SEC,Airbus,US-8634065-B2,43012750,2000s,"H04K3/41,H04K3/43",H04K3/41,true,OTHER,,High,False,aircraft laser countermeasure safety
+SAT,Thales,US-2016373991-A1,54365307,2010s,"H04B7/18513,H04B7/18515",H04B7/18541,false,SAT,,High,True,reconfigurable multibeam payload with frequency transposition
+ISL,Airbus,US-12088341-B2,76444250,2020s,H04B10/118,H04B10/25759,false,SAT,,High,False,photonic beamforming network for a satellite payload
+SEC,Nokia (lineage),US-11431435-B2,79170947,2020s,"H04K1/003,H04K1/02,H04K1/10,H04K3/224,H04K3/25,H04K3/255,H04K3/42,H04K3/65",H04W72/53,false,OTHER,,Medium,False,transmission pattern obfuscation in a generic wireless network
+GRD,Viasat,US-12609763-B2,82156553,2020s,H04B7/18517,H04B7/18517,true,GRD,,High,True,mobile earth stations sharing satellite channel configuration
+SEC,Nokia (lineage),US-2010254464-A1,38645792,2000s,H04K1/10,H04K1/10,true,OTHER,,High,False,"line training between network elements, terrestrial"
+GRD,Nokia (lineage),US-6816501-B2,8492752,2000s,H04B7/18528,H04J3/16,false,OTHER,,Low,False,"convolutional TDM channel mapping, satellite not stated"
+NET,Viasat,US-10568009-B2,60941523,2010s,H04W84/06,H04W84/06,true,OTHER,,Medium,False,"media buffering during link transitions on an aircraft, application layer"
+GRD,Viasat,US-2026039395-A1,90368166,2020s,H04B7/18517,H04B10/503,false,GRD,,High,True,optical ground terminal with uplink wavefront predistortion
+ISL,Airbus,US-9077428-B2,43014389,2000s,H04B7/18521,H04B7/18513,false,NET,,Medium,False,system architecture linking surface terminals via repeater and stationary relay
+NET,Airbus,US-12568142-B2,84360452,2020s,H04W84/06,H04L2012/4028,false,OTHER,,High,False,terrestrial sensor grid network
+NET,Nokia (lineage),US-2026197798-A1,88863380,2020s,H04W84/06,H04W64/006,false,NET,,High,True,NTN measurement relaxation based on moving cells
+GRD,Thales,US-10673974-B2,59974484,2010s,H04B7/18517,H04W84/047,false,NET,,Medium,False,"architecture integrating satellite payload, feeder station and high-altitude platform"
+SAT,Thales,US-9030938-B2,49231547,2010s,H04B7/18513,H04W72/0446,false,OTHER,,Medium,False,"Ethernet header compression, satellite not stated"
+SEC,Thales,WO-2020120430-A1,67185094,2010s,"H04K3/42,H04K3/43,H04K3/45,H04K3/62",H04K3/42,true,OTHER,,High,False,electromagnetic weapon against unshielded electronics
+SEC,Viasat,WO-2019234406-A1,62872778,2010s,H04B7/18565,H04B7/18565,true,SEC,,High,True,quantum key distribution protecting satellite telemetry and command
+NET,Viasat,US-8427999-B2,42315215,2000s,H04B7/18584,H04B7/18584,true,NET,,High,True,L2 core network keeping sessions across satellites
+NET,Nokia (lineage),US-2026122505-A1,94331364,2020s,H04W84/06,H04W88/14,false,SEC,,Medium,False,access token authorisation between a satellite network function and ground
+NET,Viasat,US-7710876-B2,39535615,2000s,H04W84/06,H04W84/06,true,OTHER,,Medium,False,generic shared-medium access protocol
+NET,Nokia (lineage),EP-1067713-A1,8242043,pre-2000,H04B7/18584,H04B7/18584,true,NET,,Medium,True,handover timestamping in a moving-satellite telecom system
+SAT,Airbus,US-9735857-B2,49261986,2010s,H04B7/18513,H04B7/18513,true,SAT,,High,True,satellite transmitter pre-distortion and envelope amplification
+NET,Thales,US-11582672-B2,84103337,2020s,"H04B7/18541,H04W84/06",H04W36/328,false,NET,,Medium,True,aircraft handoff between satellite and direct air-to-ground links
+SEC,Thales,US-7333727-B2,8866028,2000s,H04K1/02,H04K1/02,true,OTHER,,Medium,False,"reconfigurable optical network, no space link stated"
+ISL,Viasat,US-2026222060-A1,89834167,2020s,H04B7/18521,H04B7/1855,false,NET,,High,False,constellation control switching terminals to multi-satellite diversity
+NET,Thales,EP-3188378-A1,56084078,2010s,H04B7/18584,H04B7/18584,true,NET,,Medium,True,label-based routing via a satellite network hub
+SAT,Nokia (lineage),WO-2021062880-A1,75336686,2010s,H04B7/1851,H04L1/1819,false,OTHER,,Medium,False,channel quality reporting in generic cellular
+SEC,Nokia (lineage),US-11387930-B2,75529845,2020s,"H04K1/003,H04K1/06,H04K3/22,H04K3/224,H04K3/25,H04K3/827",H04W72/541,false,OTHER,,Medium,False,"interference measurement on blanked subcarriers, generic wireless"
+SAT,Viasat,US-2026222061-A1,85382541,2020s,"H04B7/18513,H04B7/18515,H04B7/18519",H04B7/2041,false,NET,,Medium,False,central server reassigning spot beams to resource elements
+NET,Thales,US-12483321-B2,75529913,2020s,H04W84/06,H04W52/0216,false,NET,,Medium,True,session continuity across successive satellites of a family
+ISL,Airbus,US-2026197081-A1,85685209,2020s,H04B10/118,H04B10/118,true,GRD,,High,False,optical uplink device for a spacecraft with adaptive wavefront control
+GRD,Viasat,US-10128939-B2,61070080,2010s,H04B7/18517,H04B7/0617,false,NET,,Medium,False,coordinating access nodes feeding an end-to-end relay
+SAT,Nokia (lineage),US-12557053-B2,83154876,2020s,H04B7/18513,H04W48/12,false,NET,,High,False,NTN New Radio timing-advance validity handling
+NET,Nokia (lineage),EP-2938117-A1,50774792,2010s,H04W84/06,H04B7/18504,false,OTHER,,High,False,drone base station positioning
+GRD,Viasat,US-2026222055-A1,85227343,2020s,H04B7/18517,H04B7/18513,false,OTHER,,Medium,False,"oscillator phase-noise calibration, generic RF"
+SAT,Viasat,US-2026222055-A1,85227343,2020s,H04B7/18513,H04B7/18513,true,OTHER,,Medium,False,"oscillator phase-noise calibration, generic RF"
+ISL,Eutelsat/OneWeb,US-9391702-B2,51895869,2010s,"H04B10/118,H04B7/18521",H04B7/18521,true,MULTI,ISL+NET,Medium,True,two constellations with optical inter-constellation links and GSO avoidance
+SAT,Thales,US-9112665-B2,48040272,2010s,H04B7/18513,H04L5/006,false,OTHER,,Medium,False,"adaptive modulation and coding, generic"
+ISL,Thales,US-9967047-B2,49322424,2010s,H04B10/118,H04B10/112,false,OTHER,,Low,False,"free-space optical multiplexing adaptation, satellite not stated"
+ISL,Thales,US-11349560-B2,69104554,2010s,H04B7/18521,H04B7/18519,false,NET,,Medium,False,computing NGSO satellite power limits to protect a GSO ground station
+GRD,Nokia (lineage),US-12483318-B2,86386852,2020s,H04B7/18517,H04W84/06,false,NET,,Medium,False,synchronising feeder-link streams across two NTN payloads from the ground
+NET,Nokia (lineage),US-12483318-B2,86386852,2020s,H04W84/06,H04W84/06,true,NET,,Medium,True,synchronising feeder-link streams across two NTN payloads from the ground
+GRD,Airbus,US-9331775-B2,48128340,2010s,H04B7/18517,H04B7/18517,true,SAT,,Medium,False,on-board antenna array detecting terrestrial broadcast signals
+SEC,Nokia (lineage),WO-2024028074-A1,87426610,2020s,H04B7/18565,H04B7/18519,false,NET,,High,False,NTN network node collecting positioning reports
+GRD,Viasat,US-2025132822-A1,77822005,2020s,H04B7/18517,H04B7/195,false,OTHER,,Medium,False,"conjunction-alert operations at a ground station, flight safety not comms"
+ISL,Airbus,US-12074639-B2,68916438,2010s,H04B10/118,H04B10/1123,false,OTHER,,Low,False,"flat optical terminal hardware, satellite not stated"
+SAT,Viasat,US-7881246-B2,39344974,2000s,"H04B7/18513,H04B7/18515",H04L5/0016,false,NET,,Medium,False,system-level polarisation reuse between two satellites and a gateway
+SAT,Nokia (lineage),WO-2026146355-A1,98520886,2020s,H04B7/18513,H04W56/0045,false,OTHER,,Medium,False,"preamble validation with timing adjustment, satellite not stated"
+SAT,Viasat,US-2011222589-A1,42061116,2010s,H04B7/18519,H04B7/18519,true,OTHER,,Medium,False,"monitoring satellite beams with another satellite, surveillance not comms"
+GRD,Viasat,US-10727934-B2,60263075,2010s,H04B7/18517,Y02D30/70,false,MULTI,SAT+GRD,Medium,True,satellite antenna subsystems designed for ground-based beamforming
+ISL,Airbus,EP-1906558-A1,37898773,2000s,H04B7/18521,H04B7/18521,true,NET,,Medium,False,relay on a moving satellite coordinating with terrestrial base stations
+SAT,Nokia (lineage),WO-2026124801-A1,96917640,2020s,H04B7/1851,H04B7/1851,true,NET,,High,False,conditional handover from LEO to GEO fallback

@@ -203,3 +203,10 @@ To add one, copy this:
 - **Answer:** they reflect the company's history, plus typos and false matches. Nokian Tyres matched only because of its name. The likely typos make up 32% of names but only 0.5% of listings, so they barely change the totals.
 - **Tools and resources:** Python and `difflib`.
 - **What it led to:** Q7 and Q10.
+
+### Q32. What do I personally have to do in the validation?
+- **Why I asked:** the validation plan is long and I lost track of what is mine versus what the software does.
+- **How I looked:** ran the pilot first pass (143 patents read blind by the assistant, labels saved, scored against the pools).
+- **Answer:** three things. (1) Review a small slice of the first-pass labels — 10 to 15 patents — and say agree or disagree for each; that checks the reader, not the whole set. (2) Say yes or no to the proposed rule fixes R1–R5 in the validation plan. (3) Later, do the bigger hand-check (stage 3) only if the buckets are meant to support comparative claims.
+- **Tools and resources:** [satcom_pilot_firstpass.csv](../../data/validation/satcom_pilot_firstpass.csv), [satcom-validation-plan.md](../02-methodology/satcom-validation-plan.md).
+- **What it led to:** the slice review and the rule-fix decisions.

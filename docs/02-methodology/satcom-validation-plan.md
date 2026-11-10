@@ -42,7 +42,32 @@ Adapted from the [six-stage design](validation.md#stages), with one stage added 
 | Stage | What happens | Size | Pass rule |
 |---|---|---|---|
 | **0. Pool census** | Count candidate families per pool, company and priority period in BigQuery, before any sampling | Full counts | None — this sizes everything below and shows early whether ICEYE's record is comms-thin. ✅ Done 10 November 2026 ([query 32](../../sql/32_pool_census.sql)); ICEYE is comms-thin as predicted |
-| **1. Pilot** | Software-assisted labelling, blind (company, pool, title and codes hidden), then rule fixes with logged reasons | 30 per pool, each code reported separately | None; rules change here, not later |
+| **1. Pilot** | Software-assisted labelling, blind (company, pool, title and codes hidden), then rule fixes with logged reasons | 30 per pool, each code reported separately | None; rules change here, not later. ✅ First pass done 10 November 2026: 143 patents read blind ([labels](../../data/validation/satcom_pilot_firstpass.csv), [scored](../../data/validation/satcom_pilot_scored.csv)); diagnosis and proposed rule fixes below — await the researcher's slice review |
+
+### Pilot results and diagnosis (10 November 2026)
+
+Two different things were measured, and the difference matters.
+
+**Is the patent satellite-communications technology at all?** (the bucket caught something in the right field):
+
+| Pool | Genuinely satcom |
+|---|---|
+| SAT | 22 of 30 (73%) |
+| GRD | 23 of 28 (82%) |
+| ISL | 18 of 29 (62%) |
+| NET | 17 of 29 (59%) |
+| SEC | 4 of 29 (14%) |
+
+**Is it in the *right* bucket?** (exact bucket match, when a patent can only take one label): much lower — SAT 6/30, ISL 3/29, GRD 9/28, NET 14/29, SEC 1/29. The dominant error is not junk; it is cross-filing between buckets (a Nokia "SAT" patent is usually really an integration patent, so it reads as NET). For the management questions this is the less damaging error, but single-bucket comparisons are not yet safe.
+
+What the pilot found, and the rule fixes it proposes (the researcher decides):
+
+- **R1. SEC fails exactly as predicted, worse than predicted.** The security codes (H04K) catch terrestrial anti-jamming and generic encryption patents — 25 of 29 were not satellite at all. The genuinely satellite-security patents found in this sample (quantum key distribution to satellites, ground de-jamming of satellite uplinks, satellite key management) arrived through the satellite codes, not the security codes. Proposed fix: rebuild SEC as a co-occurrence rule (a satellite code *and* a security code on the same patent), or stop treating security as a bucket and instead read security relevance inside the other pools.
+- **R2. Bucket confusion is the main defect, not garbage.** Report a combined "satcom capability" measure as the primary number; treat single-bucket claims as tentative until the re-test.
+- **R3. Broad first sentences hide the satellite context.** Many real non-terrestrial-network patents open with a deliberately broad first sentence ("an apparatus comprising a processor…") and only mention satellites later. Reading only the numbered sentences mislabels these as not-satellite. Proposed fix: the reader also reads the first paragraph of the description before deciding.
+- **R4. The optical inter-satellite code (H04B 10/118) mostly catches free-space laser patents whose sentences never say "satellite" (2 of 19 matched).** Either accept free-space optical terminal technology as inter-satellite-relevant by definition (that is what the code means), or restrict the code. Decision needed.
+- **R5. ISL is small and noisy.** Consider reporting it as a flag inside SAT rather than a standalone bucket.
+- Nokia note: all 10 Nokia SAT-sample patents read as NET — Nokia's satellite patenting is integration patenting. That is a finding candidate, pending the re-test.
 | **2. Freeze** | Lock the satcom codebook as version 1.0 | N/A | Later changes need a logged reason and a re-test |
 | **3. Precision** | New random sample per pool, codes hidden, **stratified by priority period and company** | Up to 100 per pool; fewer where the census is smaller, reported as-is | At least 85% per pool |
 | **4. Human validation** | Hand-labelling with documented claim evidence, a repeated subset for intra-rater consistency, then human–software agreement (Cohen's kappa) | Staged by pool priority (below) | Kappa of at least 0.7; intra-rater reported separately |
