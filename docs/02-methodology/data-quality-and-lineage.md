@@ -19,7 +19,7 @@ The [source manifest](../../data/source_manifest.csv) ties each query to its loc
 | Grants outside the US | **Low to medium** | Japan shows 0 grant dates, and Austria 99.8% |
 | Applicant names | **Medium** | Cleaned names, which keep the filing name after later transfers |
 | Legal status and current owner | **Not available in this table** | [IFI sells these separately](https://www.ificlaims.com/news/view/blog-posts/public-patent-data-now.htm) |
-| Current assignee on Google Patents | **Medium, sample only** | Useful warning, but not a register |
+| Current assignee on Google Patents | **Medium, sample only** | Google's own computed guess at today's owner — its pages carry a disclaimer that it may be inaccurate. Good enough to flag "this patent may have changed hands", not good enough to state who legally owns it; the official record is the patent office's assignment register (USPTO for US patents), not yet checked |
 | Family counts | Medium | [Providers define families differently](https://iamip.com/wiki/patent-family/) |
 
 I didn't find a formal accuracy audit of this dataset.
