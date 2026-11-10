@@ -42,6 +42,8 @@ Written for a reader who has never touched patent data. Each definition says wha
 
 **Hand-labelling / validation** — the machine sorts patents into buckets using the patent office's labels; a human then opens a sample of those patents, reads what the inventor claims to have invented, and records whether the machine was right. The share of "right" is the bucket's precision. The trust layer of the whole project — nothing gets compared or charted until the buckets pass.
 
+**Cohen's kappa** — a score from 0 to 1 of how often two labelers agree on the same items, corrected for the agreement pure luck would produce. The standard way to prove labels are trustworthy is two *people* labelling the same patents; this project has one human, so kappa here measures me against the software first pass instead — a weaker check, reported as such.
+
 **Sandbox table** — a temporary working table in our BigQuery dataset. Ours expire around the end of December 2026, which is why the heavy queries are time-boxed.
 
 ## Satellite and business terms
