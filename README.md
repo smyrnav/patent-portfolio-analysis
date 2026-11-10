@@ -80,12 +80,12 @@ So calculated indicators and recommendations are independent external assessment
 |---|---|---|
 | Research design and scope | Defined | [Five research questions](docs/01-research-design/research-questions.md) |
 | Candidate portfolio universe | Preliminary | [Counts are not verified rights or owners](docs/02-methodology/candidate-portfolio-universe.md) |
-| Technology classification | Under validation | [Code pools failed my 85% precision bar](docs/02-methodology/validation.md#precision-result) on preliminary first-pass labels. Human hand-labelling, human–software agreement and recall not done |
-| Competitor selection | Defined | [Peer selection](docs/03-market-and-patent-analysis/market-context-and-peer-selection.md) |
-| Competitive patent analysis | First estimates | [Low confidence](docs/03-market-and-patent-analysis/patent-landscape.md) |
-| Commercial and patent alignment | Pending | [Inputs collected](docs/03-market-and-patent-analysis/commercial-alignment.md) |
+| Technology classification | Under validation | Pre-pivot pools [failed my 85% precision bar](docs/02-methodology/validation.md#precision-result); the five satcom pools are [candidates](docs/01-research-design/satcom-code-pools.md) with a [validation plan](docs/02-methodology/satcom-validation-plan.md). Census and hand-checks not done |
+| Competitor selection | Defined | Five satcom actors; name census and review done, [peers table built](sql/README.md) (143k publications, exact-name matched) |
+| Competitive patent analysis | Not started for satcom | [Pre-pivot first estimates](docs/03-market-and-patent-analysis/patent-landscape.md) are method demonstrations; the pool census is the next query |
+| Commercial and patent alignment | Pending | [Inputs collected](docs/03-market-and-patent-analysis/commercial-alignment.md) (pre-pivot); [Ukraine satcom context](docs/appendices/deep-research-ukraine-satcom.md) gathered |
 | Ten-year maintenance cost model | Designed, not built | [Q9 design](docs/04-financial-analysis/ten-year-maintenance-cost-model.md). US fees and a [break-even](docs/04-financial-analysis/us-renewal-break-even.md) done |
-| Investment recommendations | Pending | [Provisional findings only](docs/05-findings-and-recommendations/findings.md) |
+| Investment recommendations | Pending | [Four early satcom findings](docs/05-findings-and-recommendations/findings.md); the headline answers wait for validated pools |
 
 ## What we can already say about the satcom question
 

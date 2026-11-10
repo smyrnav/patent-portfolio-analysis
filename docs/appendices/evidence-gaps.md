@@ -6,18 +6,19 @@ The single record of what's done and what's left, checked against the [central r
 
 | Research question | Needs most | Status |
 |---|---|---|
-| **RQ1.** Reusable Nokia–ICEYE assets | Validated pools; census on the Nokia-lineage and ICEYE tables; [owner evidence](questions.md#q22-how-much-of-the-portfolio-i-attribute-to-nokia-does-it-still-own) | ❌ |
-| **RQ2.** Third-party exposure | New peers table (name research first), then [H1](../01-research-design/satcom-hypotheses.md) on precision-adjusted counts | ❌ |
+| **RQ1.** Reusable Nokia–ICEYE assets | Validated pools; census on the Nokia-lineage and ICEYE tables (peers table built ✅); [owner evidence](questions.md#q22-how-much-of-the-portfolio-i-attribute-to-nokia-does-it-still-own) | 🟡 |
+| **RQ2.** Third-party exposure | Peers table built ✅; pool census next, then [H1](../01-research-design/satcom-hypotheses.md) on precision-adjusted counts | 🟡 |
 | **RQ3.** Where competitors invest and where differentiation is possible | Period-stratified counts (H2), citation context (H3) | ❌ |
-| **RQ4.** Build, buy, partner or license per capability | RQ1–RQ3 plus desk research on licensing and acquisition precedents | ❌ |
+| **RQ4.** Build, buy, partner or license per capability | RQ1–RQ3 plus desk research on licensing and acquisition precedents. Ukraine domestic base answered ✅ ([no corporate satcom holder](../../sql/25_ukraine_satcom_assignees.sql)) | 🟡 |
 | **RQ5.** R&D funding priorities | All of the above, plus the Q9 cost range | ❌ |
 
 ## Evidence in detail
 
 | Part of the question | Evidence needed | Nokia | Competitors | What's missing |
 |---|---|---|---|---|
-| **Who to compare** | Market leaders by segment | ✅ [Checked](../03-market-and-patent-analysis/market-context-and-peer-selection.md) | ✅ [Checked](../03-market-and-patent-analysis/market-context-and-peer-selection.md) | Nothing essential |
-| **Technology position** | Families by class, tested against claims | 🟡 [First estimates](../03-market-and-patent-analysis/patent-landscape.md) | 🟡 [First estimates](../03-market-and-patent-analysis/patent-landscape.md) | Agreement test and recall |
+| **Who to compare** | Satcom actor set with reviewed name mapping | ✅ [Name review](../../data/interim/satcom_name_review.csv) and [peers table](../../sql/24_satcom_peers_30y.sql) | ✅ Same | 11 flagged names, my decision. Pre-pivot [peer selection](../03-market-and-patent-analysis/market-context-and-peer-selection.md) kept as method record |
+| **Ukraine domestic patent base** | Ukrainian satcom holders and Ukraine-office filings | ✅ [Answered: no corporate base](../../sql/25_ukraine_satcom_assignees.sql) | ✅ [10 foreign owners ever](../../sql/26_ukraine_office_satcom_filings.sql) | Rerun after pool validation |
+| **Technology position** | Families per satcom pool, tested against claims | 🟡 Pre-pivot [first estimates](../03-market-and-patent-analysis/patent-landscape.md) (method demonstration) | 🟡 Same; [peers table](../../sql/24_satcom_peers_30y.sql) built | Pool census, then precision and recall checks |
 | **Growth** | New families by class and year | ❌ | ❌ | Claim-based estimates by period |
 | **Patent age** | Families reaching 20 years by 2036 | 🟡 Dates exist, not by class | ❌ | Same as above |
 | **Market coverage** | Filings in the US, Europe, China and Japan | 🟡 [Totals exist](../03-market-and-patent-analysis/twenty-years.md), not by class | ❌ | Same as above |
