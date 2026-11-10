@@ -2,6 +2,18 @@
 
 **Status: draft, 8 November 2026.** Companion to [satcom-code-pools.md](../01-research-design/satcom-code-pools.md). This plans how the five candidate pools (SAT, ISL, GRD, NET, SEC) earn the right to be used in comparisons. Nothing is validated yet, and per the [pivot rule](../01-research-design/pivot-sovereign-satcom.md), nothing carries over from the pre-pivot categories.
 
+## What a validation check actually is
+
+The pools sort patents automatically, using the patent office's category labels. Those labels are wrong surprisingly often, so before any bucket is trusted, a human checks the machine's work on a sample. The check runs at two levels:
+
+**One patent.** The machine says "this patent is satellite-communications payload technology." A human opens the patent, reads the numbered sentences at the back where the inventor states what they invented, and gives their own verdict: yes it is / no it isn't. The human's reading is the reference we treat as reality. Example from this project: an ICEYE patent titled "Antenna and antenna array" sounds communications-relevant, but its numbered sentences claim a synthetic-aperture-radar imaging system — it images, it does not communicate. Machine wrong, human catches it.
+
+**One bucket.** One patent tells us nothing; the bucket is judged on a random sample (30–100 patents). **Precision = how often the machine was right = right ÷ total.** The bucket passes only if at least 85 out of every 100 sampled patents genuinely belong in it, per the human who checked. The mirror question gets measured too: sampling *outside* the buckets to see how many real satcom patents the pools miss (recall).
+
+Three protections keep the human verdict honest: the question is narrow ("do these numbered sentences describe technology for capability X?"), every verdict gets a written reason a third party can audit, and some patents get labelled twice to measure whether the human agrees with themselves. If the human is inconsistent, the 85% number means nothing and the question gets tightened first.
+
+When a bucket fails, we diagnose which patents it wrongly catches, fix the code pool, and re-test — iterating until it clears the bar. The rest of this document is the mechanics of that loop.
+
 ## Why a new validation, and what the last one taught
 
 The pre-pivot pools failed the 85% precision bar in all three categories ([full record](validation.md#precision-result)). That failure is useful: it tells us where the new pools will break if we repeat the design.

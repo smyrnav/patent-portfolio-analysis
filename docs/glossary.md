@@ -38,9 +38,9 @@ Written for a reader who has never touched patent data. Each definition says wha
 
 **Recall** — of all the patents that truly belong in a bucket, how many the bucket actually found. High precision + low recall = accurate but blind to half the picture.
 
-**The 85% bar** — our house rule: no bucket may be used in statistics until a hand-checked sample shows at least 85% precision. The previous categories scored 39–73% and were thrown out; that failure is why this rule exists.
+**The 85% bar** — our house rule: no bucket may be used in statistics until a human hand-checks a random sample of its patents and confirms at least 85 out of 100 genuinely belong in it. "Genuinely" means the human read the numbered sentences at the back of each patent and agreed with the machine. The previous categories scored 39–73% and were thrown out; that failure is why this rule exists.
 
-**Hand-labelling / validation** — a human reads the claims of a sample of patents and records what each is really about, then we compare the bucket's verdict against the human's. The trust layer of the whole project.
+**Hand-labelling / validation** — the machine sorts patents into buckets using the patent office's labels; a human then opens a sample of those patents, reads what the inventor claims to have invented, and records whether the machine was right. The share of "right" is the bucket's precision. The trust layer of the whole project — nothing gets compared or charted until the buckets pass.
 
 **Sandbox table** — a temporary working table in our BigQuery dataset. Ours expire around the end of December 2026, which is why the heavy queries are time-boxed.
 
