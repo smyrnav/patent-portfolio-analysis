@@ -34,7 +34,7 @@ flowchart TD
 | Official fee schedules are deterministic inputs | They're published |
 | Future fee changes and currency movements are uncertain variables | They aren't known |
 | Use empirical renewal data if available | The [placeholders in the register](assumptions-and-scenarios.md#behaviour-what-happens-next) aren't findings |
-| Use Monte Carlo only where probability distributions can be justified | A probability curve on invented distributions would look precise without being so. The posting asks for ranges with a probability curve, so I'll build one for inputs with data behind them, such as renewal rates, and use plain scenarios for the rest |
+| Use [Monte Carlo](../glossary.md#statistics-in-plain-language) only where probability distributions can be justified | A probability curve on invented distributions would look precise without being so. The posting asks for ranges with a probability curve, so I'll build one for inputs with data behind them, such as renewal rates, and use plain scenarios for the rest |
 | Exclude internal Nokia staff costs, professional fees and confidential licensing spending from the baseline | They aren't public, and invented figures would blur what's official |
 
 ## Inputs

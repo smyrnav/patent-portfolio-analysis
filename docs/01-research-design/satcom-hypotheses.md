@@ -6,9 +6,11 @@
 
 | # | Hypothesis | Feeds | Test | What would disprove it |
 |---|---|---|---|---|
-| **H1** | The distribution of patent families across the five capability pools (SAT, ISL, GRD, NET, SEC) differs between the actors in scope (Nokia, ICEYE, Eutelsat/OneWeb, Viasat, Thales Alenia Space, Airbus Defence and Space) | RQ1, RQ2 | Chi-square test of independence, with Cramér's V | The distributions are statistically indistinguishable, or the effect size is near zero |
-| **H2** | The share of each actor's new families falling in the satcom pools has risen across priority cohorts, and the trend differs by actor | RQ3 | Cochran–Armitage trend test per actor, or logistic regression of in-pool membership on cohort, with an actor interaction | The trends are flat, or identical across actors |
-| **H3** | Within the same pool, forward-citation patterns differ between actors | RQ3 | Kruskal–Wallis, or a regression controlling for filing cohort and office | No difference once age and office are controlled |
+| **H1** | The distribution of patent families across the five capability pools (SAT, ISL, GRD, NET, SEC) differs between the actors in scope (Nokia, ICEYE, Eutelsat/OneWeb, Viasat, Thales Alenia Space, Airbus Defence and Space) | RQ1, RQ2 | [Chi-square test of independence, with Cramér's V](../glossary.md#statistics-in-plain-language) | The distributions are statistically indistinguishable, or the effect size is near zero |
+| **H2** | The share of each actor's new families falling in the satcom pools has risen across priority cohorts, and the trend differs by actor | RQ3 | [Cochran–Armitage trend test](../glossary.md#statistics-in-plain-language) per actor, or [logistic regression](../glossary.md#statistics-in-plain-language) of in-pool membership on cohort, with an actor interaction | The trends are flat, or identical across actors |
+| **H3** | Within the same pool, forward-citation patterns differ between actors | RQ3 | [Kruskal–Wallis](../glossary.md#statistics-in-plain-language), or a regression controlling for filing cohort and office | No difference once age and office are controlled |
+
+Statistical terms used below ([chi-square, p-value, effect size, degrees of freedom, residuals](../glossary.md#statistics-in-plain-language)) are defined in the glossary in plain language.
 
 H3 needs the age control to be fair: citations accumulate over time, so a raw comparison would punish young portfolios like ICEYE's for being young, not for being weak.
 

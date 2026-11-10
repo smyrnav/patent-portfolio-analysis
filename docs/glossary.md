@@ -46,6 +46,28 @@ Written for a reader who has never touched patent data. Each definition says wha
 
 **Sandbox table** — a temporary working table in our BigQuery dataset. Ours expire around the end of December 2026, which is why the heavy queries are time-boxed.
 
+## Statistics in plain language
+
+**Chi-square test (χ²)** — answers "is this pattern real, or could it be counting luck?" We compare what we actually counted (patents per company per bucket) against what we'd expect if company made no difference at all. A big gap between actual and expected means the mix of technologies really does differ by company. It never says *why*.
+
+**p-value and the 0.05 threshold** — the probability of seeing differences at least this big by pure luck, if nothing real were going on. Under 0.05 (5%) we call the result "statistically significant" and treat it as probably-not-luck. It says nothing about whether the difference is big enough to care about — that's the next entry.
+
+**Effect size / Cramér's V** — how strong the connection is, on a 0–1 scale. The p-value says "probably not luck"; Cramér's V says "and here's how much it matters." With enough data, a trivial difference can be "significant," so we always report both.
+
+**Degrees of freedom** — a technical ingredient of the chi-square calculation, roughly "how many independent pieces of information went in." Reported so anyone can re-check the arithmetic.
+
+**Standardized residuals** — after a chi-square says "companies differ," these per-cell scores show *which* company-bucket combinations drive the difference — e.g. "Nokia holds far more network-integration patents than chance would predict."
+
+**Wilson interval (the "95% range")** — when we measure something from a sample ("85 of 100 sampled patents checked out"), the true value isn't exactly 85%. The Wilson interval gives the honest range it likely sits in (say 77–91%), and it stays reliable even with small samples. Wider range = less certainty = we need a bigger sample.
+
+**Cochran–Armitage trend test / logistic regression** — two standard ways to test "is this share actually rising over the years?" instead of eyeballing a chart and hoping.
+
+**Kruskal–Wallis test** — compares a lopsided measurement (like "how many citations does each patent get?" — most get zero, a few get hundreds) across several companies, without assuming the numbers follow a neat bell curve.
+
+**Monte Carlo** — instead of one forecast, run the calculation thousands of times with randomly varied inputs and look at the spread of outcomes. Honest only when the randomness of the inputs is known from data; inventing the randomness produces a precise-looking fantasy.
+
+**Sensitivity check** — redo the whole answer with slightly different assumptions and see if the conclusion flips. If a small nudge flips it, the conclusion was fragile and we say so.
+
 ## Satellite and business terms
 
 **LEO / MEO / GEO** — orbit heights. LEO (low Earth orbit, a few hundred km up) is where Starlink and the proposed system fly: fast response, but each satellite covers a small area, so you need many. GEO (36,000 km) is where one satellite covers a continent. MEO is in between.
