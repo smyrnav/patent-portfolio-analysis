@@ -41,7 +41,7 @@ Adapted from the [six-stage design](validation.md#stages), with one stage added 
 
 | Stage | What happens | Size | Pass rule |
 |---|---|---|---|
-| **0. Pool census** | Count candidate families per pool, company and priority period in BigQuery, before any sampling | Full counts | None — this sizes everything below and shows early whether ICEYE's record is comms-thin |
+| **0. Pool census** | Count candidate families per pool, company and priority period in BigQuery, before any sampling | Full counts | None — this sizes everything below and shows early whether ICEYE's record is comms-thin. ✅ Done 10 November 2026 ([query 32](../../sql/32_pool_census.sql)); ICEYE is comms-thin as predicted |
 | **1. Pilot** | Software-assisted labelling, blind (company, pool, title and codes hidden), then rule fixes with logged reasons | 30 per pool, each code reported separately | None; rules change here, not later |
 | **2. Freeze** | Lock the satcom codebook as version 1.0 | N/A | Later changes need a logged reason and a re-test |
 | **3. Precision** | New random sample per pool, codes hidden, **stratified by priority period and company** | Up to 100 per pool; fewer where the census is smaller, reported as-is | At least 85% per pool |

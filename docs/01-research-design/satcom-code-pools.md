@@ -48,10 +48,10 @@ The rule carried over from the [codebook](../02-methodology/classification-codeb
 
 ## What happens next
 
-1. Researcher reviews these pools (researcher decision, per the pivot checklist).
-2. If accepted: research the new lineage names (ICEYE, Eutelsat/OneWeb, Viasat, Thales Alenia Space, Airbus Defence and Space), then run pool counts in BigQuery. The sandbox tables expire around the end of December 2026, so this is time-boxed.
-3. Draw the new validation sample, hand-label it, and only then make comparative claims — the full plan, including what the pre-pivot failure taught, is in [satcom-validation-plan.md](../02-methodology/satcom-validation-plan.md).
-4. On acceptance, these pools replace OPT/IPR/DCS in [`config/research_parameters.toml`](../../config/research_parameters.toml) and [scope.md](scope.md) in one pass, keeping the consistency tests green.
+1. ⬜ **Open, the one remaining gate:** the researcher reviews these pools (accept / adjust / reject).
+2. ✅ Done ahead of acceptance, 10 November 2026: name research for the five actors ([review](../../data/interim/satcom_name_review.csv)), peers table built ([query 24](../../sql/24_satcom_peers_30y.sql)), and first pool counts run ([query 32](../../sql/32_pool_census.sql), pre-validation). The sandbox tables expire around the end of December 2026, so this was time-boxed.
+3. ⬜ Next: draw the validation sample, hand-label it, and only then make comparative claims — the full plan, including what the pre-pivot failure taught, is in [satcom-validation-plan.md](../02-methodology/satcom-validation-plan.md).
+4. ⬜ On acceptance, these pools replace OPT/IPR/DCS in [`config/research_parameters.toml`](../../config/research_parameters.toml) and [scope.md](scope.md) in one pass, keeping the consistency tests green. Until then those files deliberately still show the old categories.
 
 ## Sources
 
