@@ -46,7 +46,7 @@ To examine Nokia's technology position, competitor activity, commercial developm
 
 ## Methodology
 
-The research combines patent-family analysis, claim-based technology classification, competitor benchmarking, public financial and commercial information, geographic protection analysis and ten-year patent maintenance cost modelling.
+The research counts patent families (one invention counted once, even when patented in several countries), checks what each patent is really about by reading the inventor's own numbered sentences rather than trusting the patent office's labels, compares the companies on those counts, adds public financial and commercial information, looks at which countries each invention is protected in, and models what keeping a portfolio alive would cost over ten years.
 
 Classification rules, assumptions and data transformations are documented so that the work can be rerun and checked. [Research design](docs/01-research-design/research-design.md).
 
@@ -85,7 +85,7 @@ So calculated indicators and recommendations are independent external assessment
 
 ### Patent codes alone can't compare companies
 
-Preliminary software-assisted claim checks compared each code pool with what the patent claims actually say, with company, pool and codes hidden. These first-pass labels haven't been human reviewed.
+Preliminary software-assisted checks read the inventor's numbered sentences for a sample of patents in each pool and judged whether the pool's label was right. The checks ran blind: the labeler could not see which company or pool each patent came from, so nothing could be nudged toward a preferred answer. These first-pass labels haven't been human reviewed.
 
 | Code pool | Claims match, of 100 sampled | 95% range | 85% bar |
 |---|---:|---|---|
