@@ -18,7 +18,7 @@ Each measure used in the project, and what it's measured against.
 | **Pool precision** | Patents whose claims earned the class ÷ patents sampled from that code pool | [Validation](validation.md#precision-result) |
 | **95% range** | [Wilson interval](../glossary.md#statistics-in-plain-language) on that share | [Validation](validation.md#precision-result) |
 | **Estimated families** | US families in the pool × the share of that company's sample whose claims earned the class. The range only reflects sampling of that share | [Patent landscape](../03-market-and-patent-analysis/patent-landscape.md) |
-| **Human–software agreement** | Cohen's kappa between the software-generated first pass and independent human hand-labels, targeting 100 sampled families per primary category (300 total); this compares me against the software, not against a second person | Not measured yet |
+| **Human–software agreement** | How often my hand-labels and the software's first pass agree on the same patents, with the agreement pure luck would produce subtracted out ([Cohen's kappa](../glossary.md): 0 = no better than chance, 1 = perfect; the bar is 0.7). If the score clears the bar, the software's labels can be trusted for the bulk work and weeks of hand-reading are saved. Target: 100 sampled families per primary category (300 total); this compares me against the software, not against a second person | Not measured yet |
 | **Recall** | Share of relevant families that the pools find | Not measured yet |
 
 ## Measured so far
