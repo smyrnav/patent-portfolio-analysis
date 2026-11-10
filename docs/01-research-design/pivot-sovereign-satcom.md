@@ -46,7 +46,7 @@ Adopted 2 November 2026. The canonical question lives in `config/research_parame
 |---|---|---|
 | Technology categories | OPT / IPR / DCS | New satcom code pools (e.g. H04B 7/185 satellite comms, H04K/H04L security, plus ground-segment and optical inter-satellite link codes — to be defined from CPC, not guessed) |
 | Peers | Ciena, Cisco, Arista, Huawei | Rethought per category: ICEYE (partner, not peer), Eutelsat/OneWeb, Viasat, Thales Alenia Space, Airbus Defence and Space; SpaceX noted as the dominant actor with limited patent transparency |
-| H1–H4 | Optical/routing/switching hypotheses | Retired to the log; new hypotheses drafted after the code pools exist |
+| H1–H4 | Optical/routing/switching hypotheses | Retired to the log; the satcom hypotheses H1–H3 now exist in [satcom-hypotheses.md](satcom-hypotheses.md), gated on pool validation |
 | Classification validation | 300-family sample in OPT/IPR/DCS | New sample in the new categories — nothing carries over as validated |
 | Infinera analysis | H1 driver | Becomes background; still answers "what Nokia bought in optical transport," which feeds ground-segment backhaul |
 
