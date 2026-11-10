@@ -6,7 +6,7 @@ Written for a reader who has never touched patent data. Each definition says wha
 
 **Patent** — a deal with the state: an inventor publishes exactly how their invention works, and in exchange gets the exclusive right to it for about 20 years. Because everything is published, patents are a rare public window into what companies are inventing.
 
-**Claims** — the numbered sentences at the end of a patent that define, in law, exactly what the inventor owns. The ground truth of what a patent is about. Titles and labels can mislead; claims cannot.
+**Claims** — open any patent PDF and skip to the end: after all the description and drawings there is a numbered list of sentences ("1. A method for…, 2. The method of item 1, where…"). That list is the claims: the inventor stating, in their own words, exactly what they invented and own — like the boundary description in a property deed. Everything before it is storytelling; the numbered list is the legal fence. When this project says "a human reads the claims," it means a person opens the patent, reads that numbered list, and decides what the patent is really about — because the patent office's category labels are wrong surprisingly often.
 
 **Assignee** — the company or person recorded as owning the patent. Complication: one company files under dozens of name variants ("Airbus Operations GmbH", "EADS Deutschland", spelling mistakes), which is why we had to research names before counting anything.
 

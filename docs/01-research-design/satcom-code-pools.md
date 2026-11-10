@@ -19,7 +19,7 @@ These describe what the system needs. They are not yet patent categories — tha
 
 ## From capabilities to candidate codes
 
-The rule carried over from the [codebook](../02-methodology/classification-codebook.md): **CPC codes are only a search tool.** The patent office's category labels tell us which patents are *probably* about a topic; only the patent's own claims — the legal definition of what was actually invented — say what it is really about. So the codes pick the pile, and a human reading claims makes the call (see the [glossary](../glossary.md)). Pools are deliberately narrow; they get broadened only if the recall test shows misses. Every code below was read from the [CPC scheme](#sources), not guessed.
+The rule carried over from the [codebook](../02-methodology/classification-codebook.md): **CPC codes are only a search tool.** The patent office's category labels tell us which patents are *probably* about a topic. What a patent is really about is decided by the numbered sentences at the back of the patent document, where the inventor states in their own words exactly what they invented and own — the patent world calls these the "claims" (see the [glossary](../glossary.md)). So the codes pick the pile, and a human reading those numbered sentences makes the call. Pools are deliberately narrow; they get broadened only if the recall test shows misses. Every code below was read from the [CPC scheme](#sources), not guessed.
 
 | Pool | Covers capability | Candidate CPC codes | What the code covers (scheme wording, shortened) |
 |---|---|---|---|
