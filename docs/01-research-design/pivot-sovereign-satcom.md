@@ -44,11 +44,11 @@ Adopted 2 November 2026. The canonical question lives in `config/research_parame
 
 | Element | Was | Becomes |
 |---|---|---|
-| Technology categories | OPT / IPR / DCS | New satcom code pools (e.g. H04B 7/185 satellite comms, H04K/H04L security, plus ground-segment and optical inter-satellite link codes — to be defined from CPC, not guessed) |
-| Peers | Ciena, Cisco, Arista, Huawei | Rethought per category: ICEYE (partner, not peer), Eutelsat/OneWeb, Viasat, Thales Alenia Space, Airbus Defence and Space; SpaceX noted as the dominant actor with limited patent transparency |
-| H1–H4 | Optical/routing/switching hypotheses | Retired to the log; the satcom hypotheses H1–H3 now exist in [satcom-hypotheses.md](satcom-hypotheses.md), gated on pool validation |
-| Classification validation | 300-family sample in OPT/IPR/DCS | New sample in the new categories — nothing carries over as validated |
-| Infinera analysis | H1 driver | Becomes background; still answers "what Nokia bought in optical transport," which feeds ground-segment backhaul |
+| Technology categories | Three categories from the old question: optical networking, IP routing, data-centre switching | Five buckets matching what a sovereign satellite system needs: satellite payload, inter-satellite links, ground segment, network integration, security. Each bucket is defined by reading the official CPC classification schedule, not guessed — see [satcom-code-pools.md](satcom-code-pools.md) |
+| Companies compared | Ciena, Cisco, Arista, Huawei | ICEYE (the partner, studied differently from competitors), Eutelsat/OneWeb, Viasat, Thales, Airbus. SpaceX is the biggest player in the market but protects its technology as trade secrets instead of patenting — only 110 patent families — so our counts cannot measure it, and we say so wherever comparisons are made |
+| Statistical tests (hypotheses) | Four tests about the old categories | Moved to the research log as history. Three new ones, written for the satellite question, are in [satcom-hypotheses.md](satcom-hypotheses.md); they wait for the buckets to pass validation |
+| Classification validation | A hand-check of 300 patents in the old categories | Starts over from zero in the new buckets. "Validated" means one specific thing here: a human reads a sample of patents from each bucket — the numbered sentences where the inventor states what they invented — and confirms at least 85 of 100 really belong in that bucket. The old check tested different technology, so none of its results count for the new buckets |
+| Infinera analysis | A central thread of the old question (Nokia bought the optical company Infinera) | A side note. It still answers one useful question — what Nokia gained when it bought an optical-transport company — because a satellite system's ground stations connect through optical networks |
 
 ## What this pivot must not do
 
