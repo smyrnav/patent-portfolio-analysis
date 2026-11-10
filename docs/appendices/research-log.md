@@ -30,7 +30,7 @@ I got annoyed with running random queries. Each result suggested another questio
 9. **Made the work hypothesis-led.** Pulling more metrics wasn't producing answers. I set three priority questions, hypotheses that could be disproved, pass rules for reliability and limits on what gets analysed.
 10. **Zoomed in on one question.** After a couple of hours of learning, I'd covered enough to focus on comparing Nokia's patent and investment position with its rivals.
 11. **Made the question about investment decisions.** Comparing rivals had become the goal. The earlier question was: *How does Nokia's patent portfolio and associated investment position compare with the leading competitors in AI and cloud infrastructure networking, and what strategic and financial lessons can be identified?* I changed it to: *How should Nokia prioritise its patent portfolio investments to support its AI and cloud infrastructure strategy?* Comparisons and technology labels are now inputs, and I separated what public data can do from what needs internal data.
-12. **Tested the technology labels against claims.** All three code pools failed my 85% bar, which [stopped me relying on code counts](../02-methodology/validation.md#precision-result).
+12. **Checked whether patents matched their technology labels.** For a sample in each bucket I read the numbered sentences at the back of the patent documents — the part where the inventor states what they invented — and compared. All three code pools failed my 85% bar, which [stopped me relying on code counts](../02-methodology/validation.md#precision-result).
 13. **Reviewed and consolidated the repository.** See [below](#repository-review-november-2026).
 
 ## What I kept from the exploration

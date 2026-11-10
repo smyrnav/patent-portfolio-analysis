@@ -31,7 +31,7 @@ I didn't find a formal accuracy audit of this dataset.
 | **Compare totals across queries.** That's how I found the 8,808 missing US patents | Done, and [automated](../../src/check_outputs.py) where possible |
 | **Spot-check against official registers.** Compare [a repeatable random sample of 35](../../data/validation/spot_check_sample.csv) with [Espacenet](https://worldwide.espacenet.com/) and the USPTO, and record the error rate. It has none from Japan, as no Japanese grants were detected | Not done |
 | **Compare with what Nokia reports.** [New families follow its reported new inventions](../03-market-and-patent-analysis/twenty-years.md#my-family-counts-follow-nokias-own-numbers), though its counting rules may differ | Done |
-| **Test labels against claims.** See [validation](validation.md) | Precision done, agreement and recall not done |
+| **Check patents against the inventor's own words.** Read the numbered sentences at the back of sampled patents and mark each bucket right or wrong. See [validation](validation.md) | Precision done, agreement and recall not done |
 | **Keep the docs coherent.** [Automated tests](../../tests/test_repository.py) check links, shared wording and label files | Done |
 
 ## Where to find financial data

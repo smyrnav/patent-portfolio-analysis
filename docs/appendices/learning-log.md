@@ -106,9 +106,9 @@ I [sorted all 72,207 families by status](../02-methodology/candidate-portfolio-u
 
 I [checked a competitor summary against its sources](../03-market-and-patent-analysis/market-context-and-peer-selection.md), corrected a mislabelled figure and added a missing segment leader. That gave me the comparison set for the [central research question](../01-research-design/research-design.md).
 
-## Step 13: Test the labels against claims
+## Step 13: Check whether patents match their technology labels
 
-I built a competitor table, then tested whether patent codes match what the claims say. [All three pools failed my 85% bar](../02-methodology/validation.md#precision-result). Checking current assignees along the way showed that [many Nokia-lineage patents have another current assignee](questions.md#q22-how-much-of-the-portfolio-i-attribute-to-nokia-does-it-still-own).
+I built a competitor table, then checked whether patents really were what the patent office's codes said: for a sample in each bucket, I read the numbered sentences at the back of the documents — the part where the inventor states what they invented — and compared. [All three pools failed my 85% bar](../02-methodology/validation.md#precision-result). Checking current assignees along the way showed that [many Nokia-lineage patents have another current assignee](questions.md#q22-how-much-of-the-portfolio-i-attribute-to-nokia-does-it-still-own).
 
 ## Step 14: Consolidate the repo
 
