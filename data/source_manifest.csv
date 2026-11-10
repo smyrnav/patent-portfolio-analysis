@@ -18,3 +18,5 @@ sql/17_codebook_sample_h04l49.sql,data/validation/codebook_sample_h04l49.csv,por
 "Hand-entered from company reports, sources in each row",data/processed/commercial_context.csv,SEC EDGAR and company sites,afa46462d5ce498e5ef2e1b344226520f98a6edec3b9837fe50224eed013a5db
 "AI first-pass labelling of Google Patents claims, 1 Nov 2026",data/validation/manual_labels.csv,patents.google.com,0822f662cfd80aa2a9b320fac2b1d5200879d510e4ee1a68e2402362ced8a3c4
 sql/23_satcom_actor_names.sql,data/raw/satcom_actor_names.csv,"patents-public-data.patents.publications, table last modified 23 Sep 2026",d8cb980d461f43240362193e3fc0cbd24218031fd173b1c8adbb38ca6758e59d
+sql/25_ukraine_satcom_assignees.sql,data/raw/ukraine_satcom_assignees.csv,"patents-public-data.patents.publications, table last modified 23 Sep 2026",f0d7b4af4ebb7c23541620c9197fd01a8eea7d9c05d87ff2d61d6aaf6dc54855
+sql/26_ukraine_office_satcom_filings.sql,data/raw/ukraine_office_satcom_filings.csv,"patents-public-data.patents.publications, table last modified 23 Sep 2026",67bd26fa7c54df23bc70bc4c6e3e1eb425c512aab4d7b95356082ed2f9584e07
