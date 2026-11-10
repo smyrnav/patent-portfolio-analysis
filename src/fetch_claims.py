@@ -1,6 +1,7 @@
 """Download Google Patents pages for the validation sample and extract independent claims.
 
-Usage: python src/fetch_claims.py [folder]. Pages and the parsed file stay local, in data/interim/claim_pages by default.
+Usage: python src/fetch_claims.py [folder] [slots_csv]. Pages and the parsed file stay local,
+in data/interim/claim_pages by default; slots default to data/validation/validation_slots.csv.
 """
 import concurrent.futures as cf
 import html
@@ -48,7 +49,8 @@ def parse(page):
 
 if __name__ == "__main__":
     PAGES.mkdir(parents=True, exist_ok=True)
-    ids = sorted({s["publication_number"] for s in rows("data/validation/validation_slots.csv")})
+    slots = sys.argv[2] if len(sys.argv) > 2 else "data/validation/validation_slots.csv"
+    ids = sorted({s["publication_number"] for s in rows(slots)})
     with cf.ThreadPoolExecutor(4) as pool:
         failed = [x for x in pool.map(get, ids) if x]
     parsed = {p: parse((PAGES / f"{p}.html").read_text()) for p in ids if (PAGES / f"{p}.html").exists()}
