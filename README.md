@@ -38,15 +38,21 @@ The project [pivoted to sovereign satcom](docs/01-research-design/pivot-sovereig
 - Patent portfolios, technological dependencies and competitors
 - Strategic investment priorities
 
-The pipeline was built and tested on optical networking, IP routing and data-centre switching. Those categories are being replaced by satellite-communications code pools per the [pivot checklist](docs/01-research-design/pivot-sovereign-satcom.md#checklist-to-execute-the-pivot); the results below predate the pivot and show the method, not the answer to the new question. [Full scope](docs/01-research-design/scope.md).
+The pipeline was built and tested on optical networking, IP routing and data-centre switching. Those categories are being replaced by satellite-communications code pools per the [pivot checklist](docs/01-research-design/pivot-sovereign-satcom.md#checklist-to-execute-the-pivot); the [pre-pivot results](#pre-pivot-results-method-demonstration) at the bottom of this page show the method, not the answer to the new question. [Full scope](docs/01-research-design/scope.md).
 
 ## Research objective
 
 To examine Nokia's technology position, competitor activity, commercial developments and patent portfolio characteristics, and identify where investment could be maintained, expanded, reallocated or investigated further.
 
-## Methodology
+## Methodology — each method exists to serve one decision
 
-The research counts patent families (one invention counted once, even when patented in several countries), checks what each patent is really about by reading the inventor's own numbered sentences rather than trusting the patent office's labels, compares the companies on those counts, adds public financial and commercial information, looks at which countries each invention is protected in, and models what keeping a portfolio alive would cost over ten years.
+The analysis is built around five management decisions: what can be reused, where the partnership is exposed, where it can differentiate, whether to build–buy–partner–license, and where to invest first ([the mapping](docs/01-research-design/research-questions.md#the-management-decisions-these-serve)). Every method below exists only to serve those decisions:
+
+- **Count inventions, not filings** — one invention patented in 20 countries is counted once (a patent family), so "who holds what" isn't inflated by filing habits.
+- **Read the inventor's own numbered sentences** instead of trusting the patent office's labels, and prove the reading is at least 85% accurate before comparing anything — because a comparison built on mislabeled patents is a confident wrong answer.
+- **Compare the companies on those validated counts** — this is what turns "who holds what" into the reuse and exposure answers.
+- **Add public financial and commercial information** — so the recommendations connect to what things cost and what the market is doing, not just to patent arithmetic.
+- **Model ten-year maintenance costs** — so "where to invest" includes the price of keeping patent rights alive, not only the price of getting them.
 
 Classification rules, assumptions and data transformations are documented so that the work can be rerun and checked. [Research design](docs/01-research-design/research-design.md).
 
@@ -81,7 +87,16 @@ So calculated indicators and recommendations are independent external assessment
 | Ten-year maintenance cost model | Designed, not built | [Q9 design](docs/04-financial-analysis/ten-year-maintenance-cost-model.md). US fees and a [break-even](docs/04-financial-analysis/us-renewal-break-even.md) done |
 | Investment recommendations | Pending | [Provisional findings only](docs/05-findings-and-recommendations/findings.md) |
 
-## Main results so far
+## What we can already say about the satcom question
+
+The headline answers (reuse, exposure, advantage, investment priorities) are not ready — they wait for the technology buckets to pass validation. But four findings are already established, each with its evidence on file:
+
+- **Ukraine cannot supply this technology from its own patent base.** No Ukrainian company holds satellite-communications patents: the national footprint in these technologies is 16 individual inventors with one family each, in a dataset holding over 336,000 Ukrainian patent publications overall. Foreign suppliers have filed only 16 satcom patent families at the Ukrainian office, ever. A sovereign Ukrainian system will run on foreign-patented technology; the open question is on whose terms — license, partnership or acquisition. ([queries 25–28](sql/README.md))
+- **ICEYE brings satellites and radar, not communications patents.** Its 53 patent families are dominated by radar imaging and spacecraft-platform technology — in the partnership's division of labour, the communications IP would come from Nokia. Caveat: absence of patents is not absence of capability. (peers table, [query 24](sql/README.md); full per-pool picture pending)
+- **The incumbents' patent positions are deep.** The Airbus group holds 19,488 patent families in our cleaned data, Thales 9,873, Viasat 822. Anyone building in this space builds against those positions — which is why the exposure question exists.
+- **Patent data cannot see the market leader.** SpaceX holds just 110 patent families — it protects technology as trade secrets, not published patents. Our numbers describe the published-IP landscape, not the capability landscape, and every conclusion carries that label. ([query 30](sql/30_spacex_name_counts.sql))
+
+## Pre-pivot results (method demonstration)
 
 ### Patent codes alone can't compare companies
 
