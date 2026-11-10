@@ -20,3 +20,8 @@ sql/17_codebook_sample_h04l49.sql,data/validation/codebook_sample_h04l49.csv,por
 sql/23_satcom_actor_names.sql,data/raw/satcom_actor_names.csv,"patents-public-data.patents.publications, table last modified 23 Sep 2026",d8cb980d461f43240362193e3fc0cbd24218031fd173b1c8adbb38ca6758e59d
 sql/25_ukraine_satcom_assignees.sql,data/raw/ukraine_satcom_assignees.csv,"patents-public-data.patents.publications, table last modified 23 Sep 2026",f0d7b4af4ebb7c23541620c9197fd01a8eea7d9c05d87ff2d61d6aaf6dc54855
 sql/26_ukraine_office_satcom_filings.sql,data/raw/ukraine_office_satcom_filings.csv,"patents-public-data.patents.publications, table last modified 23 Sep 2026",67bd26fa7c54df23bc70bc4c6e3e1eb425c512aab4d7b95356082ed2f9584e07
+sql/27_ukraine_coverage_check.sql,data/raw/ukraine_coverage_check.csv,"patents-public-data.patents.publications, table last modified 23 Sep 2026",d5791088457c1e125679c647ed553c631ae0461205b3e8ca5f304973cb83c3e4
+sql/28_ukraine_entity_check.sql,data/raw/ukraine_entity_check.csv,"patents-public-data.patents.publications, table last modified 23 Sep 2026",91d148910d3c46fada8b7e6050cc875f01c09105b614ccd2973ec216f5494821
+sql/29_echostar_ukraine_cpc.sql,data/raw/echostar_ukraine_cpc.csv,"patents-public-data.patents.publications, table last modified 23 Sep 2026",e55edfeab37b3cc461f7f9b5734aa606d89188ad390d4ad2c84c06c317ee6ab0
+sql/30_spacex_name_counts.sql,data/raw/spacex_name_counts.csv,"patents-public-data.patents.publications, table last modified 23 Sep 2026",1eb30c45c5d6e960ea45e514588199850b34eb68d99b246a843c6b1ceabb8619
+sql/31_iceye_recent_examples.sql,data/raw/iceye_recent_examples.csv,nokia_analytics.satcom_peers_30y,5cb078bfc768edeff27695bf27c0a92f62b81325de96fb8cfe362548cb0c9038
