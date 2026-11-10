@@ -1,0 +1,83 @@
+owner,pool,period,families
+Airbus,GRD,2010s,5
+Airbus,GRD,pre-2000,1
+Airbus,ISL,2000s,10
+Airbus,ISL,2010s,13
+Airbus,ISL,2020s,26
+Airbus,ISL,pre-2000,1
+Airbus,NET,2000s,1
+Airbus,NET,2010s,16
+Airbus,NET,2020s,11
+Airbus,NET,pre-2000,1
+Airbus,SAT,2000s,23
+Airbus,SAT,2010s,39
+Airbus,SAT,2020s,13
+Airbus,SAT,pre-2000,3
+Airbus,SEC,2000s,8
+Airbus,SEC,2010s,14
+Airbus,SEC,2020s,3
+Eutelsat/OneWeb,GRD,2010s,8
+Eutelsat/OneWeb,ISL,2010s,4
+Eutelsat/OneWeb,NET,2000s,1
+Eutelsat/OneWeb,NET,2010s,5
+Eutelsat/OneWeb,SAT,2000s,7
+Eutelsat/OneWeb,SAT,2010s,21
+Eutelsat/OneWeb,SAT,2020s,6
+Eutelsat/OneWeb,SEC,2010s,1
+ICEYE,ISL,2020s,2
+ICEYE,SAT,2010s,1
+ICEYE,SAT,2020s,3
+Nokia (lineage),GRD,2000s,2
+Nokia (lineage),GRD,2010s,2
+Nokia (lineage),GRD,2020s,7
+Nokia (lineage),GRD,pre-2000,2
+Nokia (lineage),ISL,2000s,7
+Nokia (lineage),ISL,2010s,2
+Nokia (lineage),ISL,2020s,11
+Nokia (lineage),ISL,pre-2000,1
+Nokia (lineage),NET,2000s,17
+Nokia (lineage),NET,2010s,19
+Nokia (lineage),NET,2020s,228
+Nokia (lineage),NET,pre-2000,9
+Nokia (lineage),SAT,2000s,8
+Nokia (lineage),SAT,2010s,19
+Nokia (lineage),SAT,2020s,166
+Nokia (lineage),SAT,pre-2000,8
+Nokia (lineage),SEC,2000s,18
+Nokia (lineage),SEC,2010s,12
+Nokia (lineage),SEC,2020s,26
+Nokia (lineage),SEC,pre-2000,12
+Thales,GRD,2000s,2
+Thales,GRD,2010s,25
+Thales,GRD,2020s,4
+Thales,ISL,2000s,1
+Thales,ISL,2010s,17
+Thales,ISL,2020s,21
+Thales,NET,2000s,6
+Thales,NET,2010s,35
+Thales,NET,2020s,20
+Thales,SAT,2000s,15
+Thales,SAT,2010s,93
+Thales,SAT,2020s,40
+Thales,SAT,pre-2000,1
+Thales,SEC,2000s,15
+Thales,SEC,2010s,38
+Thales,SEC,2020s,7
+Thales,SEC,pre-2000,3
+Viasat,GRD,2000s,6
+Viasat,GRD,2010s,13
+Viasat,GRD,2020s,24
+Viasat,GRD,pre-2000,2
+Viasat,ISL,2010s,6
+Viasat,ISL,2020s,16
+Viasat,NET,2000s,20
+Viasat,NET,2010s,21
+Viasat,NET,2020s,15
+Viasat,NET,pre-2000,9
+Viasat,SAT,2000s,37
+Viasat,SAT,2010s,53
+Viasat,SAT,2020s,64
+Viasat,SAT,pre-2000,12
+Viasat,SEC,2000s,3
+Viasat,SEC,2010s,4
+Viasat,SEC,2020s,2
