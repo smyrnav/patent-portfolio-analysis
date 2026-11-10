@@ -18,19 +18,28 @@ OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "data/interim/claim_pag
 PAGES = OUT / "html"
 
 
+def urls(publication):
+    bare = publication.replace("-", "")
+    yield bare
+    country, number, _kind = publication.split("-", 2)
+    if country == "US" and number[:4].isdigit() and int(number[:4]) >= 2001:
+        yield f"US{number[:4]}{number[4:].zfill(7)}{_kind}"
+
+
 def get(publication):
     path = PAGES / f"{publication}.html"
     if path.exists() and path.stat().st_size > 5000:
         return None
-    url = f"https://patents.google.com/patent/{publication.replace('-', '')}/en"
-    for _ in range(3):
-        try:
-            request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-            path.write_text(urllib.request.urlopen(request, timeout=60).read().decode("utf8", "ignore"))
-            time.sleep(0.5)
-            return None
-        except OSError:
-            time.sleep(3)
+    for candidate in urls(publication):
+        url = f"https://patents.google.com/patent/{candidate}/en"
+        for _ in range(3):
+            try:
+                request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+                path.write_text(urllib.request.urlopen(request, timeout=60).read().decode("utf8", "ignore"))
+                time.sleep(0.5)
+                return None
+            except OSError:
+                time.sleep(3)
     return publication
 
 
@@ -44,6 +53,11 @@ def parse(page):
             text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", m.group(2)))).strip()
             if not m.group(1) and len(text) > 20:
                 independent.append(text)
+        if not independent:
+            for m in re.finditer(r'<claim\b[^>]*>(.*?)</claim>', section.group(0), re.S):
+                text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", m.group(1)))).strip()
+                if len(text) > 20:
+                    independent.append(text)
     return {"orig": first, "cur": current, "ind": independent}
 
 

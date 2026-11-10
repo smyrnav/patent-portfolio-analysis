@@ -17,6 +17,10 @@ folder = Path(sys.argv[4]) if len(sys.argv) > 4 else ROOT / "data/interim/claim_
 slots = sys.argv[5] if len(sys.argv) > 5 else "data/validation/validation_slots.csv"
 parsed = json.loads((folder / "parsed.json").read_text())
 ids = sorted({s["publication_number"] for s in rows(slots) if s["stage"] == stage})
+missing = [i for i in ids if i not in parsed or not parsed[i]["ind"]]
+if missing:
+    print(f"Skipped {len(missing)} publications with no readable claims: {missing}", file=sys.stderr)
+ids = [i for i in ids if i not in missing]
 random.Random(f"blind-{stage}").shuffle(ids)
 dependent = re.compile(r"\b(of|to|in|by|with|from|under|per)\s+(any\s+(one\s+)?of\s+)?(the\s+)?(preceding\s+)?claims?\s+\d+", re.I)
 for number, publication in enumerate(ids, 1):

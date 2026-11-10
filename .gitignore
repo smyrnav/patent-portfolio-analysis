@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 data/raw/annual_reports/
 data/interim/claim_pages/
+data/interim/claim_pages_satcom/
