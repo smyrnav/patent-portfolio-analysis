@@ -1,0 +1,151 @@
+stage,pool,company,publication_number,family_id,priority_date,period,matched_codes,first_code,first_code_matches_pool,title_en
+satcom-pilot,GRD,Airbus,US-11026273-B2,70804735,20190228,2010s,H04B7/18517,H04W76/10,false,Mobile satellite communication gateway and method for establishing a satellite communication connection
+satcom-pilot,GRD,Airbus,US-9331775-B2,48128340,20121023,2010s,H04B7/18517,H04B7/18517,true,Method and system for detecting broadcast signals transmitted by terrestrial sources and received by a satellite
+satcom-pilot,GRD,Eutelsat/OneWeb,US-9203468-B2,51225675,20140401,2010s,H04B7/18528,H04B7/18513,false,Method for establishing radiofrequency links
+satcom-pilot,GRD,Eutelsat/OneWeb,US-9438372-B2,50981434,20140404,2010s,H04B7/18517,H04B7/18519,false,Device and method for neutralizing the impact of a jamming signal on a satellite
+satcom-pilot,GRD,Nokia (lineage),US-6816501-B2,8492752,20000317,2000s,H04B7/18528,H04J3/16,false,Method and system for mapping channels into a convolutional encoded time divison multiplex in the downlink
+satcom-pilot,GRD,Nokia (lineage),WO-2021037327-A1,67777298,20190823,2010s,H04B7/18517,H04B7/18517,true,Configuration in satellite system
+satcom-pilot,GRD,Nokia (lineage),US-11582003-B2,80953513,20210326,2020s,H04B7/18517,H04J3/12,false,Feeder link in data transport in wireless telecommunication systems
+satcom-pilot,GRD,Nokia (lineage),US-12483318-B2,86386852,20220520,2020s,H04B7/18517,H04W84/06,false,Timing synchronization for non-terrestrial network
+satcom-pilot,GRD,Thales,EP-1134927-B1,8492752,20000317,2000s,H04B7/18528,H04J3/16,false,Method and system for mapping channels into a convolutional encoded time division multiplex in the downlink
+satcom-pilot,GRD,Thales,US-10574344-B2,58669925,20170202,2010s,H04B7/18517,H04L12/4633,false,Method and system for transporting signals in a satellite system
+satcom-pilot,GRD,Thales,US-10673974-B2,59974484,20170615,2010s,H04B7/18517,H04W84/047,false,Telecommunication system comprising a cache server located on board a high-altitude platform and associated data-transmitting method
+satcom-pilot,GRD,Thales,US-10763582-B2,61655809,20171016,2010s,H04B7/18517,H01Q3/2635,false,"Method for determining a phase bias in the signal transmitted by at least one of the radiating elements of an active antenna, and associated device"
+satcom-pilot,GRD,Thales,US-2020100113-A1,65685385,20180920,2010s,H04B7/18517,H04L63/1458,false,Method of detecting and filtering illegitimate streams in a satellite communication network
+satcom-pilot,GRD,Thales,US-8934402-B2,43066988,20100226,2010s,H04B7/18528,H04B7/18513,false,Method for the optimized allocation of a satellite communication resource and associated communication system
+satcom-pilot,GRD,Thales,US-9363712-B2,51014315,20131223,2010s,H04B7/18517,H04B7/18513,false,Satellite communication system for a continuous high-bitrate access service over a coverage area including at least one polar region
+satcom-pilot,GRD,Thales,US-9853718-B2,53758254,20150206,2010s,"H04B7/18517,H04B7/18528",H04W40/02,false,Dynamically adjusting the transmission mode in a satellite communication system
+satcom-pilot,GRD,Thales,US-12531632-B2,86007302,20220804,2020s,H04B7/18528,H04J1/04,false,Satellite system and method for geolocating a radiofrequency transmitter
+satcom-pilot,GRD,Viasat,US-8068827-B2,40523687,20071009,2000s,H04B7/18528,H04B7/18528,true,Non-interfering utilization of non-geostationary satellite frequency band for geostationary satellite communication
+satcom-pilot,GRD,Viasat,US-8381078-B2,42936632,20090709,2000s,H04B7/18517,H04L1/0052,false,Multi-channel statistical multiplexing of FEC decoders
+satcom-pilot,GRD,Viasat,US-10128939-B2,61070080,20150410,2010s,H04B7/18517,H04B7/0617,false,Beamformer for end-to-end beamforming communications system
+satcom-pilot,GRD,Viasat,US-10284284-B2,50188190,20120904,2010s,H04B7/18517,H04W74/006,false,Paired-beam transponder satellite communication
+satcom-pilot,GRD,Viasat,US-10727934-B2,60263075,20161021,2010s,H04B7/18517,Y02D30/70,false,Ground-based beamformed communications using mutually synchronized spatially multiplexed feeder links
+satcom-pilot,GRD,Viasat,US-12609763-B2,82156553,20210513,2020s,H04B7/18517,H04B7/18517,true,Satellite communication with modularized mobile earth stations (MESs)
+satcom-pilot,GRD,Viasat,US-2025132822-A1,77822005,20210820,2020s,H04B7/18517,H04B7/195,false,Lower orbit satellite tracking
+satcom-pilot,GRD,Viasat,US-2026039395-A1,90368166,20220725,2020s,H04B7/18517,H04B10/503,false,Methods and Apparatus for Optical Beam Compensation in a Satellite Communications System
+satcom-pilot,GRD,Viasat,US-2026197071-A1,84360690,20221018,2020s,H04B7/18517,H04B7/18513,false,Individual terminal mobile satellite beam tracking
+satcom-pilot,GRD,Viasat,US-2026222055-A1,85227343,20230113,2020s,H04B7/18517,H04B7/18513,false,Oscillator phase noise calibration
+satcom-pilot,GRD,Viasat,US-2026269935-A1,85936990,20230313,2020s,H04B7/18517,H04B7/18541,false,Per link mobile satellite beam deconfliction
+satcom-pilot,GRD,Viasat,WO-2024206556-A1,90829228,20230330,2020s,H04B7/18517,H04B7/2041,false,Methods and apparatuses for multi-modal use of a satellite in a satellite communications system
+satcom-pilot,GRD,Viasat,EP-0880834-A4,24421036,19960223,pre-2000,H04B7/18517,H04B7/18578,false,Method and apparatus for command and control of remote systems using low earth orbit satellite communications
+satcom-pilot,ISL,Airbus,EP-1906558-A1,37898773,20060927,2000s,H04B7/18521,H04B7/18521,true,"Method and system for data transmission between a satellite and a terrestrial base station, low orbit satellite, relay terminal and base station"
+satcom-pilot,ISL,Airbus,US-9077428-B2,43014389,20091217,2000s,H04B7/18521,H04B7/18513,false,Hybrid space system based on a constellation of low-orbit satellites working as space repeaters for improving the transmission and reception of geostationary signals
+satcom-pilot,ISL,Airbus,US-11675145-B2,67107743,20190208,2010s,H04B10/118,G02B6/4214,false,Injection of a beam of radiation into an optical fibre
+satcom-pilot,ISL,Airbus,US-12074639-B2,68916438,20191213,2010s,H04B10/118,H04B10/1123,false,"Methods, systems and devices for free-space optical communications"
+satcom-pilot,ISL,Airbus,US-9240841-B2,43242267,20100308,2010s,H04B10/118,H04B10/516,false,Method and system for free-field optical transmission by means of laser signals
+satcom-pilot,ISL,Airbus,EP-4601220-A1,89900757,20240209,2020s,H04B10/118,H04B10/1123,false,"Optical terminal, ground station, aircraft, satellite, all-sky camera and method for free space laser communication"
+satcom-pilot,ISL,Airbus,US-12088341-B2,76444250,20210611,2020s,H04B10/118,H04B10/25759,false,Photonic beamforming for active antennas
+satcom-pilot,ISL,Airbus,US-12583626-B2,78828027,20210908,2020s,H04B10/118,H04B10/118,true,Method for acquiring images of a terrestrial zone using a spacecraft comprising a laser transmission module
+satcom-pilot,ISL,Airbus,US-2026197081-A1,85685209,20221201,2020s,H04B10/118,H04B10/118,true,Uplink Adaptor for Optical Links and Method therefor
+satcom-pilot,ISL,Airbus,WO-2024126905-A1,86657573,20221213,2020s,H04B10/118,H04B10/118,true,Method and system for optical data collection
+satcom-pilot,ISL,Airbus,WO-2025172648-A1,91738509,20240213,2020s,H04B10/118,H04B10/70,false,Optical terminal for detecting single photons
+satcom-pilot,ISL,Eutelsat/OneWeb,US-9391702-B2,51895869,20130515,2010s,"H04B10/118,H04B7/18521",H04B7/18521,true,System and method for multiple layer satellite communication
+satcom-pilot,ISL,Nokia (lineage),US-2007116095-A1,35976498,20051028,2000s,H04B7/18521,H04L27/2613,false,"Method for transmission in a cellular single frequency network, a base station, a mobile terminal and a mobile network therefor"
+satcom-pilot,ISL,Nokia (lineage),WO-2007089817-A1,38175805,20060130,2000s,H04B7/18521,G01S19/20,false,Method for utilizing a backup timing source when gps becomes nonfunctional
+satcom-pilot,ISL,Nokia (lineage),US-2024129044-A1,84359286,20221014,2020s,H04B10/118,H04B10/11,false,Point-to-point optical communication via a free space link
+satcom-pilot,ISL,Nokia (lineage),US-2025267600-A1,94581875,20240215,2020s,H04B7/18521,H04W36/083,false,Satellite switch with resynchronization
+satcom-pilot,ISL,Nokia (lineage),WO-2025233111-A1,95519178,20240510,2020s,H04B7/18521,H04B7/18521,true,Collision in a non-terrestrial cellular communication network
+satcom-pilot,ISL,Thales,US-10044435-B2,56101519,20160205,2010s,H04B7/18521,H04L45/502,false,Method for transparent on-board routing of data packets at very high bit rate in a space telecommunication system using a network of at least one regenerative satellite(s)
+satcom-pilot,ISL,Thales,US-11349560-B2,69104554,20190731,2010s,H04B7/18521,H04B7/18519,false,Method for determining a maximum transmission power of a non-geostationary satellite
+satcom-pilot,ISL,Thales,US-9967047-B2,49322424,20130607,2010s,H04B10/118,H04B10/112,false,Method and device for optical transmission at adaptive effective rates
+satcom-pilot,ISL,Thales,EP-4478656-A1,88690050,20230615,2020s,H04B10/118,H04B10/118,true,Method and key management system for establishing secure communications between a satellite control center and a satellite
+satcom-pilot,ISL,Thales,EP-4765679-A1,95745667,20241220,2020s,H04B10/118,H04B10/118,true,Quantum receiving system
+satcom-pilot,ISL,Thales,US-11595115-B2,83998930,20210513,2020s,H04B7/18521,H04B7/18521,true,Dual aperture dual modem SATCOM terminal
+satcom-pilot,ISL,Thales,US-12244351-B2,80595448,20211122,2020s,H04B10/118,H04B10/118,true,Quantum telecommunications network with a spaceborne or airborne component
+satcom-pilot,ISL,Thales,US-2026172116-A1,95745588,20241217,2020s,H04B10/118,H04J14/06,false,"Transparent optical repeater for satellite, and communication satellite comprising such a repeater"
+satcom-pilot,ISL,Viasat,US-10075231-B2,60941388,20150410,2010s,H04B10/118,H04W4/00,false,Satellite for end-to-end beamforming with non-overlapping feeder frequencies
+satcom-pilot,ISL,Viasat,US-2026222060-A1,89834167,20221219,2020s,H04B7/18521,H04B7/1855,false,Methods and Apparatuses for Enhancing Availability via Multi-Satellite Diversity
+satcom-pilot,ISL,Viasat,US-2026269932-A1,90789527,20230317,2020s,H04B7/18521,H04B7/18532,false,Single-direction crosslinks in satellite communication systems
+satcom-pilot,ISL,Viasat,WO-2025029255-A1,87760525,20230802,2020s,"H04B10/118,H04B7/18521",H04B10/118,true,Processed broadband satellite communication system with spatially multiplexed optical feeder links
+satcom-pilot,ISL,Viasat,WO-2026136722-A1,98654562,20241220,2020s,H04B10/118,H04B10/118,true,Methods and apparatuses for optical link selection in a satellite communications system
+satcom-pilot,NET,Airbus,US-2018061244-A1,57130138,20160825,2010s,H04W84/06,G08G5/0013,false,Data acquisition system and methods for data acquisition
+satcom-pilot,NET,Airbus,US-12568142-B2,84360452,20221028,2020s,H04W84/06,H04L2012/4028,false,Shared sensor grid and method for sharing sensor grid
+satcom-pilot,NET,Nokia (lineage),US-7340258-B2,35732965,20040727,2000s,H04W84/06,H04B7/18523,false,Mobile phone combined with satellite radio capability
+satcom-pilot,NET,Nokia (lineage),EP-2938117-A1,50774792,20140424,2010s,H04W84/06,H04B7/18504,false,Adjusting geographical position of a drone base station
+satcom-pilot,NET,Nokia (lineage),GB-202504765-D0,95699923,20250331,2020s,H04W84/06,H04W84/06,true,Handling of store and forward satellite operation parameters in non-integrity protected non-access stratum messages
+satcom-pilot,NET,Nokia (lineage),US-12463715-B2,81207745,20201014,2020s,H04W84/06,H04W84/06,true,User equipment autonomous adjustment of measurement window for non-terrestrial networks
+satcom-pilot,NET,Nokia (lineage),US-12483318-B2,86386852,20220520,2020s,H04W84/06,H04W84/06,true,Timing synchronization for non-terrestrial network
+satcom-pilot,NET,Nokia (lineage),US-12672087-B2,85796765,20211011,2020s,H04W84/06,H04W84/06,true,Terminal registration processing for aerial services
+satcom-pilot,NET,Nokia (lineage),US-2024155447-A1,90928548,20221104,2020s,H04W84/06,H04W36/00835,false,Obtaining target cell ephemeris information for handover cases
+satcom-pilot,NET,Nokia (lineage),US-2024267772-A1,92051190,20230203,2020s,H04W84/06,H04B7/18573,false,"Avoiding unnecessary radio measurement gaps in a non-terrestrial network, and related devices, methods and computer programs"
+satcom-pilot,NET,Nokia (lineage),US-2025008524-A1,87553528,20230630,2020s,H04W84/06,H04L5/0053,false,Configuration of pdcch
+satcom-pilot,NET,Nokia (lineage),US-2025055608-A1,94481446,20230811,2020s,H04W84/06,H04L1/1812,false,Harq state for rrc configuration for multi-tb scheduling
+satcom-pilot,NET,Nokia (lineage),US-2025151017-A1,93037220,20231107,2020s,H04W84/06,H04W56/0015,false,Handling positioning measurement
+satcom-pilot,NET,Nokia (lineage),US-2026122505-A1,94331364,20230727,2020s,H04W84/06,H04W88/14,false,Methods and related apparatuses for extending an expiration time period of a telecommunications access token
+satcom-pilot,NET,Nokia (lineage),US-2026197798-A1,88863380,20221214,2020s,H04W84/06,H04W64/006,false,Ue-specific time-based offset for serving cell end-of-coverage
+satcom-pilot,NET,Nokia (lineage),US-2026239250-A1,90880579,20230505,2020s,H04W84/06,H04W56/0045,false,Pre-compensating timing drift
+satcom-pilot,NET,Nokia (lineage),WO-2022200682-A1,83396388,20210322,2020s,H04W84/06,H04W84/06,true,Signal compensation
+satcom-pilot,NET,Nokia (lineage),WO-2025201925-A1,95064224,20240328,2020s,H04W84/06,H04W84/06,true,A radio telecommunications system with multiple mobile access nodes
+satcom-pilot,NET,Nokia (lineage),WO-2025231879-A1,97591539,20240510,2020s,"H04B7/18541,H04W84/06",H04L67/56,false,Indicating status of timer used for uplink transmission extension
+satcom-pilot,NET,Nokia (lineage),WO-2026073742-A1,97229797,20241003,2020s,H04W84/06,H04W36/00725,false,Ntn handovers
+satcom-pilot,NET,Nokia (lineage),EP-1067713-A1,8242043,19990708,pre-2000,H04B7/18584,H04B7/18584,true,A method and apparatus for transmitting and receiving digital packets in a transmission system using moving satellites
+satcom-pilot,NET,Thales,EP-3188378-A1,56084078,20151229,2010s,H04B7/18584,H04B7/18584,true,Routing between nodes in a satellite system through a satellite or through a satellite and a central station
+satcom-pilot,NET,Thales,US-10461845-B2,60923523,20170803,2010s,H04W84/06,H01Q1/288,false,Flexible payload architecture for VHTS and HTS applications
+satcom-pilot,NET,Thales,US-11582672-B2,84103337,20210518,2020s,"H04B7/18541,H04W84/06",H04W36/328,false,Dynamic roaming for aircraft data traffic connectivity between communication networks based on performance measurements
+satcom-pilot,NET,Thales,US-12483321-B2,75529913,20210129,2020s,H04W84/06,H04W52/0216,false,Power saving satellite connection for low capability device
+satcom-pilot,NET,Viasat,US-7710876-B2,39535615,20070206,2000s,H04W84/06,H04W84/06,true,Successive scheduled requests for transmission
+satcom-pilot,NET,Viasat,US-8427999-B2,42315215,20090417,2000s,H04B7/18584,H04B7/18584,true,Multi-satellite architecture
+satcom-pilot,NET,Viasat,US-10568009-B2,60941523,20160714,2010s,H04W84/06,H04W84/06,true,Variable playback rate of streaming content for uninterrupted handover in a communication system
+satcom-pilot,NET,Viasat,US-11637628-B2,68848467,20181119,2010s,H04B7/18584,H04B7/18521,false,Fractionated satellite constellation
+satcom-pilot,NET,Viasat,WO-2026035258-A1,92538674,20240806,2020s,H04B7/18541,H04B7/195,false,Method and apparatus for providing satellite service using satellites in inclined geosynchronous orbits
+satcom-pilot,SAT,Airbus,US-7714797-B2,36203937,20050304,2000s,H04B7/18515,Y10S343/02,false,Phased array antenna
+satcom-pilot,SAT,Airbus,US-9154216-B2,48050405,20120412,2010s,H04B7/18513,G01S19/08,false,Generation of a data stream comprising user messages in a satellite-based augmentation system
+satcom-pilot,SAT,Airbus,US-9735857-B2,49261986,20130809,2010s,H04B7/18513,H04B7/18513,true,Predistortion in satellite signal transmission systems
+satcom-pilot,SAT,Airbus,WO-2024156540-A1,86657755,20230123,2020s,H04B7/18513,B64G1/1007,false,System and method for managing operational flows for configuring the payload of a telecommunications satellite
+satcom-pilot,SAT,Eutelsat/OneWeb,US-7869802-B2,38024333,20070228,2000s,H04B7/18515,H04B7/18515,true,Uplink frequency multiplexing system
+satcom-pilot,SAT,Eutelsat/OneWeb,US-10680701-B2,61899136,20180306,2010s,"H04B7/18513,H04B7/18515,H04B7/18519",H01Q3/34,false,Method for adaptive demodulation and system implementing such a method
+satcom-pilot,SAT,Nokia (lineage),WO-2021062880-A1,75336686,20191004,2010s,H04B7/1851,H04L1/1819,false,Harq for long propagation delay
+satcom-pilot,SAT,Nokia (lineage),US-12557053-B2,83154876,20210305,2020s,H04B7/18513,H04W48/12,false,Mechanism for availability of system broadcasted information
+satcom-pilot,SAT,Nokia (lineage),US-2024340825-A1,89663323,20230406,2020s,H04B7/1851,H04W84/06,false,Determining round trip time in ntn
+satcom-pilot,SAT,Nokia (lineage),US-2025212292-A1,96026918,20231220,2020s,H04B7/18513,H04W48/08,false,"Method, apparatus and computer program"
+satcom-pilot,SAT,Nokia (lineage),WO-2025209757-A1,94928051,20240402,2020s,H04B7/1851,H04W56/0045,false,System information validity reporting
+satcom-pilot,SAT,Nokia (lineage),WO-2026041310-A1,96496606,20240820,2020s,"H04B7/1851,H04B7/18513",H04B7/18513,true,"Method, apparatus and computer program for a user equipment with respect to non-terrestrial network network access nodes"
+satcom-pilot,SAT,Nokia (lineage),WO-2026057615-A1,97067504,20240913,2020s,H04B7/1851,H04B7/1853,false,Synchronization signal indicator
+satcom-pilot,SAT,Nokia (lineage),WO-2026124801-A1,96917640,20241212,2020s,H04B7/1851,H04B7/1851,true,Fallback to geo for recovery in multi-orbit ntn
+satcom-pilot,SAT,Nokia (lineage),WO-2026146355-A1,98520886,20250102,2020s,H04B7/18513,H04W56/0045,false,Random access
+satcom-pilot,SAT,Nokia (lineage),US-6032902-A,9493146,19960618,pre-2000,H04B7/195,B64G1/242,false,Constellation of non-geostationary satellites providing permanent coverage
+satcom-pilot,SAT,Thales,US-2011032867-A1,39863143,20080304,2000s,H04B7/18515,H04B7/18515,true,System for generating beams with ground-operated processing and digital transmission
+satcom-pilot,SAT,Thales,US-2016373991-A1,54365307,20150619,2010s,"H04B7/18513,H04B7/18515",H04B7/18541,false,"Multibeam telecommunication satellite, associated telecommunication system and handover method"
+satcom-pilot,SAT,Thales,US-9030938-B2,49231547,20130531,2010s,H04B7/18513,H04W72/0446,false,"Methods for transmitting and receiving data between a terminal and a gateway, in particular via a satellite link"
+satcom-pilot,SAT,Thales,US-9112665-B2,48040272,20121005,2010s,H04B7/18513,H04L5/006,false,Method of transmission with mechanism for adapting modes of coding and of dynamic range modulation
+satcom-pilot,SAT,Thales,EP-4429128-A1,89158550,20230309,2020s,H04B7/18513,H04B10/70,false,"Method for establishing quantum channel via satellite, satellite for quantum channel establishment and method for emitting request for quantum channel establishment"
+satcom-pilot,SAT,Thales,US-2024187087-A1,86099872,20221206,2020s,H04B7/18513,H04B7/18513,true,"Method for allocating time-frequency resources in a satellite telecommunication system using beamforming, and associated device and computer program"
+satcom-pilot,SAT,Viasat,US-7881246-B2,39344974,20060822,2000s,"H04B7/18513,H04B7/18515",H04L5/0016,false,Cooperative orthogonal multi-satellite communication system
+satcom-pilot,SAT,Viasat,US-8385223-B2,42543158,20090708,2000s,H04B7/18513,H04B7/18513,true,Interference resistant satellite link power control using downlink beacon
+satcom-pilot,SAT,Viasat,US-10313002-B2,47880592,20100501,2010s,H04B7/18515,H04B7/212,false,Flexible capacity satellite communications system
+satcom-pilot,SAT,Viasat,US-10355772-B2,50490830,20140305,2010s,H04B7/18513,H04B7/18506,false,Combined satellite and terrestrial communication system for terminals located on a vehicle such as an aircraft using a common set of frequencies
+satcom-pilot,SAT,Viasat,US-2011222589-A1,42061116,20100312,2010s,H04B7/18519,H04B7/18519,true,Satellite Beam Monitoring
+satcom-pilot,SAT,Viasat,US-2024291143-A1,82404240,20210629,2020s,H04B7/18519,H04B7/18519,true,Techniques for phased array terminal antenna installation
+satcom-pilot,SAT,Viasat,US-2026222055-A1,85227343,20230113,2020s,H04B7/18513,H04B7/18513,true,Oscillator phase noise calibration
+satcom-pilot,SAT,Viasat,US-2026222061-A1,85382541,20230113,2020s,"H04B7/18513,H04B7/18515,H04B7/18519",H04B7/2041,false,Mobile satellite beam resource allocation
+satcom-pilot,SEC,Airbus,US-8634065-B2,43012750,20090807,2000s,"H04K3/41,H04K3/43",H04K3/41,true,Method for operating a jamming laser in a DIRCM system in a manner that is safe for eyes
+satcom-pilot,SEC,Airbus,US-8838334-B2,46514053,20110615,2010s,"H04K3/22,H04K3/224,H04K3/90",H04K3/224,true,Device for detecting and tracking motor vehicles
+satcom-pilot,SEC,Airbus,US-9397765-B2,48170377,20120324,2010s,"H04K3/45,H04K3/94",H04K3/94,true,Method for the self-testing of a reactive radio interferer
+satcom-pilot,SEC,Airbus,US-9923662-B2,53489873,20150624,2010s,"H04K1/10,H04K3/65,H04K3/84,H04K3/86",H04K3/84,true,"Method for masking communication signals, enodeb with masking functionality and aircraft"
+satcom-pilot,SEC,Nokia (lineage),US-2006234641-A1,36907535,20050203,2000s,"H04K3/22,H04K3/90",H04K2203/16,false,System for using an existing cellular network to detect incidents of GPS jaming
+satcom-pilot,SEC,Nokia (lineage),US-2010254464-A1,38645792,20070928,2000s,H04K1/10,H04K1/10,true,Method and device for data processing in xdsl system
+satcom-pilot,SEC,Nokia (lineage),US-8238875-B2,37896100,20051213,2000s,H04K3/226,H04K3/226,true,Jamming presence
+satcom-pilot,SEC,Nokia (lineage),US-9031405-B2,41327307,20090630,2000s,"H04K1/04,H04K1/06",H04K1/06,true,System and method for transmitting optical signals
+satcom-pilot,SEC,Nokia (lineage),US-12212408-B2,68136376,20190930,2010s,"H04K1/00,H04K3/41,H04K3/825",H04W72/1273,false,Securing downlink control information in cellular communication networks
+satcom-pilot,SEC,Nokia (lineage),US-9590744-B2,51841662,20130506,2010s,"H04K3/00,H04K3/28,H04K3/43,H04K3/45,H04K3/825",H04K3/28,true,Method and apparatus for beamforming
+satcom-pilot,SEC,Nokia (lineage),US-11387930-B2,75529845,20200429,2020s,"H04K1/003,H04K1/06,H04K3/22,H04K3/224,H04K3/25,H04K3/827",H04W72/541,false,Radio jamming detection
+satcom-pilot,SEC,Nokia (lineage),US-11431435-B2,79170947,20210120,2020s,"H04K1/003,H04K1/02,H04K1/10,H04K3/224,H04K3/25,H04K3/255,H04K3/42,H04K3/65",H04W72/53,false,Protecting transmissions against jamming
+satcom-pilot,SEC,Nokia (lineage),US-11595148-B2,75914377,20200603,2020s,"H04K3/226,H04K3/25,H04K3/255,H04K3/45",H04L25/03012,false,Ensuring transmissions are completed in a wireless network
+satcom-pilot,SEC,Nokia (lineage),US-12490248-B2,85076418,20220209,2020s,H04K3/22,H04L5/0005,false,Method and apparatus for radio jamming detection
+satcom-pilot,SEC,Nokia (lineage),WO-2024028074-A1,87426610,20220805,2020s,H04B7/18565,H04B7/18519,false,Network based location verification using uplink synchronization metrics in non-terrestrial networks
+satcom-pilot,SEC,Nokia (lineage),US-6266412-B1,22265101,19980615,pre-2000,H04K1/00,H04L9/0656,false,Encrypting speech coder
+satcom-pilot,SEC,Nokia (lineage),US-6584310-B1,22116304,19980507,pre-2000,H04K1/00,H04L2209/80,false,Method and apparatus for performing authentication in communication systems
+satcom-pilot,SEC,Thales,EP-1855125-A1,37496653,20060512,2000s,H04K3/228,H04K2203/32,false,Method of filtering jamming signals for a multi-channel mobile antenna
+satcom-pilot,SEC,Thales,US-7333727-B2,8866028,20010727,2000s,H04K1/02,H04K1/02,true,"Reconfigurable, multi-user communications network, with low latency time"
+satcom-pilot,SEC,Thales,US-7346310-B2,32241536,20021122,2000s,"H04K3/224,H04K3/94",G01S7/2813,false,Method for verifying anti-scrambling efficiency of a communication system
+satcom-pilot,SEC,Thales,EP-2660621-A1,47019047,20120503,2010s,"H04K3/42,H04K3/45,H04K3/46",H04K3/46,true,"Angular decoy method, device and associated decoy system"
+satcom-pilot,SEC,Thales,EP-2850760-B1,48430724,20120514,2010s,"H04K3/22,H04K3/222",H04K2203/16,false,"Method of detecting a jamming transmitter affecting a communication user equipment, device for the user equipment and system with the user equipment"
+satcom-pilot,SEC,Thales,GB-201909508-D0,67539998,20190702,2010s,"H04K3/20,H04K3/228",,,Pulsed interference reduction employing intelligent blanking
+satcom-pilot,SEC,Thales,US-10330791-B2,54937119,20150703,2010s,"H04K3/22,H04K3/90",H04K3/90,true,Method for locating a jamming source jamming signals of a satellite navigation system and associated system
+satcom-pilot,SEC,Thales,WO-2012080507-A2,45908008,20101217,2010s,"H04K3/28,H04K3/42,H04K3/45,H04K3/46",H04K3/46,true,Parasitic-signal generator
+satcom-pilot,SEC,Thales,WO-2015086690-A1,50624629,20131211,2010s,"H04K3/43,H04K3/45",H04K3/45,true,Jamming method and device with confined linear effect
+satcom-pilot,SEC,Thales,WO-2020120430-A1,67185094,20181211,2010s,"H04K3/42,H04K3/43,H04K3/45,H04K3/62",H04K3/42,true,System for disabling electronics of at least one carrier
+satcom-pilot,SEC,Thales,US-11888576-B2,74045645,20200924,2020s,H04K3/228,H04B7/18513,false,System and method for suppressing uplink interference signals generated in a multi-spot space communication system
+satcom-pilot,SEC,Viasat,US-10305199-B2,48041750,20090413,2000s,H04B7/18593,H04W72/21,false,Multi-beam active phased array architecture with independent polarization control
+satcom-pilot,SEC,Viasat,WO-2019234406-A1,62872778,20180604,2010s,H04B7/18565,H04B7/18565,true,Satellite tt&amp;c

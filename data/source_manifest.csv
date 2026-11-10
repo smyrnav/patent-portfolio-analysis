@@ -26,3 +26,4 @@ sql/29_echostar_ukraine_cpc.sql,data/raw/echostar_ukraine_cpc.csv,"patents-publi
 sql/30_spacex_name_counts.sql,data/raw/spacex_name_counts.csv,"patents-public-data.patents.publications, table last modified 23 Sep 2026",1eb30c45c5d6e960ea45e514588199850b34eb68d99b246a843c6b1ceabb8619
 sql/31_iceye_recent_examples.sql,data/raw/iceye_recent_examples.csv,nokia_analytics.satcom_peers_30y,5cb078bfc768edeff27695bf27c0a92f62b81325de96fb8cfe362548cb0c9038
 sql/32_pool_census.sql,data/raw/pool_census.csv,"nokia_analytics.portfolio_30y and nokia_analytics.satcom_peers_30y",e66e6356bffe4ea444416838c9cf36009c5eabbc4a132df4c278e4d34ae9d5bb
+sql/33_pilot_sample.sql,data/validation/satcom_pilot_slots.csv,"nokia_analytics.portfolio_30y and nokia_analytics.satcom_peers_30y",45eab09960200c8ae06621bf25e5edd234113866fc8d96fbd6201db5d1096d00
