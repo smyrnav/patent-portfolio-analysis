@@ -83,11 +83,11 @@ class LabelFile(unittest.TestCase):
         required = "simple_family_id publication_number applicant priority_date primary_class dc_context optical_medium ai_cloud_relevance claim_evidence review_status annotator confidence codebook_version".split()
         self.assertEqual(list(self.labels[0])[:len(required)], required)
         v = CFG["validation"]
-        for r in self.labels:
-            self.assertIn(r["primary_class"], CFG["scope"]["all_classes"])
+        for r in self.labels:  # archived pre-pivot record, checked against the archived values
+            self.assertIn(r["primary_class"], CFG["pre_pivot"]["all_classes"])
             self.assertIn(r["review_status"], v["review_statuses"])
             self.assertIn(r["confidence"], v["confidence_levels"])
-            self.assertEqual(r["codebook_version"], v["codebook_version"])
+            self.assertEqual(r["codebook_version"], CFG["pre_pivot"]["codebook_version"])
             self.assertTrue(r["simple_family_id"] and r["priority_date"] and r["applicant"])
 
     def test_one_row_per_patent(self):

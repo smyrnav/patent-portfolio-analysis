@@ -4,11 +4,11 @@
 central = "Which technological capabilities, patent assets and investment priorities — observable in publicly available data — are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?"
 
 [scope]
-labels = ["OPT", "IPR", "DCS"]
-all_classes = ["OPT", "IPR", "DCS", "OTHER", "MULTI"]
+labels = ["SAT", "ISL", "GRD", "NET", "SEC"]
+all_classes = ["SAT", "ISL", "GRD", "NET", "SEC", "OTHER", "MULTI"]
 reference_company = "Nokia"
-core_peers = ["Ciena", "Cisco", "Arista"]
-global_reference = "Huawei"
+core_peers = ["Airbus", "Thales", "Viasat", "Eutelsat/OneWeb", "ICEYE"]
+global_reference = "SpaceX"
 offices = ["US", "EP", "CN", "JP"]
 filings_since = 19961101
 twenty_year_cutoff = 20061101
@@ -17,13 +17,26 @@ main_comparison_years = [2020, 2024]
 provisional_years = [2025, 2026]
 
 [retrieval_pools]
-OPT = ["H04B10/", "H04J14/", "H04Q11/00"]
-IPR = ["H04L45/"]
-# H04L47 is part of the initial DCS retrieval pool alongside H04L49, matching sql/16_codebook_sample.sql.
-DCS = ["H04L49/", "H04L47/"]
+# Amended satcom pools, accepted 11 November 2026 (pilot decisions R1-R5).
+# ISL is a reporting flag inside SAT, not a standalone bucket (R5).
+# Free-space optical patents count as ISL by code definition (R4).
+SAT = ["H04B7/195", "H04B7/1851"]
+SAT_exclude = ["H04B7/18517"]
+ISL = ["H04B7/18521", "H04B10/118"]
+GRD = ["H04B7/18517", "H04B7/18528"]
+NET = ["H04W84/06", "H04B7/18584", "H04B7/18541"]
+# SEC is a co-occurrence rule (R1): any satellite prefix above AND one security prefix below.
+SEC_security = ["H04K1/", "H04K3/"]
+
+# Archived pre-pivot values. The pre-pivot validation record (manual_labels.csv,
+# validation_slots.csv, score_validation.py) is checked against these, not against [scope].
+[pre_pivot]
+labels = ["OPT", "IPR", "DCS"]
+all_classes = ["OPT", "IPR", "DCS", "OTHER", "MULTI"]
+codebook_version = "1.1"
 
 [validation]
-codebook_version = "1.1"
+codebook_version = "2.0-draft"
 precision_bar = 0.85
 kappa_bar = 0.70
 review_statuses = ["pending", "adjudicated", "accepted"]

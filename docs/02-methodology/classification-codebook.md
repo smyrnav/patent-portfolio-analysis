@@ -2,9 +2,27 @@
 
 Version 1.1. It defines what counts as optical networking, IP routing or data-centre switching, so comparisons with competitors aren't caused by inconsistent labels. Whether these labels and codes can be trusted is covered in [validation](validation.md).
 
+**Post-pivot note, 11 November 2026:** the project now works on satellite communications. Version 1.1 stays frozen as the rules of the archived pre-pivot label record; the new satcom classes are [below](#satcom-classes-post-pivot) as version 2.0-draft, and they become 2.0 when the [satcom validation plan](satcom-validation-plan.md) freezes them.
+
 Its starting point was a software-assisted draft. The changes are [listed below](#what-i-changed-from-the-draft).
 
-## Primary classes
+## Satcom classes (post-pivot)
+
+**Status: version 2.0-draft, 11 November 2026.** Defines what counts as which satellite-communications capability. The code pools that find candidates live in [satcom-code-pools.md](../01-research-design/satcom-code-pools.md), including the CPC prefixes and the SEC co-occurrence rule. Trust status is tracked in the [satcom validation plan](satcom-validation-plan.md): pools are accepted but not yet validated.
+
+| `primary_class` | What the invention mainly does |
+|---|---|
+| **SAT:** Satellite payload | Communications equipment on the satellite itself: transponders, payloads, on-board processing and beamforming |
+| **ISL:** Inter-satellite links | Moving traffic between satellites, radio or optical. A reporting flag inside SAT, not a standalone bucket. Free-space optical terminal patents count here by code definition, even when their sentences never say "satellite" |
+| **GRD:** Ground segment and terminals | Gateways, earth stations, network operations and user terminals |
+| **NET:** Network integration | Interworking between satellites and terrestrial networks: 3GPP non-terrestrial networks, handover, routing and resource management across the two |
+| **SEC:** Security and resilience | Protecting satellite communications: encryption and key management for satellite links, anti-jamming, geofencing, preventing unauthorised access |
+| **OTHER** | None of the above — including terrestrial-only wireless and non-communications space technology |
+| **MULTI** | The numbered sentences genuinely cover two classes and they can't be separated |
+
+Decision rules, in order: read the independent claims, then the first paragraph of the description (real satellite patents often open with deliberately broad sentences — pilot rule R3), then the rest of the description for context. Titles and CPC codes aren't evidence. Where a patent is used doesn't set its class; what the invention does sets it.
+
+## Primary classes (pre-pivot, archived)
 
 | `primary_class` | What the invention mainly does | Maps to Nokia unit | CPC codes used to find candidates |
 |---|---|---|---|
@@ -74,6 +92,7 @@ OTHER labels with `optical_medium` = 1 stay visible, because optical control sof
 | 1.0 | Scheduling and queues count as DCS only inside a claimed device | Timeslot and traffic policy claims were being pulled in |
 | 1.0 | H04L 47 dropped from the DCS candidates | 1 of 19 matched in the pilot |
 | 1.1 | REVIEW renamed MULTI, and `review_status` added | Separates overlapping inventions from records awaiting review |
+| 2.0-draft | Satcom classes SAT, ISL, GRD, NET, SEC added; description paragraph added to the reading rules (R3); free-space optical counts as ISL by code definition (R4) | Post-pivot. Accepted with the pilot decisions R1–R5 on 11 November 2026; becomes 2.0 when the satcom validation plan freezes it |
 
 Version 1.1 changes names and fields, not rules. All 421 labels were assigned under version 1.0 and carried across mechanically, and no OPT, IPR or DCS label moved, so no re-test was needed. Further rule changes need a logged reason and a re-test.
 

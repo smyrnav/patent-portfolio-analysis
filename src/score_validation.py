@@ -43,7 +43,7 @@ write_rows("data/validation/results_precision.csv",
            precision)
 
 # Confusion between classes: which class the claims earned, by retrieval pool
-classes = CFG["scope"]["all_classes"]
+classes = CFG["pre_pivot"]["all_classes"]
 write_rows("data/validation/results_confusion.csv", ["pool", *classes, "labelled"],
            [(pool, *[sum(labels[s["publication_number"]]["primary_class"] == c for s in test if s["pool"] == pool) for c in classes],
              sum(s["pool"] == pool for s in test)) for pool in pools])

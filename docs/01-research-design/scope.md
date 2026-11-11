@@ -1,41 +1,43 @@
-# Scope, version 1.0
+# Scope, version 2.0
 
 All documents use this scope, and [`config/research_parameters.toml`](../../config/research_parameters.toml) holds the same values for the scripts.
 
+**Changed 11 November 2026:** version 1.0 covered optical networking, IP routing and data-centre switching (OPT, IPR, DCS) against Ciena, Cisco, Arista and Huawei. The project pivoted to sovereign satellite communications; version 1.0 survives as the archived pre-pivot record under `[pre_pivot]` in the config and in the [codebook's frozen section](../02-methodology/classification-codebook.md).
+
 ## Technology
 
-> **Post-pivot note (2 November 2026):** these three categories are the pre-pivot lens the pipeline was built and tested on. They are being replaced by satellite-communications code pools per the [pivot checklist](pivot-sovereign-satcom.md#checklist-to-execute-the-pivot). Until the new pools are defined and validated, no satcom comparative claim is made.
+Five pools, defined in [satcom-code-pools.md](satcom-code-pools.md) (accepted 11 November 2026, amended by pilot decisions R1–R5, not yet validated). The **combined satcom capability pool — a family in any of the five — is the primary comparative measure**, because the pilot showed the main defect is patents landing in the wrong sub-bucket, not non-satellite junk.
 
-| Category | Definition | Primary competitor | Nokia unit |
-|---|---|---|---|
-| **OPT:** Optical networking | Optical transmission, transport, multiplexing and optical switching | Ciena | Optical Networks |
-| **IPR:** IP routing | IP route computation, routing protocols, route selection and forwarding | Cisco | IP Networks |
-| **DCS:** Data-centre switching | Packet switching, switching fabrics, buffers, queues and data-centre network architectures | Arista Networks | IP Networks |
+| Pool | Definition |
+|---|---|
+| **SAT:** Satellite payload | Communications equipment on the satellite: transponders, payloads, on-board processing and beamforming |
+| **ISL:** Inter-satellite links | Moving traffic between satellites, radio or optical. A reporting flag inside SAT, not a standalone bucket |
+| **GRD:** Ground segment and terminals | Gateways, earth stations, network operations and user terminals |
+| **NET:** Network integration | Interworking between satellites and terrestrial networks (3GPP non-terrestrial networks, handover, routing) |
+| **SEC:** Security and resilience | Protecting satellite communications: encryption and key management for satellite links, anti-jamming, geofencing, access prevention. Found by co-occurrence of a satellite code and a security code |
 
-The exact rules are in the [codebook](../02-methodology/classification-codebook.md). These three categories are a selected lens on AI and cloud infrastructure, not everything Nokia does in that market. A patent in one of them isn't automatically an AI patent, which is why the codebook also scores [AI and cloud relevance](../02-methodology/classification-codebook.md#secondary-fields).
+The exact labelling rules are in the [codebook](../02-methodology/classification-codebook.md#satcom-classes-post-pivot).
 
 ## Companies
 
 | Role | Companies | How they're used |
 |---|---|---|
-| **Reference** | Nokia | Measured in all three categories |
-| **Core comparators** | Ciena, Cisco, Arista Networks | Each is compared across all three categories, not only its primary one |
-| **Supplementary global benchmark** | Huawei | Measured in all three categories, because of its position in optical transport and networking |
-| **Commercial and technology context only** | NVIDIA, Celestica | Appear in [market context](../03-market-and-patent-analysis/market-context-and-peer-selection.md), not in patent comparisons |
+| **Reference** | Nokia | Measured in all five pools, plus the combined measure |
+| **Core comparators** | Airbus, Thales, Viasat, Eutelsat/OneWeb | Established holders of satellite communications patents |
+| **Partner, measured like a comparator** | ICEYE | Read as a complement to Nokia, not a rival: what it brings is radar heritage, and the comms-thinness of its record is itself a measurement |
+| **Context, not a benchmark** | SpaceX | The dominant actor, but patent-invisible by trade-secret strategy (110 families), so patent counts cannot measure its real position |
 
-Acquired names count with the acquirer where the deal is known: Infinera with Nokia, and Acacia and Luxtera with Cisco.
+Matching is exact-name, post-census, per actor: the name research is in [`data/interim/satcom_name_review.csv`](../../data/interim/satcom_name_review.csv), with 11 names still awaiting a keep/drop decision.
 
 ## Patent offices and dates
 
 | Item | Value | Why |
 |---|---|---|
-| Offices | US, European Patent Office, China, Japan | The main markets. US data is the most complete, so first estimates use US members |
 | Filings | Since 1 November 1996 | Covers anything that could still be in term, plus 10 years of history |
 | Could still be in term | Filed since 1 November 2006 | About 20 years from filing, as an approximation |
 | Recent application with no grant detected | No grant evidence, filed since 1 January 2021 | Saved-data label, not proof of pending or register status |
 | Main comparison period | 2020–2024 | Filing years with mostly complete publication |
 | Provisional years | 2025–2026 | Publication lags filing by about 18 months |
-| Annual reports | FY2006–FY2025 | Twenty years is enough context |
 
 ## Units
 
@@ -52,5 +54,5 @@ These extensions use the same method, and only start if the main question is ans
 |---|---|
 | AI-RAN and 6G capability map | "6G" and "AI-native" have no settled patent classification |
 | Licensing opportunity database | Public sources can't show who is already licensed |
-| ETSI declarations | Not needed for the optical, routing and switching comparison |
+| ETSI declarations | Not needed for the current pool comparison |
 | Other Nokia business units | Outside the central question |
