@@ -1,0 +1,11 @@
+slice_number,pool,company,publication_number,first_pass_label,multi_components,confidence,reason,pool_match,reviewer_verdict,excerpt_chars
+1,SAT,Airbus,US-9735857-B2,SAT,,High,satellite transmitter pre-distortion and envelope amplification,True,,450
+2,SAT,Viasat,US-2026222061-A1,NET,,Medium,central server reassigning spot beams to resource elements,False,,450
+3,ISL,Thales,US-10044435-B2,MULTI,SAT+ISL,Medium,on-board packet routing that forwards between satellites,True,,450
+4,ISL,Airbus,US-12074639-B2,OTHER,,Low,"flat optical terminal hardware, satellite not stated",False,,450
+5,GRD,Viasat,US-8381078-B2,GRD,,High,decoder allocation at a satellite gateway,True,,450
+6,GRD,Thales,US-8934402-B2,NET,,Medium,scheduling messages from aircraft over a satellite resource,False,,450
+7,NET,Nokia (lineage),US-7340258-B2,NET,,Medium,mobile switching centre integrating satellite radio content delivery,True,,450
+8,NET,Viasat,US-11637628-B2,ISL,,High,gateway satellite with intra-cluster links and protocol conversion between satellites,False,,450
+9,SEC,Viasat,WO-2019234406-A1,SEC,,High,quantum key distribution protecting satellite telemetry and command,True,,356
+10,SEC,Thales,EP-2660621-A1,OTHER,,High,"towed decoy for radar, electronic warfare not communications",False,,450
