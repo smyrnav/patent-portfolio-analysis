@@ -44,6 +44,8 @@ Adapted from the [six-stage design](validation.md#stages), with one stage added 
 | **0. Pool census** | Count candidate families per pool, company and priority period in BigQuery, before any sampling | Full counts | None — this sizes everything below and shows early whether ICEYE's record is comms-thin. ✅ Done 10 November 2026 ([query 32](../../sql/32_pool_census.sql)); ICEYE is comms-thin as predicted |
 | **1. Pilot** | Software-assisted labelling, blind (company, pool, title and codes hidden), then rule fixes with logged reasons | 30 per pool, each code reported separately | None; rules change here, not later. ✅ First pass done 10 November 2026: 143 patents read blind ([labels](../../data/validation/satcom_pilot_firstpass.csv), [scored](../../data/validation/satcom_pilot_scored.csv)); diagnosis and proposed rule fixes below — await the researcher's slice review |
 
+The researcher's slice review of the first pass ran on 11 November 2026: 10 patents (one match and one miss per pool), 10 agreements ([record](../../data/validation/satcom_slice_review.csv)). A 10-patent slice is a sanity check on the reader, not a reliability measurement — the intra-rater and agreement stages below still stand.
+
 ### Pilot results and diagnosis (10 November 2026)
 
 Two different things were measured, and the difference matters.
@@ -68,6 +70,8 @@ What the pilot found, and the rule fixes it proposes (the researcher decides):
 - **R4. The optical inter-satellite code (H04B 10/118) mostly catches free-space laser patents whose sentences never say "satellite" (2 of 19 matched).** Either accept free-space optical terminal technology as inter-satellite-relevant by definition (that is what the code means), or restrict the code. Decision needed.
 - **R5. ISL is small and noisy.** Consider reporting it as a flag inside SAT rather than a standalone bucket.
 - Nokia note: all 10 Nokia SAT-sample patents read as NET — Nokia's satellite patenting is integration patenting. That is a finding candidate, pending the re-test.
+
+**Decisions, 11 November 2026 (researcher approved R1–R5):** R1 accepted — SEC becomes a co-occurrence rule: a patent enters SEC only if it carries at least one satellite code (any SAT/ISL/GRD/NET prefix) *and* at least one security code (H04K1/, H04K3/). R2 accepted — the combined "satcom capability" measure (a family in any pool) is the primary comparative number; single-pool comparisons stay tentative until the re-test. R3 accepted — the reader also reads the first paragraph of the description before labelling. R4 accepted in its inclusive form — free-space optical terminal patents count as inter-satellite-relevant because that is what the H04B 10/118 code exists to cover; the count is reported with a note that these patents rarely say "satellite" in their numbered sentences. R5 accepted — ISL stops being a standalone reporting bucket and becomes a flag inside SAT.
 | **2. Freeze** | Lock the satcom codebook as version 1.0 | N/A | Later changes need a logged reason and a re-test |
 | **3. Precision** | New random sample per pool, codes hidden, **stratified by priority period and company** | Up to 100 per pool; fewer where the census is smaller, reported as-is | At least 85% per pool |
 | **4. Human validation** | Hand-labelling with documented claim evidence, a repeated subset for intra-rater consistency, then human–software agreement (Cohen's kappa) | Staged by pool priority (below) | Kappa of at least 0.7; intra-rater reported separately |
