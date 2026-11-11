@@ -63,5 +63,5 @@ Adopted 2 November 2026. The canonical question lives in `config/research_parame
 2. ✅ Done 2 November 2026 — rewrite the central question in `config/research_parameters.toml`, README and research design in one pass; consistency test green.
 3. ✅ Done 9 November 2026 — re-aim RQ1–RQ5 and retire H1–H4 to the log; new hypotheses in [satcom-hypotheses.md](satcom-hypotheses.md).
 4. ✅ Done 10 November 2026 — run pool counts for Nokia, ICEYE and the new peer set ([query 32](../../sql/32_pool_census.sql), pre-validation).
-5. ⬜ Next — new validation sample before any comparative claim ([plan](../02-methodology/satcom-validation-plan.md)).
+5. ✅ Done 11 November 2026 — pilot run (143 blind reads, [query 33](../../sql/33_pilot_sample.sql)), rule fixes R1–R5 approved, pools accepted as amended, scope swapped in config and docs. Re-test sample before any comparative claim: [plan](../02-methodology/satcom-validation-plan.md).
 6. 🟡 Partly — README status table updated 10 November 2026; the executive brief gets written once RQ5 has evidence.
