@@ -1,0 +1,11 @@
+slice_number,pool,company,publication_number,first_pass_label,multi_components,confidence,reason,pool_match,reviewer_verdict,excerpt_chars
+1,ISL,Airbus,US-8588617-B2,ISL,,Med,"free-space optical terminal, counted ISL per rule R4",True,,0
+2,"ISL,SEC",Airbus,US-11984970-B2,OTHER,,High,"GNSS navigation anti-jamming, not comms",False,,0
+3,"SAT,NET",Eutelsat/OneWeb,US-10051547-B2,NET,,Med,"network integration procedure, NTN context",True,,0
+4,ISL,ICEYE,US-2026238333-A1,OTHER,,High,"satellite imaging tasking, not communications",False,,0
+5,NET,Nokia (lineage),WO-2023131420-A1,NET,,High,5G NTN terminal/network procedure,True,,0
+6,"SAT,NET",Nokia (lineage),US-11711760-B2,OTHER,,Med,"carrier selection for power saving, no satellite evidence",False,,0
+7,SAT,Thales,WO-2019129885-A1,NET,,High,5G NTN terminal/network procedure,True,,0
+8,"SAT,ISL",Thales,US-2024204403-A1,OTHER,,Low,"ambiguous platform pointing, cannot confirm comms",False,,0
+9,SAT,Viasat,US-10361771-B2,GRD,,High,ground station / gateway equipment,True,,0
+10,SAT,Viasat,WO-2024220735-A1,OTHER,,Med,"generic phased array, satellite only one example; boundary",False,,0
