@@ -58,7 +58,12 @@ def parse(page):
                 text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", m.group(1)))).strip()
                 if len(text) > 20:
                     independent.append(text)
-    return {"orig": first, "cur": current, "ind": independent}
+    desc = ""
+    dsec = re.search(r'<section itemprop="description".*?</section>', page, re.S)
+    if dsec:
+        text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", dsec.group(0)))).strip()
+        desc = re.sub(r"^(description|technical field|field of the invention|background)[:\s]*", "", text, flags=re.I)[:800]
+    return {"orig": first, "cur": current, "ind": independent, "desc": desc}
 
 
 if __name__ == "__main__":

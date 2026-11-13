@@ -23,11 +23,21 @@ if missing:
 ids = [i for i in ids if i not in missing]
 random.Random(f"blind-{stage}").shuffle(ids)
 dependent = re.compile(r"\b(of|to|in|by|with|from|under|per)\s+(any\s+(one\s+)?of\s+)?(the\s+)?(preceding\s+)?claims?\s+\d+", re.I)
+companies = re.compile(r"\b(nokia|alcatel|lucent|infinera|airbus|astrium|thales|viasat|inmarsat|eutelsat|oneweb|one\s*web|worldvu|iceye|spacex|space\s*x|starlink|boeing|qualcomm|globalstar)\b", re.I)
+
+
+def scrub(text):
+    return companies.sub("[company]", text)
+
+
 for number, publication in enumerate(ids, 1):
     claims = [c for c in parsed[publication]["ind"] if not dependent.search(c[:250])]
     first = re.sub(r"^\d+\s*\.\s*", "", claims[0]) if claims else ""
     shown = first if len(first) <= first_chars else f"{first[:int(first_chars * .6)]} [...] {first[-int(first_chars * .4):]}"
-    print(f"#{number} {shown}")
+    print(f"#{number} {scrub(shown)}")
     for claim in claims[1:3]:
-        print(f"  +{re.sub(r'^[0-9]+ *[.] *', '', claim)[:other_chars]}")
+        print(f"  +{scrub(re.sub(r'^[0-9]+ *[.] *', '', claim)[:other_chars])}")
+    desc = parsed[publication].get("desc", "")
+    if desc:
+        print(f"  ~{scrub(desc[:400])}")
 (folder / f"key_{stage}.json").write_text(json.dumps(ids))
