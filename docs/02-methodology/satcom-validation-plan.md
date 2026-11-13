@@ -78,6 +78,27 @@ What the pilot found, and the rule fixes it proposes (the researcher decides):
 | **5. Recall** | Sample related families outside the pools, stratified by company and period | 100 | Report the miss rate; adjust pools if large |
 | **6. Company balance** | Compare precision by company | Across the sample | No company far below the others |
 
+## Stage 3 result, 13 November 2026: the re-test FAILED the bar
+
+144 readable patents were sampled blind from the combined pool (6 of 150 had no readable page), labelled without company names visible, then scored against the key. Three entries whose description excerpt had been truncated were re-read once with the full paragraph; the re-reads are logged in `data/validation/satcom_retest_firstpass.csv` (reasons prefixed RE-READ) and flipped three labels from OTHER into the pool.
+
+| Measure | Result | Bar | Verdict |
+|---|---|---|---|
+| **Combined pool precision (primary, per R2)** | **102 / 144 = 70.8%, 95% range [62.9%, 77.6%]** | ≥ 85% | ❌ **FAIL** |
+| SAT-tagged slots (tentative) | 51 / 68 = 75.0% | ≥ 85% | ❌ below bar |
+| NET-tagged slots (tentative) | 24 / 40 = 60.0% | ≥ 85% | ❌ below bar |
+| SAT+NET double-tagged (tentative) | 14 / 16 = 87.5% | ≥ 85% | ✅ passes, small n |
+| ISL-tagged (tentative) | 5 / 8 = 62.5% | ≥ 85% | ❌ below bar |
+| SEC-tagged | 1 family in the whole sample | — | untestable; the satellite-security space is tiny, which is itself a finding to quantify |
+
+Company balance: Thales 89.7% (26/29) is the only company near the bar; Nokia lineage 64.3%, Viasat 64.5%, Airbus 66.7%, Eutelsat/OneWeb 6/6, ICEYE 0/1. Period balance: 2000s 81.8%, 2010s 68.9%, 2020s 69.0% — the pools catch relatively more genuine satcom in the 2000s than in recent years.
+
+**What the 42 misses are.** 12 of 42 are boundary cases where a rule decision is needed (HAPS high-altitude platforms, generic quantum-key or optical components, spacecraft telemetry/command links, surveillance beamforming, constellation design tools, aircraft mesh). The rest are generic cellular or networking patents that carry a satcom classification code but whose own sentences describe ordinary terrestrial radio work — the same disease as the pre-pivot 39–73%, milder but not cured.
+
+**Consequences.** Per the rule in this plan, the combined pool does not pass, so every company comparison stays "first estimate, low confidence" — nothing graduates to a finding. The pool definitions need another logged round of tightening (the boundary questions below go to the researcher as yes/no decisions), followed by a third test on a fresh sample. The failure is reported as-is; the sample was not re-labelled to chase the bar.
+
+**Files:** slots `data/validation/satcom_retest_slots.csv` (query 34), blind labels `data/validation/satcom_retest_firstpass.csv`, scored join `data/validation/satcom_retest_scored.csv`.
+
 ## The human-labelling problem, stated plainly
 
 The pre-pivot target was 100 families per category, 300 in total, and it was never finished — that is the main reason the old comparison stayed "first estimates". Five pools at the same rule would mean 500. That is not realistic before the application deadline, so this plan needs a **researcher decision** between two honest options:

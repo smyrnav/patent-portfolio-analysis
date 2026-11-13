@@ -1,0 +1,145 @@
+blind_number,publication_number,company,period,pools_matched,first_pass_label,multi_components,confidence,in_combined_pool,reason
+1,US-7675842-B2,Viasat,2000s,NET,OTHER,,Low,0,"generic wireless method, no satellite evidence visible"
+2,US-2026238333-A1,ICEYE,2020s,ISL,OTHER,,High,0,"satellite imaging tasking, not communications"
+3,US-11546053-B2,Thales,2010s,"SAT,NET",SAT,,High,1,satellite communication payload/beams in claim
+4,US-2025373327-A1,Thales,2020s,"SAT,NET",NET,,High,1,5G NTN terminal/network procedure
+5,US-11984970-B2,Airbus,2020s,"ISL,SEC",OTHER,,High,0,"GNSS navigation anti-jamming, not comms"
+6,US-11307310-B2,Nokia (lineage),2020s,NET,OTHER,,Med,0,"HAPS platform, boundary case"
+7,US-8634414-B2,Airbus,2000s,SAT,SAT,,High,1,satellite communications system in claim
+8,US-9461733-B2,Airbus,2010s,"SAT,ISL",NET,,Med,1,"network integration procedure, NTN context"
+9,US-2024421896-A1,Viasat,2000s,"SAT,NET",NET,,High,1,5G NTN terminal/network procedure
+10,WO-2023131420-A1,Nokia (lineage),2020s,NET,NET,,High,1,5G NTN terminal/network procedure
+11,US-8588617-B2,Airbus,2000s,ISL,ISL,,Med,1,"free-space optical terminal, counted ISL per rule R4"
+12,WO-2019129885-A1,Thales,2010s,SAT,NET,,High,1,5G NTN terminal/network procedure
+13,US-9774094-B2,Thales,2010s,NET,SAT,,High,1,satellite communications system in claim
+14,US-11310067-B1,Thales,2020s,SAT,GRD,,High,1,ground station / gateway equipment
+15,WO-2024220735-A1,Viasat,2020s,SAT,OTHER,,Med,0,"generic phased array, satellite only one example; boundary"
+16,EP-4395204-A1,Thales,2020s,SAT,GRD,,Med,1,ground segment equipment or method
+17,US-11444693-B2,Thales,2010s,"SAT,ISL,GRD",ISL,,Med,1,inter-satellite link
+18,US-2025076535-A1,Viasat,2020s,SAT,GRD,,Med,1,ground segment equipment or method
+19,US-10320472-B2,Viasat,2010s,SAT,MULTI,SAT+GRD,Med,1,satellite system plus ground segment components
+20,WO-2025218938-A1,Nokia (lineage),2020s,"SAT,NET",NET,,High,1,5G NTN terminal/network procedure
+21,WO-2026057617-A1,Nokia (lineage),2020s,NET,NET,,High,1,5G NTN terminal/network procedure
+22,US-2025220612-A1,Nokia (lineage),2020s,SAT,NET,,High,1,5G NTN terminal/network procedure
+23,US-2023055270-A1,Airbus,2020s,ISL,ISL,,Med,1,"free-space optical terminal, counted ISL per rule R4"
+24,US-7489927-B2,Nokia (lineage),2000s,SAT,NET,,Med,1,"network integration procedure, NTN context"
+25,US-2025080207-A1,Nokia (lineage),2020s,SAT,NET,,High,1,5G NTN terminal/network procedure
+26,WO-2022082541-A1,Nokia (lineage),2020s,NET,OTHER,,Med,0,"HAPS platform, boundary case"
+27,US-2003224796-A1,Nokia (lineage),2000s,NET,NET,,Med,1,"network integration procedure, NTN context"
+28,WO-2025054301-A1,Viasat,2020s,SAT,OTHER,,Med,0,no satellite communications evidence
+29,WO-2026031098-A1,Nokia (lineage),2020s,NET,OTHER,,High,0,no satellite communications evidence
+30,US-11950169-B2,Nokia (lineage),2010s,NET,OTHER,,Med,0,no satellite communications evidence
+31,US-9432161-B2,Viasat,2010s,GRD,OTHER,,Med,0,no satellite communications evidence
+32,US-11994595-B2,Viasat,2020s,"SAT,GRD",GRD,,High,1,ground station / gateway equipment
+33,WO-2026124810-A1,Nokia (lineage),2020s,"SAT,ISL,NET",NET,,High,1,5G NTN terminal/network procedure
+34,US-12382411-B2,Nokia (lineage),2010s,SAT,OTHER,,Med,0,no satellite communications evidence
+35,US-10361771-B2,Viasat,2010s,SAT,GRD,,High,1,ground station / gateway equipment
+36,US-2019007127-A1,Airbus,2010s,SAT,OTHER,,Med,0,"constellation design tool, not comms tech; boundary"
+37,WO-2023151084-A1,Nokia (lineage),2020s,SAT,NET,,High,1,5G NTN terminal/network procedure
+38,US-2025386208-A1,Thales,2020s,NET,NET,,High,1,5G NTN terminal/network procedure
+39,WO-2025000202-A1,Nokia (lineage),2020s,NET,OTHER,,Med,0,no satellite communications evidence
+40,US-8299963-B2,Thales,2000s,SAT,SAT,,Med,1,RE-READ with full description: antenna with shared feeds for satellite telecommunications
+41,US-9924424-B2,Thales,2010s,NET,NET,,Med,1,RE-READ with full description: integrated satellite and terrestrial cellular coverage system
+42,WO-2026098990-A1,Nokia (lineage),2020s,NET,NET,,High,1,5G NTN terminal/network procedure
+43,US-10516475-B2,Viasat,2000s,SAT,GRD,,High,1,ground station / gateway equipment
+44,US-10784954-B2,Viasat,2010s,"SAT,NET",NET,,Med,1,"network integration procedure, NTN context"
+45,US-2023103775-A1,Nokia (lineage),2020s,NET,OTHER,,High,0,no satellite communications evidence
+46,US-10735908-B2,Nokia (lineage),2010s,NET,OTHER,,High,0,no satellite communications evidence
+47,US-2024292351-A1,Nokia (lineage),2020s,"SAT,NET",NET,,High,1,5G NTN terminal/network procedure
+48,US-12050276-B2,Viasat,2010s,SAT,OTHER,,Med,0,"SIGINT retro-beamforming, intelligence not comms; boundary"
+49,US-12119849-B2,Nokia (lineage),2010s,NET,OTHER,,Med,0,no satellite communications evidence
+50,US-9237042-B2,Airbus,2010s,SAT,SAT,,High,1,description names satellite channels
+51,US-12700921-B2,Nokia (lineage),2020s,"SAT,NET",NET,,High,1,5G NTN terminal/network procedure
+52,US-2024349172-A1,Nokia (lineage),2020s,NET,OTHER,,Med,0,no satellite communications evidence
+53,US-12609853-B2,Nokia (lineage),2020s,SAT,OTHER,,High,0,no satellite communications evidence
+54,WO-2025214882-A1,Nokia (lineage),2020s,NET,NET,,High,1,5G NTN terminal/network procedure
+55,WO-2026131766-A1,Nokia (lineage),2020s,NET,SEC,,High,1,satellite code co-occurs with security mechanism in claim
+56,WO-2025231878-A1,Nokia (lineage),2020s,NET,NET,,Med,1,"network integration procedure, NTN context"
+57,US-2024372628-A1,Thales,2020s,"SAT,ISL",OTHER,,Med,0,generic quantum key distribution device; SEC co-occurrence boundary
+58,WO-2025085061-A1,Viasat,2020s,ISL,OTHER,,Med,0,optical phase-lock component usable in fiber; R4 scope boundary
+59,WO-2024243880-A1,Nokia (lineage),2020s,SAT,NET,,High,1,5G NTN terminal/network procedure
+60,WO-2026161050-A1,Viasat,2020s,SAT,NET,,Med,1,"network integration procedure, NTN context"
+61,US-9686009-B2,Thales,2010s,SAT,SAT,,Med,1,satellite communications method in claim
+62,US-10645010-B2,Viasat,2010s,SAT,OTHER,,Med,0,"television content delivery, pilot precedent"
+63,US-9306295-B2,Thales,2010s,SAT,SAT,,Med,1,"RE-READ with full description: multi-beam satellite telecommunication antenna, frequency re-use"
+64,US-10659159-B2,Airbus,2010s,ISL,SAT,,Med,1,satellite communications method in claim
+65,US-8447258-B2,Airbus,2000s,SAT,SAT,,High,1,satellite communications system in claim
+66,US-8538323-B2,Viasat,2000s,SAT,NET,,Med,1,"network integration procedure, NTN context"
+67,US-12284621-B2,Viasat,2020s,"SAT,NET",OTHER,,Med,0,no satellite communications evidence
+68,WO-2026095943-A1,Viasat,2020s,"SAT,ISL",SAT,,High,1,satellite communications system in claim
+69,US-8265646-B2,Viasat,2000s,SAT,NET,,Med,1,"network integration procedure, NTN context"
+70,US-9667339-B2,Thales,2010s,SAT,SAT,,Med,1,satellite communications method in claim
+71,WO-2025172487-A1,Thales,2020s,NET,SEC,,High,1,satellite code co-occurs with security mechanism in claim
+72,US-11424820-B2,Airbus,2010s,SAT,NET,,Med,1,"network integration procedure, NTN context"
+73,US-2024349217-A1,Nokia (lineage),2020s,NET,NET,,High,1,5G NTN terminal/network procedure
+74,WO-2011045236-A1,Thales,2000s,SAT,NET,,Med,1,"network integration procedure, NTN context"
+75,US-6539003-B1,Viasat,pre-2000,SAT,OTHER,,Med,0,no satellite communications evidence
+76,US-7818009-B2,Viasat,2000s,NET,NET,,Med,1,description names mobile satellite service
+77,US-9929795-B2,Thales,2010s,SAT,NET,,Med,1,"network integration procedure, NTN context"
+78,US-10469157-B2,Thales,2010s,SAT,OTHER,,High,0,no satellite communications evidence
+79,US-10241589-B2,Airbus,2010s,NET,OTHER,,High,0,no satellite communications evidence
+80,US-10243648-B2,Eutelsat/OneWeb,2010s,SAT,GRD,,Med,1,ground segment equipment or method
+81,WO-2026073670-A1,Nokia (lineage),2020s,NET,OTHER,,Med,0,no satellite communications evidence
+82,US-10051547-B2,Eutelsat/OneWeb,2010s,"SAT,NET",NET,,Med,1,"network integration procedure, NTN context"
+83,EP-0971487-A1,Nokia (lineage),pre-2000,SAT,NET,,Med,1,"network integration procedure, NTN context"
+84,EP-2738870-A2,Viasat,2010s,SAT,OTHER,,Low,0,description truncated before any satellite mention; tooling flag
+85,US-2025141510-A1,Viasat,2020s,"SAT,GRD",SAT,,Med,1,satellite communications method in claim
+86,US-12604211-B2,Thales,2020s,NET,SAT,,High,1,satellite communications system in claim
+87,WO-2021226928-A1,Nokia (lineage),2020s,SAT,NET,,High,1,5G NTN terminal/network procedure
+88,US-8730086-B2,Viasat,2000s,SAT,OTHER,,Med,0,"weather sensing that uses satcom links, sensing not comms"
+89,US-10887002-B1,Thales,2010s,SAT,SAT,,High,1,satellite communications system in claim
+90,US-2024284380-A1,Nokia (lineage),2020s,NET,NET,,High,1,5G NTN terminal/network procedure
+91,US-2026089233-A1,Airbus,2020s,NET,OTHER,,Med,0,no satellite communications evidence
+92,WO-2026077784-A1,Nokia (lineage),2020s,NET,NET,,High,1,lawful intercept implemented at NTN network node
+93,WO-2026017486-A1,Nokia (lineage),2020s,SAT,NET,,Med,1,"network integration procedure, NTN context"
+94,US-12647175-B2,Eutelsat/OneWeb,2020s,SAT,NET,,Med,1,"network integration procedure, NTN context"
+95,US-2026181576-A1,Nokia (lineage),2020s,NET,NET,,High,1,5G NTN terminal/network procedure
+96,US-12520270-B2,Nokia (lineage),2020s,SAT,OTHER,,Med,0,no satellite words visible in claim or description excerpt
+97,WO-2024250273-A1,Nokia (lineage),2020s,NET,SEC,,High,1,satellite code co-occurs with security mechanism in claim
+98,US-10382192-B2,Thales,2010s,SAT,SAT,,High,1,satellite communications system in claim
+99,US-9590578-B2,Thales,2010s,SAT,SAT,,High,1,satellite communications system in claim
+100,US-6430392-B1,Nokia (lineage),pre-2000,SAT,SAT,,High,1,satellite communications system in claim
+101,US-10020875-B2,Viasat,2000s,SAT,SAT,,Med,1,satellite communications method in claim
+102,US-8977190-B2,Thales,2000s,SAT,SAT,,High,1,satellite communications system in claim
+103,US-10665952-B2,Thales,2010s,SAT,SAT,,High,1,satellite communications system in claim
+104,US-2025047381-A1,Airbus,2020s,ISL,OTHER,,High,0,"optical beacon pointing, not communications"
+105,US-2024204403-A1,Thales,2020s,"SAT,ISL",OTHER,,Low,0,"ambiguous platform pointing, cannot confirm comms"
+106,EP-4580085-A1,Thales,2020s,"SAT,NET",NET,,High,1,5G NTN terminal/network procedure
+107,US-6604146-B1,Viasat,pre-2000,NET,NET,,High,1,5G NTN terminal/network procedure
+108,US-11516818-B1,Nokia (lineage),2020s,NET,NET,,High,1,5G NTN terminal/network procedure
+109,US-2025055665-A1,Viasat,2020s,SAT,GRD,,Med,1,ground segment equipment or method
+110,US-6829310-B1,Nokia (lineage),pre-2000,SAT,OTHER,,Med,0,"telemetry and command link, spacecraft operations not comms; boundary"
+111,US-11070283-B2,Thales,2010s,SAT,SAT,,High,1,calibration of a satellite communications payload
+112,US-2020366366-A1,Thales,2010s,SAT,SAT,,High,1,"satellite multibeam telecommunication system, beam hopping"
+113,US-11711760-B2,Nokia (lineage),2020s,"SAT,NET",OTHER,,Med,0,"carrier selection for power saving, no satellite evidence"
+114,WO-2024170209-A1,Nokia (lineage),2020s,"SAT,NET",NET,,High,1,UE supporting communications over non-terrestrial network
+115,EP-1111813-A2,Airbus,pre-2000,"SAT,GRD",GRD,,Med,1,telemetry data transfer between ground stations
+116,US-12677200-B2,Nokia (lineage),2020s,NET,NET,,High,1,switching from terrestrial cell to non-terrestrial cell
+117,EP-1424831-A1,Nokia (lineage),2000s,NET,OTHER,,Med,0,generic frame header address compression in a network
+118,US-10476583-B2,Viasat,2010s,SAT,GRD,,High,1,"satellite user terminal, indoor and outdoor units"
+119,US-12677229-B2,Nokia (lineage),2020s,"SAT,NET",NET,,High,1,uplink synchronization timers for non-terrestrial networks
+120,EP-2229034-A1,Nokia (lineage),2000s,NET,OTHER,,Med,0,mesh network of transport vehicles or aircraft; boundary
+121,US-8340573-B2,Eutelsat/OneWeb,2000s,SAT,SAT,,High,1,multichannel satellite payload with transponder sections
+122,EP-3358759-A1,Eutelsat/OneWeb,2010s,SAT,SAT,,High,1,beam switching time plan synchronization for satellite payload
+123,US-8339307-B2,Airbus,2000s,SAT,SAT,,High,1,spacecraft antenna beam pointing for satellite communications
+124,WO-2022117928-A1,Airbus,2020s,ISL,ISL,,Med,1,"laser data transmission satellite to ground, optical per rule R4"
+125,EP-3253124-A1,Thales,2010s,NET,SAT,,Med,1,control of a satellite network and its bearer subnets
+126,US-11472578-B2,Airbus,2010s,SAT,OTHER,,Med,0,"estimating satellite direction during orbit transfer, operations not comms; boundary"
+127,WO-2026073699-A1,Nokia (lineage),2020s,NET,OTHER,,Med,0,"signal measurement filtering in idle mode, no satellite evidence"
+128,US-11711134-B2,Nokia (lineage),2020s,SAT,OTHER,,Med,0,"HAPS beam layer switching, boundary case"
+129,US-12167350-B2,Nokia (lineage),2010s,SAT,NET,,High,1,timing advance compensation over air/space borne vehicle link
+130,WO-2023151099-A1,Nokia (lineage),2020s,SAT,NET,,High,1,"transmission segment configuration, non-terrestrial network in description"
+131,WO-2021089906-A1,Nokia (lineage),2010s,SAT,OTHER,,Med,0,"cell sector location via timing advance, no satellite evidence visible"
+132,US-9160443-B2,Airbus,2000s,SAT,SAT,,High,1,multi-beam satellite with on-board and ground beamforming
+133,US-2025159455-A1,Nokia (lineage),2020s,"SAT,NET",NET,,High,1,network selection using GEO and non-GEO satellite coverage information
+134,US-12231976-B2,Nokia (lineage),2020s,NET,NET,,High,1,"handover rate control, non-terrestrial network in description"
+135,WO-2026003165-A1,Airbus,2020s,ISL,ISL,,Med,1,"free-space optical turbulence compensation, optical per rule R4"
+136,US-11032817-B2,Airbus,2010s,SAT,OTHER,,Low,0,"frequency hopping message protocol, no satellite evidence in excerpt"
+137,US-9735858-B2,Eutelsat/OneWeb,2010s,"SAT,GRD",SAT,,High,1,multispot satellite forward and return link establishment
+138,US-11133860-B2,Viasat,2010s,"SAT,NET",SAT,,High,1,optimized beam layout for a satellite communications system
+139,US-2025324333-A1,Nokia (lineage),2020s,"SAT,NET",NET,,High,1,non-geostationary access node connection suspension and proxy
+140,US-2025168738-A1,Nokia (lineage),2020s,NET,NET,,High,1,conditional handover in a non-terrestrial network
+141,US-8254832-B2,Viasat,2000s,SAT,SAT,,High,1,geosynchronous satellite service and feeder beams
+142,WO-2026073366-A1,Nokia (lineage),2020s,SAT,NET,,Med,1,"beam hopping cycle configuration in wireless communication, NTN context"
+143,WO-2026122684-A1,Viasat,2020s,SAT,SAT,,High,1,adaptive beamforming satellite in a satellite communications system
+144,US-11842645-B2,Airbus,2010s,SAT,SAT,,Med,1,satellite communication between rotary wing platform and ground terminal
