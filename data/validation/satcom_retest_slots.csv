@@ -1,0 +1,151 @@
+stage,pool,company,publication_number,family_id,priority_date,period,pools_matched,matched_codes,first_code,title_en
+satcom-retest,COMBINED,Airbus,US-8339307-B2,39242376,20070303,2000s,SAT,H04B7/18515,H04B7/0851,Satellite beam-pointing error correction in digital beam-forming architecture
+satcom-retest,COMBINED,Airbus,US-8447258-B2,40364275,20071221,2000s,SAT,H04B7/18515,H04B1/1036,Filtering communications channels within telecommunications satellites
+satcom-retest,COMBINED,Airbus,US-8588617-B2,40640204,20081006,2000s,ISL,H04B10/118,H04B10/118,Optical transceiver assembly with transmission-direction control
+satcom-retest,COMBINED,Airbus,US-8634414-B2,41058617,20080418,2000s,SAT,H04B7/18515,H04B7/18515,Modular digital processing system for telecommunications satellite payloads
+satcom-retest,COMBINED,Airbus,US-9160443-B2,41666811,20090928,2000s,SAT,H04B7/18515,H04B7/18515,Multi-beam satellite telecommunications system and method for forming beams
+satcom-retest,COMBINED,Airbus,US-10241589-B2,56117848,20160210,2010s,NET,H04W84/06,G06F3/162,Control device of a communication system of an aircraft
+satcom-retest,COMBINED,Airbus,US-10659159-B2,58314343,20161021,2010s,ISL,H04B10/118,H04B10/118,Combined imaging and laser communication system
+satcom-retest,COMBINED,Airbus,US-11032817-B2,58054202,20160929,2010s,SAT,H04B7/18513,H04B1/713,"Method of transmission, by a terminal of a slot-based access communication system, of a message with intra-message frequency hops"
+satcom-retest,COMBINED,Airbus,US-11424820-B2,58094340,20170210,2010s,SAT,H04B7/18519,H04B7/18519,Ultra-low latency telecommunications satellite
+satcom-retest,COMBINED,Airbus,US-11472578-B2,57485604,20160727,2010s,SAT,H04B7/18513,G01S3/043,Method and system for estimating the direction of a satellite in the transfer phase from an initial orbit to a mission orbit
+satcom-retest,COMBINED,Airbus,US-11842645-B2,67385584,20190528,2010s,SAT,H04B7/18519,G08G5/0004,Wireless communication
+satcom-retest,COMBINED,Airbus,US-2019007127-A1,54979612,20151218,2010s,SAT,H04B7/18519,G06F9/455,Communications constellation optimisation facility
+satcom-retest,COMBINED,Airbus,US-9237042-B2,48289202,20120509,2010s,SAT,H04B7/18513,H04L25/03878,Filter network arrangement
+satcom-retest,COMBINED,Airbus,US-9461733-B2,46456510,20110616,2010s,"SAT,ISL","H04B7/18513,H04B7/18519,H04B7/18521",H04B7/18521,Device and method for optimizing the ground coverage of a hybrid space system
+satcom-retest,COMBINED,Airbus,US-11984970-B2,71661956,20200224,2020s,"ISL,SEC","H04B7/18521,H04K3/22,H04K3/226,H04K3/90",H04K3/22,Method and a system for the automatic detection of a jamming of a satellite navigation system
+satcom-retest,COMBINED,Airbus,US-2023055270-A1,77447831,20210823,2020s,ISL,H04B10/118,H04B10/675,Free space optical communication terminal and method
+satcom-retest,COMBINED,Airbus,US-2025047381-A1,78916858,20211214,2020s,ISL,H04B10/118,H01Q15/02,Configurable beacon for the acquisition of covert optical communication links
+satcom-retest,COMBINED,Airbus,US-2026089233-A1,97030428,20240925,2020s,NET,H04W84/06,H04L67/04,"Method, control program, computer-readable data carrier, control unit, communication device, and system for providing a network structure, as well as apparatus configured to participate as a network node"
+satcom-retest,COMBINED,Airbus,WO-2022117928-A1,75108438,20201202,2020s,ISL,H04B10/118,H04B10/118,Laser signal transmission between a satellite and an earth-based receiving station
+satcom-retest,COMBINED,Airbus,WO-2026003165-A1,91738048,20240627,2020s,ISL,H04B10/118,H04B10/118,Wavefront compensation system
+satcom-retest,COMBINED,Airbus,EP-1111813-A2,7934022,19991223,pre-2000,"SAT,GRD","H04B7/18513,H04B7/18517",H04B7/18517,Device for transmission of Telemetrie Data
+satcom-retest,COMBINED,Eutelsat/OneWeb,US-8340573-B2,37708205,20060926,2000s,SAT,H04B7/18515,H04B7/18515,Payload system for satellites
+satcom-retest,COMBINED,Eutelsat/OneWeb,EP-3358759-A1,58043856,20170207,2010s,SAT,H04B7/18513,H04B7/2041,Method to determine the position in time of a synchronization signal and transmission system carrying out such a method
+satcom-retest,COMBINED,Eutelsat/OneWeb,US-10051547-B2,57218956,20151014,2010s,"SAT,NET","H04B7/18519,H04B7/18541",H04B7/2041,Method for maintaining signal-to-noise ratio at a user terminal in a satellite system
+satcom-retest,COMBINED,Eutelsat/OneWeb,US-10243648-B2,58632530,20151028,2010s,SAT,H04B7/1851,H04W72/0446,Satellite system having increased communications capacity and methods for increasing the capacity of satellite systems
+satcom-retest,COMBINED,Eutelsat/OneWeb,US-9735858-B2,54325365,20151012,2010s,"SAT,GRD","H04B7/18513,H04B7/18515,H04B7/18517",H04B7/18523,Method for establishing radiofrequency links in a telecommunication network with an optimised ground gateway network
+satcom-retest,COMBINED,Eutelsat/OneWeb,US-12647175-B2,73834555,20200702,2020s,SAT,"H04B7/18513,H04B7/195",H04B7/195,Methods for the transmission of data between a resource constrained device and a non-geostationary satellite and associated method
+satcom-retest,COMBINED,ICEYE,US-2026238333-A1,85202058,20230208,2020s,ISL,H04B7/18521,H04B7/18532,Methods and systems for assigning tasks to a network of satellites
+satcom-retest,COMBINED,Nokia (lineage),EP-1424831-A1,32241698,20021128,2000s,NET,H04B7/18584,H04L61/10,Device for conversion of header fields of the frames in a communication network
+satcom-retest,COMBINED,Nokia (lineage),EP-2229034-A1,40941589,20090309,2000s,NET,H04W84/06,H04W84/18,A method for building a mesh communication network using means of transportation as communication nodes
+satcom-retest,COMBINED,Nokia (lineage),US-2003224796-A1,27676173,20020228,2000s,NET,H04B7/18541,H04W16/18,Method of assigning resources that vary in time to provide continuous services and application of the method to telecommunication system planning
+satcom-retest,COMBINED,Nokia (lineage),US-7489927-B2,29549147,20020524,2000s,SAT,H04B7/195,H04B7/195,Method and system for object tracking and communication
+satcom-retest,COMBINED,Nokia (lineage),WO-02071785-A1,8860878,20010308,2000s,NET,H04W84/06,H04W52/346,Method for call admission control in a telecommunication system
+satcom-retest,COMBINED,Nokia (lineage),US-10735908-B2,63584811,20170322,2010s,NET,H04W84/06,H04W8/22,Systems and apparatuses for detecting unmanned aerial vehicle
+satcom-retest,COMBINED,Nokia (lineage),US-11950169-B2,70482739,20190502,2010s,NET,H04W84/06,H04W4/029,Uplink positioning methods and apparatuses for non-terrestrial networks
+satcom-retest,COMBINED,Nokia (lineage),US-12119849-B2,70779951,20190502,2010s,NET,H04W84/06,H04W56/0065,Timing-based user equipment mobility for transparent satellites
+satcom-retest,COMBINED,Nokia (lineage),US-12167350-B2,66001209,20190329,2010s,SAT,H04B7/1851,H04B7/18504,Timing advance compensation
+satcom-retest,COMBINED,Nokia (lineage),US-12382411-B2,72944168,20191107,2010s,SAT,H04B7/18513,H04W74/0836,Timing advance range extension in random access response
+satcom-retest,COMBINED,Nokia (lineage),WO-2021089906-A1,75849569,20191105,2010s,SAT,H04B7/1851,H04W74/0833,Enhancement on provision of timing advance data
+satcom-retest,COMBINED,Nokia (lineage),EP-4804632-A1,94925880,20250307,2020s,"SAT,NET","H04B7/1851,H04W84/06",H04W84/06,Skipping reading of mobility-related system information broadcast message
+satcom-retest,COMBINED,Nokia (lineage),EP-4804634-A1,94925862,20250307,2020s,NET,H04W84/06,H04W48/10,Skipping reading of mobility-related system information broadcast message
+satcom-retest,COMBINED,Nokia (lineage),US-11307310-B2,75252400,20200416,2020s,NET,H04W84/06,H04W36/328,Methods for managing neighbor relations and coordinating physical cell identifiers for moving high altitude platform systems
+satcom-retest,COMBINED,Nokia (lineage),US-11516818-B1,81327180,20210423,2020s,NET,H04W84/06,H04W72/541,Selecting radio resource for direct communication between NTN terminals
+satcom-retest,COMBINED,Nokia (lineage),US-11711134-B2,80979100,20210315,2020s,SAT,H04B7/18515,H04B7/088,Autonomous beam switch in HAPS coverage
+satcom-retest,COMBINED,Nokia (lineage),US-11711760-B2,70056910,20200327,2020s,"SAT,NET","H04B7/18513,H04W84/06",H04W48/20,Carrier selection in wireless network
+satcom-retest,COMBINED,Nokia (lineage),US-12231976-B2,79030821,20200624,2020s,NET,H04W84/06,H04W36/324,"Methods, devices and computer readable medium for handover rate control"
+satcom-retest,COMBINED,Nokia (lineage),US-12520270-B2,81973175,20201208,2020s,SAT,H04B7/18513,H04L5/0051,Frequency reference adjustment compensation for positioning
+satcom-retest,COMBINED,Nokia (lineage),US-12609853-B2,83455633,20210401,2020s,SAT,H04B7/1851,H04L5/0048,Aggregated phase tracking reference signal pattern
+satcom-retest,COMBINED,Nokia (lineage),US-12677200-B2,93016299,20230412,2020s,NET,H04W84/06,H04W36/083,"Switching from a terrestrial cell to a non-terrestrial cell, and related devices, methods and computer programs"
+satcom-retest,COMBINED,Nokia (lineage),US-12677229-B2,85154289,20210806,2020s,"SAT,NET","H04B7/18513,H04B7/18519,H04W84/06",H04W56/0005,Adjusting uplink synchronization timer
+satcom-retest,COMBINED,Nokia (lineage),US-12700921-B2,83457372,20220926,2020s,"SAT,NET","H04B7/1851,H04B7/18519,H04B7/195,H04W84/06",H04B7/195,Receipt of satellite assistance information at a user equipment
+satcom-retest,COMBINED,Nokia (lineage),US-2023103775-A1,85775189,20210930,2020s,NET,H04W84/06,H04W84/06,Method and apparatus for communication system serving vehicles
+satcom-retest,COMBINED,Nokia (lineage),US-2024284380-A1,92281635,20230217,2020s,NET,H04W84/06,H04W4/025,Network-based positioning in a non-terrestrial network
+satcom-retest,COMBINED,Nokia (lineage),US-2024292351-A1,78049234,20210928,2020s,"SAT,NET","H04B7/1851,H04W84/06",H04W84/06,Uplink synchronization
+satcom-retest,COMBINED,Nokia (lineage),US-2024349172-A1,83113030,20210805,2020s,NET,H04W84/06,H04W48/12,Apparatus comprising at least one processor
+satcom-retest,COMBINED,Nokia (lineage),US-2024349217-A1,85153954,20210806,2020s,NET,H04W84/06,H04W84/06,Phase error compensation for iot over ntn
+satcom-retest,COMBINED,Nokia (lineage),US-2025080207-A1,87347517,20220118,2020s,SAT,H04B7/18513,H04W52/0251,Mechanism for multi-interval discontinuous reception
+satcom-retest,COMBINED,Nokia (lineage),US-2025159455-A1,80628529,20220214,2020s,"SAT,NET","H04B7/18513,H04W84/06",H04W84/06,Geo guidance for leo coverage and connectivity
+satcom-retest,COMBINED,Nokia (lineage),US-2025168738-A1,80001539,20220105,2020s,NET,H04W84/06,H04W76/19,Conditional handover recovery in non-terrestrial networks
+satcom-retest,COMBINED,Nokia (lineage),US-2025220612-A1,89705135,20220729,2020s,SAT,H04B7/1851,H04B7/1851,Updating information for uplink synchronization
+satcom-retest,COMBINED,Nokia (lineage),US-2025324333-A1,89848229,20220801,2020s,"SAT,NET","H04B7/18513,H04W84/06",H04W36/322,"Apparatus, method, and computer program"
+satcom-retest,COMBINED,Nokia (lineage),US-2026181576-A1,94533241,20230809,2020s,NET,H04W84/06,H04W84/06,Monitoring for control information in a positioning measurement gap
+satcom-retest,COMBINED,Nokia (lineage),US-2026261937-A1,89704915,20220726,2020s,NET,H04W84/06,H04W36/083,"Devices, methods, apparatuses, and computer readable media for nonterrestrial network connection"
+satcom-retest,COMBINED,Nokia (lineage),US-2026270692-A1,90436616,20230321,2020s,NET,H04W84/06,H04W12/041,"Method, apparatus and computer program"
+satcom-retest,COMBINED,Nokia (lineage),WO-2021226928-A1,78526215,20200514,2020s,SAT,"H04B7/18513,H04B7/18519",H04L25/0256,Enhanced csi feedback in ntn with long propagation delay
+satcom-retest,COMBINED,Nokia (lineage),WO-2022082541-A1,81291364,20201021,2020s,NET,H04W84/06,H04B7/18504,Capacity boosting based on airborne platform
+satcom-retest,COMBINED,Nokia (lineage),WO-2023131420-A1,80050824,20220110,2020s,NET,H04W84/06,H04W48/12,Efficient usage of si signalling for neighbor satellite indication in sparse coverage scenarios
+satcom-retest,COMBINED,Nokia (lineage),WO-2023151084-A1,87563382,20220214,2020s,SAT,H04B7/1851,H04W56/0045,Synchronization adjustment in ntn communication
+satcom-retest,COMBINED,Nokia (lineage),WO-2023151099-A1,87563460,20220214,2020s,SAT,H04B7/18513,H04W56/0045,Configuration of multiple transmission segment durations
+satcom-retest,COMBINED,Nokia (lineage),WO-2024170209-A1,89661642,20230214,2020s,"SAT,NET","H04B7/18513,H04B7/18541",H04W76/28,"Methods, apparatuses and systems for non-terrestrial network"
+satcom-retest,COMBINED,Nokia (lineage),WO-2024243880-A1,93656390,20230531,2020s,SAT,H04B7/18513,H04B7/18513,Dynamic non-access stratum timer value in non-terrestrial network
+satcom-retest,COMBINED,Nokia (lineage),WO-2024250273-A1,93794879,20230609,2020s,NET,H04W84/06,H04L2209/80,Validation of terminal device
+satcom-retest,COMBINED,Nokia (lineage),WO-2025000202-A1,87474245,20230626,2020s,NET,H04W84/06,H04W84/06,Expiry of validity duration of global navigation satellite system information
+satcom-retest,COMBINED,Nokia (lineage),WO-2025214882-A1,95338006,20240412,2020s,NET,H04W84/06,H04W48/20,Enhancing service continuity in 5g store and forward satellite communication systems
+satcom-retest,COMBINED,Nokia (lineage),WO-2025218938-A1,91275153,20240419,2020s,"SAT,NET","H04B7/18513,H04W84/06",H04W84/06,Coarse sib for ntn signaling reduction
+satcom-retest,COMBINED,Nokia (lineage),WO-2025231878-A1,97591758,20240510,2020s,NET,H04W84/06,H04L67/56,Behavior of uplink transmission extension timer for connected-mode discontinuous reception non-active period
+satcom-retest,COMBINED,Nokia (lineage),WO-2026017486-A1,96356361,20240719,2020s,SAT,H04B7/18513,H04W52/0216,Controlling transmissions
+satcom-retest,COMBINED,Nokia (lineage),WO-2026031098-A1,98734527,20240808,2020s,NET,H04W84/06,H04W84/06,Methods for determination of csi reference resource
+satcom-retest,COMBINED,Nokia (lineage),WO-2026057617-A1,97067533,20240913,2020s,NET,H04W84/06,H04W48/20,Synchronization signal indicator
+satcom-retest,COMBINED,Nokia (lineage),WO-2026073366-A1,99357072,20241001,2020s,SAT,H04B7/18513,H04B7/0695,Beam hopping in wireless communication
+satcom-retest,COMBINED,Nokia (lineage),WO-2026073670-A1,97067511,20241003,2020s,NET,H04W84/06,H04W84/06,Signal measurements
+satcom-retest,COMBINED,Nokia (lineage),WO-2026073699-A1,97140524,20241003,2020s,NET,H04W84/06,H04W84/06,Signal measurements
+satcom-retest,COMBINED,Nokia (lineage),WO-2026077784-A1,97299991,20241009,2020s,NET,H04W84/06,H04L63/306,A core network apparatus and a non-terrestrial network node
+satcom-retest,COMBINED,Nokia (lineage),WO-2026098990-A1,97522362,20241108,2020s,NET,H04W84/06,H04L67/14,Core network enhancements to enable mbs over ntn
+satcom-retest,COMBINED,Nokia (lineage),WO-2026124810-A1,97215267,20241212,2020s,"SAT,ISL,NET","H04B7/18513,H04B7/18521,H04B7/18541,H04W84/06",H04W36/362,Fallback to geo for recovery in multi-orbit ntn
+satcom-retest,COMBINED,Nokia (lineage),WO-2026131766-A1,98268016,20241218,2020s,NET,H04W84/06,H04L9/0844,"Apparatus, method and computer program for securing the communication between a user equipment and a satellite network"
+satcom-retest,COMBINED,Nokia (lineage),EP-0971487-A1,8235423,19980702,pre-2000,SAT,H04B7/18513,H04Q11/04,Method and arrangement for exchanging control information between earth stations of a satellite communication network
+satcom-retest,COMBINED,Nokia (lineage),US-6430392-B1,9524637,19980330,pre-2000,SAT,H04B7/18513,H04W52/143,Dynamic compensation of signals for space telecommunication repeaters
+satcom-retest,COMBINED,Nokia (lineage),US-6829310-B1,9552633,19991129,pre-2000,SAT,"H04B7/18515,H04B7/18519",H04L27/0008,Method of high and low bit rate transmission on the command link of a satellite
+satcom-retest,COMBINED,Thales,US-8299963-B2,41017161,20081205,2000s,SAT,H04B7/18515,H04B7/18515,Antenna with shared feeds and method of producing an antenna with shared feeds for generating multiple beams
+satcom-retest,COMBINED,Thales,US-8977190-B2,42078867,20090828,2000s,SAT,H04B7/18515,H04B7/18515,"Linearizer-channel amplifier device for a dual RF channel, and telecommunication satellite comprising said device"
+satcom-retest,COMBINED,Thales,WO-2011045236-A1,41800477,20091016,2000s,SAT,H04B7/18513,H04B7/18513,Device and method for monitoring radio resources for satellite communication systems
+satcom-retest,COMBINED,Thales,EP-3253124-A1,56990473,20160531,2010s,NET,H04B7/18541,H04B7/18508,Method for controlling a satellite network and associated devices
+satcom-retest,COMBINED,Thales,US-10382192-B2,56741082,20160404,2010s,SAT,"H04B7/18515,H04B7/18519",H04B7/18519,System and method for dynamically calibrating one or more radiofrequency channels of a satellite payload
+satcom-retest,COMBINED,Thales,US-10469157-B2,59031025,20170126,2010s,SAT,H04B7/18519,H04L67/12,"Electronic communication gateway, an avionics communication installation comprising such a gateway, related method for processing information and computer program"
+satcom-retest,COMBINED,Thales,US-10665952-B2,60570127,20170727,2010s,SAT,H04B7/18515,H01Q1/422,Microwave antenna module for space applications including a hybrid transmit/receive module of package on package type
+satcom-retest,COMBINED,Thales,US-10887002-B1,68425012,20190620,2010s,SAT,"H04B7/18513,H04B7/18515,H04B7/18519",H04B7/18513,Telecommunications payload with coverage and capacity flexibility
+satcom-retest,COMBINED,Thales,US-11070283-B2,67383975,20190307,2010s,SAT,"H04B7/18515,H04B7/18519",H04B17/21,System for calibrating from the ground a payload of a satellite
+satcom-retest,COMBINED,Thales,US-11444693-B2,70738638,20191220,2010s,"SAT,ISL,GRD","H04B10/118,H04B7/18513,H04B7/18517",H04B10/118,Free space optical FSO space data transmission system in the infrared wavelength domain
+satcom-retest,COMBINED,Thales,US-11546053-B2,62167380,20171221,2010s,"SAT,NET","H04B7/18513,H04B7/18515,H04W84/06",H04W72/52,"Method for multibeam coverage by the grouping of elementary beams of the same colour, and telecommunications payload for implementing such a method"
+satcom-retest,COMBINED,Thales,US-2020366366-A1,68138298,20190516,2010s,SAT,"H04B7/18513,H04B7/18515",H04B7/18515,Satellite telecommunication system with transparent digital processor and beam hopping
+satcom-retest,COMBINED,Thales,US-9306295-B2,47424923,20120720,2010s,SAT,H04B7/18515,H01Q19/17,"Multibeam transmitting and receiving antenna with multiple feeds per beam, system of antennas and satellite telecommunication system containing such an antenna"
+satcom-retest,COMBINED,Thales,US-9590578-B2,52358800,20140704,2010s,SAT,H04B7/18515,H01J23/34,Amplifier device with at least one microwave tube
+satcom-retest,COMBINED,Thales,US-9667339-B2,51518812,20140411,2010s,SAT,H04B7/18515,H04B7/18582,Satellite telecommunication system and method with multispot coverage and with variable capacity distribution
+satcom-retest,COMBINED,Thales,US-9686009-B2,53776658,20150415,2010s,SAT,H04B7/18515,H04B7/18543,"Broadband multibeam satellite radio communication system with improved reuse of frequencies on the forward channel, and associated method for reuse"
+satcom-retest,COMBINED,Thales,US-9774094-B2,52589432,20141003,2010s,NET,H04W84/06,H01Q21/06,"Antenna with shaped reflector(s), reconfigurable in orbit"
+satcom-retest,COMBINED,Thales,US-9924424-B2,56084144,20160222,2010s,NET,H04W84/06,H04W72/541,Integrated radio communications system using an ordered hierarchical cellular coverage
+satcom-retest,COMBINED,Thales,US-9929795-B2,52779684,20141014,2010s,SAT,H04B7/1851,H04L67/2842,Telecommunication network architecture
+satcom-retest,COMBINED,Thales,WO-2019129885-A1,62222716,20171228,2010s,SAT,H04B7/1851,H04B7/1851,Method and system for inserting a terminal into a satellite network
+satcom-retest,COMBINED,Thales,EP-4395204-A1,86657428,20221227,2020s,SAT,H04B7/1851,H04B17/3913,"Method for determining a cause of a disturbance on a communication between at least one satellite and at least one terminal, associated computer program product and electronic determination device"
+satcom-retest,COMBINED,Thales,EP-4580085-A1,91073168,20231226,2020s,"SAT,NET","H04B7/18513,H04B7/18541",H04B7/18513,Method for transferring satellite communications
+satcom-retest,COMBINED,Thales,US-11310067-B1,81187222,20210127,2020s,SAT,H04B7/1851,H01Q1/28,Adaptive power flux density control for aeronautical broadband system reducing interference to terrestrial communication systems
+satcom-retest,COMBINED,Thales,US-12604211-B2,80786469,20211021,2020s,NET,H04W84/06,H04W84/06,Method for forming and allocating beams by frequency sub-bands for an active multi-beam satellite antenna
+satcom-retest,COMBINED,Thales,US-2024204403-A1,86100230,20221215,2020s,"SAT,ISL","H04B7/1851,H04B7/18521",H01Q3/2629,Method for Controlling the Pointing of an Antenna
+satcom-retest,COMBINED,Thales,US-2024372628-A1,88413203,20230504,2020s,"SAT,ISL","H04B10/118,H04B7/18513",H04B10/118,Optical signal generation device for quantum key distribution
+satcom-retest,COMBINED,Thales,US-2025373327-A1,82058104,20220513,2020s,"SAT,NET","H04B7/18519,H04W84/06",H04W60/04,5g platform having satellite coverage
+satcom-retest,COMBINED,Thales,US-2025386208-A1,82846175,20220708,2020s,NET,H04W84/06,H04B7/18563,Coverage availability via nas signaling
+satcom-retest,COMBINED,Thales,WO-2025172487-A1,91185300,20240216,2020s,NET,H04W84/06,H04W84/06,Satellite acting as local 5g standalone network to address intermittent/temporary connectivity
+satcom-retest,COMBINED,Viasat,US-10020875-B2,42562612,20090616,2000s,SAT,H04B7/18515,H04W72/23,Dynamic bandwidth resource allocation for satellite downlinks
+satcom-retest,COMBINED,Viasat,US-10516475-B2,39314726,20061006,2000s,SAT,H04B7/18513,H04B7/18513,Forward and reverse calibration for ground-based beamforming
+satcom-retest,COMBINED,Viasat,US-2024421896-A1,93843874,20090417,2000s,"SAT,NET","H04B7/18513,H04B7/18541",H04B7/18541,Layer-2 connectivity from switch to access node/gateway
+satcom-retest,COMBINED,Viasat,US-7675842-B2,37806694,20051028,2000s,NET,H04W84/06,H04W72/542,Adaptive coding and modulation using linked list data structures
+satcom-retest,COMBINED,Viasat,US-7818009-B2,9905400,20001219,2000s,NET,H04W84/06,H04W84/06,Cellular channel allocation scheme with multi-user detection
+satcom-retest,COMBINED,Viasat,US-8254832-B2,39738955,20060926,2000s,SAT,H04B7/18513,H04B7/18513,Frequency re-use for service and gateway beams
+satcom-retest,COMBINED,Viasat,US-8265646-B2,42153656,20081110,2000s,SAT,H04B7/18515,H04B7/18515,Dynamic frequency assignment in a multi-beam system
+satcom-retest,COMBINED,Viasat,US-8538323-B2,41380426,20060926,2000s,SAT,H04B7/18515,H04B7/18515,Satellite architecture
+satcom-retest,COMBINED,Viasat,US-8730086-B2,41724519,20080826,2000s,SAT,H04B7/18513,H04W52/245,Weather detection using satellite communication signals
+satcom-retest,COMBINED,Viasat,EP-2738870-A2,49884886,20121203,2010s,SAT,H04B7/18515,H04B7/2041,Multi-beam active phased array architecture with independent polarization control
+satcom-retest,COMBINED,Viasat,US-10320472-B2,48670080,20120611,2010s,SAT,"H04B7/18513,H04B7/18515",H04W76/10,Robust beam switch scheduling
+satcom-retest,COMBINED,Viasat,US-10361771-B2,59360347,20160122,2010s,SAT,H04B7/18513,H04W8/20,Determining an attenuation environment of a satellite communication terminal
+satcom-retest,COMBINED,Viasat,US-10476583-B2,56740519,20150813,2010s,SAT,H04B7/18513,H04L25/49,Managed time division duplexed baseband signaling
+satcom-retest,COMBINED,Viasat,US-10645010-B2,55521804,20150218,2010s,SAT,H04B7/18513,H04L67/12,Popularity-aware bitrate adaptation of linear programming for mobile communications
+satcom-retest,COMBINED,Viasat,US-10784954-B2,61627202,20170302,2010s,"SAT,NET","H04B7/18515,H04B7/18541",H04B7/19,Dynamic satellite beam assignment
+satcom-retest,COMBINED,Viasat,US-11133860-B2,59358146,20170612,2010s,"SAT,NET","H04B7/1851,H04B7/18513,H04B7/18515,H04B7/18519,H04W84/06",H04B7/18519,Beam layout optimisation
+satcom-retest,COMBINED,Viasat,US-12050276-B2,70554214,20190416,2010s,SAT,H04B7/18519,H04B7/0617,Past event signal tracking
+satcom-retest,COMBINED,Viasat,US-9432161-B2,55438541,20140908,2010s,GRD,H04B7/18517,H04W72/51,Shared channel resource allocation
+satcom-retest,COMBINED,Viasat,US-11994595-B2,75340248,20210308,2020s,"SAT,GRD","H04B7/18517,H04B7/18519",G01S19/13,Systems and methods for determining orientation of an electronically steerable antenna
+satcom-retest,COMBINED,Viasat,US-12284621-B2,85569915,20220214,2020s,"SAT,NET","H04B7/1851,H04W84/06",H04W84/06,Using time division duplexing systems in frequency division duplexing networks
+satcom-retest,COMBINED,Viasat,US-2025055665-A1,85278085,20220107,2020s,SAT,H04B7/18513,H04L27/2656,Using time division duplexing systems in frequency division duplexing networks
+satcom-retest,COMBINED,Viasat,US-2025076535-A1,80122722,20220105,2020s,SAT,H04B7/18513,H04B7/18513,Method and Apparatus for Weather Detection using Satellites
+satcom-retest,COMBINED,Viasat,US-2025141510-A1,80685216,20220218,2020s,"SAT,GRD","H04B7/18513,H04B7/18515,H04B7/18517",H04W52/367,Method and Apparatus for Transmit Beamforming
+satcom-retest,COMBINED,Viasat,WO-2024220735-A1,91070188,20230419,2020s,SAT,H04B7/18513,H04B7/18513,Full-duplex beam-nulling isolation between transmit and receive arrays
+satcom-retest,COMBINED,Viasat,WO-2025054301-A1,92843039,20230905,2020s,SAT,H04B7/1851,H04B7/1851,Beamforming and block coding with three orthogonal axis element antenna
+satcom-retest,COMBINED,Viasat,WO-2025085061-A1,88833655,20231018,2020s,ISL,H04B10/118,H03L7/113,Optical phase lock loop for transmission or reception of optical communications signals
+satcom-retest,COMBINED,Viasat,WO-2026095943-A1,93563406,20241031,2020s,"SAT,ISL","H04B10/118,H04B7/18513",H04B7/18513,Methods and apparatuses for supporting an optical feeder link in a satellite communications system
+satcom-retest,COMBINED,Viasat,WO-2026122684-A1,98366183,20241204,2020s,SAT,"H04B7/18513,H04B7/18515",H04B7/2041,Methods and apparatuses for adaptive beamforming in a satellite communications system
+satcom-retest,COMBINED,Viasat,WO-2026161050-A1,94733151,20250121,2020s,SAT,H04B7/18513,H04B7/18513,Satellite service unit allocation within a satellite communication service
+satcom-retest,COMBINED,Viasat,GB-2335827-A8,10828000,19980304,pre-2000,SAT,H04B7/18513,H04B7/18513,Data carrier deactivation in absence of user data
+satcom-retest,COMBINED,Viasat,US-6539003-B1,27490299,19971020,pre-2000,SAT,H04B7/18513,H04B7/18513,Method for acquisition and synchronization of terminals in a satellite/wireless TDMA system
+satcom-retest,COMBINED,Viasat,US-6604146-B1,23300685,19990615,pre-2000,NET,H04B7/18584,H04L45/00,Efficient internet service implementation for mesh satellite networks using centralized router server for distribution of destination tables
