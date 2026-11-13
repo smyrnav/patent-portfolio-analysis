@@ -1,0 +1,145 @@
+blind_number,first_pass_label,multi_components,confidence,reason
+1,OTHER,,Low,"generic wireless method, no satellite evidence visible"
+2,OTHER,,High,"satellite imaging tasking, not communications"
+3,SAT,,High,satellite communication payload/beams in claim
+4,NET,,High,5G NTN terminal/network procedure
+5,OTHER,,High,"GNSS navigation anti-jamming, not comms"
+6,OTHER,,Med,"HAPS platform, boundary case"
+7,SAT,,High,satellite communications system in claim
+8,NET,,Med,"network integration procedure, NTN context"
+9,NET,,High,5G NTN terminal/network procedure
+10,NET,,High,5G NTN terminal/network procedure
+11,ISL,,Med,"free-space optical terminal, counted ISL per rule R4"
+12,NET,,High,5G NTN terminal/network procedure
+13,SAT,,High,satellite communications system in claim
+14,GRD,,High,ground station / gateway equipment
+15,OTHER,,Med,"generic phased array, satellite only one example; boundary"
+16,GRD,,Med,ground segment equipment or method
+17,ISL,,Med,inter-satellite link
+18,GRD,,Med,ground segment equipment or method
+19,MULTI,SAT+GRD,Med,satellite system plus ground segment components
+20,NET,,High,5G NTN terminal/network procedure
+21,NET,,High,5G NTN terminal/network procedure
+22,NET,,High,5G NTN terminal/network procedure
+23,ISL,,Med,"free-space optical terminal, counted ISL per rule R4"
+24,NET,,Med,"network integration procedure, NTN context"
+25,NET,,High,5G NTN terminal/network procedure
+26,OTHER,,Med,"HAPS platform, boundary case"
+27,NET,,Med,"network integration procedure, NTN context"
+28,OTHER,,Med,no satellite communications evidence
+29,OTHER,,High,no satellite communications evidence
+30,OTHER,,Med,no satellite communications evidence
+31,OTHER,,Med,no satellite communications evidence
+32,GRD,,High,ground station / gateway equipment
+33,NET,,High,5G NTN terminal/network procedure
+34,OTHER,,Med,no satellite communications evidence
+35,GRD,,High,ground station / gateway equipment
+36,OTHER,,Med,"constellation design tool, not comms tech; boundary"
+37,NET,,High,5G NTN terminal/network procedure
+38,NET,,High,5G NTN terminal/network procedure
+39,OTHER,,Med,no satellite communications evidence
+40,SAT,,Med,RE-READ with full description: antenna with shared feeds for satellite telecommunications
+41,NET,,Med,RE-READ with full description: integrated satellite and terrestrial cellular coverage system
+42,NET,,High,5G NTN terminal/network procedure
+43,GRD,,High,ground station / gateway equipment
+44,NET,,Med,"network integration procedure, NTN context"
+45,OTHER,,High,no satellite communications evidence
+46,OTHER,,High,no satellite communications evidence
+47,NET,,High,5G NTN terminal/network procedure
+48,OTHER,,Med,"SIGINT retro-beamforming, intelligence not comms; boundary"
+49,OTHER,,Med,no satellite communications evidence
+50,SAT,,High,description names satellite channels
+51,NET,,High,5G NTN terminal/network procedure
+52,OTHER,,Med,no satellite communications evidence
+53,OTHER,,High,no satellite communications evidence
+54,NET,,High,5G NTN terminal/network procedure
+55,SEC,,High,satellite code co-occurs with security mechanism in claim
+56,NET,,Med,"network integration procedure, NTN context"
+57,OTHER,,Med,generic quantum key distribution device; SEC co-occurrence boundary
+58,OTHER,,Med,optical phase-lock component usable in fiber; R4 scope boundary
+59,NET,,High,5G NTN terminal/network procedure
+60,NET,,Med,"network integration procedure, NTN context"
+61,SAT,,Med,satellite communications method in claim
+62,OTHER,,Med,"television content delivery, pilot precedent"
+63,SAT,,Med,"RE-READ with full description: multi-beam satellite telecommunication antenna, frequency re-use"
+64,SAT,,Med,satellite communications method in claim
+65,SAT,,High,satellite communications system in claim
+66,NET,,Med,"network integration procedure, NTN context"
+67,OTHER,,Med,no satellite communications evidence
+68,SAT,,High,satellite communications system in claim
+69,NET,,Med,"network integration procedure, NTN context"
+70,SAT,,Med,satellite communications method in claim
+71,SEC,,High,satellite code co-occurs with security mechanism in claim
+72,NET,,Med,"network integration procedure, NTN context"
+73,NET,,High,5G NTN terminal/network procedure
+74,NET,,Med,"network integration procedure, NTN context"
+75,OTHER,,Med,no satellite communications evidence
+76,NET,,Med,description names mobile satellite service
+77,NET,,Med,"network integration procedure, NTN context"
+78,OTHER,,High,no satellite communications evidence
+79,OTHER,,High,no satellite communications evidence
+80,GRD,,Med,ground segment equipment or method
+81,OTHER,,Med,no satellite communications evidence
+82,NET,,Med,"network integration procedure, NTN context"
+83,NET,,Med,"network integration procedure, NTN context"
+84,OTHER,,Low,description truncated before any satellite mention; tooling flag
+85,SAT,,Med,satellite communications method in claim
+86,SAT,,High,satellite communications system in claim
+87,NET,,High,5G NTN terminal/network procedure
+88,OTHER,,Med,"weather sensing that uses satcom links, sensing not comms"
+89,SAT,,High,satellite communications system in claim
+90,NET,,High,5G NTN terminal/network procedure
+91,OTHER,,Med,no satellite communications evidence
+92,NET,,High,lawful intercept implemented at NTN network node
+93,NET,,Med,"network integration procedure, NTN context"
+94,NET,,Med,"network integration procedure, NTN context"
+95,NET,,High,5G NTN terminal/network procedure
+96,OTHER,,Med,no satellite words visible in claim or description excerpt
+97,SEC,,High,satellite code co-occurs with security mechanism in claim
+98,SAT,,High,satellite communications system in claim
+99,SAT,,High,satellite communications system in claim
+100,SAT,,High,satellite communications system in claim
+101,SAT,,Med,satellite communications method in claim
+102,SAT,,High,satellite communications system in claim
+103,SAT,,High,satellite communications system in claim
+104,OTHER,,High,"optical beacon pointing, not communications"
+105,OTHER,,Low,"ambiguous platform pointing, cannot confirm comms"
+106,NET,,High,5G NTN terminal/network procedure
+107,NET,,High,5G NTN terminal/network procedure
+108,NET,,High,5G NTN terminal/network procedure
+109,GRD,,Med,ground segment equipment or method
+110,OTHER,,Med,"telemetry and command link, spacecraft operations not comms; boundary"
+111,SAT,,High,calibration of a satellite communications payload
+112,SAT,,High,"satellite multibeam telecommunication system, beam hopping"
+113,OTHER,,Med,"carrier selection for power saving, no satellite evidence"
+114,NET,,High,UE supporting communications over non-terrestrial network
+115,GRD,,Med,telemetry data transfer between ground stations
+116,NET,,High,switching from terrestrial cell to non-terrestrial cell
+117,OTHER,,Med,generic frame header address compression in a network
+118,GRD,,High,"satellite user terminal, indoor and outdoor units"
+119,NET,,High,uplink synchronization timers for non-terrestrial networks
+120,OTHER,,Med,mesh network of transport vehicles or aircraft; boundary
+121,SAT,,High,multichannel satellite payload with transponder sections
+122,SAT,,High,beam switching time plan synchronization for satellite payload
+123,SAT,,High,spacecraft antenna beam pointing for satellite communications
+124,ISL,,Med,"laser data transmission satellite to ground, optical per rule R4"
+125,SAT,,Med,control of a satellite network and its bearer subnets
+126,OTHER,,Med,"estimating satellite direction during orbit transfer, operations not comms; boundary"
+127,OTHER,,Med,"signal measurement filtering in idle mode, no satellite evidence"
+128,OTHER,,Med,"HAPS beam layer switching, boundary case"
+129,NET,,High,timing advance compensation over air/space borne vehicle link
+130,NET,,High,"transmission segment configuration, non-terrestrial network in description"
+131,OTHER,,Med,"cell sector location via timing advance, no satellite evidence visible"
+132,SAT,,High,multi-beam satellite with on-board and ground beamforming
+133,NET,,High,network selection using GEO and non-GEO satellite coverage information
+134,NET,,High,"handover rate control, non-terrestrial network in description"
+135,ISL,,Med,"free-space optical turbulence compensation, optical per rule R4"
+136,OTHER,,Low,"frequency hopping message protocol, no satellite evidence in excerpt"
+137,SAT,,High,multispot satellite forward and return link establishment
+138,SAT,,High,optimized beam layout for a satellite communications system
+139,NET,,High,non-geostationary access node connection suspension and proxy
+140,NET,,High,conditional handover in a non-terrestrial network
+141,SAT,,High,geosynchronous satellite service and feeder beams
+142,NET,,Med,"beam hopping cycle configuration in wireless communication, NTN context"
+143,SAT,,High,adaptive beamforming satellite in a satellite communications system
+144,SAT,,Med,satellite communication between rotary wing platform and ground terminal

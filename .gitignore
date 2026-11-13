@@ -4,3 +4,6 @@ __pycache__/
 data/raw/annual_reports/
 data/interim/claim_pages/
 data/interim/claim_pages_satcom/
+data/interim/claim_pages_retest/
+data/interim/satcom_blind_sheet.txt
+data/interim/satcom_retest_sheet.txt
