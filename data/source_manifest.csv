@@ -28,3 +28,5 @@ sql/31_iceye_recent_examples.sql,data/raw/iceye_recent_examples.csv,nokia_analyt
 sql/32_pool_census.sql,data/raw/pool_census.csv,"nokia_analytics.portfolio_30y and nokia_analytics.satcom_peers_30y",e66e6356bffe4ea444416838c9cf36009c5eabbc4a132df4c278e4d34ae9d5bb
 sql/33_pilot_sample.sql,data/validation/satcom_pilot_slots.csv,"nokia_analytics.portfolio_30y and nokia_analytics.satcom_peers_30y",45eab09960200c8ae06621bf25e5edd234113866fc8d96fbd6201db5d1096d00
 sql/34_retest_sample.sql,data/validation/satcom_retest_slots.csv,"nokia_analytics.portfolio_30y and nokia_analytics.satcom_peers_30y",0cb85fe7bc080a8cae54937940da1a595a6365edac2866b91a92d469faf41960
+sql/35_iceye_name_variants.sql,data/raw/35_iceye_name_variants.csv,"patents-public-data.patents.publications, table last modified 23 Sep 2026",354cdce07261359081837eb13e36f8670529f1d454caa76bdf704ebaa110d894
+sql/36_iceye_tech_profile.sql,data/raw/36_iceye_tech_profile.csv,"patents-public-data.patents.publications, table last modified 23 Sep 2026",2441bf96e80ff20a8fb28af7d697b0e5438831a1ccfee9e6ad2b659dcf0eb746
