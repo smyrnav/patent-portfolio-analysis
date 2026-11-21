@@ -133,5 +133,34 @@ class RunQueries(unittest.TestCase):
         self.assertEqual(manifest_output(query_file(34)), "data/validation/satcom_retest_slots.csv")
 
 
+class ReviewWorkbench(unittest.TestCase):
+    def session(self, out="/tmp/test_wb_annotations.csv"):
+        from review_workbench import Session
+        return Session("data/validation/satcom_retest_slots.csv", "satcom-retest",
+                       "data/interim/claim_pages_retest", out, "test")
+
+    def test_order_matches_the_blind_sheet_key(self):
+        import json
+        key = json.loads((ROOT / "data/interim/claim_pages_retest/key_satcom-retest.json").read_text())
+        self.assertEqual(self.session().ids, key)
+
+    def test_record_and_resume(self):
+        import os
+        out = "/tmp/test_wb_annotations.csv"
+        if os.path.exists(out):
+            os.remove(out)
+        first = self.session(out)
+        first.record(1, "SAT", "", "High", "quote", "reason")
+        resumed = self.session(out)
+        self.assertEqual(resumed.next_open(), 2)
+        self.assertEqual(resumed.counts(), (1, 0, len(resumed.ids) - 1))
+        os.remove(out)
+
+    def test_scrub_hides_company_names(self):
+        from common import scrub
+        self.assertNotIn("Nokia", scrub("Nokia and ICEYE filed this"))
+        self.assertIn("[company]", scrub("Nokia filed this"))
+
+
 if __name__ == "__main__":
     unittest.main()

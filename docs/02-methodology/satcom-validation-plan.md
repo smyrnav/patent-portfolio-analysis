@@ -101,6 +101,18 @@ Company balance: Thales 89.7% (26/29) is the only company near the bar; Nokia li
 
 ## The human-labelling problem, stated plainly
 
+Labelling happens in the **Patent Review Workbench** ([`src/review_workbench.py`](../../src/review_workbench.py)), added 22 November 2026. The reviewer runs one command and then walks the sample patent by patent: each entry shows the patent's own independent claims and first description paragraph with company names hidden; the reviewer assigns a category, a confidence, an evidence quote and a one-line reason; every decision is saved immediately, so a session can be stopped and resumed, skipped entries are revisited at the end, and an export command writes the answers in the first-pass format the scoring step consumes. The blind numbering matches the printed sheet and the key file exactly, so the workbench, the sheet and the scorer can never drift apart:
+
+```bash
+python3 src/review_workbench.py review --slots data/validation/satcom_retest_slots.csv \
+    --stage satcom-retest --pages data/interim/claim_pages_retest \
+    --out data/validation/<name>_annotations.csv --annotator <name>
+python3 src/review_workbench.py export --annotations data/validation/<name>_annotations.csv \
+    --out data/validation/<name>_firstpass.csv
+```
+
+Because every decision stores the annotator's name, two people can label the same sample into two files and the agreement step (Cohen's kappa) compares them without any re-keying.
+
 The pre-pivot target was 100 families per category, 300 in total, and it was never finished — that is the main reason the old comparison stayed "first estimates". Five pools at the same rule would mean 500. That is not realistic before the application deadline, so this plan needs a **researcher decision** between two honest options:
 
 | Option | Consequence |

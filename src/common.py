@@ -33,6 +33,22 @@ def wilson(matches, n, z=1.96):
     return centre - half, centre + half
 
 
+# Claim-review helpers shared by make_blind_sheet.py and review_workbench.py.
+import re  # noqa: E402
+
+COMPANY_RE = re.compile(
+    r"\b(nokia|alcatel|lucent|infinera|airbus|astrium|thales|viasat|inmarsat|eutelsat|oneweb|one\s*web|worldvu|iceye|spacex|space\s*x|starlink|boeing|qualcomm|globalstar)\b",
+    re.I)
+DEPENDENT_RE = re.compile(
+    r"\b(of|to|in|by|with|from|under|per)\s+(any\s+(one\s+)?of\s+)?(the\s+)?(preceding\s+)?claims?\s+\d+",
+    re.I)
+
+
+def scrub(text):
+    """Hide company names so the reviewer cannot see whose patent it is."""
+    return COMPANY_RE.sub("[company]", text)
+
+
 def cohen_kappa(pairs):
     """Cohen's kappa for a list of (label_a, label_b) pairs."""
     n = len(pairs)

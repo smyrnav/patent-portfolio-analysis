@@ -8,7 +8,7 @@ import re
 import sys
 from pathlib import Path
 
-from common import ROOT, rows
+from common import DEPENDENT_RE as dependent, ROOT, rows, scrub
 
 stage = sys.argv[1]
 first_chars = int(sys.argv[2]) if len(sys.argv) > 2 else 700
@@ -22,12 +22,6 @@ if missing:
     print(f"Skipped {len(missing)} publications with no readable claims: {missing}", file=sys.stderr)
 ids = [i for i in ids if i not in missing]
 random.Random(f"blind-{stage}").shuffle(ids)
-dependent = re.compile(r"\b(of|to|in|by|with|from|under|per)\s+(any\s+(one\s+)?of\s+)?(the\s+)?(preceding\s+)?claims?\s+\d+", re.I)
-companies = re.compile(r"\b(nokia|alcatel|lucent|infinera|airbus|astrium|thales|viasat|inmarsat|eutelsat|oneweb|one\s*web|worldvu|iceye|spacex|space\s*x|starlink|boeing|qualcomm|globalstar)\b", re.I)
-
-
-def scrub(text):
-    return companies.sub("[company]", text)
 
 
 for number, publication in enumerate(ids, 1):
