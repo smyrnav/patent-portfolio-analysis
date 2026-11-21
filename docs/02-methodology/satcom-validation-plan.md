@@ -78,6 +78,21 @@ What the pilot found, and the rule fixes it proposes (the researcher decides):
 | **5. Recall** | Sample related families outside the pools, stratified by company and period | 100 | Report the miss rate; adjust pools if large |
 | **6. Company balance** | Compare precision by company | Across the sample | No company far below the others |
 
+## The validation pipeline as of 22 November 2026
+
+Every stage is a script, every intermediate file is fingerprinted, and the scoring reruns with one command:
+
+```mermaid
+flowchart LR
+    A["sql/NN_*.sql<br>numbered, dry-run first"] -->|run_queries.py<br>billed-bytes cap| B["CSV snapshot<br>+ sha256 in manifest"]
+    B --> C["fetch_claims.py<br>claim pages + description"]
+    C --> D["review_workbench.py<br>blind labelling, resume,<br>evidence quotes"]
+    D -->|export| E["first-pass labels CSV"]
+    E --> F["score_satcom_validation.py<br>precision, Wilson, confusion,<br>review share, code position"]
+    F --> G["check_satcom_outputs.py<br>fails loudly if files drift"]
+    G --> H["verdict vs the 85% bar<br>reported as-is"]
+```
+
 ## Stage 3 result, 13 November 2026: the re-test FAILED the bar
 
 144 readable patents were sampled blind from the combined pool (6 of 150 had no readable page), labelled without company names visible, then scored against the key. Three entries whose description excerpt had been truncated were re-read once with the full paragraph; the re-reads are logged in `data/validation/satcom_retest_firstpass.csv` (reasons prefixed RE-READ) and flipped three labels from OTHER into the pool.
@@ -96,6 +111,10 @@ Company balance: Thales 89.7% (26/29) is the only company near the bar; Nokia li
 **What the 42 misses are.** 12 of 42 are boundary cases where a rule decision is needed (HAPS high-altitude platforms, generic quantum-key or optical components, spacecraft telemetry/command links, surveillance beamforming, constellation design tools, aircraft mesh). The rest are generic cellular or networking patents that carry a satcom classification code but whose own sentences describe ordinary terrestrial radio work — the same disease as the pre-pivot 39–73%, milder but not cured.
 
 **Consequences.** Per the rule in this plan, the combined pool does not pass, so every company comparison stays "first estimate, low confidence" — nothing graduates to a finding. The pool definitions need another logged round of tightening (the boundary questions below go to the researcher as yes/no decisions), followed by a third test on a fresh sample. The failure is reported as-is; the sample was not re-labelled to chase the bar.
+
+![Precision by pool of origin, company and code position, with 95% Wilson ranges against the 85% bar](../img/satcom_validation_precision.png)
+
+*Regenerate with `python3 src/make_satcom_validation_chart.py` after each scoring run.*
 
 **Files:** slots `data/validation/satcom_retest_slots.csv` (query 34), blind labels `data/validation/satcom_retest_firstpass.csv`, scored join `data/validation/satcom_retest_scored.csv`. Every table above regenerates with one command — `python3 src/score_satcom_validation.py` (precision, confusion matrix, review share, first-listed-vs-secondary split) — and `python3 src/check_satcom_outputs.py` fails loudly if the files ever drift apart. Both run inside `src/run_all.py`.
 

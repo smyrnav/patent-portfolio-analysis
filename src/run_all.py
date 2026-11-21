@@ -8,7 +8,7 @@ import sys
 from common import ROOT
 
 STEPS = ["clean_owners.py", "clean_lineage.py", "score_validation.py", "score_satcom_validation.py", "check_outputs.py", "check_satcom_outputs.py"]
-CHARTS = ["make_charts.py", "make_data_map.py", "make_universe_chart.py", "make_twenty_years_chart.py", "make_competitor_chart.py", "make_commercial_chart.py"]
+CHARTS = ["make_charts.py", "make_data_map.py", "make_universe_chart.py", "make_twenty_years_chart.py", "make_competitor_chart.py", "make_commercial_chart.py", "make_satcom_validation_chart.py"]
 
 for script in STEPS + (CHARTS if "--charts" in sys.argv else []):
     print(f"--- {script}")
