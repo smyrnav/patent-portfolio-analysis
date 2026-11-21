@@ -1,6 +1,6 @@
 """Rerun every local step: cleaning, scoring, checks and tests. Add --charts to redraw the charts (needs matplotlib).
 
-BigQuery steps can't run here. See sql/README.md.
+BigQuery steps run through src/run_queries.py (dry-run, billed-bytes cap, CSV plus fingerprint). See sql/README.md.
 """
 import subprocess
 import sys

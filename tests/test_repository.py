@@ -116,5 +116,22 @@ class Config(unittest.TestCase):
             self.assertIn("scope", tomllib.load(f))
 
 
+class RunQueries(unittest.TestCase):
+    def test_comment_lines_are_stripped(self):
+        from run_queries import clean_sql, query_file
+        sql_text = clean_sql(query_file(35))
+        self.assertFalse(any(line.strip().startswith("--") for line in sql_text.splitlines()))
+
+    def test_ddl_detection(self):
+        from run_queries import clean_sql, is_ddl, query_file
+        self.assertTrue(is_ddl(clean_sql(query_file(6))))
+        self.assertFalse(is_ddl(clean_sql(query_file(35))))
+
+    def test_manifest_output_paths(self):
+        from run_queries import manifest_output, query_file
+        self.assertEqual(manifest_output(query_file(35)), "data/raw/35_iceye_name_variants.csv")
+        self.assertEqual(manifest_output(query_file(34)), "data/validation/satcom_retest_slots.csv")
+
+
 if __name__ == "__main__":
     unittest.main()

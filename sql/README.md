@@ -2,6 +2,19 @@
 
 Numbered in the order I ran them, as the exact text used, so older queries keep older wording such as "owners" and "core". Sandbox tables expire after 60 days, so results are saved locally, and [`data/source_manifest.csv`](../data/source_manifest.csv) fingerprints them. A cell-by-cell archive is in [`notebooks/patent_portfolio_queries.ipynb`](../notebooks/patent_portfolio_queries.ipynb).
 
+## Running a query: src/run_queries.py
+
+Since 22 November 2026 the manual BigQuery-browser step is replaced by [`src/run_queries.py`](../src/run_queries.py). It dry-runs the query first, shows the bytes to be scanned, refuses scans above a billed-bytes cap (200 GB by default, `--max-bytes` to raise), asks before billing anything, writes the CSV to the path recorded below, and refreshes the row in `data/source_manifest.csv` with a new fingerprint:
+
+```bash
+python3 src/run_queries.py --list              # known queries and their output paths
+python3 src/run_queries.py 37                  # dry-run, confirm, run, save, fingerprint
+python3 src/run_queries.py 37 --yes            # skip the confirmation prompt
+python3 src/run_queries.py --rebuild-sandbox   # recreate expired sandbox tables (queries 06, 24)
+```
+
+Big queries stay on demand: nothing runs all 36 queries automatically, and the sandbox rebuild asks before each table builder (query 06 scans about 289 GB).
+
 | Query | Purpose | Saved result | Data scanned |
 |---|---|---|---|
 | [01](01_owner_names.sql) | Applicant names with Nokia or Alcatel | [`owner_counts.csv`](../data/raw/owner_counts.csv) | Not recorded |
