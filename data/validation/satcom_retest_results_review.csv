@@ -1,0 +1,8 @@
+name,sampled,not_high_confidence,review_share,boundary_flagged,boundary_share
+all,144,71,0.493,14,0.097
+Airbus,21,13,0.619,2,0.095
+Eutelsat/OneWeb,6,3,0.5,0,0.0
+ICEYE,1,0,0.0,0,0.0
+Nokia (lineage),56,22,0.393,5,0.089
+Thales,29,12,0.414,4,0.138
+Viasat,31,21,0.677,3,0.097

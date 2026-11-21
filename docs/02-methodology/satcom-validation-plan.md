@@ -97,7 +97,7 @@ Company balance: Thales 89.7% (26/29) is the only company near the bar; Nokia li
 
 **Consequences.** Per the rule in this plan, the combined pool does not pass, so every company comparison stays "first estimate, low confidence" — nothing graduates to a finding. The pool definitions need another logged round of tightening (the boundary questions below go to the researcher as yes/no decisions), followed by a third test on a fresh sample. The failure is reported as-is; the sample was not re-labelled to chase the bar.
 
-**Files:** slots `data/validation/satcom_retest_slots.csv` (query 34), blind labels `data/validation/satcom_retest_firstpass.csv`, scored join `data/validation/satcom_retest_scored.csv`.
+**Files:** slots `data/validation/satcom_retest_slots.csv` (query 34), blind labels `data/validation/satcom_retest_firstpass.csv`, scored join `data/validation/satcom_retest_scored.csv`. Every table above regenerates with one command — `python3 src/score_satcom_validation.py` (precision, confusion matrix, review share, first-listed-vs-secondary split) — and `python3 src/check_satcom_outputs.py` fails loudly if the files ever drift apart. Both run inside `src/run_all.py`.
 
 ## The human-labelling problem, stated plainly
 
