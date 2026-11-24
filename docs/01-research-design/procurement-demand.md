@@ -1,6 +1,6 @@
 # What governments actually buy — procurement evidence
 
-**Status: first extraction done 24 November 2026.** 1,867 unique Starlink tenders pulled (the website itself never shows more than the 1,000-result cap): 1,320 complete, 373 unsuccessful, the rest active or cancelled; roughly ₴1.64 billion in expected values. Data: `data/raw/prozorro_starlink_tenders.csv` and `.json`. Known gap: the search API omits notice dates for about half the items, so per-year splits come from the tenderID, not the row dates. Reading a sample of tenders for the extraction fields above is the next step.
+**Status: initial dataset.** 1,867 Starlink tender records and 4,050 procurement plans extracted 24 November 2026 (`data/raw/prozorro_starlink_*.csv/.json`). The multi-category pipeline (19 queries, 5 categories) exists in code and config; its full run is in progress, so cross-category outputs are not yet available. This is a demand-side dataset under construction, not a completed market analysis.
 
 Patent data shows who *owns* technology. It says nothing about who *buys* it. Procurement records are the missing demand side: they show real buyer behaviour — signed contracts, real prices, real technical requirements — not analyst forecasts.
 
@@ -13,8 +13,8 @@ We are not building a catalogue of Starlink purchases for its own sake. The data
 | Part | What answers it | Where in the data |
 |---|---|---|
 | **Which needs are still active?** | What is being bought right now, in what volumes, and what buyers ask for in tender texts | Tenders by year, titles and item descriptions; the count of currently active procurements |
-| **How are they met today?** | Who actually wins, at what real (not expected) prices, and how concentrated the supply is | Contracts: suppliers with EDRPOU codes, signed values, dates; the unsuccessful/cancelled tenders show where the current market *fails* to meet demand |
-| **Is there an opening for a new supplier?** | Signals that buyers would switch: tenders titled "Starlink **або еквівалент**" (Ukrainian procurement law forces this wording — buyers must accept equivalents), failed tenders, single-vendor dependence, and the October 2026 throttling that made dependence itself a security issue | Match rates of equivalent-friendly wording, failure rates, supplier concentration |
+| **How are they met today?** | Who wins contracts, with what suppliers, and how concentrated the supply is | Contracts: suppliers with EDRPOU codes, statuses, dates |
+| **Is there an opening for a new supplier?** | Signals that buyers accept alternatives, and where buying attempts fail | Tenders titled "Starlink **або еквівалент**" (Ukrainian procurement law forces this wording — buyers must accept equivalents), plus unsuccessful and cancelled tenders |
 
 That third part is where this work meets the central research question: an alternative supplier (for example the Nokia–ICEYE sovereign offering) wins not by being mentioned in patents, but by fitting the requirements buyers already write down. Procurement data is the only public source that shows those requirements, the prices paid and the failures of the current supply.
 
@@ -37,8 +37,11 @@ This feeds [RQ1](research-questions.md): the capability map should be built from
 
 ## Honest limits
 
+- **Expected value is not expenditure.** Tender rows carry the expected procurement value; what was actually paid is known only from signed contract records, and awarded amounts can differ.
+- **A failed tender is not automatically unmet demand.** Unsuccessful or cancelled tenders can mean bad specs, unrealistic prices, timing, or paperwork — the reasons sit in each tender's documents, not in its status.
 - Prozorro and TED today mostly show purchases of *existing foreign systems* (Starlink above all). That is evidence about demand and requirements — not about the Nokia–ICEYE offer, which is a Letter of Intent, not a tender.
 - Classified defence procurement is invisible, and in wartime Ukraine that is a large blind spot.
+- The Starlink extraction is one search query, not the whole satellite-communications market; other operators and generic satellite equipment come from the multi-category run.
 - No aggregate claims ("the market is worth X") until tenders are extracted one by one and the numbers can be shown per contract.
 
 ## How the search is extracted

@@ -1,11 +1,15 @@
 # Single source for the project's research parameters. Scripts and tests read this file.
 
 [question]
-# Re-aimed 24 November 2026: from ranking capabilities and investment priorities
-# (too broad for public data) to reuse, dependencies and due-diligence priorities.
-central = "What can Nokia and ICEYE realistically reuse from their existing technology assets to deliver a sovereign satellite communications system, and what must they develop, acquire or obtain from other partners?"
+# Re-aimed 24 November 2026 (second time, after the factual audit):
+# the question no longer promises reuse/build/acquire conclusions;
+# it asks what the patent data shows and how reliable it is.
+central = "What does publicly available patent data reveal about the satellite-communications patent portfolios of Nokia, ICEYE and selected competitors, and how reliable are those comparisons?"
 
 [scope]
+# ISL is a code-defined reporting tag inside SAT (pilot decision R5), not a
+# standalone comparative bucket; it stays in this list so sampling and
+# reporting can tag it. The combined pool is the primary comparative measure.
 labels = ["SAT", "ISL", "GRD", "NET", "SEC"]
 all_classes = ["SAT", "ISL", "GRD", "NET", "SEC", "OTHER", "MULTI"]
 reference_company = "Nokia"

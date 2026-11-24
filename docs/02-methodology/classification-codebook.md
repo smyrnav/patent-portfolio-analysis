@@ -93,6 +93,7 @@ OTHER labels with `optical_medium` = 1 stay visible, because optical control sof
 | 1.0 | H04L 47 dropped from the DCS candidates | 1 of 19 matched in the pilot |
 | 1.1 | REVIEW renamed MULTI, and `review_status` added | Separates overlapping inventions from records awaiting review |
 | 2.0 | Satcom classes SAT, ISL, GRD, NET, SEC added; description paragraph added to the reading rules (R3); free-space optical counts as ISL by code definition (R4) | Post-pivot. Accepted with the pilot decisions R1–R5 on 11 November 2026; frozen 13 November 2026 |
+| 2.0 (note) | Implementation correction, 24 November 2026: [query 32](../../sql/32_pool_census.sql) had tagged SEC from security codes alone; it now implements R1 (satellite prefix AND security prefix). The saved census SEC rows predate the correction. No labelling rule changed | Found in the 24 November factual audit |
 
 Version 1.1 changes names and fields, not rules. All 421 labels were assigned under version 1.0 and carried across mechanically, and no OPT, IPR or DCS label moved, so no re-test was needed. Further rule changes need a logged reason and a re-test.
 

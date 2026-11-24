@@ -1,6 +1,6 @@
 # Satcom validation plan
 
-**Status: draft, 8 November 2026.** Companion to [satcom-code-pools.md](../01-research-design/satcom-code-pools.md). This plans how the five candidate pools (SAT, ISL, GRD, NET, SEC) earn the right to be used in comparisons. Nothing is validated yet, and per the [pivot rule](../01-research-design/pivot-sovereign-satcom.md), nothing carries over from the pre-pivot categories.
+**Status: re-test failed 13 November 2026; taxonomy redesign is the next step.** Companion to [satcom-code-pools.md](../01-research-design/satcom-code-pools.md). This plans how the five candidate pools (SAT, ISL, GRD, NET, SEC) earn the right to be used in comparisons. One distinction runs through everything below: the 70.8% re-test figure is agreement between the CPC pools and **software-generated first-pass labels** — a diagnostic of the current rules, not independently measured accuracy. Independently measured accuracy requires the human-labelling stage, which has not started. The 85% bar is this project's own acceptance rule, not an industry standard.
 
 ## What a validation check actually is
 

@@ -77,7 +77,7 @@ To add one, copy this:
 ### Q29. Does SpaceX hold a mountain of patents, given Starlink's scale?
 - **Why I asked:** intuition says the largest satellite operator on Earth must own a huge IP position.
 - **How I looked:** ad hoc BigQuery name query, 10 November 2026.
-- **Answer:** 110 patent families (366 publications) — about 175 times fewer than Airbus (19,488) and 7 times fewer than Viasat. SpaceX relies on trade secrets and execution speed, not published IP. Patent counts are a floor on capability, never a ceiling, and the same invisibility covers classified defence R&D. Recorded in [satcom-code-pools.md](../01-research-design/satcom-code-pools.md).
+- **Answer:** 110 patent families (366 publications) matched by applicant-name search — about 175 times fewer than Airbus's dataset-wide total and 7 times fewer than Viasat's. The count can't establish why it's small (a trade-secret strategy is the common hypothesis, not a proven fact) and it can't measure Starlink's position. Recorded in [satcom-code-pools.md](../01-research-design/satcom-code-pools.md).
 - **What it led to:** the documented "SpaceX stays opaque" caveat now carries a measured number.
 
 ### Q28. Which companies protect satcom technology in Ukraine itself?

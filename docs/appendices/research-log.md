@@ -102,3 +102,16 @@ Decisions taken in one pass, tests green:
 - **Fixed:** ICEYE count reconciled (53 simple families; ~70 across name variants before deduplication), the ISL class/flag tension recorded in scope.md pending the taxonomy redesign, sql/README's example query number corrected (37 → 36), and the workbench tests now skip cleanly when the gitignored claim-review key is absent.
 
 Not done, by design: no taxonomy redesign yet (that's validation test #3, the next real work), no new statistics, no repository-wide folder renaming — the review's own advice was to decide what the project is before moving files, and only files that stopped being current moved.
+
+## Factual audit and question re-aim, 24 November 2026
+
+An external factual audit of the full repository (SQL, scripts, datasets, docs) found errors that the same-day restructure had missed. Corrections made, tests green:
+
+- **Central question re-aimed again**, to what the data can support: *What does publicly available patent data reveal about the satellite-communications patent portfolios of Nokia, ICEYE and selected competitors, and how reliable are those comparisons?* The reuse/develop/acquire framing is retired, along with build–buy–license and ranked-investment outputs.
+- **Peers counts re-labelled.** Query 24 counts (Airbus 19,488, Thales 9,873, Viasat 822, ICEYE 53) are all-technology family totals (name + date, no CPC filter). They were being presented as evidence of deep satcom positions in the README, findings, scope, glossary and appendices; all corrected. The CPC-candidate counts (query 32: Nokia lineage 576, Thales 343, Viasat 307, Airbus 188, Eutelsat/OneWeb 53, ICEYE 6) are the only pool-level numbers, and they are unvalidated.
+- **SEC rule contradiction resolved.** Decision R1 (11 Nov) defines SEC as satellite prefix AND security prefix co-occurrence; query 32 implemented it as security/watch codes alone. Recorded decision: R1 stands; the SQL was corrected, a consistency test added (`TaxonomyConsistency`), and the saved census SEC rows marked as predating the correction.
+- **ISL semantics fixed.** ISL is a code-defined reporting tag inside SAT, not a comparative bucket; config, scope and codebook now say so explicitly.
+- **70.8% re-described** as agreement with software first-pass labels (a diagnostic), not validated accuracy; the 85% bar marked as a project acceptance rule.
+- **SpaceX downgraded**: 110 name-matched families is a count, not proof of a trade-secret strategy; the defensible statement is that patent data cannot measure Starlink's position.
+- **Ukraine finding narrowed** to its search scope; no claims about engineering capability.
+- **Prozorro framed as an initial demand-side dataset**: expected value is not expenditure, failed tenders are not automatically unmet demand, multi-category run still in progress.

@@ -82,7 +82,7 @@ Written for a reader who has never touched patent data. Each definition says wha
 
 **Sovereign capability** — the customer nation owns and controls the infrastructure itself, instead of renting service from a foreign company it cannot command.
 
-**Trade secret** — the anti-patent strategy: publish nothing, protect the invention by keeping it inside the building. SpaceX works this way (110 patent families vs Airbus's 19,488), which is why patent data can't see the strongest player.
+**Trade secret** — protecting an invention by keeping it inside the building instead of patenting it. SpaceX is widely reported to work this way, and its small patent count (110 name-matched families) is consistent with that — though the count alone doesn't prove it. Either way, patent data can't measure such a player.
 
 **Standard-essential patent (SEP)** — a patent you cannot avoid infringing if you build to a technical standard (like 3GPP satellite networking). Owners must license SEPs on fair terms, but they still define who holds leverage.
 

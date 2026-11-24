@@ -270,5 +270,22 @@ class ProzorroPipeline(unittest.TestCase):
         self.assertEqual(len(calls), 1)  # exactly one call, no recursion
 
 
+class TaxonomyConsistency(unittest.TestCase):
+    """The SEC co-occurrence rule (decision R1) must match between config and SQL."""
+
+    def test_pool_census_implements_sec_as_cooccurrence(self):
+        sql32 = (ROOT / "sql/32_pool_census.sql").read_text()
+        sec_branch = sql32.split("'SEC'")[1]
+        and_parts = sec_branch.split("AND EXISTS")
+        self.assertEqual(len(and_parts), 2, "SEC must require satellite AND security prefixes")
+        satellite_part, security_part = and_parts
+        for prefix in ("H04B7/195", "H04B7/1851", "H04W84/06"):
+            self.assertIn(prefix, satellite_part)
+        for prefix in CFG["retrieval_pools"]["SEC_security"]:
+            self.assertIn(prefix, security_part)
+        self.assertNotIn("H04B7/18565", security_part.split("AND")[0],
+                         "watch-item codes must not trigger SEC alone")
+
+
 if __name__ == "__main__":
     unittest.main()

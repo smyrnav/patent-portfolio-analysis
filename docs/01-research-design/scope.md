@@ -20,16 +20,16 @@ Five pools, defined in [satcom-code-pools.md](satcom-code-pools.md) (accepted 11
 
 The exact labelling rules are in the [codebook](../02-methodology/classification-codebook.md#satcom-classes-post-pivot).
 
-**Known tension, recorded 24 November 2026.** ISL appears in the label lists (config and codebook) as if it were a class, but the assignment rules treat it as a reporting flag inside SAT (pilot decision R5). GRD and SEC also had effectively no validation sample (one observation each on 13 November), so no pool-specific comparison may use them yet. The taxonomy redesign that precedes validation test #3 will separate **primary capability** (what the invention does) from **technology attributes** (inter-satellite link, optical, anti-jamming, encryption), and ISL will live only on the attribute side. Until then, the combined satcom pool remains the only comparative measure.
+**Taxonomy status, updated 24 November 2026.** ISL is a code-defined reporting tag inside SAT (pilot decision R5), not a standalone comparative bucket; it appears in the label lists only so sampling and reporting can tag it. SEC is the co-occurrence rule above; [query 32](../../sql/32_pool_census.sql) initially implemented it differently (security codes alone) and was corrected on 24 November 2026 — the saved SEC census rows predate that correction. GRD and SEC had effectively no validation sample (one observation each on 13 November), so no pool-specific comparison may use them. The next taxonomy redesign will separate **primary capability** (what the invention does) from **technology attributes** (inter-satellite link, optical, anti-jamming, encryption). Until then, the combined satcom pool remains the only comparative measure.
 
 ## Companies
 
 | Role | Companies | How they're used |
 |---|---|---|
 | **Reference** | Nokia | Measured in all five pools, plus the combined measure |
-| **Core comparators** | Airbus, Thales, Viasat, Eutelsat/OneWeb | Established holders of satellite communications patents |
-| **Partner, measured like a comparator** | ICEYE | Read as a complement to Nokia, not a rival: what it brings is radar heritage, and the comms-thinness of its record is itself a measurement |
-| **Context, not a benchmark** | SpaceX | The dominant actor, but patent-invisible by trade-secret strategy (110 families), so patent counts cannot measure its real position |
+| **Core comparators** | Airbus, Thales, Viasat, Eutelsat/OneWeb | Incumbent satellite and defence suppliers. Their dataset-wide portfolios are large; their satcom-specific shares are unvalidated until the pools pass |
+| **Partner, measured like a comparator** | ICEYE | Read as a complement to Nokia, not a rival. Its small comms-pool count is a preliminary, classification-level result |
+| **Context, not a benchmark** | SpaceX | The dominant actor, with 110 name-matched families. Patent counts cannot measure its position, so it is never benchmarked here |
 
 Matching is exact-name, post-census, per actor: the name research is in [`data/interim/satcom_name_review.csv`](../../data/interim/satcom_name_review.csv), with 11 names still awaiting a keep/drop decision.
 
@@ -52,7 +52,7 @@ Matching is exact-name, post-census, per actor: the name research is in [`data/i
 
 ## Parked
 
-These extensions use the same method, and only start if the main question is answered. Their [hypotheses are recorded](research-questions.md#parked-extensions).
+These extensions use the same method, and only start if the main question is answered. Their draft hypotheses (H5–H8) live in git history; none is active.
 
 | Extension | Why it's parked |
 |---|---|

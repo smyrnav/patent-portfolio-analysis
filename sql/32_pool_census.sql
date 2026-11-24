@@ -32,9 +32,21 @@ memberships AS (
                    OR STARTS_WITH(c, 'H04B7/18541'))
   UNION ALL
   SELECT family_id, owner, 'SEC', priority_date FROM tagged
+  -- R1 (11 Nov 2026): SEC is a co-occurrence rule — at least one satellite
+  -- prefix AND at least one security prefix on the same family.
+  -- Corrected 24 November 2026: this branch previously tagged SEC from the
+  -- security/watch codes alone, which contradicts the codebook; the saved
+  -- pool_census.csv SEC counts were produced under that inconsistent rule.
   WHERE EXISTS (SELECT 1 FROM UNNEST(cpc_codes) AS c
-                WHERE STARTS_WITH(c, 'H04K1/') OR STARTS_WITH(c, 'H04K3/')
-                   OR STARTS_WITH(c, 'H04B7/18565') OR STARTS_WITH(c, 'H04B7/18593'))
+                WHERE STARTS_WITH(c, 'H04B7/195') OR STARTS_WITH(c, 'H04B7/1851')
+                   OR STARTS_WITH(c, 'H04B7/18521') OR STARTS_WITH(c, 'H04B10/118')
+                   OR STARTS_WITH(c, 'H04B7/18528')
+                   OR STARTS_WITH(c, 'H04W84/06') OR STARTS_WITH(c, 'H04B7/18584')
+                   OR STARTS_WITH(c, 'H04B7/18541'))
+    AND EXISTS (SELECT 1 FROM UNNEST(cpc_codes) AS c
+                WHERE STARTS_WITH(c, 'H04K1/') OR STARTS_WITH(c, 'H04K3/'))
+  -- Watch items (not part of the rule): satellite-specific access codes
+  -- H04B 7/18565 and 7/18593 are too rare to sample (codebook v2.0).
 )
 SELECT
   owner,

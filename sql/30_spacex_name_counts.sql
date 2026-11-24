@@ -1,8 +1,11 @@
 -- Does SpaceX patent? Name census for SpaceX/Starlink.
 -- Answer (10 Nov 2026): SPACE EXPLORATION TECH CORP has 366 publications /
 -- 110 families — about 175x fewer than Airbus, 7x fewer than Viasat.
--- A trade-secret strategy, not a technology gap; recorded in
--- docs/01-research-design/satcom-code-pools.md (known risks).
+-- What this is: an applicant-name match count, nothing more. These are not
+-- "110 Starlink patents", and a small count does not by itself prove a
+-- deliberate trade-secret strategy — though that hypothesis fits. What the
+-- search establishes: Starlink's technological position cannot be measured
+-- through these patent counts.
 SELECT
   a.name,
   a.country_code,
