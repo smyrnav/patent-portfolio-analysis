@@ -1,10 +1,20 @@
 # Nokia–ICEYE Sovereign LEO Communications
 
-**In plain words:** Nokia and ICEYE are building satellite communications for Ukraine and European governments. This repository is my independent attempt to work out — from public patent data — who owns the technology such a system needs. It is also my work sample for Nokia's [Business Data Analytics Trainee](https://www.linkedin.com/jobs/view/4483030441) vacancy. Not affiliated with Nokia.
+**Ukraine's sovereign alternative to Starlink — technology, patent portfolio and strategic investment analysis**
 
-## What Nokia is actually trying to build
+*"Alternative to Starlink" is the headline framing; the partners describe the system as complementing, not replacing, existing networks — see the [pivot document](docs/01-research-design/pivot-sovereign-satcom.md).*
 
-In October 2026, Nokia and ICEYE announced a partnership to build sovereign satellite communications, and on 22 October they signed a Letter of Intent with Ukraine's Ministry of Defence.
+*The vacancy asks: "What would you do with all the patent data in the world?" First probably go a little insane organising, deduplicating, cleaning and validating it — and only then produce findings solid enough to base a business strategy on; nevertheless, I'd try.*
+
+**Independent research project | [Financial Data Engineering / Business Data Analytics Trainee](https://www.linkedin.com/jobs/view/4483030441) application, Business Data Analytics track**
+
+Not affiliated with Nokia.
+
+## Why this repo exists
+
+I saw Nokia's Financial Data Engineering / Business Data Analytics Trainee vacancy and opened this repository to teach myself the analytics the role calls for. Patent portfolio analysis was new territory for me, so this project is a deliberate, working-in-the-open learning exercise: pick a real question, source public data, build the pipeline, document every assumption, and keep the record honest about what holds up and what doesn't. The goal is a defensible work sample for that vacancy — and, along the way, a genuinely learned skill set.
+
+The question sharpened as I worked — I pivoted and re-aimed the research questions more than once as the evidence demanded. Then, in October 2026, ICEYE and Nokia announced a sovereign LEO satellite communications partnership, and on 22 October signed a Letter of Intent with Ukraine's Ministry of Defence. The news reached me like this:
 
 <p>
   <img src="docs/01-research-design/assets/pivot-trigger-1-headline-sq.jpg" alt="Nokia partners with Ukraine to build a Starlink alternative" width="32%">
@@ -12,25 +22,23 @@ In October 2026, Nokia and ICEYE announced a partnership to build sovereign sate
   <img src="docs/01-research-design/assets/pivot-trigger-3-partnership-sq.jpg" alt="Nokia and ICEYE: secure, sovereign LEO satellite communications for defense, border security and disaster response" width="32%">
 </p>
 
-"Sovereign" means the customer government controls the system itself. This is not abstract: in October 2026 a foreign vendor restricted Ukraine's satellite service for ten days without warning. Ukraine wants communications that keep working when ground infrastructure is destroyed — and that nobody outside Ukraine can switch off.
+This pivot is of both professional and analytical interest: secure communications that answer to the government using them are critical infrastructure, not an abstract market trend. October 2026 showed why — a foreign vendor throttled Ukraine's service for ten days without warning and demonstrated how vulnerable the dependence itself is. So participating in this project — and, hopefully, in the Nokia–ICEYE effort itself — is a chance to learn something new and provide relevant insights for the company. All of these fields are quite new to me, so terminology, appropriate research methodology and relevant data sources and validation methods are all learned along the way. The research itself is not influenced by personal interest in the subject: the data, methods and checks are what they are, and the findings are evidence-supported.
 
-Such a system needs five kinds of technology: the satellites themselves, ground stations, user terminals, the network software that ties space and ground together, and security (encryption, anti-jamming).
+## What the project is about now
 
-## The business problems this creates
+A sovereign satellite communications system needs five kinds of technology: the satellites themselves, ground stations, user terminals, the network software that ties space and ground together, and security (encryption, anti-jamming). Building one creates three business problems:
 
-1. Do Nokia and ICEYE already own the technology they need, or must they buy or license it from someone?
+1. Do Nokia and ICEYE already hold the technology they need, or must they buy or license it from someone?
 2. Could competitors' patents get in the way?
 3. What should their engineers and IP lawyers check before serious money is committed?
 
-## Which of these problems this project can research
-
-Only the part visible in public patent data: who filed which inventions, in which technologies, where and when. That is one input into the three problems above — no more.
-
-Patent data **cannot** tell us whether the technology works, what development costs, what Nokia and ICEYE agreed between themselves (their split of work and IP is not public), or whether a specific patent would actually block the system — that last one is a legal judgment, case by case. Where the data can't answer, this repo says so instead of guessing.
+This project researches the part of those problems that is visible in public patent data: who filed which inventions, in which technologies, where and when. That is one input — no more. Patent data cannot tell us whether the technology works, what development costs, what Nokia and ICEYE agreed between themselves (their split of work and IP is not public), or whether a specific patent would actually block the system — that last one is a legal judgment, case by case. Where the data can't answer, this repo says so instead of guessing.
 
 The formal research question (kept word-for-word identical across the repo by an automated test):
 
 > **What can Nokia and ICEYE realistically reuse from their existing technology assets to deliver a sovereign satellite communications system, and what must they develop, acquire or obtain from other partners?**
+
+Re-aimed 24 November 2026. The earlier wording asked which capabilities, patent assets and investment priorities mattered most — too broad, and it invited investment conclusions public data can't support. The [three research questions](docs/01-research-design/research-questions.md) break the new one into answerable parts. New to patent data? The [glossary](docs/glossary.md) explains every term used here in plain language.
 
 ## What I actually do here
 
@@ -39,6 +47,8 @@ The formal research question (kept word-for-word identical across the repo by an
 3. Count each invention once (a patent family), even if it was filed in twenty countries.
 4. Sort patents into the five technology buckets above — and **check the sorting by actually reading the patents**. Current status: the sorting failed its own accuracy test on 13 November (70.8% correct against an 85% requirement). Until it passes, no company comparisons are published. Fixing the sorting rules is the next real task.
 5. Only after the buckets pass: compare Nokia, ICEYE and competitors, and write up what that means for the three business problems.
+
+Separately, the repository now also tracks the demand side: what Ukrainian and European government buyers actually purchase in satellite communications, through public procurement records ([Prozorro pipeline](docs/01-research-design/procurement-demand.md)). Patents show who owns technology; procurement shows who buys it, at what price, and where the current supply fails.
 
 Everything is scripted and can be rerun: [`sql/`](sql/README.md) for the queries, [`src/`](src) for the pipeline, [`tests/`](tests) for the consistency checks.
 
@@ -57,6 +67,7 @@ Four findings stand, each with its query and data on file:
 |---|---|
 | Data pipeline (extraction, cleaning, deduplication) | Works, reproducible |
 | Ukraine domestic-base analysis | Done (above) |
+| Prozorro procurement pipeline | 1,867 Starlink tenders and 4,050 plans extracted; full multi-category run in progress |
 | Technology sorting into five buckets | **Failed its own accuracy test** — being redesigned |
 | Company comparisons | On hold until the sorting passes |
 | Old optical-networking analysis | [Archived](archive/pre-pivot/) — different question, kept as proof of method |
