@@ -36,7 +36,7 @@ A sovereign satellite communications system needs five kinds of technology: the 
 2. Could competitors' patents get in the way?
 3. What should their engineers and IP lawyers check before serious money is committed?
 
-This project researches the part of those problems that is visible in public patent data: who filed which inventions, in which technologies, where and when. That is one input — no more. Patent data cannot tell us whether the technology works, what development costs, what Nokia and ICEYE agreed between themselves (their split of work and IP is not public), or whether a specific patent would actually block the system — that last one is a legal judgment, case by case. Where the data can't answer, this repo says so instead of guessing.
+This project examines the patent portfolios of Nokia, ICEYE and selected competitors to understand their positions in satellite communications technologies. The repository contains the SQL and Python tools used to collect, clean, group and analyse patent data, map technology areas, validate classifications against patent claims, and bring together the market and financial context needed to interpret the findings.
 
 The formal research question (kept word-for-word identical across the repo by an automated test):
 
