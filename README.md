@@ -16,7 +16,7 @@ I came across Nokia's Financial Data Engineering / Business Data Analytics Train
 
 Patent portfolio analysis was new to me, so I approached this as a practical learning project: starting with a real question, working with public data, and building the pipeline needed to analyse it. I document the methodology, assumptions and limitations along the way, aiming to produce a useful work sample while learning the process behind the results.
 
-The research questions evolved as I worked. I changed direction more than once as I encountered new evidence and reconsidered what was worth investigating.
+The research questions changed as I worked through the data and figured out what was worth investigating. Since I am not a subject-matter expert on satcom, I learned about the terminology and industry as I worked with each dataset.
 
 Then, in October 2026, Nokia and ICEYE announced a partnership on sovereign LEO satellite communications. On 22 October, they also signed a Letter of Intent with Ukraine's Ministry of Defence.
 
