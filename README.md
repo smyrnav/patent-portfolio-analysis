@@ -1,14 +1,14 @@
 # Nokia–ICEYE Sovereign LEO Communications
 
-**Ukraine's sovereign alternative to Starlink — technology, patent portfolio and strategic investment analysis**
+**Exploring the technology, patent landscape, and strategic considerations behind a sovereign satellite communications capability for Ukraine.**
 
-*"Alternative to Starlink" is the headline framing; the partners describe the system as complementing, not replacing, existing networks — see the [pivot document](docs/01-research-design/pivot-sovereign-satcom.md).*
+*Headlines framed the announcement as "Ukraine's Starlink alternative" — and the timing explains why: days earlier, a foreign vendor had restricted Ukraine's satellite service for ten days without warning, so dependence on someone else's network became the story. Nokia and ICEYE describe the proposed system more carefully: it would complement existing military, commercial and government networks, not replace them. Background and sources: [pivot document](docs/01-research-design/pivot-sovereign-satcom.md).*
 
-*The vacancy asks: "What would you do with all the patent data in the world?" First probably go a little insane organising, deduplicating, cleaning and validating it — and only then produce findings solid enough to base a business strategy on; nevertheless, I'd try.*
+*The vacancy asks: "What would you do with all the patent data in the world?" Probably go a little insane organising, deduplicating, cleaning, and validating it first. The real challenge, however, is turning that data into reliable evidence and useful business insights. That's what I'm attempting to do here.*
 
-**Independent research project | [Financial Data Engineering / Business Data Analytics Trainee](https://www.linkedin.com/jobs/view/4483030441) application, Business Data Analytics track**
+**Independent research project | Developed in connection with the [Financial Data Engineering / Business Data Analytics Trainee](https://www.linkedin.com/jobs/view/4483030441) application, Business Data Analytics track.**
 
-Not affiliated with Nokia.
+*Not affiliated with or endorsed by Nokia or ICEYE.*
 
 ## Why this repo exists
 
