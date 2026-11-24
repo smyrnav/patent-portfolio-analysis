@@ -12,9 +12,13 @@ Not affiliated with Nokia.
 
 ## Why this repo exists
 
-I saw Nokia's Financial Data Engineering / Business Data Analytics Trainee vacancy and opened this repository to teach myself the analytics the role calls for. Patent portfolio analysis was new territory for me, so this project is a deliberate, working-in-the-open learning exercise: pick a real question, source public data, build the pipeline, document every assumption, and keep the record honest about what holds up and what doesn't. The goal is a defensible work sample for that vacancy — and, along the way, a genuinely learned skill set.
+I came across Nokia's Financial Data Engineering / Business Data Analytics Trainee vacancy and started this repository as a way to develop the analytical skills the role calls for.
 
-The question sharpened as I worked — I pivoted and re-aimed the research questions more than once as the evidence demanded. Then, in October 2026, ICEYE and Nokia announced a sovereign LEO satellite communications partnership, and on 22 October signed a Letter of Intent with Ukraine's Ministry of Defence. The news reached me like this:
+Patent portfolio analysis was new to me, so I approached the project as a practical learning exercise: start with a real question, work with publicly available data, build the necessary pipeline, and document the methodology, assumptions and limitations along the way. The aim is to develop something useful enough to serve as a work sample, while actually learning the methods behind it rather than simply presenting a polished result.
+
+The research questions evolved as I worked. I changed direction more than once as I encountered new evidence and reconsidered what was worth investigating.
+
+Then, in October 2026, Nokia and ICEYE announced a partnership on sovereign LEO satellite communications. On 22 October, they also signed a Letter of Intent with Ukraine's Ministry of Defence.
 
 <p>
   <img src="docs/01-research-design/assets/pivot-trigger-1-headline-sq.jpg" alt="Nokia partners with Ukraine to build a Starlink alternative" width="32%">
@@ -22,7 +26,7 @@ The question sharpened as I worked — I pivoted and re-aimed the research quest
   <img src="docs/01-research-design/assets/pivot-trigger-3-partnership-sq.jpg" alt="Nokia and ICEYE: secure, sovereign LEO satellite communications for defense, border security and disaster response" width="32%">
 </p>
 
-This pivot is of both professional and analytical interest: secure communications that answer to the government using them are critical infrastructure, not an abstract market trend. October 2026 showed why — a foreign vendor throttled Ukraine's service for ten days without warning and demonstrated how vulnerable the dependence itself is. So participating in this project — and, hopefully, in the Nokia–ICEYE effort itself — is a chance to learn something new and provide relevant insights for the company. All of these fields are quite new to me, so terminology, appropriate research methodology and relevant data sources and validation methods are all learned along the way. The research itself is not influenced by personal interest in the subject: the data, methods and checks are what they are, and the findings are evidence-supported.
+I came across the announcement while working on the project. The timing was unexpected, and it gave the research a new dimension.
 
 ## What the project is about now
 
