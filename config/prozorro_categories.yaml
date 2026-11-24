@@ -1,0 +1,51 @@
+# Search taxonomy for the Prozorro satellite-communications procurement pipeline.
+# Add categories or queries here; the pipeline picks them up on the next run.
+# Resume is checkpointed per query, so adding entries never reruns finished work.
+
+project:
+  name: satellite_communications_market
+  date_from: "2021-01-01"
+  date_to: null  # null = today
+
+# Stage 2 filter: which contracts are worth opening one by one in stage 3.
+# active/terminated = signed and not cancelled; cancelled contracts are noise
+# for the "who actually supplies what" question.
+selection:
+  contract_statuses: ["active", "terminated"]
+  min_amount: 0        # UAH; raise to skip trivial purchases
+  top_n: 50            # how many contracts, by value, get full detail records
+
+categories:
+  starlink:
+    queries:
+      - "Starlink"
+
+  alternative_operators:
+    queries:
+      - "OneWeb"
+      - "Eutelsat"
+      - "Iridium"
+      - "Inmarsat"
+      - "Thuraya"
+      - "VSAT"
+
+  satellite_hardware:
+    queries:
+      - "супутниковий термінал"
+      - "супутниковий модем"
+      - "супутникова антена"
+      - "супутниковий телефон"
+      - "супутникова станція зв'язку"
+
+  satellite_services:
+    queries:
+      - "супутниковий інтернет"
+      - "супутниковий зв'язок"
+      - "супутниковий канал зв'язку"
+      - "підключення до супутникової мережі"
+
+  deployment_support:
+    queries:
+      - "монтаж супутникового обладнання"
+      - "обслуговування супутникових терміналів"
+      - "налаштування супутникового зв'язку"
