@@ -42,7 +42,7 @@ The formal research question (kept word-for-word identical across the repo by an
 
 > **What can Nokia and ICEYE realistically reuse from their existing technology assets to deliver a sovereign satellite communications system, and what must they develop, acquire or obtain from other partners?**
 
-Re-aimed 24 November 2026. The earlier wording asked which capabilities, patent assets and investment priorities mattered most — too broad, and it invited investment conclusions public data can't support. The [three research questions](docs/01-research-design/research-questions.md) break the new one into answerable parts. New to patent data? The [glossary](docs/glossary.md) explains every term used here in plain language.
+Updated 24 November 2026. The project now focuses on three research questions that can be investigated using public data. See the [research questions](docs/01-research-design/research-questions.md) and [plain-language glossary](docs/glossary.md).
 
 ## What I actually do here
 
