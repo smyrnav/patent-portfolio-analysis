@@ -2,7 +2,7 @@
 
 **Exploring the technology, patent landscape, and strategic considerations behind a sovereign satellite communications capability for Ukraine.**
 
-*Headlines framed the announcement as "Ukraine's Starlink alternative" — and the timing explains why: days earlier, a foreign vendor had restricted Ukraine's satellite service for ten days without warning, so dependence on someone else's network became the story. Nokia and ICEYE describe the proposed system more carefully: it would complement existing military, commercial and government networks, not replace them. Background and sources: [pivot document](docs/01-research-design/pivot-sovereign-satcom.md).*
+*The project was widely described as Ukraine's "Starlink alternative" after a foreign provider restricted Ukraine's satellite service without warning for ten days. The disruption highlighted the risks of relying on an external network. Nokia and ICEYE describe their proposed system as a complement to existing military, commercial, and government networks, not a replacement. [Background and sources](docs/01-research-design/pivot-sovereign-satcom.md).*
 
 *The vacancy asks: "What would you do with all the patent data in the world?" Probably go a little insane organising, deduplicating, cleaning, and validating it first. The real challenge, however, is turning that data into reliable evidence and useful business insights. That's what I'm attempting to do here.*
 
