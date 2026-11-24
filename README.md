@@ -54,6 +54,29 @@ Re-aimed 24 November 2026. The earlier wording asked which capabilities, patent 
 
 Separately, the repository now also tracks the demand side: what Ukrainian and European government buyers actually purchase in satellite communications, through public procurement records ([Prozorro pipeline](docs/01-research-design/procurement-demand.md)). Patents show who owns technology; procurement shows who buys it, at what price, and where the current supply fails.
 
+```mermaid
+flowchart TD
+    A["config/prozorro_categories.yaml<br/>5 categories · 19 search queries"] --> B["Prozorro portal search API<br/>POST /api/search/tenders · /contracts"]
+    B --> C["Date sharding + pagination<br/>date ranges split until every shard is under the 1,000-result cap"]
+    C --> D["Global deduplication<br/>one record per tenderID / contractID,<br/>every matching query and category kept"]
+    D --> E["Raw JSONL + checkpoints<br/>evidence for every row, resume after interruption"]
+    E --> F["Stage 1 · Bulk base<br/>tenders.csv · contracts.csv · matches.csv · tender cards"]
+    F --> G["Stage 2 · Filter<br/>signed contracts only, ranked by value, top 50"]
+    G --> H["Stage 3 · Selective details<br/>contract_details.csv · tech_requirements.csv"]
+    F --> I["quality.csv<br/>shards, pages, duplicates, INCOMPLETE flags"]
+    F --> J["prozorro_satellite_research.xlsx"]
+    style A fill:#124191,color:#ffffff
+    style B fill:#124191,color:#ffffff
+    style C fill:#124191,color:#ffffff
+    style D fill:#124191,color:#ffffff
+    style E fill:#124191,color:#ffffff
+    style F fill:#5B7DB8,color:#ffffff
+    style G fill:#E6EAF0,color:#1A1A1A
+    style H fill:#E6EAF0,color:#1A1A1A
+    style I fill:#5B7DB8,color:#ffffff
+    style J fill:#5B7DB8,color:#ffffff
+```
+
 Everything is scripted and can be rerun: [`sql/`](sql/README.md) for the queries, [`src/`](src) for the pipeline, [`tests/`](tests) for the consistency checks.
 
 ## What we know so far
