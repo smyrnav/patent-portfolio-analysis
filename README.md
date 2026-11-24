@@ -46,12 +46,12 @@ Updated 24 November 2026. The project now focuses on three research questions th
 ## What I actually do here
 
 1. Pull patent records from Google's public patent dataset (BigQuery).
-2. Clean up company names, so "Nokia", "Alcatel-Lucent" and "Infinera" count as one lineage.
-3. Count each invention once (a patent family), even if it was filed in twenty countries.
-4. Sort patents into the five technology buckets above — and **check the sorting by actually reading the patents**. Current status: the sorting failed its own accuracy test on 13 November (70.8% correct against an 85% requirement). Until it passes, no company comparisons are published. Fixing the sorting rules is the next real task.
-5. Only after the buckets pass: compare Nokia, ICEYE and competitors, and write up what that means for the three business problems.
+2. Clean company names, so "Nokia", "Alcatel-Lucent" and "Infinera" count as one lineage.
+3. Count each invention once (a patent family), not once per country.
+4. Sort patents into the five technology buckets — and verify the sorting by reading the patents. On 13 November it failed its own accuracy test (70.8% against the 85% requirement), so company comparisons are on hold until the rules are fixed. That fix is the next real task.
+5. Only then: compare Nokia, ICEYE and competitors, and write up what it means for the three business problems.
 
-Separately, the repository now also tracks the demand side: what Ukrainian and European government buyers actually purchase in satellite communications, through public procurement records ([Prozorro pipeline](docs/01-research-design/procurement-demand.md)). Patents show who owns technology; procurement shows who buys it, at what price, and where the current supply fails.
+The repository also tracks the demand side through public procurement ([Prozorro pipeline](docs/01-research-design/procurement-demand.md)): who buys what, at what price — and which tenders fail. Unsuccessful and cancelled tenders are unmet demand: buyers the current market could not supply.
 
 ```mermaid
 flowchart TD
@@ -82,10 +82,10 @@ Everything is scripted and can be rerun: [`sql/`](sql/README.md) for the queries
 
 Four findings stand, each with its query and data on file:
 
-- **Ukraine has no domestic satellite-communications patent base.** Sixteen individual inventors with one family each; no companies. Only 16 satcom patent families were ever filed at the Ukrainian patent office, by 10 foreign owners. So the system's technology will be foreign-patented, and the terms of access (license, partnership, purchase) become the real sovereignty question. This says nothing about Ukrainian engineering ability — patents don't measure that, and classified defence work never patents. ([queries 25–28](sql/README.md))
-- **ICEYE's patent record is radar and satellite platforms, not communications.** 53 patent families: 35 radar imaging, 14 spacecraft operations, only 7 in transmission. My working guess, labelled as a guess: the communications technology in the partnership comes from Nokia. The actual split is not public, and few patents does not mean little capability. ([queries 24, 35, 36](sql/README.md))
-- **The incumbents hold deep patent positions.** Airbus ~19,500 families, Thales ~9,900, Viasat ~800 in our cleaned data. Anyone building in this space builds next to those positions — that's where dependency risk would come from.
-- **Patent data can't see the market leader.** SpaceX holds only 110 families — it keeps technology as trade secrets. So no patent-based comparison with Starlink is possible, and I say so wherever comparisons appear. ([query 30](sql/30_spacex_name_counts.sql))
+- **Ukraine has no domestic satellite-communications patent base.** 16 individual inventors with one family each; no companies. 16 satcom families ever filed at the Ukrainian office, all foreign-owned. The system's technology will be foreign-patented — so the terms of access are the real sovereignty question. Patents don't measure engineering ability; this says nothing about Ukraine's engineers. ([queries 25–28](sql/README.md))
+- **ICEYE's patent record is radar and satellite platforms, not communications.** 53 families: 35 radar imaging, 14 spacecraft operations, 7 transmission. Working guess, labelled as such: the partnership's comms IP comes from Nokia — the actual split is undisclosed, and few patents does not mean little capability. ([queries 24, 35, 36](sql/README.md))
+- **The incumbents hold deep patent positions.** Airbus ~19,500 families, Thales ~9,900, Viasat ~800. That is where dependency risk would come from.
+- **Patent data can't see the market leader.** SpaceX holds 110 families — a trade-secret strategy, not a technology gap. No patent-based comparison with Starlink is possible. ([query 30](sql/30_spacex_name_counts.sql))
 
 ## Honest status
 
@@ -107,7 +107,7 @@ Full detail: [research design](docs/01-research-design/research-design.md) · [r
 python3 src/run_all.py
 ```
 
-Reruns the cleaning, scoring, checks and tests with only the standard library (Python 3.11+). On a fresh clone, the two steps that need my local patent-claim pages (gitignored, since they mirror claim text) skip themselves cleanly and keep the committed results. Add `--charts` (needs `pip install -r requirements.txt`) to redraw the charts. BigQuery steps are listed in [`sql/README.md`](sql/README.md).
+Reruns the cleaning, scoring, checks and tests (stdlib only, Python 3.11+). Steps that need local claim-review pages (gitignored) skip cleanly on a fresh clone. Add `--charts` to redraw charts (needs `pip install -r requirements.txt`). BigQuery steps: [`sql/README.md`](sql/README.md).
 
 ## How this was made
 
