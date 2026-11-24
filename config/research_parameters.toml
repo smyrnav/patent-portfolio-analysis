@@ -1,7 +1,9 @@
 # Single source for the project's research parameters. Scripts and tests read this file.
 
 [question]
-central = "Which technological capabilities, patent assets and investment priorities — observable in publicly available data — are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?"
+# Re-aimed 24 November 2026: from ranking capabilities and investment priorities
+# (too broad for public data) to reuse, dependencies and due-diligence priorities.
+central = "What can Nokia and ICEYE realistically reuse from their existing technology assets to deliver a sovereign satellite communications system, and what must they develop, acquire or obtain from other partners?"
 
 [scope]
 labels = ["SAT", "ISL", "GRD", "NET", "SEC"]

@@ -124,6 +124,19 @@ def main():
     parser.add_argument("--out-prefix", default="data/validation/satcom_retest")
     args = parser.parse_args()
 
+    # The blind key is local-only (gitignored claim text). On a clean checkout the
+    # committed results are the record; re-scoring is skipped, not failed.
+    missing = [p for p in (args.slots, args.key, args.firstpass) if not (ROOT / p).exists()]
+    outputs = [f"{args.out_prefix}{s}" for s in
+               ("_scored.csv", "_results_precision.csv", "_results_confusion.csv", "_results_review.csv")]
+    if missing:
+        if all((ROOT / p).exists() for p in outputs):
+            print(f"re-scoring skipped: missing local-only inputs ({', '.join(missing)}); "
+                  "committed results from the 13 November re-test kept as the record")
+            return
+        raise SystemExit(f"missing inputs: {', '.join(missing)} — regenerate the blind key with "
+                         "src/fetch_claims.py and src/make_blind_sheet.py, or restore the committed results")
+
     scored = load_join(args.slots, args.stage, args.key, args.firstpass)
     write_rows(f"{args.out_prefix}_scored.csv",
                "blind_number publication_number company period pools_matched first_pass_label multi_components confidence in_combined_pool code_position reason".split(),

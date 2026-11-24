@@ -96,7 +96,7 @@ At this point I was running queries without a clear purpose, so I stopped and [c
 
 ## Step 10: Add the money
 
-I [extracted figures from 20 of Nokia's annual reports](../03-market-and-patent-analysis/twenty-years.md) and compared them with the patent data. New families followed Nokia's reported new inventions, and the check also exposed missing applicant names on Japanese records.
+I [extracted figures from 20 of Nokia's annual reports](../../archive/pre-pivot/twenty-years.md) and compared them with the patent data. New families followed Nokia's reported new inventions, and the check also exposed missing applicant names on Japanese records.
 
 ## Step 11: Sort the families
 
@@ -104,7 +104,7 @@ I [sorted all 72,207 families by status](../02-methodology/candidate-portfolio-u
 
 ## Step 12: Check the market
 
-I [checked a competitor summary against its sources](../03-market-and-patent-analysis/market-context-and-peer-selection.md), corrected a mislabelled figure and added a missing segment leader. That gave me the comparison set for the [central research question](../01-research-design/research-design.md).
+I [checked a competitor summary against its sources](../../archive/pre-pivot/market-context-and-peer-selection.md), corrected a mislabelled figure and added a missing segment leader. That gave me the comparison set for the [central research question](../01-research-design/research-design.md).
 
 ## Step 13: Check whether patents match their technology labels
 

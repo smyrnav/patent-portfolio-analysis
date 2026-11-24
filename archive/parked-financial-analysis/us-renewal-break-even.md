@@ -1,10 +1,12 @@
 # US renewal break-even
 
+> **Parked 24 November 2026.** Financial-methodology exercise that fed the retired investment-priorities question (old RQ5/Q9). Kept for later reuse; it is not part of the current research question.
+
 A supporting calculation for one US patent's keep-or-drop decision. The main financial work is the [ten-year maintenance cost model](ten-year-maintenance-cost-model.md). Everything here is official US fees only, not filing or attorney costs.
 
 ## How much value must a patent generate to justify its next fee?
 
-Using the [USPTO large-entity fees](../appendices/sources.md#patent-rules-and-data-sources), and the [median US time to grant of 4.05 years](../02-methodology/metrics.md#measured-so-far):
+Using the [USPTO large-entity fees](../../docs/appendices/sources.md#patent-rules-and-data-sources), and the [median US time to grant of 4.05 years](../../docs/02-methodology/metrics.md#measured-so-far):
 
 | Renewal | Fee | Cover it buys | Break-even value per year at 5% | At 10% | At 15% |
 |---|---:|---:|---:|---:|---:|

@@ -27,6 +27,8 @@ The screenshots are the discovery record; the press release and reporting linked
 
 Adopted 2 November 2026. The canonical question lives in `config/research_parameters.toml` and is enforced by `tests/test_repository.py`; the rewrite covered the config, README, research design, research questions, scope and the assumptions register in one pass, with the consistency test green. Sharpened 9 November 2026: the public-data qualification was made explicit, and the build–buy–partner–license framing moved into the five research questions; the wording above is the 2 November adoption, kept as the record.
 
+**Superseded 24 November 2026:** this question was replaced by the reuse-and-dependencies wording in the [research design](research-design.md#central-research-question), after the 13 November validation failure showed the old framing invited conclusions public data can't support. The build–buy–partner–license RQ4 and the investment-ranking RQ5 were retired with it. This section stays as the adoption record.
+
 ## What the analysis will be used for
 
 1. **The application work sample.** Same vacancy, same standard: a defensible, reproducible, outside-in analysis. The pivot itself is evidence — recognising a material strategic event and re-aiming the research within days.

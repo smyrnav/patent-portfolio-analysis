@@ -133,17 +133,25 @@ class RunQueries(unittest.TestCase):
         self.assertEqual(manifest_output(query_file(34)), "data/validation/satcom_retest_slots.csv")
 
 
+RETEST_PAGES = ROOT / "data/interim/claim_pages_retest"  # gitignored: local claim text and labelling key
+needs_retest_pages = unittest.skipUnless(
+    (RETEST_PAGES / "parsed.json").exists() and (RETEST_PAGES / "key_satcom-retest.json").exists(),
+    "local claim-review pages not in git; regenerate via src/fetch_claims.py to run")
+
+
 class ReviewWorkbench(unittest.TestCase):
     def session(self, out="/tmp/test_wb_annotations.csv"):
         from review_workbench import Session
         return Session("data/validation/satcom_retest_slots.csv", "satcom-retest",
                        "data/interim/claim_pages_retest", out, "test")
 
+    @needs_retest_pages
     def test_order_matches_the_blind_sheet_key(self):
         import json
         key = json.loads((ROOT / "data/interim/claim_pages_retest/key_satcom-retest.json").read_text())
         self.assertEqual(self.session().ids, key)
 
+    @needs_retest_pages
     def test_record_and_resume(self):
         import os
         out = "/tmp/test_wb_annotations.csv"
@@ -160,6 +168,106 @@ class ReviewWorkbench(unittest.TestCase):
         from common import scrub
         self.assertNotIn("Nokia", scrub("Nokia and ICEYE filed this"))
         self.assertIn("[company]", scrub("Nokia filed this"))
+
+
+class ProzorroExtractor(unittest.TestCase):
+    """Sharding logic only; no network. fetch() is replaced with canned totals."""
+
+    def setUp(self):
+        import prozorro_extractor as pe
+        self.pe = pe
+        self.real_fetch, self.real_pause = pe.fetch, pe.PAUSE
+        pe.PAUSE = 0
+
+    def tearDown(self):
+        self.pe.fetch, self.pe.PAUSE = self.real_fetch, self.real_pause
+
+    def fake_totals(self, totals):
+        def fake(kind, text, page, start=None, end=None, date_dim=None):
+            return {"total": totals.get((start, end), 5), "data": []}
+        self.pe.fetch = fake
+
+    def test_oversized_range_splits_until_each_shard_fits(self):
+        import datetime
+        pe = self.pe
+        start, end = datetime.date(2026, 1, 1), datetime.date(2026, 1, 8)
+
+        def fake(kind, text, page, start=None, end=None, date_dim=None):
+            # any range longer than a day is over the cap; a single day fits
+            return {"total": 1500 if (end - start).days >= 1 else 300, "data": []}
+        pe.fetch = fake
+        shards = list(pe.shard("tenders", "x", start, end, "notice"))
+        self.assertTrue(shards)
+        for s, e, total in shards:
+            self.assertLess(total, pe.MAX_TOTAL)
+            self.assertEqual(s, e)  # split down to single days
+        days = {s for s, _, _ in shards}
+        self.assertEqual(len(days), 8)  # every day covered exactly once
+
+    def test_empty_range_yields_nothing(self):
+        import datetime
+        pe = self.pe
+        self.fake_totals({(datetime.date(2022, 1, 1), datetime.date(2022, 12, 31)): 0})
+        self.assertEqual(list(pe.shard("tenders", "x", datetime.date(2022, 1, 1), datetime.date(2022, 12, 31), "notice")), [])
+
+    def test_row_from_contract_links_parent_tender(self):
+        item = {"contractID": "UA-2024-01-01-000001-a-c1", "status": "terminated",
+                "buyer": {"name": "Buyer"}, "suppliers": [{"name": "Seller"}],
+                "value": {"amount": 100, "currency": "UAH", "valueAddedTaxIncluded": True}}
+        row = self.pe.row_from("contracts", item, parent_tender_id="UA-2024-01-01-000001-a")
+        self.assertEqual(row[0], "UA-2024-01-01-000001-a-c1")
+        self.assertEqual(row[1], "UA-2024-01-01-000001-a")
+        self.assertEqual(row[3], "Seller")
+
+
+class ProzorroPipeline(unittest.TestCase):
+    """Dedup/merge logic; no network, no YAML."""
+
+    def item(self, tid, title="t"):
+        return {"tenderID": tid, "title": title, "status": "complete",
+                "procuringEntity": {"name": "B"}, "value": {"amount": 1, "currency": "UAH"}}
+
+    def test_one_tender_keeps_every_matching_category_and_query(self):
+        import prozorro_pipeline as pp
+        db, matches = {}, []
+        pp.add_match(db, matches, "starlink", "Starlink", self.item("UA-1"))
+        pp.add_match(db, matches, "satellite_hardware", "супутниковий модем", self.item("UA-1"))
+        pp.add_match(db, matches, "satellite_hardware", "супутниковий термінал", self.item("UA-1"))
+        pp.add_match(db, matches, "starlink", "Starlink", self.item("UA-2"))
+        self.assertEqual(len(db), 2)  # one tender = one record
+        self.assertEqual(db["UA-1"]["categories"], {"starlink", "satellite_hardware"})
+        self.assertEqual(db["UA-1"]["queries"], {"Starlink", "супутниковий модем", "супутниковий термінал"})
+        self.assertEqual(len(matches), 4)  # every match preserved as a relation
+
+    def test_resume_skips_completed_queries(self):
+        import prozorro_pipeline as pp
+        cp = {"queries": {"starlink|Starlink": {"items": 5}}, "contracts": [], "details": [], "summaries": []}
+        cfg = {"project": {"date_from": "2024-01-01", "date_to": "2024-12-31"},
+               "categories": {"starlink": {"queries": ["Starlink"]}}}
+        done = []
+        real_read = pp.read_jsonl
+        pp.read_jsonl = lambda path: []
+        try:
+            db, matches = pp.search_phase(cfg, cp, done)
+        finally:
+            pp.read_jsonl = real_read
+        self.assertIn("starlink|Starlink", cp["queries"])
+        self.assertEqual(db, {})  # no network calls happened; checkpoint said done
+
+    def test_fetch_retry_calls_the_original_fetch_not_the_patched_one(self):
+        import prozorro_pipeline as pp
+        calls = []
+        real = pp._REAL_FETCH
+        pp._REAL_FETCH = lambda *a, **k: calls.append(a) or {"total": 0, "data": []}
+        try:
+            pe_fetch_before = pp.pe.fetch
+            pp.pe.fetch = pp.fetch_retry  # what search_phase does
+            result = pp.fetch_retry("tenders", "x", 1)
+        finally:
+            pp._REAL_FETCH = real
+            pp.pe.fetch = pe_fetch_before
+        self.assertEqual(result, {"total": 0, "data": []})
+        self.assertEqual(len(calls), 1)  # exactly one call, no recursion
 
 
 if __name__ == "__main__":

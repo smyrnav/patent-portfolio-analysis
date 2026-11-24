@@ -1,36 +1,44 @@
 # Research questions
 
-Five questions support the [central research question](research-design.md#central-research-question). Each one feeds the next: reuse, exposure, advantage, action, then priorities. Every question names its query or desk-research task and the measurable output it produces. Re-aimed to sovereign LEO satellite communications in the [2 November 2026 pivot](pivot-sovereign-satcom.md); rebuilt 9 November 2026 around the build–buy–partner–license framing.
+Three questions support the [central research question](research-design.md#central-research-question). Rebuilt 24 November 2026: the previous five-question structure — reuse, exposure, advantage, build–buy–partner–license, then ranked investment priorities — was retired because RQ4 and RQ5 promised conclusions public data cannot deliver, and all five depended on a classification that [failed validation](../02-methodology/satcom-validation-plan.md) on 13 November. The retired structure is summarised [below](#retired-questions); the satcom hypotheses that survive are in [satcom-hypotheses.md](satcom-hypotheses.md), gated by the validation plan.
 
-| # | Research question | How it's answered | Measurable output | Limit |
+| # | Research question | How it's answered | Output | Limit |
 |---|---|---|---|---|
-| **RQ1** | Which technologies the system needs are already covered by Nokia's or ICEYE's existing patents — where can the partnership reuse instead of develop? | Census and validated labels on the Nokia-lineage and ICEYE tables against the [five pools](satcom-code-pools.md) | Reusable-asset inventory per pool, with 95% ranges from measured precision | Holding a patent on a technology doesn't mean the partnership may build it — others' patents may stand in the way; and who owns each patent today is only checked for US records so far |
-| **RQ2** | Where do third parties hold significant positions in those same technologies — where could licensing costs, freedom-to-operate constraints or competitor dependence bite? | Third-party pool counts (name research first, then the new peers table), then [H1's chi-square](satcom-hypotheses.md) on precision-adjusted counts | Exposure list per pool, with [χ², Cramér's V and residuals](../glossary.md#statistics-in-plain-language) | A big count flags where to investigate, nothing more. Whether one patent can actually block the system depends on whether its numbered sentences cover exactly what we want to build — a case-by-case legal judgment this project doesn't make (glossary: [freedom to operate](../glossary.md)) |
-| **RQ3** | Where is competitor patenting rising, and where could the partnership build defensible IP that is hard to replicate? | Priority-year trends per pool (H2); citation context (H3) | Differentiation map: crowded areas versus open ones | Patent applications stay secret for about 18 months, so the newest two years look emptier than they really are |
-| **RQ4** | For each required capability, what does the evidence support: build, buy, partner or license? | RQ1–RQ3 evidence mapped onto the six capabilities; desk research on licensing and acquisition precedents | Capability × action matrix, each cell linked to its evidence | Public data can't show internal costs or existing licences |
-| **RQ5** | Which R&D investments are urgent, which can wait, and which aren't justified? | Score pools on reuse, exposure, growth and cost against published weights, then a sensitivity check on the weights | Ranked priorities, with the ranking's sensitivity shown | Priorities to investigate, not decisions |
+| **RQ1** | What technological capabilities does a sovereign LEO communications system need, and what is each partner demonstrably contributing? | Desk research on the partnership's public disclosures and product documentation, plus [procurement records](procurement-demand.md) showing what governments actually buy, mapped onto the system components (space segment, ground segment, terminals, network integration, security) | Capability map: what the system needs, what buyers demonstrably pay for, who contributes what, and what remains undisclosed | Public descriptions and tenders only. The actual division of engineering work and IP ownership between Nokia and ICEYE is not disclosed, so undisclosed stays undisclosed |
+| **RQ2** | What relevant patent assets are publicly observable across Nokia, ICEYE and the selected competitors? | Census and validated labels on the Nokia-lineage and [peers](../../sql/24_satcom_peers_30y.sql) tables against the [satcom pools](satcom-code-pools.md) | Validated patent landscape per pool, with 95% ranges from measured precision | Nothing comparative ships until a pool passes the 85% precision bar. Holding a patent doesn't mean the partnership may build it, and current ownership is unverified outside early US checks |
+| **RQ3** | Where are the significant third-party IP concentrations, evidence gaps and uncertainties that warrant further investigation? | Third-party pool counts (after RQ2 validation), [H1–H3](satcom-hypotheses.md) on precision-adjusted counts, plus the [evidence-gap tracker](../appendices/evidence-gaps.md) | Due-diligence priority matrix: where to look, why, and at what confidence | A big third-party count flags where to investigate, nothing more. Whether one patent can block the system is a case-by-case legal judgment this project doesn't make (glossary: [freedom to operate](../glossary.md)) |
 
-Current status is in the [evidence tracker](../appendices/evidence-gaps.md). The patent database isn't validated yet, so every output above arrives with its confidence label attached.
+Current status is in the [evidence tracker](../appendices/evidence-gaps.md). The patent classification isn't validated yet, so every output above arrives with its confidence label attached.
 
-**Q9 sits under RQ5.** "What would it cost to maintain a defined portfolio of patent rights over ten years, as a range?" is the [main financial workstream](../04-financial-analysis/ten-year-maintenance-cost-model.md), and its cost range feeds the priorities ranking.
-
-## The management decisions these serve
+## The decisions these serve
 
 Each research question exists to serve one decision. If an answer wouldn't change the decision, it doesn't belong in the findings.
 
-| Research question | Management decision | Useful output |
+| Research question | Decision it supports | Useful output |
 |---|---|---|
-| RQ1 | Accelerate development | Existing technology that can be leveraged |
-| RQ2 | Protect commercialisation | Potential IP conflicts and licensing dependencies |
-| RQ3 | Differentiate the product | Opportunities for defensible technological advantages |
-| RQ4 | Allocate R&D resources | Build, buy, partner or license recommendations |
-| RQ5 | Prioritise investment | Ranked technology investment opportunities |
+| RQ1 | Understand what is being built | A shared, sourced picture of the system and the partners' roles |
+| RQ2 | Reuse what exists | An inventory of observable partner and competitor assets, trusted at a measured level |
+| RQ3 | Investigate before committing | A prioritised list of dependencies, gaps and uncertainties for internal technical and legal review |
 
-**Caveat.** Patent data alone cannot establish freedom to operate, engineering readiness, actual development costs or market demand — those need other evidence. What patent intelligence can do is identify where management should investigate before committing resources.
+The endpoint is a due-diligence agenda for Nokia's portfolio and strategy teams — not a build/buy/license verdict and not a ranked R&D budget. Those need internal costs, existing licences and engineering judgment that public data doesn't contain.
+
+## The validation gate
+
+No comparative claim between companies may use a pool that hasn't passed the [85% precision bar](../02-methodology/satcom-validation-plan.md) with human-reviewed labels. The 13 November re-test measured 70.8% against first-pass reference labels, so every company comparison currently waits for test #3: a redesigned taxonomy (separating primary capability from technology attributes such as inter-satellite links), a new stratified sample, human review, and re-measured precision and recall. Discovering the instrument was unreliable is a result; acting as if it weren't would be an error.
+
+## Retired questions
+
+Kept for the record; they return only if the three questions above are answered and a business need justifies them.
+
+| # | Retired question | Why retired |
+|---|---|---|
+| Old RQ4 | For each required capability: build, buy, partner or license? | Presumes freedom-to-operate and cost evidence public data can't supply. The Ukraine domestic-base part survived and is answered: no Ukrainian corporate satcom patent base exists, so domestic sourcing is not an option ([finding S1](../05-findings-and-recommendations/findings.md)) |
+| Old RQ5 | Which R&D investments are urgent, which can wait, which aren't justified? | Ranking a company's internal R&D spend from outside was never supportable. RQ3's due-diligence priorities replace it |
+| Q9 cost model | Ten-year maintenance cost range for a defined portfolio | Parked with the rest of the [financial analysis](../../archive/parked-financial-analysis/) as a separate methodology exercise; it fed old RQ5 |
 
 ## Hypotheses
 
-**H1–H4 below are retired.** They belong to the pre-pivot optical/routing/switching scope. The new satcom hypotheses are drafted in [satcom-hypotheses.md](satcom-hypotheses.md), gated by the [validation plan](../02-methodology/satcom-validation-plan.md). The retired set is kept here for the record.
+**H1–H4 below are retired.** They belong to the pre-pivot optical/routing/switching scope. The current satcom hypotheses are drafted in [satcom-hypotheses.md](satcom-hypotheses.md), gated by the [validation plan](../02-methodology/satcom-validation-plan.md). The retired set is kept here for the record.
 
 | # | Hypothesis (retired) | Feeds | Measure | What would disprove it |
 |---|---|---|---|---|
@@ -56,4 +64,4 @@ A licensing database could contain the company, sector, relevant standards, publ
 
 ## What public data can't settle
 
-Patents show technical position, not product quality or market share. Citations and family counts are indicators rather than value. A final R&D or licensing decision also needs Nokia's internal costs, roadmaps and deals.
+Patents show technical position, not product quality or market share. Citations and family counts are indicators rather than value. The partnership's internal division of work, existing licences, engineering readiness and development costs are invisible from outside. A final R&D or licensing decision also needs Nokia's internal costs, roadmaps and deals.

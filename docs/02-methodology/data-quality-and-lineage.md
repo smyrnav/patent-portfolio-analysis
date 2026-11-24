@@ -30,7 +30,7 @@ I didn't find a formal accuracy audit of this dataset.
 |---|---|
 | **Compare totals across queries.** That's how I found the 8,808 missing US patents | Done, and [automated](../../src/check_outputs.py) where possible |
 | **Spot-check against official registers.** Compare [a repeatable random sample of 35](../../data/validation/spot_check_sample.csv) with [Espacenet](https://worldwide.espacenet.com/) and the USPTO, and record the error rate. It has none from Japan, as no Japanese grants were detected | Not done |
-| **Compare with what Nokia reports.** [New families follow its reported new inventions](../03-market-and-patent-analysis/twenty-years.md#my-family-counts-follow-nokias-own-numbers), though its counting rules may differ | Done |
+| **Compare with what Nokia reports.** [New families follow its reported new inventions](../../archive/pre-pivot/twenty-years.md#my-family-counts-follow-nokias-own-numbers), though its counting rules may differ | Done |
 | **Check patents against the inventor's own words.** Read the numbered sentences at the back of sampled patents and mark each bucket right or wrong. See [validation](validation.md) | Precision done, agreement and recall not done |
 | **Keep the docs coherent.** [Automated tests](../../tests/test_repository.py) check links, shared wording and label files | Done |
 
@@ -38,7 +38,7 @@ I didn't find a formal accuracy audit of this dataset.
 
 | Source | What it gives | Status |
 |---|---|---|
-| [Nokia's 20 annual reports, FY2006–FY2025](../../data/raw/annual_reports_manifest.csv) | R&D, licensing, segments, deals and risks | Official, [key figures extracted](../03-market-and-patent-analysis/twenty-years.md) |
+| [Nokia's 20 annual reports, FY2006–FY2025](../../data/raw/annual_reports_manifest.csv) | R&D, licensing, segments, deals and risks | Official, [key figures extracted](../../archive/pre-pivot/twenty-years.md) |
 | [Nokia's Q3 2026 report](https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm) | Technology Standards net sales of €425M in Q3 and €1,217M for January–September, and R&D expenses of €1,251M in Q3 | Official |
 | [USPTO fee schedule](https://www.uspto.gov/learning-and-resources/fees-and-payment/uspto-fee-schedule) | US renewal fees | Official |
 | [EPO fee rules](https://www.epo.org/en/legal/epc/2020/EPC_rfees_20260401_en_20260326.pdf) | European fees from 1 April 2026 | Official, figures not extracted yet |

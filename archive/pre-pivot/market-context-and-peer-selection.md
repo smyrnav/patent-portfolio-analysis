@@ -1,12 +1,14 @@
 # Market context and peer selection
 
+> **Archived 24 November 2026.** Pre-pivot method demonstration (optical networking, IP routing and data-centre switching scope). Kept as evidence of method; it does not answer the current sovereign-satcom question. Current protocol: `docs/01-research-design/research-design.md`.
+
 No single company leads AI and cloud networking. The leader changes by segment, and Nokia's strongest public positions are in optical. This page covers market performance, which is separate from patent performance. The patent comparison is in the [patent landscape](patent-landscape.md).
 
-![No single company leads AI and cloud networking](../img/ai_cloud_leaders.png)
+![No single company leads AI and cloud networking](../../docs/img/ai_cloud_leaders.png)
 
 ## Peer selection
 
-Nokia is the reference company, and every company below is compared across [all three categories](../01-research-design/scope.md#technology), not only its main one.
+Nokia is the reference company, and every company below is compared across [all three categories](../../docs/01-research-design/scope.md#technology), not only its main one.
 
 | Company | Main benchmarking role | Research emphasis |
 |---|---|---|
@@ -33,7 +35,7 @@ NVIDIA and Celestica lead AI networking segments, so they appear in the market f
 
 **These figures aren't a ranking of AI infrastructure R&D.** Nokia's segment, Nokia's group and the other companies' totals describe different organisational boundaries, periods and accounting bases. Each row only compares a company with its own prior period.
 
-![Each company's own sales and R&D growth](../img/commercial_context.png)
+![Each company's own sales and R&D growth](../../docs/img/commercial_context.png)
 
 | Company | Boundary and period | R&D as % of sales | Year earlier | R&D growth | Sales growth | Source |
 |---|---|---:|---:|---:|---:|---|

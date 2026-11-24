@@ -1,17 +1,19 @@
 # Assumptions and scenarios
 
+> **Parked 24 November 2026.** Financial-methodology exercise that fed the retired investment-priorities question (old RQ5/Q9). Kept for later reuse; it is not part of the current research question.
+
 What the analysis takes as given, separated into verified inputs and hypothetical assumptions. **Impact** is my estimate of how much an assumption could change the recommendation, and it needs testing.
 
 ## Verified inputs
 
 | Input | Value | Basis |
 |---|---|---|
-| US large-entity renewal fees | $2,150, $4,040, $8,280 | [Official schedule](../appendices/sources.md#patent-rules-and-data-sources), recheck before use |
+| US large-entity renewal fees | $2,150, $4,040, $8,280 | [Official schedule](../../docs/appendices/sources.md#patent-rules-and-data-sources), recheck before use |
 | US renewal dates | 3.5, 7.5 and 11.5 years after grant | [USPTO](https://www.uspto.gov/patents/maintain) |
 | US term | Generally 20 years from filing | [35 U.S.C. § 154](https://www.law.cornell.edu/uscode/text/35/154) |
-| US time to grant | Median 4.05 years, mean 4.27 | [Measured](../02-methodology/metrics.md#measured-so-far) from my data |
-| Applications per family with grant evidence | Mean 3.68, median 3 | [Measured](../02-methodology/metrics.md#measured-so-far), and known to be low |
-| Code pool precision | Optical 73%, routing 39%, switching 42% | [Measured](../02-methodology/validation.md#precision-result) on first-pass labels |
+| US time to grant | Median 4.05 years, mean 4.27 | [Measured](../../docs/02-methodology/metrics.md#measured-so-far) from my data |
+| Applications per family with grant evidence | Mean 3.68, median 3 | [Measured](../../docs/02-methodology/metrics.md#measured-so-far), and known to be low |
+| Code pool precision | Optical 73%, routing 39%, switching 42% | [Measured](../../docs/02-methodology/validation.md#precision-result) on first-pass labels |
 
 ## Top priorities to test
 
@@ -27,21 +29,21 @@ What the analysis takes as given, separated into verified inputs and hypothetica
 
 | # | Assumption | Current value | Affects | Impact | How to test | Status |
 |---|---|---|---|---|---|---|
-| P1 | Candidate families are in force and held by Nokia | 19,873 with grant evidence, 5,595 with a recent application and no grant detected | All costs | High | USPTO renewal and assignment records | **Contradicted in part.** [42 of 179 sampled patents show another assignee](../02-methodology/candidate-portfolio-universe.md#current-owner-evidence-so-far) |
+| P1 | Candidate families are in force and held by Nokia | 19,873 with grant evidence, 5,595 with a recent application and no grant detected | All costs | High | USPTO renewal and assignment records | **Contradicted in part.** [42 of 179 sampled patents show another assignee](../../docs/02-methodology/candidate-portfolio-universe.md#current-owner-evidence-so-far) |
 | P2 | Applicant names find the candidate universe | [Name patterns](../../sql/06_create_portfolio_30y.sql) | Universe size | High | Register spot-check | Partly tested. Japan needed a family lookup |
-| P3 | Grant is detected from grant date or kind code | [Rules](../02-methodology/candidate-portfolio-universe.md#how-the-rules-work) | Universe size | Medium | Spot-check by office | Partly tested. Grants outside the US look undercounted |
+| P3 | Grant is detected from grant date or kind code | [Rules](../../docs/02-methodology/candidate-portfolio-universe.md#how-the-rules-work) | Universe size | Medium | Spot-check by office | Partly tested. Grants outside the US look undercounted |
 | P4 | Protection ends 20 years after filing | Cut-off of 1 November 2006 | Expiry and forecast | Medium | Compare with register dates | Not tested. US rule, applied as an approximation elsewhere |
 | P5 | Filings since 2021 with no grant detected remain unverified | 1 January 2021 | Filing and grant forecast | Low | Sample register status | Not tested; no detected grant isn't proof of pending status |
-| P6 | Families are the unit for inventions | Simple families | Inventions and value | Medium | Compare with extended families | Supported. New families [follow Nokia's reported inventions](../03-market-and-patent-analysis/twenty-years.md#my-family-counts-follow-nokias-own-numbers) |
+| P6 | Families are the unit for inventions | Simple families | Inventions and value | Medium | Compare with extended families | Supported. New families [follow Nokia's reported inventions](../pre-pivot/twenty-years.md#my-family-counts-follow-nokias-own-numbers) |
 | P7 | The US, Europe, China and Japan are the offices that matter | Four offices | Scope of the model | Medium | Check filing share in other offices | Chosen, not tested |
 
 ### Technology: what counts as AI and cloud networking?
 
 | # | Assumption | Current value | Affects | Impact | How to test | Status |
 |---|---|---|---|---|---|---|
-| T1 | [Codebook labels](../02-methodology/classification-codebook.md) separate the three categories reliably | Version 1.1 | All comparisons | High | Agreement test | Not tested. First-pass labels only |
-| T2 | CPC codes find most relevant families | H04B 10, H04J 14, H04Q 11/00, H04L 45, H04L 49 | Share and growth | High | Recall test | Not tested. [Precision failed](../02-methodology/validation.md#precision-result) |
-| T3 | ~~Optical, routing and switching represent AI and cloud infrastructure~~ Superseded by the [2 November 2026 pivot](../01-research-design/pivot-sovereign-satcom.md): the categories no longer stand proxy for the central question | Three categories | The central question | High | New satcom code pools, then recall test | Retired: 1 explicit AI patent in the 343 tested |
+| T1 | [Codebook labels](../../docs/02-methodology/classification-codebook.md) separate the three categories reliably | Version 1.1 | All comparisons | High | Agreement test | Not tested. First-pass labels only |
+| T2 | CPC codes find most relevant families | H04B 10, H04J 14, H04Q 11/00, H04L 45, H04L 49 | Share and growth | High | Recall test | Not tested. [Precision failed](../../docs/02-methodology/validation.md#precision-result) |
+| T3 | ~~Optical, routing and switching represent AI and cloud infrastructure~~ Superseded by the [2 November 2026 pivot](../../docs/01-research-design/pivot-sovereign-satcom.md): the categories no longer stand proxy for the central question | Three categories | The central question | High | New satcom code pools, then recall test | Retired: 1 explicit AI patent in the 343 tested |
 
 ### Costs: what would it cost?
 
@@ -61,7 +63,7 @@ Filing, attorney and translation costs are [outside the statutory baseline](ten-
 |---|---|---|---|---|---|---|
 | F1 | Renewal rates at 3.5, 7.5 and 11.5 years | Placeholders of 90/80/70% and 80/60/40% | Mean, median and forecast | High | USPTO renewal records | Placeholder |
 | F2 | Renewal rates vary by age, origin and technology | Not set | Keep-or-drop and scenarios | High | Split renewal rates | Not started |
-| F3 | Future new inventions per year | Not set | Filing volumes and capacity | Medium | Scenarios from the [recent trend](../03-market-and-patent-analysis/twenty-years.md) | Not started. Recent data is provisional |
+| F3 | Future new inventions per year | Not set | Filing volumes and capacity | Medium | Scenarios from the [recent trend](../pre-pivot/twenty-years.md) | Not started. Recent data is provisional |
 | F4 | Past behaviour predicts future choices | Not set | Forecast | Medium | Compare periods | Not started |
 
 ### Value: what is it worth?
@@ -82,7 +84,7 @@ Filing, attorney and translation costs are [outside the statutory baseline](ten-
 | B4 | Costs can be allocated to business units | Not set | Scenarios | Medium | State a rule for families serving several units | Not started |
 | B5 | Team capacity per task | Not set | Capacity plan | Low | Assumed hours as ranges | Not started |
 
-**Retired:** B2 and V4 used fees as a share of licensing sales, and sales per family, as a sense of scale. Those ratios don't establish efficiency or value, so [I removed them](../appendices/research-log.md#repository-review-november-2026).
+**Retired:** B2 and V4 used fees as a share of licensing sales, and sales per family, as a sense of scale. Those ratios don't establish efficiency or value, so [I removed them](../../docs/appendices/research-log.md#repository-review-november-2026).
 
 ## Scenarios
 

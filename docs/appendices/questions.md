@@ -59,7 +59,7 @@ To add one, copy this:
 
 ### Q9. What would keeping a portfolio cost over 10 years, as a range?
 - **Why I asked:** the posting asks for ranges and tested assumptions rather than one number.
-- **How I'll look:** the [ten-year maintenance cost model](../04-financial-analysis/ten-year-maintenance-cost-model.md): official fees on verified national rights, with scenarios, and Monte Carlo only where distributions can be justified. Internal costs stay out of the baseline.
+- **How I'll look:** the [ten-year maintenance cost model](../../archive/parked-financial-analysis/ten-year-maintenance-cost-model.md): official fees on verified national rights, with scenarios, and Monte Carlo only where distributions can be justified. Internal costs stay out of the baseline.
 
 ## Answered
 
@@ -108,7 +108,7 @@ To add one, copy this:
 
 ### Q19. How do Nokia's reported finances line up with its patent activity?
 - **Why I asked:** patent data has no money in it, and the annual reports are the main public source of it.
-- **How I looked:** [extracted figures from 20 reports](../03-market-and-patent-analysis/twenty-years.md), and compared them with new families per year.
+- **How I looked:** [extracted figures from 20 reports](../../archive/pre-pivot/twenty-years.md), and compared them with new families per year.
 - **Answer:** new families follow Nokia's reported new inventions closely, and reported licensing income varied around the smartphone renewal cycle. Nokia's reports attribute the 2024 rise to renewal timing; this is an observed pattern, not tested causation.
 - **Tools and resources:** SEC EDGAR, Nokia's 20-F reports and BigQuery.
 - **What it led to:** Q20 and the Japan fix.

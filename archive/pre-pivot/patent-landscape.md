@@ -1,6 +1,8 @@
 # Patent landscape
 
-**Status: first estimates, low confidence, pre-pivot.** This page answers the pre-pivot position and comparison questions as far as the evidence goes. It uses claim-based estimates because [code counts failed the precision test](../02-methodology/validation.md#precision-result).
+> **Archived 24 November 2026.** Pre-pivot method demonstration (optical networking, IP routing and data-centre switching scope). Kept as evidence of method; it does not answer the current sovereign-satcom question. Current protocol: `docs/01-research-design/research-design.md`.
+
+**Status: first estimates, low confidence, pre-pivot.** This page answers the pre-pivot position and comparison questions as far as the evidence goes. It uses claim-based estimates because [code counts failed the precision test](../../docs/02-methodology/validation.md#precision-result).
 
 ## Estimated US families by company
 
@@ -18,7 +20,7 @@ The ranges are wide, and they overlap for many pairs. Nokia against Cisco in opt
 
 ## The same estimate, keeping only patents without another current assignee
 
-Nokia's figures drop more than anyone's, because [its patents show transfers and the others mostly don't](../02-methodology/candidate-portfolio-universe.md#current-owner-evidence-so-far). Current assignee comes from Google Patents, not a register. These are mid-points only. [Source](../../data/validation/results_estimates_current_assignee.csv).
+Nokia's figures drop more than anyone's, because [its patents show transfers and the others mostly don't](../../docs/02-methodology/candidate-portfolio-universe.md#current-owner-evidence-so-far). Current assignee comes from Google Patents, not a register. These are mid-points only. [Source](../../data/validation/results_estimates_current_assignee.csv).
 
 | Company | Optical | IP routing | Switching (H04L 49) |
 |---|---:|---:|---:|
@@ -44,19 +46,19 @@ These are priorities to investigate, not final results. Only 1 patent in the tes
 |---|---|
 | **H1:** Infinera strengthened Nokia's optical position | Not tested |
 | **H2:** Nokia trails the leaders in routing and switching | First estimates point this way, for all years rather than 2020–2024 |
-| **H3:** Cover is ageing without enough replacement | Not tested. [Precision falls in newer patents](../02-methodology/validation.md#precision-by-priority-period), so it needs claim-based estimates by period |
+| **H3:** Cover is ageing without enough replacement | Not tested. [Precision falls in newer patents](../../docs/02-methodology/validation.md#precision-by-priority-period), so it needs claim-based estimates by period |
 | **H4:** Cover in main markets has gaps | Not tested |
 
 ## Where Nokia's patents came from
 
 This is portfolio lineage, not current ownership.
 
-![US patents by origin](../img/origin_30y.png)
+![US patents by origin](../../docs/img/origin_30y.png)
 
 The saved recount verifies 36,630 distinct US publications filed since 1996 and 37,710 owner-publication listings. Origin counts overlap and sum to 36,866, so they cannot establish a distinct Alcatel/Lucent share. That share awaits a corrected publication-level SQL rerun; BigQuery cannot be rerun in this environment. [Source](../../data/processed/us_30y_recount.csv). Any cost or renewal analysis needs to report Alcatel and Lucent lineage separately, because Lucent spun off Avaya and Agere and those patents may have left with them.
 
 ## Where applications were filed
 
-![Applications by patent office](../img/offices.png)
+![Applications by patent office](../../docs/img/offices.png)
 
 [Source](../../data/raw/filings_by_country.csv). These are applications at each office, not granted or live rights. WO filings aren't patents yet.

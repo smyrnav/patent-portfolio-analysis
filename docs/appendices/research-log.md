@@ -55,7 +55,7 @@ I used software assistance for a repository review and checked each recommendati
 | Make Q9 the principal financial model | Adopted | Break-even stays as support |
 | Remove the 1% of licensing sales comparison | Adopted, and extended | I also removed its conclusion that fees look small, and the sales-per-family figure and chart, as they had the same flaw |
 | Stop comparing R&D across different boundaries | Adopted | Now shown as context, with Nokia's two boundaries side by side |
-| Three maintenance scenarios | Adopted, alongside my three investment strategies | [They answer different questions](../04-financial-analysis/assumptions-and-scenarios.md#scenarios) |
+| Three maintenance scenarios | Adopted, alongside my three investment strategies | [They answer different questions](../../archive/parked-financial-analysis/assumptions-and-scenarios.md#scenarios) |
 | Monte Carlo only where distributions can be justified | Adopted | The posting's probability curve stays, for inputs with data behind them |
 | Target folder structure | Adopted now | It said this could wait, but overlap between documents was the problem I wanted fixed. Where its names conflicted, I used the more specific one |
 | `executive-brief.md` | Not created yet | An empty brief would imply a result that doesn't exist |
@@ -66,7 +66,7 @@ I used software assistance for a repository review and checked each recommendati
 
 - Several documents said "I labelled" when software assistance made the first pass. They now distinguish software-generated labels from human review.
 - The README disclosure understated the software's role. It's now specific.
-- The estimates table compared Nokia with other assignees removed against competitors without that adjustment. [Both are now shown on the same basis](../03-market-and-patent-analysis/patent-landscape.md#the-same-estimate-keeping-only-patents-without-another-current-assignee).
+- The estimates table compared Nokia with other assignees removed against competitors without that adjustment. [Both are now shown on the same basis](../../archive/pre-pivot/patent-landscape.md#the-same-estimate-keeping-only-patents-without-another-current-assignee).
 - Recalculating from unrounded shares moved four range edges by 1, such as Nokia routing's upper end from 330 to 329.
 
 ## Pivot to sovereign satcom, 2 November 2026
@@ -88,3 +88,17 @@ Project retitled to *Nokia–ICEYE Sovereign LEO Communications* — the partner
 ## Origin section anonymised, 10 November 2026
 
 The personal-position paragraph in the README was replaced with a neutral statement of professional and analytical interest, so the project doesn't disclose the author's nationality. Motivation is not evidence either way; the data, methods and checks stand on their own.
+
+## Question re-aimed and repository reset, 24 November 2026
+
+An outside review (Kimi Code, applying the FESTS survey-first workflow) found the project had accumulated material faster than it had clarified: the five-question structure promised investment rankings public data can't support, the 13 November re-test had failed the 85% bar at 70.8%, the README quoted ~70 ICEYE families where the peers table holds 53 simple families, ISL was both a class and a flag, and `run_all.py` couldn't complete on a clean checkout because the review-workbench key is gitignored.
+
+Decisions taken in one pass, tests green:
+
+- **Central question re-aimed** to reuse and dependencies: *What can Nokia and ICEYE realistically reuse from their existing technology assets to deliver a sovereign satellite communications system, and what must they develop, acquire or obtain from other partners?* Rewritten in config, README and research design; enforced by the same consistency test.
+- **Five research questions reduced to three** (capability map, validated patent landscape, due-diligence priorities). Old RQ4 (build–buy–partner–license) and RQ5 (investment ranking) retired in place; Q9 and the financial workstream parked.
+- **Archived, not deleted:** the pre-pivot market/patent analysis and draft executive brief moved to `archive/pre-pivot/`; the ten-year cost model, assumptions and break-even to `archive/parked-financial-analysis/`. All moves are `git mv`, history preserved.
+- **Overclaims downgraded:** "the communications IP would come from Nokia" is now a labelled hypothesis (the partnership's IP division is undisclosed); the Ukraine finding now states explicitly that a missing patent base says nothing about engineering capability.
+- **Fixed:** ICEYE count reconciled (53 simple families; ~70 across name variants before deduplication), the ISL class/flag tension recorded in scope.md pending the taxonomy redesign, sql/README's example query number corrected (37 → 36), and the workbench tests now skip cleanly when the gitignored claim-review key is absent.
+
+Not done, by design: no taxonomy redesign yet (that's validation test #3, the next real work), no new statistics, no repository-wide folder renaming — the review's own advice was to decide what the project is before moving files, and only files that stopped being current moved.

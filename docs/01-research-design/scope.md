@@ -4,6 +4,8 @@ All documents use this scope, and [`config/research_parameters.toml`](../../conf
 
 **Changed 11 November 2026:** version 1.0 covered optical networking, IP routing and data-centre switching (OPT, IPR, DCS) against Ciena, Cisco, Arista and Huawei. The project pivoted to sovereign satellite communications; version 1.0 survives as the archived pre-pivot record under `[pre_pivot]` in the config and in the [codebook's frozen section](../02-methodology/classification-codebook.md).
 
+**Re-aimed 24 November 2026:** the [central question](research-design.md#central-research-question) changed; the technology pools, companies, offices and dates below are unchanged.
+
 ## Technology
 
 Five pools, defined in [satcom-code-pools.md](satcom-code-pools.md) (accepted 11 November 2026, amended by pilot decisions R1–R5, not yet validated). The **combined satcom capability pool — a family in any of the five — is the primary comparative measure**, because the pilot showed the main defect is patents landing in the wrong sub-bucket, not non-satellite junk.
@@ -17,6 +19,8 @@ Five pools, defined in [satcom-code-pools.md](satcom-code-pools.md) (accepted 11
 | **SEC:** Security and resilience | Protecting satellite communications: encryption and key management for satellite links, anti-jamming, geofencing, access prevention. Found by co-occurrence of a satellite code and a security code |
 
 The exact labelling rules are in the [codebook](../02-methodology/classification-codebook.md#satcom-classes-post-pivot).
+
+**Known tension, recorded 24 November 2026.** ISL appears in the label lists (config and codebook) as if it were a class, but the assignment rules treat it as a reporting flag inside SAT (pilot decision R5). GRD and SEC also had effectively no validation sample (one observation each on 13 November), so no pool-specific comparison may use them yet. The taxonomy redesign that precedes validation test #3 will separate **primary capability** (what the invention does) from **technology attributes** (inter-satellite link, optical, anti-jamming, encryption), and ISL will live only on the attribute side. Until then, the combined satcom pool remains the only comparative measure.
 
 ## Companies
 

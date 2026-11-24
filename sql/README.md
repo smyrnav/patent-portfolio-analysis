@@ -8,8 +8,8 @@ Since 22 November 2026 the manual BigQuery-browser step is replaced by [`src/run
 
 ```bash
 python3 src/run_queries.py --list              # known queries and their output paths
-python3 src/run_queries.py 37                  # dry-run, confirm, run, save, fingerprint
-python3 src/run_queries.py 37 --yes            # skip the confirmation prompt
+python3 src/run_queries.py 36                  # dry-run, confirm, run, save, fingerprint
+python3 src/run_queries.py 36 --yes            # skip the confirmation prompt
 python3 src/run_queries.py --rebuild-sandbox   # recreate expired sandbox tables (queries 06, 24)
 ```
 

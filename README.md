@@ -1,20 +1,10 @@
 # Nokia–ICEYE Sovereign LEO Communications
 
-**Ukraine's sovereign alternative to Starlink — technology, patent portfolio and strategic investment analysis**
+**In plain words:** Nokia and ICEYE are building satellite communications for Ukraine and European governments. This repository is my independent attempt to work out — from public patent data — who owns the technology such a system needs. It is also my work sample for Nokia's [Business Data Analytics Trainee](https://www.linkedin.com/jobs/view/4483030441) vacancy. Not affiliated with Nokia.
 
-*"Alternative to Starlink" is the headline framing; the partners describe the system as complementing, not replacing, existing networks — see the [pivot document](docs/01-research-design/pivot-sovereign-satcom.md).*
+## What Nokia is actually trying to build
 
-*The vacancy asks: "What would you do with all the patent data in the world?" First probably go a little insane organising, deduplicating, cleaning and validating it — and only then produce findings solid enough to base a business strategy on; nevertheless, I'd try.*
-
-**Independent research project | [Financial Data Engineering / Business Data Analytics Trainee](https://www.linkedin.com/jobs/view/4483030441) application, Business Data Analytics track**
-
-Not affiliated with Nokia.
-
-## Why this repo exists
-
-I saw Nokia's Financial Data Engineering / Business Data Analytics Trainee vacancy and opened this repository to teach myself the analytics the role calls for. Patent portfolio analysis was new territory for me, so this project is a deliberate, working-in-the-open learning exercise: pick a real question, source public data, build the pipeline, document every assumption, and keep the record honest about what holds up and what doesn't. The goal is a defensible work sample for that vacancy — and, along the way, a genuinely learned skill set.
-
-The question sharpened as I worked — I pivoted and re-aimed the research questions more than once as the evidence demanded. Then, in October 2026, ICEYE and Nokia announced a sovereign LEO satellite communications partnership, and on 22 October signed a Letter of Intent with Ukraine's Ministry of Defence. The news reached me like this:
+In October 2026, Nokia and ICEYE announced a partnership to build sovereign satellite communications, and on 22 October they signed a Letter of Intent with Ukraine's Ministry of Defence.
 
 <p>
   <img src="docs/01-research-design/assets/pivot-trigger-1-headline-sq.jpg" alt="Nokia partners with Ukraine to build a Starlink alternative" width="32%">
@@ -22,135 +12,57 @@ The question sharpened as I worked — I pivoted and re-aimed the research quest
   <img src="docs/01-research-design/assets/pivot-trigger-3-partnership-sq.jpg" alt="Nokia and ICEYE: secure, sovereign LEO satellite communications for defense, border security and disaster response" width="32%">
 </p>
 
-This pivot is of both professional and analytical interest: secure communications that answer to the government using them are critical infrastructure, not an abstract market trend. October 2026 showed why — a foreign vendor throttled Ukraine's service for ten days without warning and demonstrated how vulnerable the dependence itself is. So participating in this project — and, hopefully, in the Nokia–ICEYE effort itself — is a chance to learn something new and provide relevant insights for the company. All of these fields are quite new to me, so terminology, appropriate research methodology and relevant data sources and validation methods are all learned along the way. The research itself is not influenced by personal interest in the subject: the data, methods and checks are what they are, and the findings are evidence-supported.
-## Research question
+"Sovereign" means the customer government controls the system itself. This is not abstract: in October 2026 a foreign vendor restricted Ukraine's satellite service for ten days without warning. Ukraine wants communications that keep working when ground infrastructure is destroyed — and that nobody outside Ukraine can switch off.
 
-**Which technological capabilities, patent assets and investment priorities — observable in publicly available data — are most important for developing a sovereign LEO satellite communications capability for Ukraine and European government customers?**
+Such a system needs five kinds of technology: the satellites themselves, ground stations, user terminals, the network software that ties space and ground together, and security (encryption, anti-jamming).
 
-The project [pivoted to sovereign satcom](docs/01-research-design/pivot-sovereign-satcom.md) on 2 November 2026, after ICEYE and Nokia signed a Letter of Intent with the Ministry of Defence of Ukraine. The [five research questions](docs/01-research-design/research-questions.md) break it into five answerable parts, built on the build–buy–partner–license framing. New to patent data? The [glossary](docs/glossary.md) explains every term used here in plain language.
+## The business problems this creates
 
-## Analytical focus
+1. Do Nokia and ICEYE already own the technology they need, or must they buy or license it from someone?
+2. Could competitors' patents get in the way?
+3. What should their engineers and IP lawyers check before serious money is committed?
 
-- Satellite communications and non-terrestrial networks (NTN)
-- Secure and resilient connectivity
-- Ground infrastructure and network integration
-- Satellite terminals and communications technology
-- Patent portfolios, technological dependencies and competitors
-- Strategic investment priorities
+## Which of these problems this project can research
 
-The pipeline was built and tested on optical networking, IP routing and data-centre switching. Those categories are being replaced by satellite-communications code pools per the [pivot checklist](docs/01-research-design/pivot-sovereign-satcom.md#checklist-to-execute-the-pivot); the [pre-pivot results](#pre-pivot-results-method-demonstration) at the bottom of this page show the method, not the answer to the new question. [Full scope](docs/01-research-design/scope.md).
+Only the part visible in public patent data: who filed which inventions, in which technologies, where and when. That is one input into the three problems above — no more.
 
-## Research objective
+Patent data **cannot** tell us whether the technology works, what development costs, what Nokia and ICEYE agreed between themselves (their split of work and IP is not public), or whether a specific patent would actually block the system — that last one is a legal judgment, case by case. Where the data can't answer, this repo says so instead of guessing.
 
-To examine Nokia's technology position, competitor activity, commercial developments and patent portfolio characteristics, and identify where investment could be maintained, expanded, reallocated or investigated further.
+The formal research question (kept word-for-word identical across the repo by an automated test):
 
-## Methodology — each method exists to serve one decision
+> **What can Nokia and ICEYE realistically reuse from their existing technology assets to deliver a sovereign satellite communications system, and what must they develop, acquire or obtain from other partners?**
 
-The analysis is built around five management decisions: what can be reused, where the partnership is exposed, where it can differentiate, whether to build–buy–partner–license, and where to invest first ([the mapping](docs/01-research-design/research-questions.md#the-management-decisions-these-serve)). Every method below exists only to serve those decisions:
+## What I actually do here
 
-- **Count inventions, not filings** — one invention patented in 20 countries is counted once (a patent family), so "who holds what" isn't inflated by filing habits.
-- **Read the inventor's own numbered sentences** instead of trusting the patent office's labels, and prove the reading is at least 85% accurate before comparing anything — because a comparison built on mislabeled patents is a confident wrong answer.
-- **Compare the companies on those validated counts** — this is what turns "who holds what" into the reuse and exposure answers.
-- **Add public financial and commercial information** — so the recommendations connect to what things cost and what the market is doing, not just to patent arithmetic.
-- **Model ten-year maintenance costs** — so "where to invest" includes the price of keeping patent rights alive, not only the price of getting them.
+1. Pull patent records from Google's public patent dataset (BigQuery).
+2. Clean up company names, so "Nokia", "Alcatel-Lucent" and "Infinera" count as one lineage.
+3. Count each invention once (a patent family), even if it was filed in twenty countries.
+4. Sort patents into the five technology buckets above — and **check the sorting by actually reading the patents**. Current status: the sorting failed its own accuracy test on 13 November (70.8% correct against an 85% requirement). Until it passes, no company comparisons are published. Fixing the sorting rules is the next real task.
+5. Only after the buckets pass: compare Nokia, ICEYE and competitors, and write up what that means for the three business problems.
 
-Classification rules, assumptions and data transformations are documented so that the work can be rerun and checked. [Research design](docs/01-research-design/research-design.md).
+Everything is scripted and can be rerun: [`sql/`](sql/README.md) for the queries, [`src/`](src) for the pipeline, [`tests/`](tests) for the consistency checks.
 
-## Data limitations
+## What we know so far
 
-The research relies only on publicly available information. It doesn't include Nokia's internal patent spending, portfolio valuations, confidential licensing arrangements or internal R&D investment decisions.
+Four findings stand, each with its query and data on file:
 
-So calculated indicators and recommendations are independent external assessments based on observable evidence. They aren't definitive assessments of Nokia's internal portfolio strategy.
+- **Ukraine has no domestic satellite-communications patent base.** Sixteen individual inventors with one family each; no companies. Only 16 satcom patent families were ever filed at the Ukrainian patent office, by 10 foreign owners. So the system's technology will be foreign-patented, and the terms of access (license, partnership, purchase) become the real sovereignty question. This says nothing about Ukrainian engineering ability — patents don't measure that, and classified defence work never patents. ([queries 25–28](sql/README.md))
+- **ICEYE's patent record is radar and satellite platforms, not communications.** 53 patent families: 35 radar imaging, 14 spacecraft operations, only 7 in transmission. My working guess, labelled as a guess: the communications technology in the partnership comes from Nokia. The actual split is not public, and few patents does not mean little capability. ([queries 24, 35, 36](sql/README.md))
+- **The incumbents hold deep patent positions.** Airbus ~19,500 families, Thales ~9,900, Viasat ~800 in our cleaned data. Anyone building in this space builds next to those positions — that's where dependency risk would come from.
+- **Patent data can't see the market leader.** SpaceX holds only 110 families — it keeps technology as trade secrets. So no patent-based comparison with Starlink is possible, and I say so wherever comparisons appear. ([query 30](sql/30_spacex_name_counts.sql))
 
-## Data sources
+## Honest status
 
-| Data | Source | Notes |
-|---|---|---|
-| Patent publications and technology codes | [Google Patents public dataset in BigQuery](https://console.cloud.google.com/marketplace/product/google_patents_public_datasets/google-patents-public-data), supplied by IFI CLAIMS; table last modified 23 September 2026 | Queried with the SQL in [`sql/`](sql/README.md); local snapshots fingerprinted in [`data/source_manifest.csv`](data/source_manifest.csv) |
-| Classification code definitions | [USPTO CPC scheme](https://www.uspto.gov/web/patents/classification/cpc/html/cpc-H04B.html) | Basis of the satcom code pools, checked 8 November 2026 |
-| Nokia financials | [Nokia 20-F annual reports, FY2006–FY2025](data/raw/annual_reports_manifest.csv), via SEC EDGAR | Official filings |
-| US renewal fees | [USPTO fee schedule](https://www.uspto.gov/learning-and-resources/fees-and-payment/uspto-fee-schedule) | Official; fees change, check before reuse |
-| Ownership and renewal records | [USPTO bulk data portal](https://data.uspto.gov/bulkdata/datasets/ptmnfee2) | Not yet downloaded — the known ownership gap |
-
-## Research status
-
-**There's no answer to the central question yet.** [Full tracker](docs/appendices/evidence-gaps.md).
-
-| Workstream | Status | Where it stands |
-|---|---|---|
-| Research design and scope | Defined | [Five research questions](docs/01-research-design/research-questions.md) |
-| Candidate portfolio universe | Preliminary | [Counts are not verified rights or owners](docs/02-methodology/candidate-portfolio-universe.md) |
-| Technology classification | Under validation | Five satcom pools defined, [codebook frozen at 2.0](docs/02-methodology/satcom-validation-plan.md); pool census done (query 32); pilot done; **re-test 13 Nov FAILED the 85% bar at 70.8%** — comparisons stay "first estimate" until test #3 passes |
-| Validation pipeline | Automated | Every stage is a script: [run_queries.py](src/run_queries.py) (BigQuery bridge with dry-run and cost cap), [review_workbench.py](src/review_workbench.py) (blind labelling), [score_satcom_validation.py](src/score_satcom_validation.py) (repeatable scoring), [check_satcom_outputs.py](src/check_satcom_outputs.py) (consistency guard) |
-| Competitor selection | Defined | Five satcom actors; name census and review done, [peers table built](sql/README.md) (143k publications, exact-name matched) |
-| Competitive patent analysis | Not started for satcom | [Pre-pivot first estimates](docs/03-market-and-patent-analysis/patent-landscape.md) are method demonstrations; pool census done (query 32), company comparisons wait for validated pools |
-
-![Re-test precision vs the 85% bar, by pool, company and code position](docs/img/satcom_validation_precision.png)
-| Commercial and patent alignment | Pending | [Inputs collected](docs/03-market-and-patent-analysis/commercial-alignment.md) (pre-pivot); [Ukraine satcom context](docs/appendices/deep-research-ukraine-satcom.md) gathered |
-| Ten-year maintenance cost model | Designed, not built | [Q9 design](docs/04-financial-analysis/ten-year-maintenance-cost-model.md). US fees and a [break-even](docs/04-financial-analysis/us-renewal-break-even.md) done |
-| Investment recommendations | Pending | [Four early satcom findings](docs/05-findings-and-recommendations/findings.md); the headline answers wait for validated pools |
-
-## What we can already say about the satcom question
-
-The headline answers (reuse, exposure, advantage, investment priorities) are not ready — they wait for the technology buckets to pass validation. But four findings are already established, each with its evidence on file:
-
-- **Ukraine cannot supply this technology from its own patent base.** No Ukrainian company holds satellite-communications patents: the national footprint in these technologies is 16 individual inventors with one family each, in a dataset holding over 336,000 Ukrainian patent publications overall. Foreign suppliers have filed only 16 satcom patent families at the Ukrainian office, ever. A sovereign Ukrainian system will run on foreign-patented technology; the open question is on whose terms — license, partnership or acquisition. ([queries 25–28](sql/README.md))
-- **ICEYE brings satellites and radar, not communications patents.** Its ~70 patent families (all 9 name variants checked) are dominated by radar imaging (35 families) and spacecraft-platform technology (14), with only 7 in transmission. In the partnership's division of labour, the communications IP would come from Nokia. Caveat: absence of patents is not absence of capability. ([queries 24, 35, 36](sql/README.md))
-- **The incumbents' patent positions are deep.** The Airbus group holds 19,488 patent families in our cleaned data, Thales 9,873, Viasat 822. Anyone building in this space builds against those positions — which is why the exposure question exists.
-- **Patent data cannot see the market leader.** SpaceX holds just 110 patent families — it protects technology as trade secrets, not published patents. Our numbers describe the published-IP landscape, not the capability landscape, and every conclusion carries that label. ([query 30](sql/30_spacex_name_counts.sql))
-
-## Pre-pivot results (method demonstration)
-
-### Patent codes alone can't compare companies
-
-Preliminary software-assisted checks read the inventor's numbered sentences for a sample of patents in each pool and judged whether the pool's label was right. The checks ran blind: the labeler could not see which company or pool each patent came from, so nothing could be nudged toward a preferred answer. These first-pass labels haven't been human reviewed.
-
-| Code pool | Claims match, of 100 sampled | 95% range | 85% bar |
-|---|---:|---|---|
-| Optical | 73 | 64–81% | Fail |
-| IP routing | 39 | 30–49% | Fail |
-| Data-centre switching (H04L 49) | 42 | 33–52% | Fail |
-
-### Nokia-lineage patents show far more transfers than competitors' patents
-
-42 of 179 sampled Nokia-lineage patents (23.5%) show another current assignee on Google Patents, such as WSOU or RPX, against 2 of 242 for the other four companies. Google Patents isn't a register, so [this needs checking against USPTO records](docs/02-methodology/candidate-portfolio-universe.md#current-owner-evidence-so-far).
-
-### The candidate universe isn't a verified portfolio
-
-![From 72,207 families to a candidate universe](docs/img/candidate_universe.png)
-
-19,873 families have grant evidence and were filed within 20 years, and 5,595 more have a recent application with no grant detected. Absence of a detected grant isn't proof of pending status. Verified active rights and verified current owners are both still at 0.
-
-### First estimates: strongest in optical, thinnest in switching
-
-| Estimated US families (95% range) | Optical | IP routing | Switching |
-|---|---|---|---|
-| **Nokia lineage** | 768 (641–840) | 233 (151–329) | 70 (46–97) |
-| Ciena | 263 (169–342) | 90 (47–146) | 40 (24–57) |
-| Cisco, with Acacia and Luxtera | 233 (155–294) | 792 (410–1,284) | 220 (120–337) |
-| Arista | 9 (5–12) | 143 (74–198) | 33 (14–57) |
-| Huawei | 746 (423–950) | 714 (300–1,226) | 175 (73–300) |
-
-Low confidence: small samples, recall untested, and not yet adjusted for transfers. [The adjusted version](docs/03-market-and-patent-analysis/patent-landscape.md#the-same-estimate-keeping-only-patents-without-another-current-assignee) lowers Nokia's switching estimate to 26.
-
-### No single company leads AI and cloud networking
-
-![No single company leads AI and cloud networking](docs/img/ai_cloud_leaders.png)
-
-Market share isn't patent strength. [Sources and peer selection](docs/03-market-and-patent-analysis/market-context-and-peer-selection.md).
-
-## Guide to the repo
-
-| Folder | Contents |
+| Part | State |
 |---|---|
-| [1. Research design](docs/01-research-design/research-design.md) | The protocol, [scope](docs/01-research-design/scope.md) and [research questions](docs/01-research-design/research-questions.md) |
-| 2. Methodology | [Codebook](docs/02-methodology/classification-codebook.md), [validation](docs/02-methodology/validation.md), [candidate universe](docs/02-methodology/candidate-portfolio-universe.md), [data quality and lineage](docs/02-methodology/data-quality-and-lineage.md), [metrics](docs/02-methodology/metrics.md) |
-| 3. Market and patent analysis | [Peer selection](docs/03-market-and-patent-analysis/market-context-and-peer-selection.md), [patent landscape](docs/03-market-and-patent-analysis/patent-landscape.md), [commercial alignment](docs/03-market-and-patent-analysis/commercial-alignment.md), [twenty years of reported figures](docs/03-market-and-patent-analysis/twenty-years.md) |
-| 4. Financial analysis | [Ten-year cost model](docs/04-financial-analysis/ten-year-maintenance-cost-model.md), [assumptions and scenarios](docs/04-financial-analysis/assumptions-and-scenarios.md), [US break-even](docs/04-financial-analysis/us-renewal-break-even.md) |
-| 5. Findings | [Findings so far](docs/05-findings-and-recommendations/findings.md) |
-| Appendices | [Progress tracker](docs/appendices/evidence-gaps.md), [fact checks](docs/appendices/sources.md), [data map](docs/appendices/data-map.md), [working principles](docs/appendices/working-principles.md) |
-| How I learned | [Learning log](docs/appendices/learning-log.md), [research log](docs/appendices/research-log.md), [question notebook](docs/appendices/questions.md), [knowledge check](docs/appendices/explain-it.md) |
-| Code and data | [`sql/`](sql/README.md), [`src/`](src), [`tests/`](tests), [`data/`](docs/appendices/data-map.md#repository-data-folders), [`config/`](config/research_parameters.toml) |
+| Data pipeline (extraction, cleaning, deduplication) | Works, reproducible |
+| Ukraine domestic-base analysis | Done (above) |
+| Technology sorting into five buckets | **Failed its own accuracy test** — being redesigned |
+| Company comparisons | On hold until the sorting passes |
+| Old optical-networking analysis | [Archived](archive/pre-pivot/) — different question, kept as proof of method |
+| Ten-year patent cost model | [Parked](archive/parked-financial-analysis/) — answered a question nobody is asking right now |
+
+Full detail: [research design](docs/01-research-design/research-design.md) · [research questions](docs/01-research-design/research-questions.md) · [findings with evidence](docs/05-findings-and-recommendations/findings.md) · [progress tracker](docs/appendices/evidence-gaps.md) · [glossary in plain language](docs/glossary.md)
 
 ## Run it yourself
 
@@ -158,21 +70,8 @@ Market share isn't patent strength. [Sources and peer selection](docs/03-market-
 python3 src/run_all.py
 ```
 
-That reruns the cleaning, scoring, checks and tests, using only the standard library and Python 3.11 or later. To redraw the charts as well:
-
-```bash
-pip install -r requirements.txt
-python3 src/run_all.py --charts
-```
-
-To get Nokia's annual reports, set your own contact, as the SEC requires one:
-
-```bash
-SEC_USER_AGENT="Your Name you@example.com" python3 src/download_annual_reports.py
-```
-
-The reports stay out of the repo because of their size, and [the manifest](data/raw/annual_reports_manifest.csv) records each file's source and fingerprint. BigQuery steps are listed in [`sql/README.md`](sql/README.md) and consolidated cell by cell in [`notebooks/patent_portfolio_queries.ipynb`](notebooks/patent_portfolio_queries.ipynb); they rebuild the sandbox tables, which expire after 60 days.
+Reruns the cleaning, scoring, checks and tests with only the standard library (Python 3.11+). On a fresh clone, the two steps that need my local patent-claim pages (gitignored, since they mirror claim text) skip themselves cleanly and keep the committed results. Add `--charts` (needs `pip install -r requirements.txt`) to redraw the charts. BigQuery steps are listed in [`sql/README.md`](sql/README.md).
 
 ## How this was made
 
-I chose the question, sources and method, and I am responsible for the methods, validation, calculations and conclusions. I used Claude for script drafting, browser-assisted query execution, document drafting and software-generated first-pass patent labels, and Kimi for a repository-structure review. Those labels haven't been human reviewed; the [validation page](docs/02-methodology/validation.md#who-labelled-what) records what remains to be checked.
+I chose the question, sources and method, and I am responsible for the methods, validation, calculations and conclusions. I used Claude for script drafting, query execution, document drafting and first-pass patent labels, and Kimi / Kimi Code for repository-structure reviews and the 24 November restructure. The [validation page](docs/02-methodology/validation.md#who-labelled-what) records exactly what a human still has to check.

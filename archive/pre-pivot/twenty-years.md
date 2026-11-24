@@ -1,8 +1,10 @@
 # Twenty years of patents and money
 
+> **Archived 24 November 2026.** Pre-pivot method demonstration (optical networking, IP routing and data-centre switching scope). Kept as evidence of method; it does not answer the current sovereign-satcom question. Current protocol: `docs/01-research-design/research-design.md`.
+
 Historical financial and patent context. I took the figures from Nokia's [20 annual reports](../../data/raw/annual_reports_manifest.csv) and compared them with the patent data.
 
-![Twenty years of Nokia's patents and money](../img/twenty_years.png)
+![Twenty years of Nokia's patents and money](../../docs/img/twenty_years.png)
 
 ## The data
 
@@ -32,7 +34,7 @@ Both series rise from 2019 to 2024. My counts are lower in 2023–24, which fits
 
 ### Portfolio size has two reported levels
 
-Nokia reported more than 26,000 families in FY2016, around 20,000 from FY2017 to FY2023, and 26,000+ in FY2025. My [candidate universe](../02-methodology/candidate-portfolio-universe.md) has 19,873 families with grant evidence, plus 5,595 families with a recent application and no grant detected, or 25,468 in total. That total is close to 26,000, but it isn't evidence that the two match: Nokia doesn't publish its counting rules, and [my count includes patents showing other assignees](../02-methodology/candidate-portfolio-universe.md#current-owner-evidence-so-far).
+Nokia reported more than 26,000 families in FY2016, around 20,000 from FY2017 to FY2023, and 26,000+ in FY2025. My [candidate universe](../../docs/02-methodology/candidate-portfolio-universe.md) has 19,873 families with grant evidence, plus 5,595 families with a recent application and no grant detected, or 25,468 in total. That total is close to 26,000, but it isn't evidence that the two match: Nokia doesn't publish its counting rules, and [my count includes patents showing other assignees](../../docs/02-methodology/candidate-portfolio-universe.md#current-owner-evidence-so-far).
 
 **Unexplained:** I haven't found why the figure fell by about 6,000 between FY2016 and FY2017, or why it rose again by FY2025. Infinera wouldn't account for all of the rise, so this stays open.
 

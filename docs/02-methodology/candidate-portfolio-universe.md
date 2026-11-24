@@ -38,7 +38,7 @@ The tables are `nokia_analytics.portfolio_30y` and `nokia_analytics.family_statu
 
 ## Against Nokia's reported figures
 
-[Nokia reports](../03-market-and-patent-analysis/twenty-years.md#portfolio-size-has-two-reported-levels) around 20,000 families for FY2017–FY2023 and 26,000+ for FY2025. My 19,873 and 5,595 total 25,468. **That closeness isn't evidence that the counts match**, as the errors below push in both directions, Nokia's counting rules aren't published, and my count includes patents held by others.
+[Nokia reports](../../archive/pre-pivot/twenty-years.md#portfolio-size-has-two-reported-levels) around 20,000 families for FY2017–FY2023 and 26,000+ for FY2025. My 19,873 and 5,595 total 25,468. **That closeness isn't evidence that the counts match**, as the errors below push in both directions, Nokia's counting rules aren't published, and my count includes patents held by others.
 
 ## Current-owner evidence so far
 
@@ -60,7 +60,7 @@ Recorded assignments confirm transfers on pages I opened, such as [US8432894B2](
 |---|---|
 | Patents that lapsed because fees weren't paid | Too high |
 | Patents transferred to others, as filing names remain | Too high |
-| Grants missed outside the US, as [many Japanese records have no applicant name](../03-market-and-patent-analysis/twenty-years.md#japan-needed-fixing) | Too low |
+| Grants missed outside the US, as [many Japanese records have no applicant name](../../archive/pre-pivot/twenty-years.md#japan-needed-fixing) | Too low |
 | Applications filed before 2021 with no grant detected | Outside the recent-application category; status unknown |
 | Grant dates that look wrong for some offices | Could go either way |
 

@@ -1,5 +1,7 @@
 # Commercial alignment
 
+> **Archived 24 November 2026.** Pre-pivot method demonstration (optical networking, IP routing and data-centre switching scope). Kept as evidence of method; it does not answer the current sovereign-satcom question. Current protocol: `docs/01-research-design/research-design.md`.
+
 **Status: not tested, pre-pivot.** This page collected commercial inputs for the pre-pivot optical, routing and switching scope. Re-aimed, it feeds RQ3 and RQ4; the comparison needs validated claim-based satcom counts first.
 
 ## Commercial evidence collected

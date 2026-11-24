@@ -69,7 +69,7 @@ I am the only person labelling. The standard proof that labels are trustworthy i
 | Switching as first planned: H04L 49 or H04L 47 | DCS labels out of 100 patents | 21 | 14–30% | No |
 | Switching: H04L 49 only | DCS labels out of 100 patents | 42 | 33–52% | No |
 
-H04L 47 alone matched 7 of 70, so switching now uses H04L 49. **Raw code counts can't be used to compare companies.** Any comparison has to use estimates from claims, with ranges and low confidence, as in the [patent landscape](../03-market-and-patent-analysis/patent-landscape.md).
+H04L 47 alone matched 7 of 70, so switching now uses H04L 49. **Raw code counts can't be used to compare companies.** Any comparison has to use estimates from claims, with ranges and low confidence, as in the [patent landscape](../../archive/pre-pivot/patent-landscape.md).
 
 ## Confusion between classes
 
