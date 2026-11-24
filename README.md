@@ -14,7 +14,7 @@
 
 I came across Nokia's Financial Data Engineering / Business Data Analytics Trainee vacancy and started this repository as a way to develop the analytical skills the role calls for.
 
-Patent portfolio analysis was new to me, so I approached the project as a practical learning exercise: start with a real question, work with publicly available data, build the necessary pipeline, and document the methodology, assumptions and limitations along the way. The aim is to develop something useful enough to serve as a work sample, while actually learning the methods behind it rather than simply presenting a polished result.
+Patent portfolio analysis was new to me, so I approached this as a practical learning project: starting with a real question, working with public data, and building the pipeline needed to analyse it. I document the methodology, assumptions and limitations along the way, aiming to produce a useful work sample while learning the process behind the results.
 
 The research questions evolved as I worked. I changed direction more than once as I encountered new evidence and reconsidered what was worth investigating.
 
