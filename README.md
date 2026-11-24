@@ -4,7 +4,6 @@
 
 *The project was widely described as Ukraine's "Starlink alternative" after a foreign provider restricted Ukraine's satellite service without warning for ten days. The disruption highlighted the risks of relying on an external network. Nokia and ICEYE describe their proposed system as a complement to existing military, commercial, and government networks, not a replacement. [Background and sources](docs/01-research-design/pivot-sovereign-satcom.md).*
 
-*The vacancy asks: "What would you do with all the patent data in the world?" Probably go a little insane organising, deduplicating, cleaning, and validating it first. The real challenge, however, is turning that data into reliable evidence and useful business insights. That's what I'm attempting to do here.*
 
 **Independent research project | Developed in connection with the [Financial Data Engineering / Business Data Analytics Trainee](https://www.linkedin.com/jobs/view/4483030441) application, Business Data Analytics track.**
 
